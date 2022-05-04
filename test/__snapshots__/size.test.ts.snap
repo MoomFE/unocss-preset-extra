@@ -1,0 +1,61 @@
+// Vitest Snapshot v1
+
+exports[`size > autocomplete 1`] = `
+[
+  "size-2xl",
+  "size-3xl",
+  "size-4xl",
+  "size-5xl",
+  "size-6xl",
+  "size-7xl",
+  "size-auto",
+  "size-lg",
+  "size-md",
+  "size-none",
+  "size-prose",
+  "size-screen",
+  "size-sm",
+  "size-xl",
+  "size-xs",
+]
+`;
+
+exports[`size > autocomplete 2`] = `
+[
+  "min-size-2xl",
+  "min-size-3xl",
+  "min-size-4xl",
+  "min-size-5xl",
+  "min-size-6xl",
+  "min-size-7xl",
+  "min-size-auto",
+  "min-size-lg",
+  "min-size-md",
+  "min-size-none",
+  "min-size-prose",
+  "min-size-screen",
+  "min-size-sm",
+  "min-size-xl",
+  "min-size-xs",
+]
+`;
+
+exports[`size > autocomplete 3`] = `
+[
+  "max-size-2xl",
+  "max-size-3xl",
+  "max-size-4xl",
+  "max-size-5xl",
+  "max-size-6xl",
+  "max-size-7xl",
+  "max-size-auto",
+  "max-size-lg",
+  "max-size-md",
+  "max-size-none",
+  "max-size-prose",
+  "max-size-screen",
+  "max-size-sm",
+  "max-size-xl",
+  "max-size-xs",
+]
+`;
