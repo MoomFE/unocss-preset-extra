@@ -1,4 +1,7 @@
 ## [Unreleased]
+
+## [v0.1.0]
+ - 📅 2022-05-04
  - 🌟 新增使用 `(min-|max-)?size-*` 的方式同时定义宽高
 
 <br>
@@ -22,3 +25,10 @@ CHANGELOG 图标规范
 - ⚠️: 与上一版本可能不兼容的功能更改<br>
 - 🐞: 问题修正<br>
 - 📅: 版本发布日期
+
+<br>
+<hr>
+<br>
+
+[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.1.0...HEAD
+[v0.1.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.1.0
