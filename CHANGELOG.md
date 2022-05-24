@@ -1,4 +1,5 @@
 ## [Unreleased]
+ - 💄 更新 `package.json` 的 `peerDependencies` 字段中要求的 `unocss` 版本
 
 ## [v0.1.0]
  - 📅 2022-05-04
