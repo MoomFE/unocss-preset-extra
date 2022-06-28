@@ -1,9 +1,14 @@
 import { createGenerator, presetAttributify, presetUno } from 'unocss';
 import { describe, expect, test } from 'vitest';
 import { createAutocomplete } from '@unocss/autocomplete';
+import { omit } from 'lodash-es';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { presetExtra } from '@/index';
+
+function removeUnusedItems(cssJson: object) {
+  return omit(cssJson, ['*,::before,::after', '::backdrop']);
+}
 
 describe('size', () => {
   const generator = createGenerator({
@@ -27,11 +32,13 @@ describe('size', () => {
       ['auto', 'screen'].map(s => `max-size-${s}`).join(' '),
     );
 
-    expect({
-      ...postcssJs.objectify(postcss.parse(css)),
-      ...postcssJs.objectify(postcss.parse(minCss)),
-      ...postcssJs.objectify(postcss.parse(maxCss)),
-    }).toEqual({
+    expect(
+      removeUnusedItems({
+        ...postcssJs.objectify(postcss.parse(css)),
+        ...postcssJs.objectify(postcss.parse(minCss)),
+        ...postcssJs.objectify(postcss.parse(maxCss)),
+      }),
+    ).toEqual({
       '.size-auto': { width: 'auto', height: 'auto' },
       '.size-screen': { width: '100vw', height: '100vh' },
 
@@ -54,11 +61,13 @@ describe('size', () => {
       ['1/2', '1/4', '1/10', 'full'].map(s => `max-size-${s}`).join(' '),
     );
 
-    expect({
-      ...postcssJs.objectify(postcss.parse(css)),
-      ...postcssJs.objectify(postcss.parse(minCss)),
-      ...postcssJs.objectify(postcss.parse(maxCss)),
-    }).toEqual({
+    expect(
+      removeUnusedItems({
+        ...postcssJs.objectify(postcss.parse(css)),
+        ...postcssJs.objectify(postcss.parse(minCss)),
+        ...postcssJs.objectify(postcss.parse(maxCss)),
+      }),
+    ).toEqual({
       '.size-1\\/2': { width: '50%', height: '50%' },
       '.size-1\\/4': { width: '25%', height: '25%' },
       '.size-1\\/10': { width: '10%', height: '10%' },
@@ -96,11 +105,13 @@ describe('size', () => {
       ].map(s => `max-size-${s}`).join(' '),
     );
 
-    expect({
-      ...postcssJs.objectify(postcss.parse(css)),
-      ...postcssJs.objectify(postcss.parse(minCss)),
-      ...postcssJs.objectify(postcss.parse(maxCss)),
-    }).toEqual({
+    expect(
+      removeUnusedItems({
+        ...postcssJs.objectify(postcss.parse(css)),
+        ...postcssJs.objectify(postcss.parse(minCss)),
+        ...postcssJs.objectify(postcss.parse(maxCss)),
+      }),
+    ).toEqual({
       '.size-1': { width: '0.25rem', height: '0.25rem' },
       '.size-2': { width: '0.5rem', height: '0.5rem' },
       '.size-3': { width: '0.75rem', height: '0.75rem' },
@@ -162,11 +173,13 @@ describe('size', () => {
       ['1px', '1pt', '1pc', '1rem', '1em', '1%', '1vh', '1vw', '1in', '1cm', '1mm', '1ex', '1ch', '1vmin', '1vmax', '1rpx'].map(s => `max-size-[${s}]`).join(' '),
     );
 
-    expect({
-      ...postcssJs.objectify(postcss.parse(css)),
-      ...postcssJs.objectify(postcss.parse(minCss)),
-      ...postcssJs.objectify(postcss.parse(maxCss)),
-    }).toEqual({
+    expect(
+      removeUnusedItems({
+        ...postcssJs.objectify(postcss.parse(css)),
+        ...postcssJs.objectify(postcss.parse(minCss)),
+        ...postcssJs.objectify(postcss.parse(maxCss)),
+      }),
+    ).toEqual({
       '.size-\\[1px\\]': { width: '1px', height: '1px' },
       '.size-\\[1pt\\]': { width: '1pt', height: '1pt' },
       '.size-\\[1pc\\]': { width: '1pc', height: '1pc' },
