@@ -21,7 +21,7 @@ describe('size', () => {
 
   const autocomplete = createAutocomplete(generator);
 
-  test('自动宽高, 屏幕宽高', async() => {
+  test('自动宽高, 屏幕宽高', async () => {
     const { css } = await generator.generate(
       ['auto', 'screen'].map(s => `size-${s}`).join(' '),
     );
@@ -50,7 +50,7 @@ describe('size', () => {
     });
   });
 
-  test('百分比宽高', async() => {
+  test('百分比宽高', async () => {
     const { css } = await generator.generate(
       ['1/2', '1/4', '1/10', 'full'].map(s => `size-${s}`).join(' '),
     );
@@ -85,7 +85,7 @@ describe('size', () => {
     });
   });
 
-  test('固定宽高', async() => {
+  test('固定宽高', async () => {
     const { css } = await generator.generate(
       [
         '1', '2', '3', '666',
@@ -162,7 +162,7 @@ describe('size', () => {
     });
   });
 
-  test('自定义宽高', async() => {
+  test('自定义宽高', async () => {
     const { css } = await generator.generate(
       ['1px', '1pt', '1pc', '1rem', '1em', '1%', '1vh', '1vw', '1in', '1cm', '1mm', '1ex', '1ch', '1vmin', '1vmax', '1rpx'].map(s => `size-[${s}]`).join(' '),
     );
@@ -233,7 +233,7 @@ describe('size', () => {
     });
   });
 
-  test('autocomplete', async() => {
+  test('autocomplete', async () => {
     expect(
       await autocomplete.suggest('size-'),
     ).toMatchSnapshot();

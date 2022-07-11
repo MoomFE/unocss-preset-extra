@@ -2,29 +2,29 @@
   "name": "unocss-preset-extra",
   "version": "0.1.1",
   "description": "",
-  "license": "MIT",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
+  "license": "MIT",
+  "homepage": "https://github.com/MoomFE/unocss-preset-extra#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MoomFE/unocss-preset-extra.git"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "files": [
-    "dist"
-  ],
   "bugs": {
     "url": "https://github.com/MoomFE/unocss-preset-extra/issues"
   },
-  "homepage": "https://github.com/MoomFE/unocss-preset-extra#readme",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "esno scripts/build.ts",
     "test": "vitest",
