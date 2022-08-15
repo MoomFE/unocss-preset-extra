@@ -47,7 +47,7 @@ export const elevationRules: Rule[] = [[
   {
     autocomplete: [
       `(elevation|shadow-elevation)-(${elevationLevel})`,
-      `(elevation|shadow-elevation)--(${elevationLevel})-fade`,
+      `(elevation|shadow-elevation)-(${elevationLevel})-fade`,
     ],
   },
 ]];
