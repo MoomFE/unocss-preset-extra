@@ -4,8 +4,8 @@ import { createAutocomplete } from '@unocss/autocomplete';
 import { omit } from 'lodash-es';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
+import { ambient, ambientOpacity, penumbra, penumbraOpacity, umbra, umbraOpacity } from '@@/src/rules/elevation';
 import { presetExtra } from '@/index';
-import { ambient, ambientOpacity, penumbra, penumbraOpacity, umbra, umbraOpacity } from '@/rules/elevation';
 
 function removeUnusedItems(cssJson: object) {
   return omit(cssJson, ['*,::before,::after', '::backdrop']);
