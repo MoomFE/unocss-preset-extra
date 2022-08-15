@@ -13,9 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.1
-        with:
-          version: 6.32.3
+        run: npm install pnpm@7 -g
 
       - name: Set node version to 16
         uses: actions/setup-node@v2
