@@ -30,10 +30,10 @@ export default defineConfig({
 <br>
 
 
-## 内置的规则
+## 内置规则
 
 <details>
-  <summary>size</summary>
+  <summary>size - 同时设置 `width` 和 `height` 样式</summary>
 
   ```html
   <div class="size-auto" />
@@ -53,6 +53,28 @@ export default defineConfig({
   .min-size-xs { min-width: 20rem; min-height: 20rem; }
   .max-size-1 { max-width: 0.25rem; max-height: 0.25rem; }
   .max-size-[1px] { max-width: 1px; max-height: 1px; }
+  ```
+</details>
+
+<details>
+  <summary>elevation - Vuetify 海拔样式</summary>
+
+  ```html
+  <div class="elevation-0" />
+  <div class="elevation-6" />
+  <div class="elevation-24" />
+  <div class="elevation-6-fade" />
+  <div class="elevation-24-fade" />
+  ```
+
+  这将生成以下 css 代码
+
+  ```css
+  .elevation-0 { box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
+  .elevation-6 { box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12); }
+  .elevation-24 { box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12); }
+  .elevation-6-fade { box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1), 0px 6px 10px 0px rgba(0, 0, 0, 0.07), 0px 1px 18px 0px rgba(0, 0, 0, 0.06); }
+  .elevation-24-fade { box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.1), 0px 24px 38px 3px rgba(0, 0, 0, 0.07), 0px 9px 46px 8px rgba(0, 0, 0, 0.06); }
   ```
 </details>
 
