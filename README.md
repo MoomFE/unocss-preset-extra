@@ -34,6 +34,7 @@ export default defineConfig({
 
 <details>
   <summary>size - 同时设置 `width` 和 `height` 样式</summary>
+  <br>
 
   ```html
   <div class="size-auto" />
@@ -58,6 +59,7 @@ export default defineConfig({
 
 <details>
   <summary>elevation - Vuetify 海拔样式</summary>
+  <br>
 
   ```html
   <div class="elevation-0" />
