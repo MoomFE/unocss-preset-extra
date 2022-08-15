@@ -1,5 +1,8 @@
 # unocss-preset-extra
 
+[![npm](https://img.shields.io/npm/v/unocss-preset-extra.svg)](https://www.npmjs.com/package/unocss-preset-extra)
+[![Downloads](https://img.shields.io/npm/dm/unocss-preset-extra.svg)](https://www.npmjs.com/package/unocss-preset-extra)
+
 <br>
 
 ## 安装
