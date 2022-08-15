@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [v0.2.0]
+ - 📅 2022-08-15
+ - 🌟 新增使用 `(shadow-)?elevation-(0~24)(-fade)?` 的方式生成 Vuetify 海拔样式
+
 ## [v0.1.1]
  - 📅 2022-05-24
  - 💄 更新 `package.json` 的 `peerDependencies` 字段中要求的 `unocss` 版本
@@ -34,5 +38,7 @@ CHANGELOG 图标规范
 <hr>
 <br>
 
-[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.2.0...HEAD
+[v0.2.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.2.0
+[v0.1.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.1.1
 [v0.1.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.1.0
