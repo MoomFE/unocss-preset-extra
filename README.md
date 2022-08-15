@@ -55,6 +55,8 @@ export default defineConfig({
   .max-size-1 { max-width: 0.25rem; max-height: 0.25rem; }
   .max-size-[1px] { max-width: 1px; max-height: 1px; }
   ```
+
+  <br>
 </details>
 
 <details>
@@ -78,6 +80,8 @@ export default defineConfig({
   .elevation-6-fade { box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1), 0px 6px 10px 0px rgba(0, 0, 0, 0.07), 0px 1px 18px 0px rgba(0, 0, 0, 0.06); }
   .elevation-24-fade { box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.1), 0px 24px 38px 3px rgba(0, 0, 0, 0.07), 0px 9px 46px 8px rgba(0, 0, 0, 0.06); }
   ```
+
+  <br>
 </details>
 
 <br>
