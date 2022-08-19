@@ -70,7 +70,7 @@ export default defineConfig({
   <div class="elevation-0" />
   <div class="elevation-6" />
   <div class="elevation-24" />
-  <div class="elevation-6-fade" />
+  <div class="elevation-6-fade" /> <!-- 加上 `fade` 可减淡阴影效果 ( 50% ) -->
   <div class="elevation-24-fade" />
   ```
 
