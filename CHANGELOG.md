@@ -1,4 +1,7 @@
 ## [Unreleased]
+
+## [v0.3.0]
+  - 📅 2022-08-19
  - 🌟 更新海拔样式的规则, `elevation` 支持使用 `el` 进行简写
  - 🌟 新增使用 `(shadow-)?(el|elevation)-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度, 减淡阴影效果
  - 🌟 兼容使用 `shadow-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度, 减淡阴影效果
@@ -47,7 +50,8 @@ CHANGELOG 图标规范
 <hr>
 <br>
 
-[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.3.0...HEAD
+[v0.3.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.3.0
 [v0.2.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.2.1
 [v0.2.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.2.0
 [v0.1.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.1.1
