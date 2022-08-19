@@ -34,9 +34,18 @@ describe('elevation', async () => {
 
   const autocomplete = createAutocomplete(generator);
 
-  test('el-*', async () => {
+  test('(shadow-)?(el|elevation)-*', async () => {
     const { css } = await generator.generate(
       Array.from({ length: 36 }).map((_, i) => `el-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
+    );
+    const { css: css2 } = await generator.generate(
+      Array.from({ length: 36 }).map((_, i) => `elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
+    );
+    const { css: css3 } = await generator.generate(
+      Array.from({ length: 36 }).map((_, i) => `shadow-el-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
+    );
+    const { css: css4 } = await generator.generate(
+      Array.from({ length: 36 }).map((_, i) => `shadow-elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
     );
 
     expect(
@@ -46,30 +55,26 @@ describe('elevation', async () => {
     ).toEqual(
       createElevationRules('el'),
     );
-  });
-
-  test('elevation-*', async () => {
-    const { css } = await generator.generate(
-      Array.from({ length: 36 }).map((_, i) => `elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
-    );
 
     expect(
       removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css)),
+        postcssJs.objectify(postcss.parse(css2)),
       ),
     ).toEqual(
       createElevationRules(),
     );
-  });
 
-  test('shadow-elevation-*', async () => {
-    const { css } = await generator.generate(
-      Array.from({ length: 36 }).map((_, i) => `shadow-elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
+    expect(
+      removeUnusedItems(
+        postcssJs.objectify(postcss.parse(css3)),
+      ),
+    ).toEqual(
+      createElevationRules('shadow-el'),
     );
 
     expect(
       removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css)),
+        postcssJs.objectify(postcss.parse(css4)),
       ),
     ).toEqual(
       createElevationRules('shadow-elevation'),
