@@ -51,12 +51,12 @@ export default defineConfig({
   这将生成以下 css 代码
 
   ```css
-  .size-auto { width: auto; height: auto; }
-  .size-full { width: 100%; height: 100%; }
-  .min-size-1/2 { min-width: 50%; min-height: 50%; }
-  .min-size-xs { min-width: 20rem; min-height: 20rem; }
-  .max-size-1 { max-width: 0.25rem; max-height: 0.25rem; }
-  .max-size-[1px] { max-width: 1px; max-height: 1px; }
+  .size-auto { width: auto; height: auto }
+  .size-full { width: 100%; height: 100% }
+  .min-size-1\/2 { min-width: 50%; min-height: 50% }
+  .min-size-xs { min-width: 20rem; min-height: 20rem }
+  .max-size-1 { max-width: 0.25rem; max-height: 0.25rem }
+  .max-size-\[1px\] { max-width: 1px; max-height: 1px }
   ```
 
   <br>
@@ -67,21 +67,27 @@ export default defineConfig({
   <br>
 
   ```html
-  <div class="elevation-0" />
-  <div class="elevation-6" />
-  <div class="elevation-24" />
-  <div class="elevation-6-fade" /> <!-- 加上 `fade` 可减淡阴影效果 ( 50% ) -->
-  <div class="elevation-24-fade" />
+  <!-- 正常使用 -->
+  <div class="el-1" />
+  <div class="elevation-2" />
+  <div class="shadow-el-3" />
+  <div class="shadow-elevation-4" />
+  <!-- 透明度 -->
+  <div class="el-5 el-op-50" />
+  <div class="el-6 shadow-op-50" />
   ```
 
   这将生成以下 css 代码
 
   ```css
-  .elevation-0 { box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
-  .elevation-6 { box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12); }
-  .elevation-24 { box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12); }
-  .elevation-6-fade { box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1), 0px 6px 10px 0px rgba(0, 0, 0, 0.07), 0px 1px 18px 0px rgba(0, 0, 0, 0.06); }
-  .elevation-24-fade { box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.1), 0px 24px 38px 3px rgba(0, 0, 0, 0.07), 0px 9px 46px 8px rgba(0, 0, 0, 0.06); }
+  .el-1 { box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 1px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 3px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
+  .elevation-2 { box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 2px 2px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 5px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
+  .shadow-el-3 { box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 3px 4px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 8px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
+  .shadow-elevation-4 { box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 4px 5px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 10px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
+  .el-5 { box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 5px 8px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 14px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
+  .el-6 { box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 6px 10px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 18px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
+  .el-op-50 { --une-el-opacity: 0.5 }
+  .shadow-op-50 { --un-shadow-opacity: 0.5 }
   ```
 
   <br>
