@@ -35,7 +35,7 @@ const elevationLevel = Array.from({ length: 25 }).map((_, i) => i).join('|');
  */
 export const elevationRules: Rule[] = [
   [
-    /(shadow-)?elevation-(\d+)$/,
+    /(shadow-)?el(?:evation)?-(\d+)$/,
     ([,, prop]) => {
       const index = Number(prop);
 
@@ -48,18 +48,18 @@ export const elevationRules: Rule[] = [
       }
     },
     {
-      autocomplete: `(elevation|shadow-elevation)-(${elevationLevel})`,
+      autocomplete: `(el|elevation|shadow-elevation)-(${elevationLevel})`,
     },
   ],
   [
-    /(shadow-)?elevation-op(?:acity)?-(\d+)$/,
+    /(shadow-)?el(?:evation)?-op(?:acity)?-(\d+)$/,
     ([,, o]) => {
       return {
         '--une-el-opacity': handler.bracket.percent(o),
       };
     },
     {
-      autocomplete: '(elevation|shadow-elevation)-op-<percent>',
+      autocomplete: '(el|elevation|shadow-elevation)-op-<percent>',
     },
   ],
 ];
