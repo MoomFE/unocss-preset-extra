@@ -1,5 +1,6 @@
 ## [Unreleased]
- - 🌟 新增使用 `(shadow-)?elevation-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度
+ - 🌟 新增使用 `(shadow-)?elevation-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度, 减淡阴影效果
+ - ⚠️ 移除使用 `-fade` 的方式减淡阴影效果, 使用 `(shadow-)?elevation-(op|opacity)-50` 写法获得同等效果
 
 ## [v0.2.1]
   - 📅 2022-08-15

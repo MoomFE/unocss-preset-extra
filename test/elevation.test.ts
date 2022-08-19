@@ -11,18 +11,6 @@ function removeUnusedItems(cssJson: object) {
   return omit(cssJson, ['*,::before,::after', '::backdrop']);
 }
 
-function createElevationRules(suffix = '', opacity = 1) {
-  return Object.assign({}, ...Array.from({ length: 25 }).map((_, index) => {
-    return {
-      [`.elevation-${index}${suffix}`]: {
-        boxShadow: `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity * opacity} * var(--une-el-opacity, 1))), `
-                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity * opacity} * var(--une-el-opacity, 1))), `
-                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity * opacity} * var(--une-el-opacity, 1)))`,
-      },
-    };
-  }));
-}
-
 describe('elevation', async () => {
   const generator = createGenerator({
     presets: [
@@ -34,8 +22,15 @@ describe('elevation', async () => {
 
   const autocomplete = createAutocomplete(generator);
 
-  const elevationRules = createElevationRules();
-  const elevationFadeRules = createElevationRules('-fade', 0.5);
+  const elevationRules = Object.assign({}, ...Array.from({ length: 25 }).map((_, index) => {
+    return {
+      [`.elevation-${index}`]: {
+        boxShadow: `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity} * var(--une-el-opacity, 1))), `
+                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity} * var(--une-el-opacity, 1))), `
+                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity} * var(--une-el-opacity, 1)))`,
+      },
+    };
+  }));
 
   test('elevation-*', async () => {
     const { css } = await generator.generate(
@@ -51,20 +46,6 @@ describe('elevation', async () => {
     );
   });
 
-  test('elevation-*-fade', async () => {
-    const { css } = await generator.generate(
-      Array.from({ length: 25 }).map((_, i) => `elevation-${i}-fade`).join(' '),
-    );
-
-    expect(
-      removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css)),
-      ),
-    ).toEqual(
-      elevationFadeRules,
-    );
-  });
-
   test('shadow-elevation-*', async () => {
     const { css } = await generator.generate(
       Array.from({ length: 25 }).map((_, i) => `shadow-elevation-${i}`).join(' '),
@@ -77,24 +58,6 @@ describe('elevation', async () => {
     ).toEqual(
       Object.fromEntries(
         Object.entries(elevationRules).map(([key, value]) => {
-          return [key.replace('.elevation', '.shadow-elevation'), value];
-        }),
-      ),
-    );
-  });
-
-  test('shadow-elevation-*-fade', async () => {
-    const { css } = await generator.generate(
-      Array.from({ length: 25 }).map((_, i) => `shadow-elevation-${i}-fade`).join(' '),
-    );
-
-    expect(
-      removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css)),
-      ),
-    ).toEqual(
-      Object.fromEntries(
-        Object.entries(elevationFadeRules).map(([key, value]) => {
           return [key.replace('.elevation', '.shadow-elevation'), value];
         }),
       ),

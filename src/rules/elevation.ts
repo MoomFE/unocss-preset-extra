@@ -35,26 +35,22 @@ const elevationLevel = Array.from({ length: 25 }).map((_, i) => i).join('|');
  */
 export const elevationRules: Rule[] = [
   [
-    /(shadow-)?elevation-(\d+)(-fade)?$/,
-    ([,, prop, fade]) => {
+    /(shadow-)?elevation-(\d+)$/,
+    ([,, prop]) => {
       const index = Number(prop);
-      const multiply = fade ? 0.5 : 1;
 
       return {
-        'box-shadow': `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity * multiply} * var(--une-el-opacity, 1))), `
-                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity * multiply} * var(--une-el-opacity, 1))), `
-                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity * multiply} * var(--une-el-opacity, 1)))`,
+        'box-shadow': `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity} * var(--une-el-opacity, 1))), `
+                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity} * var(--une-el-opacity, 1))), `
+                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity} * var(--une-el-opacity, 1)))`,
       };
     },
     {
-      autocomplete: [
-        `(elevation|shadow-elevation)-(${elevationLevel})`,
-        `(elevation|shadow-elevation)-(${elevationLevel})-fade`,
-      ],
+      autocomplete: `(elevation|shadow-elevation)-(${elevationLevel})`,
     },
   ],
   [
-    /(shadow-)?elevation-op(?:acity)?-(.+)?$/,
+    /(shadow-)?elevation-op(?:acity)?-(\d+)$/,
     ([,, o]) => {
       return {
         '--une-el-opacity': handler.bracket.percent(o),
