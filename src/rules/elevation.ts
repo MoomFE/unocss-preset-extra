@@ -39,11 +39,13 @@ export const elevationRules: Rule[] = [
     ([,, prop]) => {
       const index = Number(prop);
 
-      return {
-        'box-shadow': `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity} * var(--une-el-opacity, 1))), `
+      if (umbra[index]) {
+        return {
+          'box-shadow': `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity} * var(--une-el-opacity, 1))), `
                     + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity} * var(--une-el-opacity, 1))), `
                     + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity} * var(--une-el-opacity, 1)))`,
-      };
+        };
+      }
     },
     {
       autocomplete: `(elevation|shadow-elevation)-(${elevationLevel})`,

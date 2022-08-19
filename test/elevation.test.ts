@@ -34,7 +34,7 @@ describe('elevation', async () => {
 
   test('elevation-*', async () => {
     const { css } = await generator.generate(
-      Array.from({ length: 25 }).map((_, i) => `elevation-${i}`).join(' '),
+      Array.from({ length: 36 }).map((_, i) => `elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
     );
 
     expect(
@@ -48,7 +48,7 @@ describe('elevation', async () => {
 
   test('shadow-elevation-*', async () => {
     const { css } = await generator.generate(
-      Array.from({ length: 25 }).map((_, i) => `shadow-elevation-${i}`).join(' '),
+      Array.from({ length: 36 }).map((_, i) => `shadow-elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
     );
 
     expect(
