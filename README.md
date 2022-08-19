@@ -66,6 +66,10 @@ export default defineConfig({
   <summary>elevation - Vuetify 海拔样式</summary>
   <br>
 
+  1. 类名 `elevation` 可简写为 `el`
+  2. 可选的前缀 `shadow-`
+  3. 透明度支持 `(el|elevation)-(op|opacity)-(0~100)` 或 `shadow-(op|opacity)-(0~100)` 的方式
+
   ```html
   <!-- 正常使用 -->
   <div class="el-1" />
