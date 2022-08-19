@@ -1,6 +1,6 @@
 # unocss-preset-extra
 
-UnoCSS 扩展, 提供类名简写及额外一些样式预设
+[UnoCSS](https://github.com/unocss/unocss) 扩展, 提供类名简写及额外一些样式预设
 
 [![npm](https://img.shields.io/npm/v/unocss-preset-extra.svg)](https://www.npmjs.com/package/unocss-preset-extra)
 [![Downloads](https://img.shields.io/npm/dm/unocss-preset-extra.svg)](https://www.npmjs.com/package/unocss-preset-extra)
