@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [v0.3.1]
+  - 📅 2022-08-19
+  - 💄 Update README.md
+
 ## [v0.3.0]
   - 📅 2022-08-19
  - 🌟 更新海拔样式的规则, `elevation` 支持使用 `el` 进行简写
@@ -50,7 +54,8 @@ CHANGELOG 图标规范
 <hr>
 <br>
 
-[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.3.1...HEAD
+[v0.3.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.3.1
 [v0.3.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.3.0
 [v0.2.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.2.1
 [v0.2.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.2.0
