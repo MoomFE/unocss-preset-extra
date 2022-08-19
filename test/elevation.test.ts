@@ -11,13 +11,23 @@ function removeUnusedItems(cssJson: object) {
   return omit(cssJson, ['*,::before,::after', '::backdrop']);
 }
 
-function createElevationRules(name = 'elevation') {
+function createElevationRules(name: string) {
   return Object.assign({}, ...Array.from({ length: 25 }).map((_, index) => {
     return {
       [`.${name}-${index}`]: {
         boxShadow: `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity} * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), `
                     + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity} * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), `
                     + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity} * var(--une-el-opacity, var(--un-shadow-opacity, 1))))`,
+      },
+    };
+  }));
+}
+
+function createElevationOpacityRules(name: string) {
+  return Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
+    return {
+      [`.${name}-${i}`]: {
+        '--une-el-opacity': `${i / 100}`,
       },
     };
   }));
@@ -35,17 +45,9 @@ describe('elevation', async () => {
   const autocomplete = createAutocomplete(generator);
 
   test('(shadow-)?(el|elevation)-*', async () => {
+    // el-*
     const { css } = await generator.generate(
       Array.from({ length: 36 }).map((_, i) => `el-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
-    );
-    const { css: css2 } = await generator.generate(
-      Array.from({ length: 36 }).map((_, i) => `elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
-    );
-    const { css: css3 } = await generator.generate(
-      Array.from({ length: 36 }).map((_, i) => `shadow-el-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
-    );
-    const { css: css4 } = await generator.generate(
-      Array.from({ length: 36 }).map((_, i) => `shadow-elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
     );
 
     expect(
@@ -56,12 +58,22 @@ describe('elevation', async () => {
       createElevationRules('el'),
     );
 
+    // elevation-*
+    const { css: css2 } = await generator.generate(
+      Array.from({ length: 36 }).map((_, i) => `elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
+    );
+
     expect(
       removeUnusedItems(
         postcssJs.objectify(postcss.parse(css2)),
       ),
     ).toEqual(
-      createElevationRules(),
+      createElevationRules('elevation'),
+    );
+
+    // shadow-el-*
+    const { css: css3 } = await generator.generate(
+      Array.from({ length: 36 }).map((_, i) => `shadow-el-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
     );
 
     expect(
@@ -70,6 +82,11 @@ describe('elevation', async () => {
       ),
     ).toEqual(
       createElevationRules('shadow-el'),
+    );
+
+    // shadow-elevation-*
+    const { css: css4 } = await generator.generate(
+      Array.from({ length: 36 }).map((_, i) => `shadow-elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
     );
 
     expect(
@@ -81,114 +98,109 @@ describe('elevation', async () => {
     );
   });
 
-  test('el-(op|opacity)-*', async () => {
+  test('(shadow-)?(el|elevation)-(op|opacity)-*', async () => {
+    // el-op-*
     const { css } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `el-op-${i}`).join(' '),
     );
+
+    expect(
+      removeUnusedItems(
+        postcssJs.objectify(postcss.parse(css)),
+      ),
+    ).toEqual(
+      createElevationOpacityRules('el-op'),
+    );
+
+    // el-opacity-*
     const { css: css2 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `el-opacity-${i}`).join(' '),
     );
 
     expect(
       removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css)),
+        postcssJs.objectify(postcss.parse(css2)),
       ),
     ).toEqual(
-      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
-        return {
-          [`.el-op-${i}`]: {
-            '--une-el-opacity': `${i / 100}`,
-          },
-        };
-      })),
+      createElevationOpacityRules('el-opacity'),
+    );
+
+    // elevation-op-*
+    const { css: css3 } = await generator.generate(
+      Array.from({ length: 101 }).map((_, i) => `elevation-op-${i}`).join(' '),
     );
 
     expect(
       removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css2)),
+        postcssJs.objectify(postcss.parse(css3)),
       ),
     ).toEqual(
-      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
-        return {
-          [`.el-opacity-${i}`]: {
-            '--une-el-opacity': `${i / 100}`,
-          },
-        };
-      })),
+      createElevationOpacityRules('elevation-op'),
     );
-  });
 
-  test('elevation-(op|opacity)-*', async () => {
-    const { css } = await generator.generate(
-      Array.from({ length: 101 }).map((_, i) => `elevation-op-${i}`).join(' '),
-    );
-    const { css: css2 } = await generator.generate(
+    // elevation-opacity-*
+    const { css: css4 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `elevation-opacity-${i}`).join(' '),
     );
 
     expect(
       removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css)),
+        postcssJs.objectify(postcss.parse(css4)),
       ),
     ).toEqual(
-      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
-        return {
-          [`.elevation-op-${i}`]: {
-            '--une-el-opacity': `${i / 100}`,
-          },
-        };
-      })),
+      createElevationOpacityRules('elevation-opacity'),
+    );
+
+    // shadow-el-op-*
+    const { css: css5 } = await generator.generate(
+      Array.from({ length: 101 }).map((_, i) => `shadow-el-op-${i}`).join(' '),
     );
 
     expect(
       removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css2)),
+        postcssJs.objectify(postcss.parse(css5)),
       ),
     ).toEqual(
-      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
-        return {
-          [`.elevation-opacity-${i}`]: {
-            '--une-el-opacity': `${i / 100}`,
-          },
-        };
-      })),
+      createElevationOpacityRules('shadow-el-op'),
     );
-  });
 
-  test('shadow-elevation-(op|opacity)-*', async () => {
-    const { css } = await generator.generate(
+    // shadow-el-opacity-*
+    const { css: css6 } = await generator.generate(
+      Array.from({ length: 101 }).map((_, i) => `shadow-el-opacity-${i}`).join(' '),
+    );
+
+    expect(
+      removeUnusedItems(
+        postcssJs.objectify(postcss.parse(css6)),
+      ),
+    ).toEqual(
+      createElevationOpacityRules('shadow-el-opacity'),
+    );
+
+    // shadow-elevation-op-*
+    const { css: css7 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `shadow-elevation-op-${i}`).join(' '),
     );
-    const { css: css2 } = await generator.generate(
+
+    expect(
+      removeUnusedItems(
+        postcssJs.objectify(postcss.parse(css7)),
+      ),
+    ).toEqual(
+      createElevationOpacityRules('shadow-elevation-op'),
+    );
+
+    // shadow-elevation-opacity-*
+    const { css: css8 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `shadow-elevation-opacity-${i}`).join(' '),
     );
 
     expect(
       removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css)),
+        postcssJs.objectify(postcss.parse(css8)),
       ),
     ).toEqual(
-      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
-        return {
-          [`.shadow-elevation-op-${i}`]: {
-            '--une-el-opacity': `${i / 100}`,
-          },
-        };
-      })),
-    );
-
-    expect(
-      removeUnusedItems(
-        postcssJs.objectify(postcss.parse(css2)),
-      ),
-    ).toEqual(
-      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
-        return {
-          [`.shadow-elevation-opacity-${i}`]: {
-            '--une-el-opacity': `${i / 100}`,
-          },
-        };
-      })),
+      createElevationOpacityRules('shadow-elevation-opacity'),
     );
   });
 
