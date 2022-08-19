@@ -1,7 +1,8 @@
 ## [Unreleased]
  - 🌟 更新海拔样式的规则, `elevation` 支持使用 `el` 进行简写
  - 🌟 新增使用 `(shadow-)?(el|elevation)-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度, 减淡阴影效果
- - ⚠️ 移除使用 `-fade` 的方式减淡阴影效果, 使用 `(shadow-)?(el|elevation)-(op|opacity)-50` 写法获得同等效果
+ - 🌟 兼容使用 `shadow-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度, 减淡阴影效果
+ - ⚠️ 移除使用 `-fade` 的方式减淡阴影效果, 使用 `(shadow-)?(el|elevation)-(op|opacity)-50` 或 `shadow-(op|opacity)-50` 写法获得同等效果
  - 🐞 修复使用海拔样式时, 使用非 `0~24` 海拔时, 会返回错误样式的问题
 
 ## [v0.2.1]

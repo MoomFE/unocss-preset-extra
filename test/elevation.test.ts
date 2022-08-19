@@ -15,9 +15,9 @@ function createElevationRules(name = 'elevation') {
   return Object.assign({}, ...Array.from({ length: 25 }).map((_, index) => {
     return {
       [`.${name}-${index}`]: {
-        boxShadow: `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity} * var(--une-el-opacity, 1))), `
-                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity} * var(--une-el-opacity, 1))), `
-                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity} * var(--une-el-opacity, 1)))`,
+        boxShadow: `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity} * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), `
+                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity} * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), `
+                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity} * var(--une-el-opacity, var(--un-shadow-opacity, 1))))`,
       },
     };
   }));

@@ -41,9 +41,9 @@ export const elevationRules: Rule[] = [
 
       if (umbra[index]) {
         return {
-          'box-shadow': `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity} * var(--une-el-opacity, 1))), `
-                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity} * var(--une-el-opacity, 1))), `
-                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity} * var(--une-el-opacity, 1)))`,
+          'box-shadow': `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity} * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), `
+                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity} * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), `
+                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity} * var(--une-el-opacity, var(--un-shadow-opacity, 1))))`,
         };
       }
     },
