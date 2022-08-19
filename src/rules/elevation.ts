@@ -1,4 +1,5 @@
 import { type Rule } from 'unocss';
+import { handler } from '@unocss/preset-mini/utils';
 
 export const umbraOpacity = 0.2;
 export const penumbraOpacity = 0.14;
@@ -32,22 +33,35 @@ const elevationLevel = Array.from({ length: 25 }).map((_, i) => i).join('|');
  * 海拔
  * @link https://vuetifyjs.com/zh-Hans/styles/elevation/
  */
-export const elevationRules: Rule[] = [[
-  /(shadow-)?elevation-(\d+)(-fade)?$/,
-  ([,, prop, fade]) => {
-    const index = Number(prop);
-    const multiply = fade ? 0.5 : 1;
+export const elevationRules: Rule[] = [
+  [
+    /(shadow-)?elevation-(\d+)(-fade)?$/,
+    ([,, prop, fade]) => {
+      const index = Number(prop);
+      const multiply = fade ? 0.5 : 1;
 
-    return {
-      'box-shadow': `${umbra[index]} rgba(0, 0, 0, ${umbraOpacity * multiply}), `
-                  + `${penumbra[index]} rgba(0, 0, 0, ${penumbraOpacity * multiply}), `
-                  + `${ambient[index]} rgba(0, 0, 0, ${ambientOpacity * multiply})`,
-    };
-  },
-  {
-    autocomplete: [
-      `(elevation|shadow-elevation)-(${elevationLevel})`,
-      `(elevation|shadow-elevation)-(${elevationLevel})-fade`,
-    ],
-  },
-]];
+      return {
+        'box-shadow': `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity * multiply} * var(--une-el-opacity, 1))), `
+                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity * multiply} * var(--une-el-opacity, 1))), `
+                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity * multiply} * var(--une-el-opacity, 1)))`,
+      };
+    },
+    {
+      autocomplete: [
+        `(elevation|shadow-elevation)-(${elevationLevel})`,
+        `(elevation|shadow-elevation)-(${elevationLevel})-fade`,
+      ],
+    },
+  ],
+  [
+    /(shadow-)?elevation-op(?:acity)?-(.+)?$/,
+    ([,, o]) => {
+      return {
+        '--une-el-opacity': handler.bracket.percent(o),
+      };
+    },
+    {
+      autocomplete: '(elevation|shadow-elevation)-op-<percent>',
+    },
+  ],
+];

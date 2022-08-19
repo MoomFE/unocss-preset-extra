@@ -11,6 +11,18 @@ function removeUnusedItems(cssJson: object) {
   return omit(cssJson, ['*,::before,::after', '::backdrop']);
 }
 
+function createElevationRules(suffix = '', opacity = 1) {
+  return Object.assign({}, ...Array.from({ length: 25 }).map((_, index) => {
+    return {
+      [`.elevation-${index}${suffix}`]: {
+        boxShadow: `${umbra[index]} rgba(0, 0, 0, calc(${umbraOpacity * opacity} * var(--une-el-opacity, 1))), `
+                    + `${penumbra[index]} rgba(0, 0, 0, calc(${penumbraOpacity * opacity} * var(--une-el-opacity, 1))), `
+                    + `${ambient[index]} rgba(0, 0, 0, calc(${ambientOpacity * opacity} * var(--une-el-opacity, 1)))`,
+      },
+    };
+  }));
+}
+
 describe('elevation', async () => {
   const generator = createGenerator({
     presets: [
@@ -22,25 +34,8 @@ describe('elevation', async () => {
 
   const autocomplete = createAutocomplete(generator);
 
-  const elevationRules = Object.assign({}, ...Array.from({ length: 25 }).map((_, index) => {
-    return {
-      [`.elevation-${index}`]: {
-        boxShadow: `${umbra[index]} rgba(0, 0, 0, ${umbraOpacity}), `
-                    + `${penumbra[index]} rgba(0, 0, 0, ${penumbraOpacity}), `
-                    + `${ambient[index]} rgba(0, 0, 0, ${ambientOpacity})`,
-      },
-    };
-  }));
-
-  const elevationFadeRules = Object.assign({}, ...Array.from({ length: 25 }).map((_, index) => {
-    return {
-      [`.elevation-${index}-fade`]: {
-        boxShadow: `${umbra[index]} rgba(0, 0, 0, ${umbraOpacity * 0.5}), `
-                    + `${penumbra[index]} rgba(0, 0, 0, ${penumbraOpacity * 0.5}), `
-                    + `${ambient[index]} rgba(0, 0, 0, ${ambientOpacity * 0.5})`,
-      },
-    };
-  }));
+  const elevationRules = createElevationRules();
+  const elevationFadeRules = createElevationRules('-fade', 0.5);
 
   test('elevation-*', async () => {
     const { css } = await generator.generate(
@@ -103,6 +98,80 @@ describe('elevation', async () => {
           return [key.replace('.elevation', '.shadow-elevation'), value];
         }),
       ),
+    );
+  });
+
+  test('elevation-(op|opacity)-*', async () => {
+    const { css } = await generator.generate(
+      Array.from({ length: 101 }).map((_, i) => `elevation-op-${i}`).join(' '),
+    );
+    const { css: css2 } = await generator.generate(
+      Array.from({ length: 101 }).map((_, i) => `elevation-opacity-${i}`).join(' '),
+    );
+
+    expect(
+      removeUnusedItems(
+        postcssJs.objectify(postcss.parse(css)),
+      ),
+    ).toEqual(
+      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
+        return {
+          [`.elevation-op-${i}`]: {
+            '--une-el-opacity': `${i / 100}`,
+          },
+        };
+      })),
+    );
+
+    expect(
+      removeUnusedItems(
+        postcssJs.objectify(postcss.parse(css2)),
+      ),
+    ).toEqual(
+      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
+        return {
+          [`.elevation-opacity-${i}`]: {
+            '--une-el-opacity': `${i / 100}`,
+          },
+        };
+      })),
+    );
+  });
+
+  test('shadow-elevation-(op|opacity)-*', async () => {
+    const { css } = await generator.generate(
+      Array.from({ length: 101 }).map((_, i) => `shadow-elevation-op-${i}`).join(' '),
+    );
+    const { css: css2 } = await generator.generate(
+      Array.from({ length: 101 }).map((_, i) => `shadow-elevation-opacity-${i}`).join(' '),
+    );
+
+    expect(
+      removeUnusedItems(
+        postcssJs.objectify(postcss.parse(css)),
+      ),
+    ).toEqual(
+      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
+        return {
+          [`.shadow-elevation-op-${i}`]: {
+            '--une-el-opacity': `${i / 100}`,
+          },
+        };
+      })),
+    );
+
+    expect(
+      removeUnusedItems(
+        postcssJs.objectify(postcss.parse(css2)),
+      ),
+    ).toEqual(
+      Object.assign({}, ...Array.from({ length: 101 }).map((_, i) => {
+        return {
+          [`.shadow-elevation-opacity-${i}`]: {
+            '--une-el-opacity': `${i / 100}`,
+          },
+        };
+      })),
     );
   });
 
