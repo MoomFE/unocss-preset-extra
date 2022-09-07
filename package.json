@@ -26,7 +26,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "esno scripts/build.ts",
+    "build": "tsx scripts/build.ts",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test-build": "npm run build && vitest --mode test-build",
@@ -45,13 +45,13 @@
     "@unocss/autocomplete": "^0.45.18",
     "@vitest/ui": "^0.23.1",
     "eslint": "^8.23.0",
-    "esno": "^0.16.3",
     "fs-extra": "^10.1.0",
     "lodash-es": "^4.17.21",
     "postcss": "^8.4.16",
     "postcss-js": "^4.0.0",
     "rollup": "^2.79.0",
     "rollup-plugin-dts": "^4.2.2",
+    "tsx": "^3.9.0",
     "typescript": "^4.8.2",
     "unocss": "^0.45.18",
     "vite": "^3.1.0",
