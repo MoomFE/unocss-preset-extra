@@ -13,7 +13,7 @@ const buildPath = resolve(rootPath, 'dist');
 /** 入口文件 */
 const entry = resolve(srcPath, 'index.ts');
 
-(async() => {
+(async () => {
   // 清空输出目录
   emptyDirSync(resolve(rootPath, 'dist'));
 
