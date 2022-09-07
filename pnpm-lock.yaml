@@ -8,6 +8,7 @@ specifiers:
   '@types/postcss-js': ^4.0.0
   '@unocss/autocomplete': ^0.45.18
   '@vitest/ui': ^0.23.1
+  animate.css: ^4.1.1
   eslint: ^8.23.0
   fs-extra: ^10.1.0
   lodash-es: ^4.17.21
@@ -29,6 +30,7 @@ devDependencies:
   '@types/postcss-js': 4.0.0
   '@unocss/autocomplete': 0.45.18
   '@vitest/ui': 0.23.1
+  animate.css: 4.1.1
   eslint: 8.23.0
   fs-extra: 10.1.0
   lodash-es: 4.17.21
@@ -718,6 +720,10 @@ packages:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
+    dev: true
+
+  /animate.css/4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
     dev: true
 
   /ansi-regex/5.0.1:
