@@ -1,0 +1,1751 @@
+{
+  "bounce": {
+    "css": {
+      "animationName": "bounce",
+      "transformOrigin": "center bottom"
+    },
+    "keyframes": {
+      "from,\n  20%,\n  53%,\n  to": {
+        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "40%,\n  43%": {
+        "animationTimingFunction": "cubic-bezier(0.755, 0.05, 0.855, 0.06)",
+        "transform": "translate3d(0, -30px, 0) scaleY(1.1)"
+      },
+      "70%": {
+        "animationTimingFunction": "cubic-bezier(0.755, 0.05, 0.855, 0.06)",
+        "transform": "translate3d(0, -15px, 0) scaleY(1.05)"
+      },
+      "80%": {
+        "transitionTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+        "transform": "translate3d(0, 0, 0) scaleY(0.95)"
+      },
+      "90%": {
+        "transform": "translate3d(0, -4px, 0) scaleY(1.02)"
+      }
+    }
+  },
+  "flash": {
+    "css": {
+      "animationName": "flash"
+    },
+    "keyframes": {
+      "from,\n  50%,\n  to": {
+        "opacity": 1
+      },
+      "25%,\n  75%": {
+        "opacity": 0
+      }
+    }
+  },
+  "headShake": {
+    "css": {
+      "animationTimingFunction": "ease-in-out",
+      "animationName": "headShake"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "translateX(0)"
+      },
+      "6.5%": {
+        "transform": "translateX(-6px) rotateY(-9deg)"
+      },
+      "18.5%": {
+        "transform": "translateX(5px) rotateY(7deg)"
+      },
+      "31.5%": {
+        "transform": "translateX(-3px) rotateY(-5deg)"
+      },
+      "43.5%": {
+        "transform": "translateX(2px) rotateY(3deg)"
+      },
+      "50%": {
+        "transform": "translateX(0)"
+      }
+    }
+  },
+  "heartBeat": {
+    "css": {
+      "animationName": "heartBeat",
+      "animationDuration": "calc(var(--animate-duration) * 1.3)",
+      "animationTimingFunction": "ease-in-out"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "scale(1)"
+      },
+      "14%": {
+        "transform": "scale(1.3)"
+      },
+      "28%": {
+        "transform": "scale(1)"
+      },
+      "42%": {
+        "transform": "scale(1.3)"
+      },
+      "70%": {
+        "transform": "scale(1)"
+      }
+    }
+  },
+  "jello": {
+    "css": {
+      "animationName": "jello",
+      "transformOrigin": "center"
+    },
+    "keyframes": {
+      "from,\n  11.1%,\n  to": {
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "22.2%": {
+        "transform": "skewX(-12.5deg) skewY(-12.5deg)"
+      },
+      "33.3%": {
+        "transform": "skewX(6.25deg) skewY(6.25deg)"
+      },
+      "44.4%": {
+        "transform": "skewX(-3.125deg) skewY(-3.125deg)"
+      },
+      "55.5%": {
+        "transform": "skewX(1.5625deg) skewY(1.5625deg)"
+      },
+      "66.6%": {
+        "transform": "skewX(-0.78125deg) skewY(-0.78125deg)"
+      },
+      "77.7%": {
+        "transform": "skewX(0.390625deg) skewY(0.390625deg)"
+      },
+      "88.8%": {
+        "transform": "skewX(-0.1953125deg) skewY(-0.1953125deg)"
+      }
+    }
+  },
+  "pulse": {
+    "css": {
+      "animationName": "pulse",
+      "animationTimingFunction": "ease-in-out"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "scale3d(1, 1, 1)"
+      },
+      "50%": {
+        "transform": "scale3d(1.05, 1.05, 1.05)"
+      },
+      "to": {
+        "transform": "scale3d(1, 1, 1)"
+      }
+    }
+  },
+  "rubberBand": {
+    "css": {
+      "animationName": "rubberBand"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "scale3d(1, 1, 1)"
+      },
+      "30%": {
+        "transform": "scale3d(1.25, 0.75, 1)"
+      },
+      "40%": {
+        "transform": "scale3d(0.75, 1.25, 1)"
+      },
+      "50%": {
+        "transform": "scale3d(1.15, 0.85, 1)"
+      },
+      "65%": {
+        "transform": "scale3d(0.95, 1.05, 1)"
+      },
+      "75%": {
+        "transform": "scale3d(1.05, 0.95, 1)"
+      },
+      "to": {
+        "transform": "scale3d(1, 1, 1)"
+      }
+    }
+  },
+  "shake": {
+    "css": {
+      "animationName": "shake"
+    },
+    "keyframes": {
+      "from,\n  to": {
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "10%,\n  30%,\n  50%,\n  70%,\n  90%": {
+        "transform": "translate3d(-10px, 0, 0)"
+      },
+      "20%,\n  40%,\n  60%,\n  80%": {
+        "transform": "translate3d(10px, 0, 0)"
+      }
+    }
+  },
+  "shakeX": {
+    "css": {
+      "animationName": "shakeX"
+    },
+    "keyframes": {
+      "from,\n  to": {
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "10%,\n  30%,\n  50%,\n  70%,\n  90%": {
+        "transform": "translate3d(-10px, 0, 0)"
+      },
+      "20%,\n  40%,\n  60%,\n  80%": {
+        "transform": "translate3d(10px, 0, 0)"
+      }
+    }
+  },
+  "shakeY": {
+    "css": {
+      "animationName": "shakeY"
+    },
+    "keyframes": {
+      "from,\n  to": {
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "10%,\n  30%,\n  50%,\n  70%,\n  90%": {
+        "transform": "translate3d(0, -10px, 0)"
+      },
+      "20%,\n  40%,\n  60%,\n  80%": {
+        "transform": "translate3d(0, 10px, 0)"
+      }
+    }
+  },
+  "swing": {
+    "css": {
+      "transformOrigin": "top center",
+      "animationName": "swing"
+    },
+    "keyframes": {
+      "20%": {
+        "transform": "rotate3d(0, 0, 1, 15deg)"
+      },
+      "40%": {
+        "transform": "rotate3d(0, 0, 1, -10deg)"
+      },
+      "60%": {
+        "transform": "rotate3d(0, 0, 1, 5deg)"
+      },
+      "80%": {
+        "transform": "rotate3d(0, 0, 1, -5deg)"
+      },
+      "to": {
+        "transform": "rotate3d(0, 0, 1, 0deg)"
+      }
+    }
+  },
+  "tada": {
+    "css": {
+      "animationName": "tada"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "scale3d(1, 1, 1)"
+      },
+      "10%,\n  20%": {
+        "transform": "scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)"
+      },
+      "30%,\n  50%,\n  70%,\n  90%": {
+        "transform": "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)"
+      },
+      "40%,\n  60%,\n  80%": {
+        "transform": "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)"
+      },
+      "to": {
+        "transform": "scale3d(1, 1, 1)"
+      }
+    }
+  },
+  "wobble": {
+    "css": {
+      "animationName": "wobble"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "15%": {
+        "transform": "translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)"
+      },
+      "30%": {
+        "transform": "translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)"
+      },
+      "45%": {
+        "transform": "translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)"
+      },
+      "60%": {
+        "transform": "translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)"
+      },
+      "75%": {
+        "transform": "translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "backInDown": {
+    "css": {
+      "animationName": "backInDown"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "translateY(-1200px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "80%": {
+        "transform": "translateY(0px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "100%": {
+        "transform": "scale(1)",
+        "opacity": 1
+      }
+    }
+  },
+  "backInLeft": {
+    "css": {
+      "animationName": "backInLeft"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "translateX(-2000px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "80%": {
+        "transform": "translateX(0px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "100%": {
+        "transform": "scale(1)",
+        "opacity": 1
+      }
+    }
+  },
+  "backInRight": {
+    "css": {
+      "animationName": "backInRight"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "translateX(2000px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "80%": {
+        "transform": "translateX(0px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "100%": {
+        "transform": "scale(1)",
+        "opacity": 1
+      }
+    }
+  },
+  "backInUp": {
+    "css": {
+      "animationName": "backInUp"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "translateY(1200px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "80%": {
+        "transform": "translateY(0px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "100%": {
+        "transform": "scale(1)",
+        "opacity": 1
+      }
+    }
+  },
+  "backOutDown": {
+    "css": {
+      "animationName": "backOutDown"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "scale(1)",
+        "opacity": 1
+      },
+      "20%": {
+        "transform": "translateY(0px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "100%": {
+        "transform": "translateY(700px) scale(0.7)",
+        "opacity": 0.7
+      }
+    }
+  },
+  "backOutLeft": {
+    "css": {
+      "animationName": "backOutLeft"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "scale(1)",
+        "opacity": 1
+      },
+      "20%": {
+        "transform": "translateX(0px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "100%": {
+        "transform": "translateX(-2000px) scale(0.7)",
+        "opacity": 0.7
+      }
+    }
+  },
+  "backOutRight": {
+    "css": {
+      "animationName": "backOutRight"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "scale(1)",
+        "opacity": 1
+      },
+      "20%": {
+        "transform": "translateX(0px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "100%": {
+        "transform": "translateX(2000px) scale(0.7)",
+        "opacity": 0.7
+      }
+    }
+  },
+  "backOutUp": {
+    "css": {
+      "animationName": "backOutUp"
+    },
+    "keyframes": {
+      "0%": {
+        "transform": "scale(1)",
+        "opacity": 1
+      },
+      "20%": {
+        "transform": "translateY(0px) scale(0.7)",
+        "opacity": 0.7
+      },
+      "100%": {
+        "transform": "translateY(-700px) scale(0.7)",
+        "opacity": 0.7
+      }
+    }
+  },
+  "bounceIn": {
+    "css": {
+      "animationDuration": "calc(var(--animate-duration) * 0.75)",
+      "animationName": "bounceIn"
+    },
+    "keyframes": {
+      "from,\n  20%,\n  40%,\n  60%,\n  80%,\n  to": {
+        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
+      },
+      "0%": {
+        "opacity": 0,
+        "transform": "scale3d(0.3, 0.3, 0.3)"
+      },
+      "20%": {
+        "transform": "scale3d(1.1, 1.1, 1.1)"
+      },
+      "40%": {
+        "transform": "scale3d(0.9, 0.9, 0.9)"
+      },
+      "60%": {
+        "opacity": 1,
+        "transform": "scale3d(1.03, 1.03, 1.03)"
+      },
+      "80%": {
+        "transform": "scale3d(0.97, 0.97, 0.97)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "scale3d(1, 1, 1)"
+      }
+    }
+  },
+  "bounceInDown": {
+    "css": {
+      "animationName": "bounceInDown"
+    },
+    "keyframes": {
+      "from,\n  60%,\n  75%,\n  90%,\n  to": {
+        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
+      },
+      "0%": {
+        "opacity": 0,
+        "transform": "translate3d(0, -3000px, 0) scaleY(3)"
+      },
+      "60%": {
+        "opacity": 1,
+        "transform": "translate3d(0, 25px, 0) scaleY(0.9)"
+      },
+      "75%": {
+        "transform": "translate3d(0, -10px, 0) scaleY(0.95)"
+      },
+      "90%": {
+        "transform": "translate3d(0, 5px, 0) scaleY(0.985)"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "bounceInLeft": {
+    "css": {
+      "animationName": "bounceInLeft"
+    },
+    "keyframes": {
+      "from,\n  60%,\n  75%,\n  90%,\n  to": {
+        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
+      },
+      "0%": {
+        "opacity": 0,
+        "transform": "translate3d(-3000px, 0, 0) scaleX(3)"
+      },
+      "60%": {
+        "opacity": 1,
+        "transform": "translate3d(25px, 0, 0) scaleX(1)"
+      },
+      "75%": {
+        "transform": "translate3d(-10px, 0, 0) scaleX(0.98)"
+      },
+      "90%": {
+        "transform": "translate3d(5px, 0, 0) scaleX(0.995)"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "bounceInRight": {
+    "css": {
+      "animationName": "bounceInRight"
+    },
+    "keyframes": {
+      "from,\n  60%,\n  75%,\n  90%,\n  to": {
+        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
+      },
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(3000px, 0, 0) scaleX(3)"
+      },
+      "60%": {
+        "opacity": 1,
+        "transform": "translate3d(-25px, 0, 0) scaleX(1)"
+      },
+      "75%": {
+        "transform": "translate3d(10px, 0, 0) scaleX(0.98)"
+      },
+      "90%": {
+        "transform": "translate3d(-5px, 0, 0) scaleX(0.995)"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "bounceInUp": {
+    "css": {
+      "animationName": "bounceInUp"
+    },
+    "keyframes": {
+      "from,\n  60%,\n  75%,\n  90%,\n  to": {
+        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
+      },
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(0, 3000px, 0) scaleY(5)"
+      },
+      "60%": {
+        "opacity": 1,
+        "transform": "translate3d(0, -20px, 0) scaleY(0.9)"
+      },
+      "75%": {
+        "transform": "translate3d(0, 10px, 0) scaleY(0.95)"
+      },
+      "90%": {
+        "transform": "translate3d(0, -5px, 0) scaleY(0.985)"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "bounceOut": {
+    "css": {
+      "animationDuration": "calc(var(--animate-duration) * 0.75)",
+      "animationName": "bounceOut"
+    },
+    "keyframes": {
+      "20%": {
+        "transform": "scale3d(0.9, 0.9, 0.9)"
+      },
+      "50%,\n  55%": {
+        "opacity": 1,
+        "transform": "scale3d(1.1, 1.1, 1.1)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "scale3d(0.3, 0.3, 0.3)"
+      }
+    }
+  },
+  "bounceOutDown": {
+    "css": {
+      "animationName": "bounceOutDown"
+    },
+    "keyframes": {
+      "20%": {
+        "transform": "translate3d(0, 10px, 0) scaleY(0.985)"
+      },
+      "40%,\n  45%": {
+        "opacity": 1,
+        "transform": "translate3d(0, -20px, 0) scaleY(0.9)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(0, 2000px, 0) scaleY(3)"
+      }
+    }
+  },
+  "bounceOutLeft": {
+    "css": {
+      "animationName": "bounceOutLeft"
+    },
+    "keyframes": {
+      "20%": {
+        "opacity": 1,
+        "transform": "translate3d(20px, 0, 0) scaleX(0.9)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(-2000px, 0, 0) scaleX(2)"
+      }
+    }
+  },
+  "bounceOutRight": {
+    "css": {
+      "animationName": "bounceOutRight"
+    },
+    "keyframes": {
+      "20%": {
+        "opacity": 1,
+        "transform": "translate3d(-20px, 0, 0) scaleX(0.9)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(2000px, 0, 0) scaleX(2)"
+      }
+    }
+  },
+  "bounceOutUp": {
+    "css": {
+      "animationName": "bounceOutUp"
+    },
+    "keyframes": {
+      "20%": {
+        "transform": "translate3d(0, -10px, 0) scaleY(0.985)"
+      },
+      "40%,\n  45%": {
+        "opacity": 1,
+        "transform": "translate3d(0, 20px, 0) scaleY(0.9)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(0, -2000px, 0) scaleY(3)"
+      }
+    }
+  },
+  "fadeIn": {
+    "css": {
+      "animationName": "fadeIn"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0
+      },
+      "to": {
+        "opacity": 1
+      }
+    }
+  },
+  "fadeInBottomLeft": {
+    "css": {
+      "animationName": "fadeInBottomLeft"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(-100%, 100%, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInBottomRight": {
+    "css": {
+      "animationName": "fadeInBottomRight"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(100%, 100%, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInDown": {
+    "css": {
+      "animationName": "fadeInDown"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(0, -100%, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInDownBig": {
+    "css": {
+      "animationName": "fadeInDownBig"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(0, -2000px, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInLeft": {
+    "css": {
+      "animationName": "fadeInLeft"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(-100%, 0, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInLeftBig": {
+    "css": {
+      "animationName": "fadeInLeftBig"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(-2000px, 0, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInRight": {
+    "css": {
+      "animationName": "fadeInRight"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(100%, 0, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInRightBig": {
+    "css": {
+      "animationName": "fadeInRightBig"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(2000px, 0, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInTopLeft": {
+    "css": {
+      "animationName": "fadeInTopLeft"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(-100%, -100%, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInTopRight": {
+    "css": {
+      "animationName": "fadeInTopRight"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(100%, -100%, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInUp": {
+    "css": {
+      "animationName": "fadeInUp"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(0, 100%, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeInUpBig": {
+    "css": {
+      "animationName": "fadeInUpBig"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(0, 2000px, 0)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "fadeOut": {
+    "css": {
+      "animationName": "fadeOut"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0
+      }
+    }
+  },
+  "fadeOutBottomLeft": {
+    "css": {
+      "animationName": "fadeOutBottomLeft"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(-100%, 100%, 0)"
+      }
+    }
+  },
+  "fadeOutBottomRight": {
+    "css": {
+      "animationName": "fadeOutBottomRight"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(100%, 100%, 0)"
+      }
+    }
+  },
+  "fadeOutDown": {
+    "css": {
+      "animationName": "fadeOutDown"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(0, 100%, 0)"
+      }
+    }
+  },
+  "fadeOutDownBig": {
+    "css": {
+      "animationName": "fadeOutDownBig"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(0, 2000px, 0)"
+      }
+    }
+  },
+  "fadeOutLeft": {
+    "css": {
+      "animationName": "fadeOutLeft"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(-100%, 0, 0)"
+      }
+    }
+  },
+  "fadeOutLeftBig": {
+    "css": {
+      "animationName": "fadeOutLeftBig"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(-2000px, 0, 0)"
+      }
+    }
+  },
+  "fadeOutRight": {
+    "css": {
+      "animationName": "fadeOutRight"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(100%, 0, 0)"
+      }
+    }
+  },
+  "fadeOutRightBig": {
+    "css": {
+      "animationName": "fadeOutRightBig"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(2000px, 0, 0)"
+      }
+    }
+  },
+  "fadeOutTopLeft": {
+    "css": {
+      "animationName": "fadeOutTopLeft"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(-100%, -100%, 0)"
+      }
+    }
+  },
+  "fadeOutTopRight": {
+    "css": {
+      "animationName": "fadeOutTopRight"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(100%, -100%, 0)"
+      }
+    }
+  },
+  "fadeOutUp": {
+    "css": {
+      "animationName": "fadeOutUp"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(0, -100%, 0)"
+      }
+    }
+  },
+  "fadeOutUpBig": {
+    "css": {
+      "animationName": "fadeOutUpBig"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(0, -2000px, 0)"
+      }
+    }
+  },
+  "flip": {
+    "css": {
+      "backfaceVisibility": "visible",
+      "animationName": "flip"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg)",
+        "animationTimingFunction": "ease-out"
+      },
+      "40%": {
+        "transform": "perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -190deg)",
+        "animationTimingFunction": "ease-out"
+      },
+      "50%": {
+        "transform": "perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -170deg)",
+        "animationTimingFunction": "ease-in"
+      },
+      "80%": {
+        "transform": "perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, 0deg)",
+        "animationTimingFunction": "ease-in"
+      },
+      "to": {
+        "transform": "perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg)",
+        "animationTimingFunction": "ease-in"
+      }
+    }
+  },
+  "flipInX": {
+    "css": {
+      "backfaceVisibility": "visible !important",
+      "animationName": "flipInX"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "perspective(400px) rotate3d(1, 0, 0, 90deg)",
+        "animationTimingFunction": "ease-in",
+        "opacity": 0
+      },
+      "40%": {
+        "transform": "perspective(400px) rotate3d(1, 0, 0, -20deg)",
+        "animationTimingFunction": "ease-in"
+      },
+      "60%": {
+        "transform": "perspective(400px) rotate3d(1, 0, 0, 10deg)",
+        "opacity": 1
+      },
+      "80%": {
+        "transform": "perspective(400px) rotate3d(1, 0, 0, -5deg)"
+      },
+      "to": {
+        "transform": "perspective(400px)"
+      }
+    }
+  },
+  "flipInY": {
+    "css": {
+      "backfaceVisibility": "visible !important",
+      "animationName": "flipInY"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "perspective(400px) rotate3d(0, 1, 0, 90deg)",
+        "animationTimingFunction": "ease-in",
+        "opacity": 0
+      },
+      "40%": {
+        "transform": "perspective(400px) rotate3d(0, 1, 0, -20deg)",
+        "animationTimingFunction": "ease-in"
+      },
+      "60%": {
+        "transform": "perspective(400px) rotate3d(0, 1, 0, 10deg)",
+        "opacity": 1
+      },
+      "80%": {
+        "transform": "perspective(400px) rotate3d(0, 1, 0, -5deg)"
+      },
+      "to": {
+        "transform": "perspective(400px)"
+      }
+    }
+  },
+  "flipOutX": {
+    "css": {
+      "animationDuration": "calc(var(--animate-duration) * 0.75)",
+      "animationName": "flipOutX",
+      "backfaceVisibility": "visible !important"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "perspective(400px)"
+      },
+      "30%": {
+        "transform": "perspective(400px) rotate3d(1, 0, 0, -20deg)",
+        "opacity": 1
+      },
+      "to": {
+        "transform": "perspective(400px) rotate3d(1, 0, 0, 90deg)",
+        "opacity": 0
+      }
+    }
+  },
+  "flipOutY": {
+    "css": {
+      "animationDuration": "calc(var(--animate-duration) * 0.75)",
+      "backfaceVisibility": "visible !important",
+      "animationName": "flipOutY"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "perspective(400px)"
+      },
+      "30%": {
+        "transform": "perspective(400px) rotate3d(0, 1, 0, -15deg)",
+        "opacity": 1
+      },
+      "to": {
+        "transform": "perspective(400px) rotate3d(0, 1, 0, 90deg)",
+        "opacity": 0
+      }
+    }
+  },
+  "lightSpeedInLeft": {
+    "css": {
+      "animationName": "lightSpeedInLeft",
+      "animationTimingFunction": "ease-out"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(-100%, 0, 0) skewX(30deg)",
+        "opacity": 0
+      },
+      "60%": {
+        "transform": "skewX(-20deg)",
+        "opacity": 1
+      },
+      "80%": {
+        "transform": "skewX(5deg)"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "lightSpeedInRight": {
+    "css": {
+      "animationName": "lightSpeedInRight",
+      "animationTimingFunction": "ease-out"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(100%, 0, 0) skewX(-30deg)",
+        "opacity": 0
+      },
+      "60%": {
+        "transform": "skewX(20deg)",
+        "opacity": 1
+      },
+      "80%": {
+        "transform": "skewX(-5deg)"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "lightSpeedOutLeft": {
+    "css": {
+      "animationName": "lightSpeedOutLeft",
+      "animationTimingFunction": "ease-in"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "transform": "translate3d(-100%, 0, 0) skewX(-30deg)",
+        "opacity": 0
+      }
+    }
+  },
+  "lightSpeedOutRight": {
+    "css": {
+      "animationName": "lightSpeedOutRight",
+      "animationTimingFunction": "ease-in"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "transform": "translate3d(100%, 0, 0) skewX(30deg)",
+        "opacity": 0
+      }
+    }
+  },
+  "rotateIn": {
+    "css": {
+      "animationName": "rotateIn",
+      "transformOrigin": "center"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "rotate3d(0, 0, 1, -200deg)",
+        "opacity": 0
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)",
+        "opacity": 1
+      }
+    }
+  },
+  "rotateInDownLeft": {
+    "css": {
+      "animationName": "rotateInDownLeft",
+      "transformOrigin": "left bottom"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "rotate3d(0, 0, 1, -45deg)",
+        "opacity": 0
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)",
+        "opacity": 1
+      }
+    }
+  },
+  "rotateInDownRight": {
+    "css": {
+      "animationName": "rotateInDownRight",
+      "transformOrigin": "right bottom"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "rotate3d(0, 0, 1, 45deg)",
+        "opacity": 0
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)",
+        "opacity": 1
+      }
+    }
+  },
+  "rotateInUpLeft": {
+    "css": {
+      "animationName": "rotateInUpLeft",
+      "transformOrigin": "left bottom"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "rotate3d(0, 0, 1, 45deg)",
+        "opacity": 0
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)",
+        "opacity": 1
+      }
+    }
+  },
+  "rotateInUpRight": {
+    "css": {
+      "animationName": "rotateInUpRight",
+      "transformOrigin": "right bottom"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "rotate3d(0, 0, 1, -90deg)",
+        "opacity": 0
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)",
+        "opacity": 1
+      }
+    }
+  },
+  "rotateOut": {
+    "css": {
+      "animationName": "rotateOut",
+      "transformOrigin": "center"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "transform": "rotate3d(0, 0, 1, 200deg)",
+        "opacity": 0
+      }
+    }
+  },
+  "rotateOutDownLeft": {
+    "css": {
+      "animationName": "rotateOutDownLeft",
+      "transformOrigin": "left bottom"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "transform": "rotate3d(0, 0, 1, 45deg)",
+        "opacity": 0
+      }
+    }
+  },
+  "rotateOutDownRight": {
+    "css": {
+      "animationName": "rotateOutDownRight",
+      "transformOrigin": "right bottom"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "transform": "rotate3d(0, 0, 1, -45deg)",
+        "opacity": 0
+      }
+    }
+  },
+  "rotateOutUpLeft": {
+    "css": {
+      "animationName": "rotateOutUpLeft",
+      "transformOrigin": "left bottom"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "transform": "rotate3d(0, 0, 1, -45deg)",
+        "opacity": 0
+      }
+    }
+  },
+  "rotateOutUpRight": {
+    "css": {
+      "animationName": "rotateOutUpRight",
+      "transformOrigin": "right bottom"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "transform": "rotate3d(0, 0, 1, 90deg)",
+        "opacity": 0
+      }
+    }
+  },
+  "slideInDown": {
+    "css": {
+      "animationName": "slideInDown"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(0, -100%, 0)",
+        "visibility": "visible"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "slideInLeft": {
+    "css": {
+      "animationName": "slideInLeft"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(-100%, 0, 0)",
+        "visibility": "visible"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "slideInRight": {
+    "css": {
+      "animationName": "slideInRight"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(100%, 0, 0)",
+        "visibility": "visible"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "slideInUp": {
+    "css": {
+      "animationName": "slideInUp"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(0, 100%, 0)",
+        "visibility": "visible"
+      },
+      "to": {
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "slideOutDown": {
+    "css": {
+      "animationName": "slideOutDown"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "to": {
+        "visibility": "hidden",
+        "transform": "translate3d(0, 100%, 0)"
+      }
+    }
+  },
+  "slideOutLeft": {
+    "css": {
+      "animationName": "slideOutLeft"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "to": {
+        "visibility": "hidden",
+        "transform": "translate3d(-100%, 0, 0)"
+      }
+    }
+  },
+  "slideOutRight": {
+    "css": {
+      "animationName": "slideOutRight"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "to": {
+        "visibility": "hidden",
+        "transform": "translate3d(100%, 0, 0)"
+      }
+    }
+  },
+  "slideOutUp": {
+    "css": {
+      "animationName": "slideOutUp"
+    },
+    "keyframes": {
+      "from": {
+        "transform": "translate3d(0, 0, 0)"
+      },
+      "to": {
+        "visibility": "hidden",
+        "transform": "translate3d(0, -100%, 0)"
+      }
+    }
+  },
+  "hinge": {
+    "css": {
+      "animationDuration": "calc(var(--animate-duration) * 2)",
+      "animationName": "hinge",
+      "transformOrigin": "top left"
+    },
+    "keyframes": {
+      "0%": {
+        "animationTimingFunction": "ease-in-out"
+      },
+      "20%,\n  60%": {
+        "transform": "rotate3d(0, 0, 1, 80deg)",
+        "animationTimingFunction": "ease-in-out"
+      },
+      "40%,\n  80%": {
+        "transform": "rotate3d(0, 0, 1, 60deg)",
+        "animationTimingFunction": "ease-in-out",
+        "opacity": 1
+      },
+      "to": {
+        "transform": "translate3d(0, 700px, 0)",
+        "opacity": 0
+      }
+    }
+  },
+  "jackInTheBox": {
+    "css": {
+      "animationName": "jackInTheBox"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "scale(0.1) rotate(30deg)",
+        "transformOrigin": "center bottom"
+      },
+      "50%": {
+        "transform": "rotate(-10deg)"
+      },
+      "70%": {
+        "transform": "rotate(3deg)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "scale(1)"
+      }
+    }
+  },
+  "rollIn": {
+    "css": {
+      "animationName": "rollIn"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)"
+      },
+      "to": {
+        "opacity": 1,
+        "transform": "translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "rollOut": {
+    "css": {
+      "animationName": "rollOut"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)"
+      }
+    }
+  },
+  "zoomIn": {
+    "css": {
+      "animationName": "zoomIn"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "scale3d(0.3, 0.3, 0.3)"
+      },
+      "50%": {
+        "opacity": 1
+      }
+    }
+  },
+  "zoomInDown": {
+    "css": {
+      "animationName": "zoomInDown"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0)",
+        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+      },
+      "60%": {
+        "opacity": 1,
+        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0)",
+        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+      }
+    }
+  },
+  "zoomInLeft": {
+    "css": {
+      "animationName": "zoomInLeft"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0)",
+        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+      },
+      "60%": {
+        "opacity": 1,
+        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0)",
+        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+      }
+    }
+  },
+  "zoomInRight": {
+    "css": {
+      "animationName": "zoomInRight"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0)",
+        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+      },
+      "60%": {
+        "opacity": 1,
+        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0)",
+        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+      }
+    }
+  },
+  "zoomInUp": {
+    "css": {
+      "animationName": "zoomInUp"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 0,
+        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0)",
+        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+      },
+      "60%": {
+        "opacity": 1,
+        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0)",
+        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+      }
+    }
+  },
+  "zoomOut": {
+    "css": {
+      "animationName": "zoomOut"
+    },
+    "keyframes": {
+      "from": {
+        "opacity": 1
+      },
+      "50%": {
+        "opacity": 0,
+        "transform": "scale3d(0.3, 0.3, 0.3)"
+      },
+      "to": {
+        "opacity": 0
+      }
+    }
+  },
+  "zoomOutDown": {
+    "css": {
+      "animationName": "zoomOutDown",
+      "transformOrigin": "center bottom"
+    },
+    "keyframes": {
+      "40%": {
+        "opacity": 1,
+        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0)",
+        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0)",
+        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+      }
+    }
+  },
+  "zoomOutLeft": {
+    "css": {
+      "animationName": "zoomOutLeft",
+      "transformOrigin": "left center"
+    },
+    "keyframes": {
+      "40%": {
+        "opacity": 1,
+        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "scale(0.1) translate3d(-2000px, 0, 0)"
+      }
+    }
+  },
+  "zoomOutRight": {
+    "css": {
+      "animationName": "zoomOutRight",
+      "transformOrigin": "right center"
+    },
+    "keyframes": {
+      "40%": {
+        "opacity": 1,
+        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "scale(0.1) translate3d(2000px, 0, 0)"
+      }
+    }
+  },
+  "zoomOutUp": {
+    "css": {
+      "animationName": "zoomOutUp",
+      "transformOrigin": "center bottom"
+    },
+    "keyframes": {
+      "40%": {
+        "opacity": 1,
+        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0)",
+        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+      },
+      "to": {
+        "opacity": 0,
+        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0)",
+        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+      }
+    }
+  }
+}

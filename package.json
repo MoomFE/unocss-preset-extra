@@ -26,9 +26,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsx scripts/build.ts",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
+    "pre-task": "tsx scripts/transitionAnimateCSS.ts",
+    "build": "npm run pre-task && tsx scripts/build.ts",
+    "test": "npm run pre-task && vitest",
+    "test:ui": "npm run pre-task && vitest --ui",
     "test-build": "npm run build && vitest --mode test-build",
     "test-build:ui": "npm run build && vitest --mode test-build --ui",
     "lint": "eslint ./src --fix"
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@moomfe/eslint-config": "^2.1.2",
+    "@moomfe/small-utils": "^5.2.0",
     "@types/fs-extra": "^9.0.13",
     "@types/lodash-es": "^4.17.6",
     "@types/node": "^18.7.15",
@@ -46,7 +48,9 @@
     "@vitest/ui": "^0.23.1",
     "animate.css": "^4.1.1",
     "eslint": "^8.23.0",
+    "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
+    "local-pkg": "^0.4.2",
     "lodash-es": "^4.17.21",
     "postcss": "^8.4.16",
     "postcss-js": "^4.0.0",
