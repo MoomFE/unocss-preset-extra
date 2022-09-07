@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`animated > autocomplete 1`] = `
+[
+  "animated",
+]
+`;

@@ -1,6 +1,7 @@
 import { type Preset } from 'unocss';
 import { sizeRules } from '@/rules/size';
 import { elevationRules } from '@/rules/elevation';
+import { animatedRules } from '@/rules/animated';
 
 export function presetExtra(): Preset {
   return {
@@ -10,6 +11,8 @@ export function presetExtra(): Preset {
       ...sizeRules,
       // 海拔
       ...elevationRules,
+      // animate.css
+      ...animatedRules,
     ],
   };
 }
