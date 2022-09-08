@@ -1,7 +1,7 @@
 {
   "bounce": {
     "css": {
-      "animationName": "bounce",
+      "animationName": "uneBounce",
       "transformOrigin": "center bottom"
     },
     "keyframes": {
@@ -28,7 +28,7 @@
   },
   "flash": {
     "css": {
-      "animationName": "flash"
+      "animationName": "uneFlash"
     },
     "keyframes": {
       "from,\n  50%,\n  to": {
@@ -39,10 +39,10 @@
       }
     }
   },
-  "headShake": {
+  "head-shake": {
     "css": {
       "animationTimingFunction": "ease-in-out",
-      "animationName": "headShake"
+      "animationName": "uneHeadShake"
     },
     "keyframes": {
       "0%": {
@@ -65,9 +65,9 @@
       }
     }
   },
-  "heartBeat": {
+  "heart-beat": {
     "css": {
-      "animationName": "heartBeat",
+      "animationName": "uneHeartBeat",
       "animationDuration": "calc(var(--animate-duration) * 1.3)",
       "animationTimingFunction": "ease-in-out"
     },
@@ -91,7 +91,7 @@
   },
   "jello": {
     "css": {
-      "animationName": "jello",
+      "animationName": "uneJello",
       "transformOrigin": "center"
     },
     "keyframes": {
@@ -123,7 +123,7 @@
   },
   "pulse": {
     "css": {
-      "animationName": "pulse",
+      "animationName": "unePulse",
       "animationTimingFunction": "ease-in-out"
     },
     "keyframes": {
@@ -138,9 +138,9 @@
       }
     }
   },
-  "rubberBand": {
+  "rubber-band": {
     "css": {
-      "animationName": "rubberBand"
+      "animationName": "uneRubberBand"
     },
     "keyframes": {
       "from": {
@@ -168,7 +168,7 @@
   },
   "shake": {
     "css": {
-      "animationName": "shake"
+      "animationName": "uneShake"
     },
     "keyframes": {
       "from,\n  to": {
@@ -182,9 +182,9 @@
       }
     }
   },
-  "shakeX": {
+  "shake-x": {
     "css": {
-      "animationName": "shakeX"
+      "animationName": "uneShakeX"
     },
     "keyframes": {
       "from,\n  to": {
@@ -198,9 +198,9 @@
       }
     }
   },
-  "shakeY": {
+  "shake-y": {
     "css": {
-      "animationName": "shakeY"
+      "animationName": "uneShakeY"
     },
     "keyframes": {
       "from,\n  to": {
@@ -217,7 +217,7 @@
   "swing": {
     "css": {
       "transformOrigin": "top center",
-      "animationName": "swing"
+      "animationName": "uneSwing"
     },
     "keyframes": {
       "20%": {
@@ -239,7 +239,7 @@
   },
   "tada": {
     "css": {
-      "animationName": "tada"
+      "animationName": "uneTada"
     },
     "keyframes": {
       "from": {
@@ -261,7 +261,7 @@
   },
   "wobble": {
     "css": {
-      "animationName": "wobble"
+      "animationName": "uneWobble"
     },
     "keyframes": {
       "from": {
@@ -287,9 +287,9 @@
       }
     }
   },
-  "backInDown": {
+  "back-in-down": {
     "css": {
-      "animationName": "backInDown"
+      "animationName": "uneBackInDown"
     },
     "keyframes": {
       "0%": {
@@ -306,9 +306,9 @@
       }
     }
   },
-  "backInLeft": {
+  "back-in-left": {
     "css": {
-      "animationName": "backInLeft"
+      "animationName": "uneBackInLeft"
     },
     "keyframes": {
       "0%": {
@@ -325,9 +325,9 @@
       }
     }
   },
-  "backInRight": {
+  "back-in-right": {
     "css": {
-      "animationName": "backInRight"
+      "animationName": "uneBackInRight"
     },
     "keyframes": {
       "0%": {
@@ -344,9 +344,9 @@
       }
     }
   },
-  "backInUp": {
+  "back-in-up": {
     "css": {
-      "animationName": "backInUp"
+      "animationName": "uneBackInUp"
     },
     "keyframes": {
       "0%": {
@@ -363,9 +363,9 @@
       }
     }
   },
-  "backOutDown": {
+  "back-out-down": {
     "css": {
-      "animationName": "backOutDown"
+      "animationName": "uneBackOutDown"
     },
     "keyframes": {
       "0%": {
@@ -382,9 +382,9 @@
       }
     }
   },
-  "backOutLeft": {
+  "back-out-left": {
     "css": {
-      "animationName": "backOutLeft"
+      "animationName": "uneBackOutLeft"
     },
     "keyframes": {
       "0%": {
@@ -401,9 +401,9 @@
       }
     }
   },
-  "backOutRight": {
+  "back-out-right": {
     "css": {
-      "animationName": "backOutRight"
+      "animationName": "uneBackOutRight"
     },
     "keyframes": {
       "0%": {
@@ -420,9 +420,9 @@
       }
     }
   },
-  "backOutUp": {
+  "back-out-up": {
     "css": {
-      "animationName": "backOutUp"
+      "animationName": "uneBackOutUp"
     },
     "keyframes": {
       "0%": {
@@ -439,10 +439,10 @@
       }
     }
   },
-  "bounceIn": {
+  "bounce-in": {
     "css": {
       "animationDuration": "calc(var(--animate-duration) * 0.75)",
-      "animationName": "bounceIn"
+      "animationName": "uneBounceIn"
     },
     "keyframes": {
       "from,\n  20%,\n  40%,\n  60%,\n  80%,\n  to": {
@@ -471,9 +471,9 @@
       }
     }
   },
-  "bounceInDown": {
+  "bounce-in-down": {
     "css": {
-      "animationName": "bounceInDown"
+      "animationName": "uneBounceInDown"
     },
     "keyframes": {
       "from,\n  60%,\n  75%,\n  90%,\n  to": {
@@ -498,9 +498,9 @@
       }
     }
   },
-  "bounceInLeft": {
+  "bounce-in-left": {
     "css": {
-      "animationName": "bounceInLeft"
+      "animationName": "uneBounceInLeft"
     },
     "keyframes": {
       "from,\n  60%,\n  75%,\n  90%,\n  to": {
@@ -525,9 +525,9 @@
       }
     }
   },
-  "bounceInRight": {
+  "bounce-in-right": {
     "css": {
-      "animationName": "bounceInRight"
+      "animationName": "uneBounceInRight"
     },
     "keyframes": {
       "from,\n  60%,\n  75%,\n  90%,\n  to": {
@@ -552,9 +552,9 @@
       }
     }
   },
-  "bounceInUp": {
+  "bounce-in-up": {
     "css": {
-      "animationName": "bounceInUp"
+      "animationName": "uneBounceInUp"
     },
     "keyframes": {
       "from,\n  60%,\n  75%,\n  90%,\n  to": {
@@ -579,10 +579,10 @@
       }
     }
   },
-  "bounceOut": {
+  "bounce-out": {
     "css": {
       "animationDuration": "calc(var(--animate-duration) * 0.75)",
-      "animationName": "bounceOut"
+      "animationName": "uneBounceOut"
     },
     "keyframes": {
       "20%": {
@@ -598,9 +598,9 @@
       }
     }
   },
-  "bounceOutDown": {
+  "bounce-out-down": {
     "css": {
-      "animationName": "bounceOutDown"
+      "animationName": "uneBounceOutDown"
     },
     "keyframes": {
       "20%": {
@@ -616,9 +616,9 @@
       }
     }
   },
-  "bounceOutLeft": {
+  "bounce-out-left": {
     "css": {
-      "animationName": "bounceOutLeft"
+      "animationName": "uneBounceOutLeft"
     },
     "keyframes": {
       "20%": {
@@ -631,9 +631,9 @@
       }
     }
   },
-  "bounceOutRight": {
+  "bounce-out-right": {
     "css": {
-      "animationName": "bounceOutRight"
+      "animationName": "uneBounceOutRight"
     },
     "keyframes": {
       "20%": {
@@ -646,9 +646,9 @@
       }
     }
   },
-  "bounceOutUp": {
+  "bounce-out-up": {
     "css": {
-      "animationName": "bounceOutUp"
+      "animationName": "uneBounceOutUp"
     },
     "keyframes": {
       "20%": {
@@ -664,9 +664,9 @@
       }
     }
   },
-  "fadeIn": {
+  "fade-in": {
     "css": {
-      "animationName": "fadeIn"
+      "animationName": "uneFadeIn"
     },
     "keyframes": {
       "from": {
@@ -677,9 +677,9 @@
       }
     }
   },
-  "fadeInBottomLeft": {
+  "fade-in-bottom-left": {
     "css": {
-      "animationName": "fadeInBottomLeft"
+      "animationName": "uneFadeInBottomLeft"
     },
     "keyframes": {
       "from": {
@@ -692,9 +692,9 @@
       }
     }
   },
-  "fadeInBottomRight": {
+  "fade-in-bottom-right": {
     "css": {
-      "animationName": "fadeInBottomRight"
+      "animationName": "uneFadeInBottomRight"
     },
     "keyframes": {
       "from": {
@@ -707,9 +707,9 @@
       }
     }
   },
-  "fadeInDown": {
+  "fade-in-down": {
     "css": {
-      "animationName": "fadeInDown"
+      "animationName": "uneFadeInDown"
     },
     "keyframes": {
       "from": {
@@ -722,9 +722,9 @@
       }
     }
   },
-  "fadeInDownBig": {
+  "fade-in-down-big": {
     "css": {
-      "animationName": "fadeInDownBig"
+      "animationName": "uneFadeInDownBig"
     },
     "keyframes": {
       "from": {
@@ -737,9 +737,9 @@
       }
     }
   },
-  "fadeInLeft": {
+  "fade-in-left": {
     "css": {
-      "animationName": "fadeInLeft"
+      "animationName": "uneFadeInLeft"
     },
     "keyframes": {
       "from": {
@@ -752,9 +752,9 @@
       }
     }
   },
-  "fadeInLeftBig": {
+  "fade-in-left-big": {
     "css": {
-      "animationName": "fadeInLeftBig"
+      "animationName": "uneFadeInLeftBig"
     },
     "keyframes": {
       "from": {
@@ -767,9 +767,9 @@
       }
     }
   },
-  "fadeInRight": {
+  "fade-in-right": {
     "css": {
-      "animationName": "fadeInRight"
+      "animationName": "uneFadeInRight"
     },
     "keyframes": {
       "from": {
@@ -782,9 +782,9 @@
       }
     }
   },
-  "fadeInRightBig": {
+  "fade-in-right-big": {
     "css": {
-      "animationName": "fadeInRightBig"
+      "animationName": "uneFadeInRightBig"
     },
     "keyframes": {
       "from": {
@@ -797,9 +797,9 @@
       }
     }
   },
-  "fadeInTopLeft": {
+  "fade-in-top-left": {
     "css": {
-      "animationName": "fadeInTopLeft"
+      "animationName": "uneFadeInTopLeft"
     },
     "keyframes": {
       "from": {
@@ -812,9 +812,9 @@
       }
     }
   },
-  "fadeInTopRight": {
+  "fade-in-top-right": {
     "css": {
-      "animationName": "fadeInTopRight"
+      "animationName": "uneFadeInTopRight"
     },
     "keyframes": {
       "from": {
@@ -827,9 +827,9 @@
       }
     }
   },
-  "fadeInUp": {
+  "fade-in-up": {
     "css": {
-      "animationName": "fadeInUp"
+      "animationName": "uneFadeInUp"
     },
     "keyframes": {
       "from": {
@@ -842,9 +842,9 @@
       }
     }
   },
-  "fadeInUpBig": {
+  "fade-in-up-big": {
     "css": {
-      "animationName": "fadeInUpBig"
+      "animationName": "uneFadeInUpBig"
     },
     "keyframes": {
       "from": {
@@ -857,9 +857,9 @@
       }
     }
   },
-  "fadeOut": {
+  "fade-out": {
     "css": {
-      "animationName": "fadeOut"
+      "animationName": "uneFadeOut"
     },
     "keyframes": {
       "from": {
@@ -870,9 +870,9 @@
       }
     }
   },
-  "fadeOutBottomLeft": {
+  "fade-out-bottom-left": {
     "css": {
-      "animationName": "fadeOutBottomLeft"
+      "animationName": "uneFadeOutBottomLeft"
     },
     "keyframes": {
       "from": {
@@ -885,9 +885,9 @@
       }
     }
   },
-  "fadeOutBottomRight": {
+  "fade-out-bottom-right": {
     "css": {
-      "animationName": "fadeOutBottomRight"
+      "animationName": "uneFadeOutBottomRight"
     },
     "keyframes": {
       "from": {
@@ -900,9 +900,9 @@
       }
     }
   },
-  "fadeOutDown": {
+  "fade-out-down": {
     "css": {
-      "animationName": "fadeOutDown"
+      "animationName": "uneFadeOutDown"
     },
     "keyframes": {
       "from": {
@@ -914,9 +914,9 @@
       }
     }
   },
-  "fadeOutDownBig": {
+  "fade-out-down-big": {
     "css": {
-      "animationName": "fadeOutDownBig"
+      "animationName": "uneFadeOutDownBig"
     },
     "keyframes": {
       "from": {
@@ -928,9 +928,9 @@
       }
     }
   },
-  "fadeOutLeft": {
+  "fade-out-left": {
     "css": {
-      "animationName": "fadeOutLeft"
+      "animationName": "uneFadeOutLeft"
     },
     "keyframes": {
       "from": {
@@ -942,9 +942,9 @@
       }
     }
   },
-  "fadeOutLeftBig": {
+  "fade-out-left-big": {
     "css": {
-      "animationName": "fadeOutLeftBig"
+      "animationName": "uneFadeOutLeftBig"
     },
     "keyframes": {
       "from": {
@@ -956,9 +956,9 @@
       }
     }
   },
-  "fadeOutRight": {
+  "fade-out-right": {
     "css": {
-      "animationName": "fadeOutRight"
+      "animationName": "uneFadeOutRight"
     },
     "keyframes": {
       "from": {
@@ -970,9 +970,9 @@
       }
     }
   },
-  "fadeOutRightBig": {
+  "fade-out-right-big": {
     "css": {
-      "animationName": "fadeOutRightBig"
+      "animationName": "uneFadeOutRightBig"
     },
     "keyframes": {
       "from": {
@@ -984,9 +984,9 @@
       }
     }
   },
-  "fadeOutTopLeft": {
+  "fade-out-top-left": {
     "css": {
-      "animationName": "fadeOutTopLeft"
+      "animationName": "uneFadeOutTopLeft"
     },
     "keyframes": {
       "from": {
@@ -999,9 +999,9 @@
       }
     }
   },
-  "fadeOutTopRight": {
+  "fade-out-top-right": {
     "css": {
-      "animationName": "fadeOutTopRight"
+      "animationName": "uneFadeOutTopRight"
     },
     "keyframes": {
       "from": {
@@ -1014,9 +1014,9 @@
       }
     }
   },
-  "fadeOutUp": {
+  "fade-out-up": {
     "css": {
-      "animationName": "fadeOutUp"
+      "animationName": "uneFadeOutUp"
     },
     "keyframes": {
       "from": {
@@ -1028,9 +1028,9 @@
       }
     }
   },
-  "fadeOutUpBig": {
+  "fade-out-up-big": {
     "css": {
-      "animationName": "fadeOutUpBig"
+      "animationName": "uneFadeOutUpBig"
     },
     "keyframes": {
       "from": {
@@ -1045,7 +1045,7 @@
   "flip": {
     "css": {
       "backfaceVisibility": "visible",
-      "animationName": "flip"
+      "animationName": "uneFlip"
     },
     "keyframes": {
       "from": {
@@ -1070,10 +1070,10 @@
       }
     }
   },
-  "flipInX": {
+  "flip-in-x": {
     "css": {
       "backfaceVisibility": "visible !important",
-      "animationName": "flipInX"
+      "animationName": "uneFlipInX"
     },
     "keyframes": {
       "from": {
@@ -1097,10 +1097,10 @@
       }
     }
   },
-  "flipInY": {
+  "flip-in-y": {
     "css": {
       "backfaceVisibility": "visible !important",
-      "animationName": "flipInY"
+      "animationName": "uneFlipInY"
     },
     "keyframes": {
       "from": {
@@ -1124,10 +1124,10 @@
       }
     }
   },
-  "flipOutX": {
+  "flip-out-x": {
     "css": {
       "animationDuration": "calc(var(--animate-duration) * 0.75)",
-      "animationName": "flipOutX",
+      "animationName": "uneFlipOutX",
       "backfaceVisibility": "visible !important"
     },
     "keyframes": {
@@ -1144,11 +1144,11 @@
       }
     }
   },
-  "flipOutY": {
+  "flip-out-y": {
     "css": {
       "animationDuration": "calc(var(--animate-duration) * 0.75)",
       "backfaceVisibility": "visible !important",
-      "animationName": "flipOutY"
+      "animationName": "uneFlipOutY"
     },
     "keyframes": {
       "from": {
@@ -1164,9 +1164,9 @@
       }
     }
   },
-  "lightSpeedInLeft": {
+  "light-speed-in-left": {
     "css": {
-      "animationName": "lightSpeedInLeft",
+      "animationName": "uneLightSpeedInLeft",
       "animationTimingFunction": "ease-out"
     },
     "keyframes": {
@@ -1186,9 +1186,9 @@
       }
     }
   },
-  "lightSpeedInRight": {
+  "light-speed-in-right": {
     "css": {
-      "animationName": "lightSpeedInRight",
+      "animationName": "uneLightSpeedInRight",
       "animationTimingFunction": "ease-out"
     },
     "keyframes": {
@@ -1208,9 +1208,9 @@
       }
     }
   },
-  "lightSpeedOutLeft": {
+  "light-speed-out-left": {
     "css": {
-      "animationName": "lightSpeedOutLeft",
+      "animationName": "uneLightSpeedOutLeft",
       "animationTimingFunction": "ease-in"
     },
     "keyframes": {
@@ -1223,9 +1223,9 @@
       }
     }
   },
-  "lightSpeedOutRight": {
+  "light-speed-out-right": {
     "css": {
-      "animationName": "lightSpeedOutRight",
+      "animationName": "uneLightSpeedOutRight",
       "animationTimingFunction": "ease-in"
     },
     "keyframes": {
@@ -1238,9 +1238,9 @@
       }
     }
   },
-  "rotateIn": {
+  "rotate-in": {
     "css": {
-      "animationName": "rotateIn",
+      "animationName": "uneRotateIn",
       "transformOrigin": "center"
     },
     "keyframes": {
@@ -1254,9 +1254,9 @@
       }
     }
   },
-  "rotateInDownLeft": {
+  "rotate-in-down-left": {
     "css": {
-      "animationName": "rotateInDownLeft",
+      "animationName": "uneRotateInDownLeft",
       "transformOrigin": "left bottom"
     },
     "keyframes": {
@@ -1270,9 +1270,9 @@
       }
     }
   },
-  "rotateInDownRight": {
+  "rotate-in-down-right": {
     "css": {
-      "animationName": "rotateInDownRight",
+      "animationName": "uneRotateInDownRight",
       "transformOrigin": "right bottom"
     },
     "keyframes": {
@@ -1286,9 +1286,9 @@
       }
     }
   },
-  "rotateInUpLeft": {
+  "rotate-in-up-left": {
     "css": {
-      "animationName": "rotateInUpLeft",
+      "animationName": "uneRotateInUpLeft",
       "transformOrigin": "left bottom"
     },
     "keyframes": {
@@ -1302,9 +1302,9 @@
       }
     }
   },
-  "rotateInUpRight": {
+  "rotate-in-up-right": {
     "css": {
-      "animationName": "rotateInUpRight",
+      "animationName": "uneRotateInUpRight",
       "transformOrigin": "right bottom"
     },
     "keyframes": {
@@ -1318,9 +1318,9 @@
       }
     }
   },
-  "rotateOut": {
+  "rotate-out": {
     "css": {
-      "animationName": "rotateOut",
+      "animationName": "uneRotateOut",
       "transformOrigin": "center"
     },
     "keyframes": {
@@ -1333,9 +1333,9 @@
       }
     }
   },
-  "rotateOutDownLeft": {
+  "rotate-out-down-left": {
     "css": {
-      "animationName": "rotateOutDownLeft",
+      "animationName": "uneRotateOutDownLeft",
       "transformOrigin": "left bottom"
     },
     "keyframes": {
@@ -1348,9 +1348,9 @@
       }
     }
   },
-  "rotateOutDownRight": {
+  "rotate-out-down-right": {
     "css": {
-      "animationName": "rotateOutDownRight",
+      "animationName": "uneRotateOutDownRight",
       "transformOrigin": "right bottom"
     },
     "keyframes": {
@@ -1363,9 +1363,9 @@
       }
     }
   },
-  "rotateOutUpLeft": {
+  "rotate-out-up-left": {
     "css": {
-      "animationName": "rotateOutUpLeft",
+      "animationName": "uneRotateOutUpLeft",
       "transformOrigin": "left bottom"
     },
     "keyframes": {
@@ -1378,9 +1378,9 @@
       }
     }
   },
-  "rotateOutUpRight": {
+  "rotate-out-up-right": {
     "css": {
-      "animationName": "rotateOutUpRight",
+      "animationName": "uneRotateOutUpRight",
       "transformOrigin": "right bottom"
     },
     "keyframes": {
@@ -1393,9 +1393,9 @@
       }
     }
   },
-  "slideInDown": {
+  "slide-in-down": {
     "css": {
-      "animationName": "slideInDown"
+      "animationName": "uneSlideInDown"
     },
     "keyframes": {
       "from": {
@@ -1407,9 +1407,9 @@
       }
     }
   },
-  "slideInLeft": {
+  "slide-in-left": {
     "css": {
-      "animationName": "slideInLeft"
+      "animationName": "uneSlideInLeft"
     },
     "keyframes": {
       "from": {
@@ -1421,9 +1421,9 @@
       }
     }
   },
-  "slideInRight": {
+  "slide-in-right": {
     "css": {
-      "animationName": "slideInRight"
+      "animationName": "uneSlideInRight"
     },
     "keyframes": {
       "from": {
@@ -1435,9 +1435,9 @@
       }
     }
   },
-  "slideInUp": {
+  "slide-in-up": {
     "css": {
-      "animationName": "slideInUp"
+      "animationName": "uneSlideInUp"
     },
     "keyframes": {
       "from": {
@@ -1449,9 +1449,9 @@
       }
     }
   },
-  "slideOutDown": {
+  "slide-out-down": {
     "css": {
-      "animationName": "slideOutDown"
+      "animationName": "uneSlideOutDown"
     },
     "keyframes": {
       "from": {
@@ -1463,9 +1463,9 @@
       }
     }
   },
-  "slideOutLeft": {
+  "slide-out-left": {
     "css": {
-      "animationName": "slideOutLeft"
+      "animationName": "uneSlideOutLeft"
     },
     "keyframes": {
       "from": {
@@ -1477,9 +1477,9 @@
       }
     }
   },
-  "slideOutRight": {
+  "slide-out-right": {
     "css": {
-      "animationName": "slideOutRight"
+      "animationName": "uneSlideOutRight"
     },
     "keyframes": {
       "from": {
@@ -1491,9 +1491,9 @@
       }
     }
   },
-  "slideOutUp": {
+  "slide-out-up": {
     "css": {
-      "animationName": "slideOutUp"
+      "animationName": "uneSlideOutUp"
     },
     "keyframes": {
       "from": {
@@ -1508,7 +1508,7 @@
   "hinge": {
     "css": {
       "animationDuration": "calc(var(--animate-duration) * 2)",
-      "animationName": "hinge",
+      "animationName": "uneHinge",
       "transformOrigin": "top left"
     },
     "keyframes": {
@@ -1530,9 +1530,9 @@
       }
     }
   },
-  "jackInTheBox": {
+  "jack-in-the-box": {
     "css": {
-      "animationName": "jackInTheBox"
+      "animationName": "uneJackInTheBox"
     },
     "keyframes": {
       "from": {
@@ -1552,9 +1552,9 @@
       }
     }
   },
-  "rollIn": {
+  "roll-in": {
     "css": {
-      "animationName": "rollIn"
+      "animationName": "uneRollIn"
     },
     "keyframes": {
       "from": {
@@ -1567,9 +1567,9 @@
       }
     }
   },
-  "rollOut": {
+  "roll-out": {
     "css": {
-      "animationName": "rollOut"
+      "animationName": "uneRollOut"
     },
     "keyframes": {
       "from": {
@@ -1581,9 +1581,9 @@
       }
     }
   },
-  "zoomIn": {
+  "zoom-in": {
     "css": {
-      "animationName": "zoomIn"
+      "animationName": "uneZoomIn"
     },
     "keyframes": {
       "from": {
@@ -1595,9 +1595,9 @@
       }
     }
   },
-  "zoomInDown": {
+  "zoom-in-down": {
     "css": {
-      "animationName": "zoomInDown"
+      "animationName": "uneZoomInDown"
     },
     "keyframes": {
       "from": {
@@ -1612,9 +1612,9 @@
       }
     }
   },
-  "zoomInLeft": {
+  "zoom-in-left": {
     "css": {
-      "animationName": "zoomInLeft"
+      "animationName": "uneZoomInLeft"
     },
     "keyframes": {
       "from": {
@@ -1629,9 +1629,9 @@
       }
     }
   },
-  "zoomInRight": {
+  "zoom-in-right": {
     "css": {
-      "animationName": "zoomInRight"
+      "animationName": "uneZoomInRight"
     },
     "keyframes": {
       "from": {
@@ -1646,9 +1646,9 @@
       }
     }
   },
-  "zoomInUp": {
+  "zoom-in-up": {
     "css": {
-      "animationName": "zoomInUp"
+      "animationName": "uneZoomInUp"
     },
     "keyframes": {
       "from": {
@@ -1663,9 +1663,9 @@
       }
     }
   },
-  "zoomOut": {
+  "zoom-out": {
     "css": {
-      "animationName": "zoomOut"
+      "animationName": "uneZoomOut"
     },
     "keyframes": {
       "from": {
@@ -1680,9 +1680,9 @@
       }
     }
   },
-  "zoomOutDown": {
+  "zoom-out-down": {
     "css": {
-      "animationName": "zoomOutDown",
+      "animationName": "uneZoomOutDown",
       "transformOrigin": "center bottom"
     },
     "keyframes": {
@@ -1698,9 +1698,9 @@
       }
     }
   },
-  "zoomOutLeft": {
+  "zoom-out-left": {
     "css": {
-      "animationName": "zoomOutLeft",
+      "animationName": "uneZoomOutLeft",
       "transformOrigin": "left center"
     },
     "keyframes": {
@@ -1714,9 +1714,9 @@
       }
     }
   },
-  "zoomOutRight": {
+  "zoom-out-right": {
     "css": {
-      "animationName": "zoomOutRight",
+      "animationName": "uneZoomOutRight",
       "transformOrigin": "right center"
     },
     "keyframes": {
@@ -1730,9 +1730,9 @@
       }
     }
   },
-  "zoomOutUp": {
+  "zoom-out-up": {
     "css": {
-      "animationName": "zoomOutUp",
+      "animationName": "uneZoomOutUp",
       "transformOrigin": "center bottom"
     },
     "keyframes": {

@@ -1,6 +1,7 @@
 import { resolve } from 'path';
 import { outputFileSync, readFileSync } from 'fs-extra';
 import { getPackageInfoSync } from 'local-pkg';
+import { camelCase, kebabCase } from 'lodash-es';
 import fg from 'fast-glob';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
@@ -20,8 +21,11 @@ const styles = Object.fromEntries(
     const [name, css] = rules.find(([key]) => key.startsWith('.'))!;
     const keyframes = rules.find(([key]) => key.startsWith('@'))![1];
 
+    if (css.animationName)
+      css.animationName = camelCase(`une-${css.animationName}`);
+
     return [
-      name.replace(/^(\.animated)?\./, ''),
+      kebabCase(name.replace(/^(\.animated)?\./, '')),
       {
         css,
         keyframes,
@@ -32,5 +36,5 @@ const styles = Object.fromEntries(
 
 outputFileSync(
   resolve(__dirname, '../src/rules/animated.json'),
-  JSON.stringify(styles, null, 2),
+  `${JSON.stringify(styles, null, 2)}\n`,
 );

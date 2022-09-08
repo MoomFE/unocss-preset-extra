@@ -5,6 +5,7 @@ import { omit } from 'lodash-es';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { presetExtra } from '@/index';
+import animated from '@/rules/animated.json';
 
 function removeUnusedItems(cssJson: object) {
   return omit(cssJson, ['*,::before,::after', '::backdrop']);
@@ -13,6 +14,22 @@ function removeUnusedItems(cssJson: object) {
 function removeLastZero(v: string | number) {
   return `${v}`.replace(/0+$/, '');
 }
+
+describe('animated.json', () => {
+  test('json 数据的 key 均为 kebabCase 格式', () => {
+    Object.keys(animated).forEach((key) => {
+      expect(/^[a-z-]+$/.test(key)).is.true;
+    });
+  });
+
+  test('css 的 animationName 都有值, 且均为 une 开头的 camelCase 格式', () => {
+    Object.values(animated).forEach(({ css }) => {
+      expect(
+        /^une[A-Z]/.test(css.animationName),
+      ).is.true;
+    });
+  });
+});
 
 describe('animated', () => {
   const generator = createGenerator({
