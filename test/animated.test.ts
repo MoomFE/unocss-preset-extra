@@ -40,9 +40,8 @@ describe('animated', () => {
     const { css } = await generator.generate(`
       animated-infinite
       animated-repeat-infinite
-      ${/* 0 ~ 6 */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}`).join(' ')}
-      ${/* 10, 100, 1000 */ Array.from({ length: 3 }, (_, i) => `animated-repeat-10${''.padEnd(i, '0')}`).join(' ')}
-      ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}.${i + 1}`).join(' ')}
+      ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}`).join(' ')}
+      ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}.${i + 1}`).join(' ')}
       ${/* 0_1, 1_2, ... ( 不符合规则的样式类 ) */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${i + 1}`).join(' ')}
       ${/* a ~ z ( 不符合规则的样式类 ) */ Array.from({ length: 26 }, (_, i) => `animated-repeat-${String.fromCharCode(97 + i)}`)}
     `);
@@ -57,17 +56,13 @@ describe('animated', () => {
         {
           '.animated-infinite,\n.animated-repeat-infinite': { animationIterationCount: 'infinite' },
         },
-        // 0 ~ 6
-        ...Array.from({ length: 7 }, (_, i) => ({
+        // 0 ~ 66
+        ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-repeat-${i}`]: { animationIterationCount: `${i}` },
         })),
         // 0.1, 1.2, ... ( 小数 )
-        ...Array.from({ length: 7 }, (_, i) => ({
+        ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-repeat-${i}\\.${i + 1}`]: { animationIterationCount: `${i}.${i + 1}` },
-        })),
-        // 10, 100, 1000
-        ...Array.from({ length: 3 }, (_, i) => ({
-          [`.animated-repeat-10${''.padEnd(i, '0')}`]: { animationIterationCount: `10${''.padEnd(i, '0')}` },
         })),
       ),
     );
@@ -76,9 +71,9 @@ describe('animated', () => {
   test('animated-delay', async () => {
     const { css } = await generator.generate(`
       animated-delay-none
-      ${/* 0 ~ 6 */ Array.from({ length: 7 }, (_, i) => `animated-delay-${i}`).join(' ')}
-      ${/* 0ms ~ 6ms */ Array.from({ length: 7 }, (_, i) => `animated-delay-${i}ms`).join(' ')}
-      ${/* 0s ~ 6s */ Array.from({ length: 7 }, (_, i) => `animated-delay-${i}s`).join(' ')}
+      ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}`).join(' ')}
+      ${/* 0ms ~ 66ms */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}ms`).join(' ')}
+      ${/* 0s ~ 66s */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}s`).join(' ')}
     `);
 
     expect(
@@ -91,13 +86,13 @@ describe('animated', () => {
         {
           '.animated-delay-0,\n.animated-delay-0ms,\n.animated-delay-none': { animationDelay: '0ms' },
         },
-        // 1 ~ 6
-        // 1ms ~ 6ms
-        ...Array.from({ length: 6 }, (_, i) => ({
+        // 1 ~ 66
+        // 1ms ~ 66ms
+        ...Array.from({ length: 66 }, (_, i) => ({
           [`.animated-delay-${i + 1},\n.animated-delay-${i + 1}ms`]: { animationDelay: `${i + 1}ms` },
         })),
-        // 0s ~ 6s
-        ...Array.from({ length: 7 }, (_, i) => ({
+        // 0s ~ 66s
+        ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-delay-${i}s`]: { animationDelay: `${i}s` },
         })),
       ),
