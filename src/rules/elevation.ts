@@ -1,4 +1,5 @@
 import { type Rule } from 'unocss';
+import { type Theme } from '@unocss/preset-mini';
 import { handler } from '@unocss/preset-mini/utils';
 
 export const umbraOpacity = 0.2;
@@ -33,7 +34,7 @@ const elevationLevel = Array.from({ length: 25 }).map((_, i) => i).join('|');
  * 海拔
  * @link https://vuetifyjs.com/zh-Hans/styles/elevation/
  */
-export const elevationRules: Rule[] = [
+export const elevationRules: Rule<Theme>[] = [
   [
     /(shadow-)?el(?:evation)?-(\d+)$/,
     ([,, prop]) => {

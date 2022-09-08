@@ -1,4 +1,5 @@
 import { type Rule } from 'unocss';
+import { type Theme } from '@unocss/preset-mini';
 import { handler } from '@unocss/preset-mini/utils';
 
 type WidthProps = 'width' | 'maxWidth' | 'minWidth';
@@ -11,15 +12,13 @@ function camelCase(str: string) {
 /**
  * 同时定义宽高
  */
-export const sizeRules: Rule[] = [[
+export const sizeRules: Rule<Theme>[] = [[
   /^(min-|max-)?size-(.+)$/,
   ([, minmax, prop], { theme }) => {
     const widthProperty = `${minmax || ''}width`;
     const heightProperty = `${minmax || ''}height`;
 
-    // @ts-expect-error ???
     const width = theme[camelCase(widthProperty) as WidthProps]?.[prop];
-    // @ts-expect-error ???
     const height = theme[camelCase(heightProperty) as HeightProps]?.[prop];
 
     if (width != null && height != null) {

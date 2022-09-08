@@ -1,9 +1,10 @@
 import { type Rule } from 'unocss';
+import { type Theme } from '@unocss/preset-mini';
 
 /**
  * animate.css
  */
-export const animatedRules: Rule[] = [
+export const animatedRules: Rule<Theme>[] = [
   [
     /^animated$/,
     () => {
