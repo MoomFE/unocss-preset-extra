@@ -10,6 +10,10 @@ function removeUnusedItems(cssJson: object) {
   return omit(cssJson, ['*,::before,::after', '::backdrop']);
 }
 
+function removeLastZero(v: string | number) {
+  return `${v}`.replace(/0+$/, '');
+}
+
 describe('animated', () => {
   const generator = createGenerator({
     presets: [
@@ -41,8 +45,8 @@ describe('animated', () => {
       animated-infinite
       animated-repeat-infinite
       ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}`).join(' ')}
-      ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}.${i + 1}`).join(' ')}
-      ${/* 0_1, 1_2, ... ( 不符合规则的样式类 ) */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${i + 1}`).join(' ')}
+      ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}.${removeLastZero(i + 1)}`).join(' ')}
+      ${/* 0_1, 1_2, ... ( 不符合规则的样式类 ) */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${removeLastZero(i + 1)}`).join(' ')}
       ${/* a ~ z ( 不符合规则的样式类 ) */ Array.from({ length: 26 }, (_, i) => `animated-repeat-${String.fromCharCode(97 + i)}`)}
     `);
 
@@ -62,7 +66,7 @@ describe('animated', () => {
         })),
         // 0.1, 1.2, ... ( 小数 )
         ...Array.from({ length: 67 }, (_, i) => ({
-          [`.animated-repeat-${i}\\.${i + 1}`]: { animationIterationCount: `${i}.${i + 1}` },
+          [`.animated-repeat-${i}\\.${removeLastZero(i + 1)}`]: { animationIterationCount: `${i}.${removeLastZero(i + 1)}` },
         })),
       ),
     );
@@ -74,6 +78,9 @@ describe('animated', () => {
       ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}`).join(' ')}
       ${/* 0ms ~ 66ms */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}ms`).join(' ')}
       ${/* 0s ~ 66s */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}s`).join(' ')}
+      ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}`).join(' ')}
+      ${/* 0.1ms, 1.2ms, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
+      ${/* 0.1s, 1.2s, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}s`).join(' ')}
     `);
 
     expect(
@@ -94,6 +101,15 @@ describe('animated', () => {
         // 0s ~ 66s
         ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-delay-${i}s`]: { animationDelay: `${i}s` },
+        })),
+        // 0.1, 1.2, ... ( 小数 )
+        // 0.1ms, 1.2ms, ... ( 小数 )
+        ...Array.from({ length: 67 }, (_, i) => ({
+          [`.animated-delay-${i}\\.${removeLastZero(i + 1)},\n.animated-delay-${i}\\.${removeLastZero(i + 1)}ms`]: { animationDelay: `${i}.${removeLastZero(i + 1)}ms` },
+        })),
+        // 0s ~ 66s
+        ...Array.from({ length: 67 }, (_, i) => ({
+          [`.animated-delay-${i}\\.${removeLastZero(i + 1)}s`]: { animationDelay: `${i}.${removeLastZero(i + 1)}s` },
         })),
       ),
     );
