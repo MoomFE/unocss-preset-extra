@@ -3,5 +3,17 @@
 exports[`animated > autocomplete 1`] = `
 [
   "animated",
+  "animated-infinite",
+  "animated-repeat-0",
+  "animated-repeat-1",
+  "animated-repeat-2",
+  "animated-repeat-3",
+  "animated-repeat-4",
+  "animated-repeat-5",
+  "animated-repeat-6",
+  "animated-repeat-10",
+  "animated-repeat-100",
+  "animated-repeat-1000",
+  "animated-repeat-infinite",
 ]
 `;

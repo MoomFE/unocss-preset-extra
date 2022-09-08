@@ -13,8 +13,21 @@ export const animatedRules: Rule[] = [
       };
     },
   ],
-  // [
-  //   /^animated-(infinite|(repeat-(infinite|\d+)))$/,
-  //   () => {},
-  // ],
+  [
+    /^animated-(infinite|(repeat-(infinite|\d+)))$/,
+    ([,,,repeat]) => {
+      const isInfinite = !repeat || repeat === 'infinite';
+
+      return {
+        'animation-iteration-count': isInfinite ? 'infinite' : repeat,
+      };
+    },
+    {
+      autocomplete: [
+        'animated-infinite',
+        'animated-repeat-infinite',
+        'animated-repeat-<num>',
+      ],
+    },
+  ],
 ];
