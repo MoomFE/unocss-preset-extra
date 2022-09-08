@@ -15,7 +15,7 @@ export const animatedRules: Rule<Theme>[] = [
     },
   ],
   [
-    /^animated-(infinite|(repeat-(infinite|(\d+(.\d+)?))))$/,
+    /^animated-(infinite|(repeat-(infinite|(\d+(\.\d+)?))))$/,
     ([,,, repeat]) => {
       const isInfinite = !repeat || repeat === 'infinite';
 

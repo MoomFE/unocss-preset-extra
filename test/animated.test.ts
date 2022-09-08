@@ -43,6 +43,7 @@ describe('animated', () => {
       ${/* 0 ~ 6 */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}`).join(' ')}
       ${/* 10, 100, 1000 */ Array.from({ length: 3 }, (_, i) => `animated-repeat-10${''.padEnd(i, '0')}`).join(' ')}
       ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}.${i + 1}`).join(' ')}
+      ${/* 0_1, 1_2, ... ( 不符合规则的样式类 ) */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${i + 1}`).join(' ')}
       ${/* a ~ z ( 不符合规则的样式类 ) */ Array.from({ length: 26 }, (_, i) => `animated-repeat-${String.fromCharCode(97 + i)}`)}
     `);
 
