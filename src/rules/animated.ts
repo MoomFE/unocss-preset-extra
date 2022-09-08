@@ -1,5 +1,6 @@
 import { type Rule } from 'unocss';
 import { type Theme } from '@unocss/preset-mini';
+import { handler } from '@unocss/preset-mini/utils';
 
 /**
  * animate.css
@@ -28,6 +29,18 @@ export const animatedRules: Rule<Theme>[] = [
         'animated-infinite',
         'animated-repeat-infinite',
         'animated-repeat-<num>',
+      ],
+    },
+  ],
+  [
+    /^animated-delay-(none|(\d+(\.\d+)?(m?s)?))$/,
+    ([, d]) => ({
+      'animation-delay': d === 'none' ? '0ms' : handler.bracket.cssvar.time(d),
+    }),
+    {
+      autocomplete: [
+        'animated-delay-none',
+        'animated-delay-$duration',
       ],
     },
   ],

@@ -53,6 +53,7 @@ describe('animated', () => {
       }),
     ).toEqual(
       Object.assign(
+        // infinite, repeat-infinite
         {
           '.animated-infinite,\n.animated-repeat-infinite': { animationIterationCount: 'infinite' },
         },
@@ -72,9 +73,48 @@ describe('animated', () => {
     );
   });
 
+  test('animated-delay', async () => {
+    const { css } = await generator.generate(`
+      animated-delay-none
+      ${/* 0 ~ 6 */ Array.from({ length: 7 }, (_, i) => `animated-delay-${i}`).join(' ')}
+      ${/* 0ms ~ 6ms */ Array.from({ length: 7 }, (_, i) => `animated-delay-${i}ms`).join(' ')}
+      ${/* 0s ~ 6s */ Array.from({ length: 7 }, (_, i) => `animated-delay-${i}s`).join(' ')}
+    `);
+
+    expect(
+      removeUnusedItems({
+        ...postcssJs.objectify(postcss.parse(css)),
+      }),
+    ).toEqual(
+      Object.assign(
+        // 0, 0ms, none
+        {
+          '.animated-delay-0,\n.animated-delay-0ms,\n.animated-delay-none': { animationDelay: '0ms' },
+        },
+        // 1 ~ 6
+        // 1ms ~ 6ms
+        ...Array.from({ length: 6 }, (_, i) => ({
+          [`.animated-delay-${i + 1},\n.animated-delay-${i + 1}ms`]: { animationDelay: `${i + 1}ms` },
+        })),
+        // 0s ~ 6s
+        ...Array.from({ length: 7 }, (_, i) => ({
+          [`.animated-delay-${i}s`]: { animationDelay: `${i}s` },
+        })),
+      ),
+    );
+  });
+
   test('autocomplete', async () => {
     expect(
       await autocomplete.suggest('animated'),
+    ).toMatchSnapshot();
+
+    expect(
+      await autocomplete.suggest('animated-repeat-'),
+    ).toMatchSnapshot();
+
+    expect(
+      await autocomplete.suggest('animated-delay-'),
     ).toMatchSnapshot();
   });
 });
