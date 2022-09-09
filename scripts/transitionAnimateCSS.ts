@@ -37,6 +37,9 @@ const styles = {};
 
     // 动画名称为 une 开头且为 camelCase 格式
     css.animationName = animationName;
+    // CSS 变量重命名
+    if (css.animationDuration)
+      css.animationDuration = css.animationDuration.replace('--animate-duration', '--une-animated-duration');
     // css 样式名转为 kebabCase 格式
     Object.entries(css).forEach(([key, value]) => {
       delete css[key];

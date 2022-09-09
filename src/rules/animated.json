@@ -26,7 +26,7 @@
     "animationName": "uneHeartBeat",
     "css": {
       "animation-name": "uneHeartBeat",
-      "animation-duration": "calc(var(--animate-duration) * 1.3)",
+      "animation-duration": "calc(var(--une-animated-duration) * 1.3)",
       "animation-timing-function": "ease-in-out"
     },
     "keyframes": "0% { transform: scale(1) } 14% { transform: scale(1.3) } 28% { transform: scale(1) } 42% { transform: scale(1.3) } 70% { transform: scale(1) }"
@@ -156,7 +156,7 @@
   "bounce-in": {
     "animationName": "uneBounceIn",
     "css": {
-      "animation-duration": "calc(var(--animate-duration) * 0.75)",
+      "animation-duration": "calc(var(--une-animated-duration) * 0.75)",
       "animation-name": "uneBounceIn"
     },
     "keyframes": "0%,20%,40%,60%,80%,to { animation-timing-function: cubic-bezier(.215,.61,.355,1) } 0% { opacity: 0; transform: scale3d(.3,.3,.3) } 20% { transform: scale3d(1.1,1.1,1.1) } 40% { transform: scale3d(.9,.9,.9) } 60% { opacity: 1; transform: scale3d(1.03,1.03,1.03) } 80% { transform: scale3d(.97,.97,.97) } to { opacity: 1; transform: scaleX(1) }"
@@ -192,7 +192,7 @@
   "bounce-out": {
     "animationName": "uneBounceOut",
     "css": {
-      "animation-duration": "calc(var(--animate-duration) * 0.75)",
+      "animation-duration": "calc(var(--une-animated-duration) * 0.75)",
       "animation-name": "uneBounceOut"
     },
     "keyframes": "20% { transform: scale3d(.9,.9,.9) } 50%,55% { opacity: 1; transform: scale3d(1.1,1.1,1.1) } to { opacity: 0; transform: scale3d(.3,.3,.3) }"
@@ -434,7 +434,7 @@
   "flip-out-x": {
     "animationName": "uneFlipOutX",
     "css": {
-      "animation-duration": "calc(var(--animate-duration) * 0.75)",
+      "animation-duration": "calc(var(--une-animated-duration) * 0.75)",
       "animation-name": "uneFlipOutX",
       "backface-visibility": "visible !important"
     },
@@ -443,7 +443,7 @@
   "flip-out-y": {
     "animationName": "uneFlipOutY",
     "css": {
-      "animation-duration": "calc(var(--animate-duration) * 0.75)",
+      "animation-duration": "calc(var(--une-animated-duration) * 0.75)",
       "backface-visibility": "visible !important",
       "animation-name": "uneFlipOutY"
     },
@@ -620,7 +620,7 @@
   "hinge": {
     "animationName": "uneHinge",
     "css": {
-      "animation-duration": "calc(var(--animate-duration) * 2)",
+      "animation-duration": "calc(var(--une-animated-duration) * 2)",
       "animation-name": "uneHinge",
       "transform-origin": "top left"
     },

@@ -13,6 +13,13 @@ function getAnimated() {
   };
 }
 
+export const durationShortcuts = {
+  faster: 0.5,
+  fast: 0.8,
+  slow: 2,
+  slower: 3,
+};
+
 /**
  * animate.css
  */
@@ -21,7 +28,8 @@ export const animatedRules: Rule<Theme>[] = [
     /^animated$/,
     () => {
       return {
-        'animation-duration': '1s',
+        '--une-animated-duration': '1s',
+        'animation-duration': 'var(--une-animated-duration)',
         'animation-fill-mode': 'both',
       };
     },
@@ -64,6 +72,20 @@ export const animatedRules: Rule<Theme>[] = [
         'animated-delay-none',
         'animated-delay-$duration',
       ],
+    },
+  ],
+  [
+    /^animated-(((fast|slow)(?:er)?)|duration-(none|(\d+(\.\d+)?(m?s)?)))/,
+    ([_,, shortcut,, v]) => {
+      if (shortcut) {
+        return {
+          'animation-duration': `calc(var(--une-animated-duration) * ${durationShortcuts[shortcut as keyof typeof durationShortcuts]});`,
+        };
+      }
+
+      return {
+        'animation-duration': v === 'none' ? '0ms' : handler.bracket.cssvar.time(v),
+      };
     },
   ],
 ];

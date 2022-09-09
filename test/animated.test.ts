@@ -5,6 +5,7 @@ import { omit } from 'lodash-es';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { presetExtra } from '@/index';
+import { durationShortcuts } from '@/rules/animated';
 import animated from '@/rules/animated.json';
 
 function removeUnusedItems(cssJson: object) {
@@ -58,8 +59,9 @@ describe('animated', () => {
       }),
     ).toEqual({
       '.animated': {
-        animationDuration: '1s',
-        animationFillMode: 'both',
+        '--une-animated-duration': '1s',
+        'animationDuration': 'var(--une-animated-duration)',
+        'animationFillMode': 'both',
       },
     });
   });
@@ -150,6 +152,54 @@ describe('animated', () => {
         // 0s ~ 66s
         ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-delay-${i}\\.${removeLastZero(i + 1)}s`]: { animationDelay: `${i}.${removeLastZero(i + 1)}s` },
+        })),
+      ),
+    );
+  });
+
+  test('animated-duration', async () => {
+    const { css } = await generator.generate(`
+      animated-duration-none
+      ${/* shortcuts */ Object.keys(durationShortcuts).map(k => `animated-${k}`).join(' ')}
+      ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}`).join(' ')}
+      ${/* 0ms ~ 66ms */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}ms`).join(' ')}
+      ${/* 0s ~ 66s */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}s`).join(' ')}
+      ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}`).join(' ')}
+      ${/* 0.1ms, 1.2ms, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
+      ${/* 0.1s, 1.2s, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}s`).join(' ')}
+    `);
+
+    expect(
+      removeUnusedItems({
+        ...postcssJs.objectify(postcss.parse(css)),
+      }),
+    ).toEqual(
+      Object.assign(
+        // 0, 0ms, none
+        {
+          '.animated-duration-0,\n.animated-duration-0ms,\n.animated-duration-none': { animationDuration: '0ms' },
+        },
+        // shortcuts
+        ...Object.entries(durationShortcuts).map(([shortcut, v]) => ({
+          [`.animated-${shortcut}`]: { animationDuration: `calc(var(--une-animated-duration) * ${v})` },
+        })),
+        // 1 ~ 66
+        // 1ms ~ 66ms
+        ...Array.from({ length: 66 }, (_, i) => ({
+          [`.animated-duration-${i + 1},\n.animated-duration-${i + 1}ms`]: { animationDuration: `${i + 1}ms` },
+        })),
+        // 0s ~ 66s
+        ...Array.from({ length: 67 }, (_, i) => ({
+          [`.animated-duration-${i}s`]: { animationDuration: `${i}s` },
+        })),
+        // 0.1, 1.2, ... ( 小数 )
+        // 0.1ms, 1.2ms, ... ( 小数 )
+        ...Array.from({ length: 67 }, (_, i) => ({
+          [`.animated-duration-${i}\\.${removeLastZero(i + 1)},\n.animated-duration-${i}\\.${removeLastZero(i + 1)}ms`]: { animationDuration: `${i}.${removeLastZero(i + 1)}ms` },
+        })),
+        // 0s ~ 66s
+        ...Array.from({ length: 67 }, (_, i) => ({
+          [`.animated-duration-${i}\\.${removeLastZero(i + 1)}s`]: { animationDuration: `${i}.${removeLastZero(i + 1)}s` },
         })),
       ),
     );
