@@ -99,6 +99,47 @@ export default defineConfig({
   <br>
 </details>
 
+<details>
+  <summary>animated - <a href="https://animate.style/" target="_blank">animate.css</a> 的 Unocss 版本</summary>
+  <br>
+
+  样式名称
+
+  ```html
+  <!-- 动画名称 -->
+  <div class="animated animated-bounce" />
+  <div class="animated animated-fade-in" />
+  <div class="animated animated-fade-out" />
+
+  <!-- 动画运行次数 -->
+  <div class="animated animated-bounce animated-infinite" />
+  <div class="animated animated-bounce animated-repeat-2" />
+  <div class="animated animated-bounce animated-repeat-666" />
+
+  <!-- 动画延迟 -->
+  <div class="animated animated-bounce animated-delay-1" />
+  <div class="animated animated-bounce animated-delay-1s" />
+  <div class="animated animated-bounce animated-delay-1ms" />
+
+  <!-- 动画周期 -->
+  <div class="animated animated-bounce animated-fast" />
+  <div class="animated animated-bounce animated-faster" />
+  <div class="animated animated-bounce animated-slow" />
+  <div class="animated animated-bounce animated-slower" />
+  <div class="animated animated-bounce animated-duration-1" />
+  <div class="animated animated-bounce animated-duration-1s" />
+  <div class="animated animated-bounce animated-duration-1ms" />
+  ```
+
+  在 Vue 3 中使用
+
+  ```html
+  <Transition class="animated animated-faster" enter-active-class="animated-rotateIn" leave-active-class="animated-rotateOut" mode="out-in">
+    ...
+  </Transition>
+  ```
+</details>
+
 <br>
 
 ## License
