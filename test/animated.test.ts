@@ -22,11 +22,18 @@ describe('animated.json', () => {
     });
   });
 
-  test('css: 动画名称为 une 开头的 camelCase 格式', () => {
+  test('动画名称为 une 开头的 camelCase 格式', () => {
+    Object.values(animated).forEach(({ animationName, css }) => {
+      expect(/^une[A-Z]/.test(animationName)).is.true;
+      expect(/^une[A-Z]/.test(css['animation-name'])).is.true;
+    });
+  });
+
+  test('css 样式名为 kebabCase 格式', () => {
     Object.values(animated).forEach(({ css }) => {
-      expect(
-        /^une[A-Z]/.test(css.animationName),
-      ).is.true;
+      Object.keys(css).forEach((key) => {
+        expect(/^[a-z-]+$/.test(key)).is.true;
+      });
     });
   });
 });
@@ -135,14 +142,6 @@ describe('animated', () => {
   test('autocomplete', async () => {
     expect(
       await autocomplete.suggest('animated'),
-    ).toMatchSnapshot();
-
-    expect(
-      await autocomplete.suggest('animated-repeat-'),
-    ).toMatchSnapshot();
-
-    expect(
-      await autocomplete.suggest('animated-delay-'),
     ).toMatchSnapshot();
   });
 });

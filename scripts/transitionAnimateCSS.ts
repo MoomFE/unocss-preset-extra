@@ -33,11 +33,18 @@ const styles = {};
 
     const name = rule[0].replace(/^(\.animated)?\./, '');
     const css = rule[1] as HTMLElement['style'];
+    const animationName = camelCase(`une-${css.animationName}`);
 
     // 动画名称为 une 开头且为 camelCase 格式
-    css.animationName = camelCase(`une-${css.animationName}`);
+    css.animationName = animationName;
+    // css 样式名转为 kebabCase 格式
+    Object.entries(css).forEach(([key, value]) => {
+      delete css[key];
+      css[kebabCase(key)] = value;
+    });
 
     styles[kebabCase(name)] = {
+      animationName,
       css,
       keyframes: keyframes.css.replace(/\n(\s+)?/g, ' '),
     };
