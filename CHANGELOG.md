@@ -1,32 +1,36 @@
 ## [Unreleased]
 
+## [v0.4.0]
+  - 📅 2022-09-09
+  - 🌟 新增 [animate.css](https://animate.style) 的预设规则
+
 ## [v0.3.1]
   - 📅 2022-08-19
   - 💄 Update README.md
 
 ## [v0.3.0]
   - 📅 2022-08-19
- - 🌟 更新海拔样式的规则, `elevation` 支持使用 `el` 进行简写
- - 🌟 新增使用 `(shadow-)?(el|elevation)-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度, 减淡阴影效果
- - 🌟 兼容使用 `shadow-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度, 减淡阴影效果
- - ⚠️ 移除使用 `-fade` 的方式减淡阴影效果, 使用 `(shadow-)?(el|elevation)-(op|opacity)-50` 或 `shadow-(op|opacity)-50` 写法获得同等效果
- - 🐞 修复使用海拔样式时, 使用非 `0~24` 海拔时, 会返回错误样式的问题
+  - 🌟 更新海拔样式的规则, `elevation` 支持使用 `el` 进行简写
+  - 🌟 新增使用 `(shadow-)?(el|elevation)-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度, 减淡阴影效果
+  - 🌟 兼容使用 `shadow-(op|opacity)-(0~100)` 的方式为海拔样式设置透明度, 减淡阴影效果
+  - ⚠️ 移除使用 `-fade` 的方式减淡阴影效果, 使用 `(shadow-)?(el|elevation)-(op|opacity)-50` 或 `shadow-(op|opacity)-50` 写法获得同等效果
+  - 🐞 修复使用海拔样式时, 使用非 `0~24` 海拔时, 会返回错误样式的问题
 
 ## [v0.2.1]
-  - 📅 2022-08-15
-  - 🐞 修复海拔样式的 autocomplete 错误
+   - 📅 2022-08-15
+   - 🐞 修复海拔样式的 autocomplete 错误
 
 ## [v0.2.0]
- - 📅 2022-08-15
- - 🌟 新增使用 `(shadow-)?elevation-(0~24)(-fade)?` 的方式生成 Vuetify 海拔样式
+  - 📅 2022-08-15
+  - 🌟 新增使用 `(shadow-)?elevation-(0~24)(-fade)?` 的方式生成 Vuetify 海拔样式
 
 ## [v0.1.1]
- - 📅 2022-05-24
- - 💄 更新 `package.json` 的 `peerDependencies` 字段中要求的 `unocss` 版本
+  - 📅 2022-05-24
+  - 💄 更新 `package.json` 的 `peerDependencies` 字段中要求的 `unocss` 版本
 
 ## [v0.1.0]
- - 📅 2022-05-04
- - 🌟 新增使用 `(min-|max-)?size-*` 的方式同时定义宽高
+  - 📅 2022-05-04
+  - 🌟 新增使用 `(min-|max-)?size-*` 的方式同时定义宽高
 
 <br>
 <hr>
