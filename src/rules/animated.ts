@@ -1,6 +1,17 @@
-import { type Rule } from 'unocss';
+import { type CSSObject, type Rule } from 'unocss';
 import { type Theme } from '@unocss/preset-mini';
 import { handler } from '@unocss/preset-mini/utils';
+import animatedJSON from './animated.json';
+
+function getAnimated() {
+  return animatedJSON as unknown as {
+    [key: string]: {
+      animationName: string
+      css: CSSObject
+      keyframes: string
+    }
+  };
+}
 
 /**
  * animate.css
@@ -13,6 +24,17 @@ export const animatedRules: Rule<Theme>[] = [
         'animation-duration': '1s',
         'animation-fill-mode': 'both',
       };
+    },
+  ],
+  [
+    new RegExp(`^animated-(${Object.keys(animatedJSON).join('|')})$`),
+    ([, name]) => {
+      const { animationName, css, keyframes } = getAnimated()[name];
+
+      return [
+        `@keyframes ${animationName} { ${keyframes} }`,
+        css,
+      ];
     },
   ],
   [

@@ -1,4 +1,4 @@
-import { createGenerator, presetAttributify, presetUno } from 'unocss';
+import { type CSSObject, createGenerator, presetAttributify, presetUno } from 'unocss';
 import { describe, expect, test } from 'vitest';
 import { createAutocomplete } from '@unocss/autocomplete';
 import { omit } from 'lodash-es';
@@ -29,7 +29,7 @@ describe('animated.json', () => {
     });
   });
 
-  test('css 样式名为 kebabCase 格式', () => {
+  test('样式名为 kebabCase 格式', () => {
     Object.values(animated).forEach(({ css }) => {
       Object.keys(css).forEach((key) => {
         expect(/^[a-z-]+$/.test(key)).is.true;
@@ -61,6 +61,22 @@ describe('animated', () => {
         animationDuration: '1s',
         animationFillMode: 'both',
       },
+    });
+  });
+
+  test('animated-name', async () => {
+    const { css } = await generator.generate(
+      Object.keys(animated).map(k => `animated-${k}`).join(' '),
+    );
+
+    const styles = removeUnusedItems({
+      ...postcssJs.objectify(postcss.parse(css)),
+    }) as CSSObject;
+
+    // 均生成了 css 样式及 @keyframes
+    Object.entries(animated).forEach(([key, { animationName }]) => {
+      expect(styles[`.animated-${key}`]).toBeDefined();
+      expect(styles[`@keyframes ${animationName}`]).toBeDefined();
     });
   });
 
