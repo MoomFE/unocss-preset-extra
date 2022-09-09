@@ -4,66 +4,20 @@
       "animationName": "uneBounce",
       "transformOrigin": "center bottom"
     },
-    "keyframes": {
-      "from,\n  20%,\n  53%,\n  to": {
-        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "40%,\n  43%": {
-        "animationTimingFunction": "cubic-bezier(0.755, 0.05, 0.855, 0.06)",
-        "transform": "translate3d(0, -30px, 0) scaleY(1.1)"
-      },
-      "70%": {
-        "animationTimingFunction": "cubic-bezier(0.755, 0.05, 0.855, 0.06)",
-        "transform": "translate3d(0, -15px, 0) scaleY(1.05)"
-      },
-      "80%": {
-        "transitionTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
-        "transform": "translate3d(0, 0, 0) scaleY(0.95)"
-      },
-      "90%": {
-        "transform": "translate3d(0, -4px, 0) scaleY(1.02)"
-      }
-    }
+    "keyframes": "0%,20%,53%,to { animation-timing-function: cubic-bezier(.215,.61,.355,1); transform: translateZ(0) } 40%,43% { transform: translate3d(0,-30px,0) scaleY(1.1) } 40%,43%,70% { animation-timing-function: cubic-bezier(.755,.05,.855,.06) } 70% { transform: translate3d(0,-15px,0) scaleY(1.05) } 80% { transform: translateZ(0) scaleY(.95); transition-timing-function: cubic-bezier(.215,.61,.355,1) } 90% { transform: translate3d(0,-4px,0) scaleY(1.02) }"
   },
   "flash": {
     "css": {
       "animationName": "uneFlash"
     },
-    "keyframes": {
-      "from,\n  50%,\n  to": {
-        "opacity": 1
-      },
-      "25%,\n  75%": {
-        "opacity": 0
-      }
-    }
+    "keyframes": "0%,50%,to { opacity: 1 } 25%,75% { opacity: 0 }"
   },
   "head-shake": {
     "css": {
       "animationTimingFunction": "ease-in-out",
       "animationName": "uneHeadShake"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "translateX(0)"
-      },
-      "6.5%": {
-        "transform": "translateX(-6px) rotateY(-9deg)"
-      },
-      "18.5%": {
-        "transform": "translateX(5px) rotateY(7deg)"
-      },
-      "31.5%": {
-        "transform": "translateX(-3px) rotateY(-5deg)"
-      },
-      "43.5%": {
-        "transform": "translateX(2px) rotateY(3deg)"
-      },
-      "50%": {
-        "transform": "translateX(0)"
-      }
-    }
+    "keyframes": "0% { transform: translateX(0) } 6.5% { transform: translateX(-6px) rotateY(-9deg) } 18.5% { transform: translateX(5px) rotateY(7deg) } 31.5% { transform: translateX(-3px) rotateY(-5deg) } 43.5% { transform: translateX(2px) rotateY(3deg) } 50% { transform: translateX(0) }"
   },
   "heart-beat": {
     "css": {
@@ -71,1058 +25,351 @@
       "animationDuration": "calc(var(--animate-duration) * 1.3)",
       "animationTimingFunction": "ease-in-out"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "scale(1)"
-      },
-      "14%": {
-        "transform": "scale(1.3)"
-      },
-      "28%": {
-        "transform": "scale(1)"
-      },
-      "42%": {
-        "transform": "scale(1.3)"
-      },
-      "70%": {
-        "transform": "scale(1)"
-      }
-    }
+    "keyframes": "0% { transform: scale(1) } 14% { transform: scale(1.3) } 28% { transform: scale(1) } 42% { transform: scale(1.3) } 70% { transform: scale(1) }"
   },
   "jello": {
     "css": {
       "animationName": "uneJello",
       "transformOrigin": "center"
     },
-    "keyframes": {
-      "from,\n  11.1%,\n  to": {
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "22.2%": {
-        "transform": "skewX(-12.5deg) skewY(-12.5deg)"
-      },
-      "33.3%": {
-        "transform": "skewX(6.25deg) skewY(6.25deg)"
-      },
-      "44.4%": {
-        "transform": "skewX(-3.125deg) skewY(-3.125deg)"
-      },
-      "55.5%": {
-        "transform": "skewX(1.5625deg) skewY(1.5625deg)"
-      },
-      "66.6%": {
-        "transform": "skewX(-0.78125deg) skewY(-0.78125deg)"
-      },
-      "77.7%": {
-        "transform": "skewX(0.390625deg) skewY(0.390625deg)"
-      },
-      "88.8%": {
-        "transform": "skewX(-0.1953125deg) skewY(-0.1953125deg)"
-      }
-    }
+    "keyframes": "0%,11.1%,to { transform: translateZ(0) } 22.2% { transform: skewX(-12.5deg) skewY(-12.5deg) } 33.3% { transform: skewX(6.25deg) skewY(6.25deg) } 44.4% { transform: skewX(-3.125deg) skewY(-3.125deg) } 55.5% { transform: skewX(1.5625deg) skewY(1.5625deg) } 66.6% { transform: skewX(-.78125deg) skewY(-.78125deg) } 77.7% { transform: skewX(.390625deg) skewY(.390625deg) } 88.8% { transform: skewX(-.1953125deg) skewY(-.1953125deg) }"
   },
   "pulse": {
     "css": {
       "animationName": "unePulse",
       "animationTimingFunction": "ease-in-out"
     },
-    "keyframes": {
-      "from": {
-        "transform": "scale3d(1, 1, 1)"
-      },
-      "50%": {
-        "transform": "scale3d(1.05, 1.05, 1.05)"
-      },
-      "to": {
-        "transform": "scale3d(1, 1, 1)"
-      }
-    }
+    "keyframes": "0% { transform: scaleX(1) } 50% { transform: scale3d(1.05,1.05,1.05) } to { transform: scaleX(1) }"
   },
   "rubber-band": {
     "css": {
       "animationName": "uneRubberBand"
     },
-    "keyframes": {
-      "from": {
-        "transform": "scale3d(1, 1, 1)"
-      },
-      "30%": {
-        "transform": "scale3d(1.25, 0.75, 1)"
-      },
-      "40%": {
-        "transform": "scale3d(0.75, 1.25, 1)"
-      },
-      "50%": {
-        "transform": "scale3d(1.15, 0.85, 1)"
-      },
-      "65%": {
-        "transform": "scale3d(0.95, 1.05, 1)"
-      },
-      "75%": {
-        "transform": "scale3d(1.05, 0.95, 1)"
-      },
-      "to": {
-        "transform": "scale3d(1, 1, 1)"
-      }
-    }
+    "keyframes": "0% { transform: scaleX(1) } 30% { transform: scale3d(1.25,.75,1) } 40% { transform: scale3d(.75,1.25,1) } 50% { transform: scale3d(1.15,.85,1) } 65% { transform: scale3d(.95,1.05,1) } 75% { transform: scale3d(1.05,.95,1) } to { transform: scaleX(1) }"
   },
   "shake": {
     "css": {
       "animationName": "uneShake"
     },
-    "keyframes": {
-      "from,\n  to": {
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "10%,\n  30%,\n  50%,\n  70%,\n  90%": {
-        "transform": "translate3d(-10px, 0, 0)"
-      },
-      "20%,\n  40%,\n  60%,\n  80%": {
-        "transform": "translate3d(10px, 0, 0)"
-      }
-    }
+    "keyframes": "0%,to { transform: translateZ(0) } 10%,30%,50%,70%,90% { transform: translate3d(-10px,0,0) } 20%,40%,60%,80% { transform: translate3d(10px,0,0) }"
   },
   "shake-x": {
     "css": {
       "animationName": "uneShakeX"
     },
-    "keyframes": {
-      "from,\n  to": {
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "10%,\n  30%,\n  50%,\n  70%,\n  90%": {
-        "transform": "translate3d(-10px, 0, 0)"
-      },
-      "20%,\n  40%,\n  60%,\n  80%": {
-        "transform": "translate3d(10px, 0, 0)"
-      }
-    }
+    "keyframes": "0%,to { transform: translateZ(0) } 10%,30%,50%,70%,90% { transform: translate3d(-10px,0,0) } 20%,40%,60%,80% { transform: translate3d(10px,0,0) }"
   },
   "shake-y": {
     "css": {
       "animationName": "uneShakeY"
     },
-    "keyframes": {
-      "from,\n  to": {
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "10%,\n  30%,\n  50%,\n  70%,\n  90%": {
-        "transform": "translate3d(0, -10px, 0)"
-      },
-      "20%,\n  40%,\n  60%,\n  80%": {
-        "transform": "translate3d(0, 10px, 0)"
-      }
-    }
+    "keyframes": "0%,to { transform: translateZ(0) } 10%,30%,50%,70%,90% { transform: translate3d(0,-10px,0) } 20%,40%,60%,80% { transform: translate3d(0,10px,0) }"
   },
   "swing": {
     "css": {
       "transformOrigin": "top center",
       "animationName": "uneSwing"
     },
-    "keyframes": {
-      "20%": {
-        "transform": "rotate3d(0, 0, 1, 15deg)"
-      },
-      "40%": {
-        "transform": "rotate3d(0, 0, 1, -10deg)"
-      },
-      "60%": {
-        "transform": "rotate3d(0, 0, 1, 5deg)"
-      },
-      "80%": {
-        "transform": "rotate3d(0, 0, 1, -5deg)"
-      },
-      "to": {
-        "transform": "rotate3d(0, 0, 1, 0deg)"
-      }
-    }
+    "keyframes": "20% { transform: rotate(15deg) } 40% { transform: rotate(-10deg) } 60% { transform: rotate(5deg) } 80% { transform: rotate(-5deg) } to { transform: rotate(0deg) }"
   },
   "tada": {
     "css": {
       "animationName": "uneTada"
     },
-    "keyframes": {
-      "from": {
-        "transform": "scale3d(1, 1, 1)"
-      },
-      "10%,\n  20%": {
-        "transform": "scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)"
-      },
-      "30%,\n  50%,\n  70%,\n  90%": {
-        "transform": "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)"
-      },
-      "40%,\n  60%,\n  80%": {
-        "transform": "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)"
-      },
-      "to": {
-        "transform": "scale3d(1, 1, 1)"
-      }
-    }
+    "keyframes": "0% { transform: scaleX(1) } 10%,20% { transform: scale3d(.9,.9,.9) rotate(-3deg) } 30%,50%,70%,90% { transform: scale3d(1.1,1.1,1.1) rotate(3deg) } 40%,60%,80% { transform: scale3d(1.1,1.1,1.1) rotate(-3deg) } to { transform: scaleX(1) }"
   },
   "wobble": {
     "css": {
       "animationName": "uneWobble"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "15%": {
-        "transform": "translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)"
-      },
-      "30%": {
-        "transform": "translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)"
-      },
-      "45%": {
-        "transform": "translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)"
-      },
-      "60%": {
-        "transform": "translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)"
-      },
-      "75%": {
-        "transform": "translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { transform: translateZ(0) } 15% { transform: translate3d(-25%,0,0) rotate(-5deg) } 30% { transform: translate3d(20%,0,0) rotate(3deg) } 45% { transform: translate3d(-15%,0,0) rotate(-3deg) } 60% { transform: translate3d(10%,0,0) rotate(2deg) } 75% { transform: translate3d(-5%,0,0) rotate(-1deg) } to { transform: translateZ(0) }"
   },
   "back-in-down": {
     "css": {
       "animationName": "uneBackInDown"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "translateY(-1200px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "80%": {
-        "transform": "translateY(0px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "100%": {
-        "transform": "scale(1)",
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { transform: translateY(-1200px) scale(.7) } 0%,80% { opacity: 0.7 } 80% { transform: translateY(0) scale(.7) } to { opacity: 1; transform: scale(1) }"
   },
   "back-in-left": {
     "css": {
       "animationName": "uneBackInLeft"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "translateX(-2000px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "80%": {
-        "transform": "translateX(0px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "100%": {
-        "transform": "scale(1)",
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { transform: translateX(-2000px) scale(.7) } 0%,80% { opacity: 0.7 } 80% { transform: translateX(0) scale(.7) } to { opacity: 1; transform: scale(1) }"
   },
   "back-in-right": {
     "css": {
       "animationName": "uneBackInRight"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "translateX(2000px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "80%": {
-        "transform": "translateX(0px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "100%": {
-        "transform": "scale(1)",
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { transform: translateX(2000px) scale(.7) } 0%,80% { opacity: 0.7 } 80% { transform: translateX(0) scale(.7) } to { opacity: 1; transform: scale(1) }"
   },
   "back-in-up": {
     "css": {
       "animationName": "uneBackInUp"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "translateY(1200px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "80%": {
-        "transform": "translateY(0px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "100%": {
-        "transform": "scale(1)",
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { transform: translateY(1200px) scale(.7) } 0%,80% { opacity: 0.7 } 80% { transform: translateY(0) scale(.7) } to { opacity: 1; transform: scale(1) }"
   },
   "back-out-down": {
     "css": {
       "animationName": "uneBackOutDown"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "scale(1)",
-        "opacity": 1
-      },
-      "20%": {
-        "transform": "translateY(0px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "100%": {
-        "transform": "translateY(700px) scale(0.7)",
-        "opacity": 0.7
-      }
-    }
+    "keyframes": "0% { opacity: 1; transform: scale(1) } 20% { transform: translateY(0) scale(.7) } 20%,to { opacity: 0.7 } to { transform: translateY(700px) scale(.7) }"
   },
   "back-out-left": {
     "css": {
       "animationName": "uneBackOutLeft"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "scale(1)",
-        "opacity": 1
-      },
-      "20%": {
-        "transform": "translateX(0px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "100%": {
-        "transform": "translateX(-2000px) scale(0.7)",
-        "opacity": 0.7
-      }
-    }
+    "keyframes": "0% { opacity: 1; transform: scale(1) } 20% { transform: translateX(0) scale(.7) } 20%,to { opacity: 0.7 } to { transform: translateX(-2000px) scale(.7) }"
   },
   "back-out-right": {
     "css": {
       "animationName": "uneBackOutRight"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "scale(1)",
-        "opacity": 1
-      },
-      "20%": {
-        "transform": "translateX(0px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "100%": {
-        "transform": "translateX(2000px) scale(0.7)",
-        "opacity": 0.7
-      }
-    }
+    "keyframes": "0% { opacity: 1; transform: scale(1) } 20% { transform: translateX(0) scale(.7) } 20%,to { opacity: 0.7 } to { transform: translateX(2000px) scale(.7) }"
   },
   "back-out-up": {
     "css": {
       "animationName": "uneBackOutUp"
     },
-    "keyframes": {
-      "0%": {
-        "transform": "scale(1)",
-        "opacity": 1
-      },
-      "20%": {
-        "transform": "translateY(0px) scale(0.7)",
-        "opacity": 0.7
-      },
-      "100%": {
-        "transform": "translateY(-700px) scale(0.7)",
-        "opacity": 0.7
-      }
-    }
+    "keyframes": "0% { opacity: 1; transform: scale(1) } 20% { transform: translateY(0) scale(.7) } 20%,to { opacity: 0.7 } to { transform: translateY(-700px) scale(.7) }"
   },
   "bounce-in": {
     "css": {
       "animationDuration": "calc(var(--animate-duration) * 0.75)",
       "animationName": "uneBounceIn"
     },
-    "keyframes": {
-      "from,\n  20%,\n  40%,\n  60%,\n  80%,\n  to": {
-        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
-      },
-      "0%": {
-        "opacity": 0,
-        "transform": "scale3d(0.3, 0.3, 0.3)"
-      },
-      "20%": {
-        "transform": "scale3d(1.1, 1.1, 1.1)"
-      },
-      "40%": {
-        "transform": "scale3d(0.9, 0.9, 0.9)"
-      },
-      "60%": {
-        "opacity": 1,
-        "transform": "scale3d(1.03, 1.03, 1.03)"
-      },
-      "80%": {
-        "transform": "scale3d(0.97, 0.97, 0.97)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "scale3d(1, 1, 1)"
-      }
-    }
+    "keyframes": "0%,20%,40%,60%,80%,to { animation-timing-function: cubic-bezier(.215,.61,.355,1) } 0% { opacity: 0; transform: scale3d(.3,.3,.3) } 20% { transform: scale3d(1.1,1.1,1.1) } 40% { transform: scale3d(.9,.9,.9) } 60% { opacity: 1; transform: scale3d(1.03,1.03,1.03) } 80% { transform: scale3d(.97,.97,.97) } to { opacity: 1; transform: scaleX(1) }"
   },
   "bounce-in-down": {
     "css": {
       "animationName": "uneBounceInDown"
     },
-    "keyframes": {
-      "from,\n  60%,\n  75%,\n  90%,\n  to": {
-        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
-      },
-      "0%": {
-        "opacity": 0,
-        "transform": "translate3d(0, -3000px, 0) scaleY(3)"
-      },
-      "60%": {
-        "opacity": 1,
-        "transform": "translate3d(0, 25px, 0) scaleY(0.9)"
-      },
-      "75%": {
-        "transform": "translate3d(0, -10px, 0) scaleY(0.95)"
-      },
-      "90%": {
-        "transform": "translate3d(0, 5px, 0) scaleY(0.985)"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0%,60%,75%,90%,to { animation-timing-function: cubic-bezier(.215,.61,.355,1) } 0% { opacity: 0; transform: translate3d(0,-3000px,0) scaleY(3) } 60% { opacity: 1; transform: translate3d(0,25px,0) scaleY(.9) } 75% { transform: translate3d(0,-10px,0) scaleY(.95) } 90% { transform: translate3d(0,5px,0) scaleY(.985) } to { transform: translateZ(0) }"
   },
   "bounce-in-left": {
     "css": {
       "animationName": "uneBounceInLeft"
     },
-    "keyframes": {
-      "from,\n  60%,\n  75%,\n  90%,\n  to": {
-        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
-      },
-      "0%": {
-        "opacity": 0,
-        "transform": "translate3d(-3000px, 0, 0) scaleX(3)"
-      },
-      "60%": {
-        "opacity": 1,
-        "transform": "translate3d(25px, 0, 0) scaleX(1)"
-      },
-      "75%": {
-        "transform": "translate3d(-10px, 0, 0) scaleX(0.98)"
-      },
-      "90%": {
-        "transform": "translate3d(5px, 0, 0) scaleX(0.995)"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0%,60%,75%,90%,to { animation-timing-function: cubic-bezier(.215,.61,.355,1) } 0% { opacity: 0; transform: translate3d(-3000px,0,0) scaleX(3) } 60% { opacity: 1; transform: translate3d(25px,0,0) scaleX(1) } 75% { transform: translate3d(-10px,0,0) scaleX(.98) } 90% { transform: translate3d(5px,0,0) scaleX(.995) } to { transform: translateZ(0) }"
   },
   "bounce-in-right": {
     "css": {
       "animationName": "uneBounceInRight"
     },
-    "keyframes": {
-      "from,\n  60%,\n  75%,\n  90%,\n  to": {
-        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
-      },
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(3000px, 0, 0) scaleX(3)"
-      },
-      "60%": {
-        "opacity": 1,
-        "transform": "translate3d(-25px, 0, 0) scaleX(1)"
-      },
-      "75%": {
-        "transform": "translate3d(10px, 0, 0) scaleX(0.98)"
-      },
-      "90%": {
-        "transform": "translate3d(-5px, 0, 0) scaleX(0.995)"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0%,60%,75%,90%,to { animation-timing-function: cubic-bezier(.215,.61,.355,1) } 0% { opacity: 0; transform: translate3d(3000px,0,0) scaleX(3) } 60% { opacity: 1; transform: translate3d(-25px,0,0) scaleX(1) } 75% { transform: translate3d(10px,0,0) scaleX(.98) } 90% { transform: translate3d(-5px,0,0) scaleX(.995) } to { transform: translateZ(0) }"
   },
   "bounce-in-up": {
     "css": {
       "animationName": "uneBounceInUp"
     },
-    "keyframes": {
-      "from,\n  60%,\n  75%,\n  90%,\n  to": {
-        "animationTimingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)"
-      },
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(0, 3000px, 0) scaleY(5)"
-      },
-      "60%": {
-        "opacity": 1,
-        "transform": "translate3d(0, -20px, 0) scaleY(0.9)"
-      },
-      "75%": {
-        "transform": "translate3d(0, 10px, 0) scaleY(0.95)"
-      },
-      "90%": {
-        "transform": "translate3d(0, -5px, 0) scaleY(0.985)"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0%,60%,75%,90%,to { animation-timing-function: cubic-bezier(.215,.61,.355,1) } 0% { opacity: 0; transform: translate3d(0,3000px,0) scaleY(5) } 60% { opacity: 1; transform: translate3d(0,-20px,0) scaleY(.9) } 75% { transform: translate3d(0,10px,0) scaleY(.95) } 90% { transform: translate3d(0,-5px,0) scaleY(.985) } to { transform: translateZ(0) }"
   },
   "bounce-out": {
     "css": {
       "animationDuration": "calc(var(--animate-duration) * 0.75)",
       "animationName": "uneBounceOut"
     },
-    "keyframes": {
-      "20%": {
-        "transform": "scale3d(0.9, 0.9, 0.9)"
-      },
-      "50%,\n  55%": {
-        "opacity": 1,
-        "transform": "scale3d(1.1, 1.1, 1.1)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "scale3d(0.3, 0.3, 0.3)"
-      }
-    }
+    "keyframes": "20% { transform: scale3d(.9,.9,.9) } 50%,55% { opacity: 1; transform: scale3d(1.1,1.1,1.1) } to { opacity: 0; transform: scale3d(.3,.3,.3) }"
   },
   "bounce-out-down": {
     "css": {
       "animationName": "uneBounceOutDown"
     },
-    "keyframes": {
-      "20%": {
-        "transform": "translate3d(0, 10px, 0) scaleY(0.985)"
-      },
-      "40%,\n  45%": {
-        "opacity": 1,
-        "transform": "translate3d(0, -20px, 0) scaleY(0.9)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(0, 2000px, 0) scaleY(3)"
-      }
-    }
+    "keyframes": "20% { transform: translate3d(0,10px,0) scaleY(.985) } 40%,45% { opacity: 1; transform: translate3d(0,-20px,0) scaleY(.9) } to { opacity: 0; transform: translate3d(0,2000px,0) scaleY(3) }"
   },
   "bounce-out-left": {
     "css": {
       "animationName": "uneBounceOutLeft"
     },
-    "keyframes": {
-      "20%": {
-        "opacity": 1,
-        "transform": "translate3d(20px, 0, 0) scaleX(0.9)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(-2000px, 0, 0) scaleX(2)"
-      }
-    }
+    "keyframes": "20% { opacity: 1; transform: translate3d(20px,0,0) scaleX(.9) } to { opacity: 0; transform: translate3d(-2000px,0,0) scaleX(2) }"
   },
   "bounce-out-right": {
     "css": {
       "animationName": "uneBounceOutRight"
     },
-    "keyframes": {
-      "20%": {
-        "opacity": 1,
-        "transform": "translate3d(-20px, 0, 0) scaleX(0.9)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(2000px, 0, 0) scaleX(2)"
-      }
-    }
+    "keyframes": "20% { opacity: 1; transform: translate3d(-20px,0,0) scaleX(.9) } to { opacity: 0; transform: translate3d(2000px,0,0) scaleX(2) }"
   },
   "bounce-out-up": {
     "css": {
       "animationName": "uneBounceOutUp"
     },
-    "keyframes": {
-      "20%": {
-        "transform": "translate3d(0, -10px, 0) scaleY(0.985)"
-      },
-      "40%,\n  45%": {
-        "opacity": 1,
-        "transform": "translate3d(0, 20px, 0) scaleY(0.9)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(0, -2000px, 0) scaleY(3)"
-      }
-    }
+    "keyframes": "20% { transform: translate3d(0,-10px,0) scaleY(.985) } 40%,45% { opacity: 1; transform: translate3d(0,20px,0) scaleY(.9) } to { opacity: 0; transform: translate3d(0,-2000px,0) scaleY(3) }"
   },
   "fade-in": {
     "css": {
       "animationName": "uneFadeIn"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0
-      },
-      "to": {
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { opacity: 0 } to { opacity: 1 }"
   },
   "fade-in-bottom-left": {
     "css": {
       "animationName": "uneFadeInBottomLeft"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(-100%, 100%, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(-100%,100%,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-bottom-right": {
     "css": {
       "animationName": "uneFadeInBottomRight"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(100%, 100%, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(100%,100%,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-down": {
     "css": {
       "animationName": "uneFadeInDown"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(0, -100%, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(0,-100%,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-down-big": {
     "css": {
       "animationName": "uneFadeInDownBig"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(0, -2000px, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(0,-2000px,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-left": {
     "css": {
       "animationName": "uneFadeInLeft"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(-100%, 0, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(-100%,0,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-left-big": {
     "css": {
       "animationName": "uneFadeInLeftBig"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(-2000px, 0, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(-2000px,0,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-right": {
     "css": {
       "animationName": "uneFadeInRight"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(100%, 0, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(100%,0,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-right-big": {
     "css": {
       "animationName": "uneFadeInRightBig"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(2000px, 0, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(2000px,0,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-top-left": {
     "css": {
       "animationName": "uneFadeInTopLeft"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(-100%, -100%, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(-100%,-100%,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-top-right": {
     "css": {
       "animationName": "uneFadeInTopRight"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(100%, -100%, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(100%,-100%,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-up": {
     "css": {
       "animationName": "uneFadeInUp"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(0, 100%, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(0,100%,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-in-up-big": {
     "css": {
       "animationName": "uneFadeInUpBig"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(0, 2000px, 0)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(0,2000px,0) } to { opacity: 1; transform: translateZ(0) }"
   },
   "fade-out": {
     "css": {
       "animationName": "uneFadeOut"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0 }"
   },
   "fade-out-bottom-left": {
     "css": {
       "animationName": "uneFadeOutBottomLeft"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(-100%, 100%, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1; transform: translateZ(0) } to { opacity: 0; transform: translate3d(-100%,100%,0) }"
   },
   "fade-out-bottom-right": {
     "css": {
       "animationName": "uneFadeOutBottomRight"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(100%, 100%, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1; transform: translateZ(0) } to { opacity: 0; transform: translate3d(100%,100%,0) }"
   },
   "fade-out-down": {
     "css": {
       "animationName": "uneFadeOutDown"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(0, 100%, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(0,100%,0) }"
   },
   "fade-out-down-big": {
     "css": {
       "animationName": "uneFadeOutDownBig"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(0, 2000px, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(0,2000px,0) }"
   },
   "fade-out-left": {
     "css": {
       "animationName": "uneFadeOutLeft"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(-100%, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(-100%,0,0) }"
   },
   "fade-out-left-big": {
     "css": {
       "animationName": "uneFadeOutLeftBig"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(-2000px, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(-2000px,0,0) }"
   },
   "fade-out-right": {
     "css": {
       "animationName": "uneFadeOutRight"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(100%, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(100%,0,0) }"
   },
   "fade-out-right-big": {
     "css": {
       "animationName": "uneFadeOutRightBig"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(2000px, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(2000px,0,0) }"
   },
   "fade-out-top-left": {
     "css": {
       "animationName": "uneFadeOutTopLeft"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(-100%, -100%, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1; transform: translateZ(0) } to { opacity: 0; transform: translate3d(-100%,-100%,0) }"
   },
   "fade-out-top-right": {
     "css": {
       "animationName": "uneFadeOutTopRight"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(100%, -100%, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1; transform: translateZ(0) } to { opacity: 0; transform: translate3d(100%,-100%,0) }"
   },
   "fade-out-up": {
     "css": {
       "animationName": "uneFadeOutUp"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(0, -100%, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(0,-100%,0) }"
   },
   "fade-out-up-big": {
     "css": {
       "animationName": "uneFadeOutUpBig"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(0, -2000px, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(0,-2000px,0) }"
   },
   "flip": {
     "css": {
       "backfaceVisibility": "visible",
       "animationName": "uneFlip"
     },
-    "keyframes": {
-      "from": {
-        "transform": "perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg)",
-        "animationTimingFunction": "ease-out"
-      },
-      "40%": {
-        "transform": "perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -190deg)",
-        "animationTimingFunction": "ease-out"
-      },
-      "50%": {
-        "transform": "perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)\n      rotate3d(0, 1, 0, -170deg)",
-        "animationTimingFunction": "ease-in"
-      },
-      "80%": {
-        "transform": "perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)\n      rotate3d(0, 1, 0, 0deg)",
-        "animationTimingFunction": "ease-in"
-      },
-      "to": {
-        "transform": "perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg)",
-        "animationTimingFunction": "ease-in"
-      }
-    }
+    "keyframes": "0% { transform: perspective(400px) scaleX(1) translateZ(0) rotateY(-1turn) } 0%,40% { animation-timing-function: ease-out } 40% { transform: perspective(400px) scaleX(1) translateZ(150px) rotateY(-190deg) } 50% { transform: perspective(400px) scaleX(1) translateZ(150px) rotateY(-170deg) } 50%,80% { animation-timing-function: ease-in } 80% { transform: perspective(400px) scale3d(.95,.95,.95) translateZ(0) rotateY(0deg) } to { animation-timing-function: ease-in; transform: perspective(400px) scaleX(1) translateZ(0) rotateY(0deg) }"
   },
   "flip-in-x": {
     "css": {
       "backfaceVisibility": "visible !important",
       "animationName": "uneFlipInX"
     },
-    "keyframes": {
-      "from": {
-        "transform": "perspective(400px) rotate3d(1, 0, 0, 90deg)",
-        "animationTimingFunction": "ease-in",
-        "opacity": 0
-      },
-      "40%": {
-        "transform": "perspective(400px) rotate3d(1, 0, 0, -20deg)",
-        "animationTimingFunction": "ease-in"
-      },
-      "60%": {
-        "transform": "perspective(400px) rotate3d(1, 0, 0, 10deg)",
-        "opacity": 1
-      },
-      "80%": {
-        "transform": "perspective(400px) rotate3d(1, 0, 0, -5deg)"
-      },
-      "to": {
-        "transform": "perspective(400px)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: perspective(400px) rotateX(90deg) } 0%,40% { animation-timing-function: ease-in } 40% { transform: perspective(400px) rotateX(-20deg) } 60% { opacity: 1; transform: perspective(400px) rotateX(10deg) } 80% { transform: perspective(400px) rotateX(-5deg) } to { transform: perspective(400px) }"
   },
   "flip-in-y": {
     "css": {
       "backfaceVisibility": "visible !important",
       "animationName": "uneFlipInY"
     },
-    "keyframes": {
-      "from": {
-        "transform": "perspective(400px) rotate3d(0, 1, 0, 90deg)",
-        "animationTimingFunction": "ease-in",
-        "opacity": 0
-      },
-      "40%": {
-        "transform": "perspective(400px) rotate3d(0, 1, 0, -20deg)",
-        "animationTimingFunction": "ease-in"
-      },
-      "60%": {
-        "transform": "perspective(400px) rotate3d(0, 1, 0, 10deg)",
-        "opacity": 1
-      },
-      "80%": {
-        "transform": "perspective(400px) rotate3d(0, 1, 0, -5deg)"
-      },
-      "to": {
-        "transform": "perspective(400px)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: perspective(400px) rotateY(90deg) } 0%,40% { animation-timing-function: ease-in } 40% { transform: perspective(400px) rotateY(-20deg) } 60% { opacity: 1; transform: perspective(400px) rotateY(10deg) } 80% { transform: perspective(400px) rotateY(-5deg) } to { transform: perspective(400px) }"
   },
   "flip-out-x": {
     "css": {
@@ -1130,19 +377,7 @@
       "animationName": "uneFlipOutX",
       "backfaceVisibility": "visible !important"
     },
-    "keyframes": {
-      "from": {
-        "transform": "perspective(400px)"
-      },
-      "30%": {
-        "transform": "perspective(400px) rotate3d(1, 0, 0, -20deg)",
-        "opacity": 1
-      },
-      "to": {
-        "transform": "perspective(400px) rotate3d(1, 0, 0, 90deg)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { transform: perspective(400px) } 30% { opacity: 1; transform: perspective(400px) rotateX(-20deg) } to { opacity: 0; transform: perspective(400px) rotateX(90deg) }"
   },
   "flip-out-y": {
     "css": {
@@ -1150,360 +385,153 @@
       "backfaceVisibility": "visible !important",
       "animationName": "uneFlipOutY"
     },
-    "keyframes": {
-      "from": {
-        "transform": "perspective(400px)"
-      },
-      "30%": {
-        "transform": "perspective(400px) rotate3d(0, 1, 0, -15deg)",
-        "opacity": 1
-      },
-      "to": {
-        "transform": "perspective(400px) rotate3d(0, 1, 0, 90deg)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { transform: perspective(400px) } 30% { opacity: 1; transform: perspective(400px) rotateY(-15deg) } to { opacity: 0; transform: perspective(400px) rotateY(90deg) }"
   },
   "light-speed-in-left": {
     "css": {
       "animationName": "uneLightSpeedInLeft",
       "animationTimingFunction": "ease-out"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(-100%, 0, 0) skewX(30deg)",
-        "opacity": 0
-      },
-      "60%": {
-        "transform": "skewX(-20deg)",
-        "opacity": 1
-      },
-      "80%": {
-        "transform": "skewX(5deg)"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(-100%,0,0) skewX(30deg) } 60% { opacity: 1; transform: skewX(-20deg) } 80% { transform: skewX(5deg) } to { transform: translateZ(0) }"
   },
   "light-speed-in-right": {
     "css": {
       "animationName": "uneLightSpeedInRight",
       "animationTimingFunction": "ease-out"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(100%, 0, 0) skewX(-30deg)",
-        "opacity": 0
-      },
-      "60%": {
-        "transform": "skewX(20deg)",
-        "opacity": 1
-      },
-      "80%": {
-        "transform": "skewX(-5deg)"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(100%,0,0) skewX(-30deg) } 60% { opacity: 1; transform: skewX(20deg) } 80% { transform: skewX(-5deg) } to { transform: translateZ(0) }"
   },
   "light-speed-out-left": {
     "css": {
       "animationName": "uneLightSpeedOutLeft",
       "animationTimingFunction": "ease-in"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "transform": "translate3d(-100%, 0, 0) skewX(-30deg)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(-100%,0,0) skewX(-30deg) }"
   },
   "light-speed-out-right": {
     "css": {
       "animationName": "uneLightSpeedOutRight",
       "animationTimingFunction": "ease-in"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "transform": "translate3d(100%, 0, 0) skewX(30deg)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(100%,0,0) skewX(30deg) }"
   },
   "rotate-in": {
     "css": {
       "animationName": "uneRotateIn",
       "transformOrigin": "center"
     },
-    "keyframes": {
-      "from": {
-        "transform": "rotate3d(0, 0, 1, -200deg)",
-        "opacity": 0
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)",
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: rotate(-200deg) } to { opacity: 1; transform: translateZ(0) }"
   },
   "rotate-in-down-left": {
     "css": {
       "animationName": "uneRotateInDownLeft",
       "transformOrigin": "left bottom"
     },
-    "keyframes": {
-      "from": {
-        "transform": "rotate3d(0, 0, 1, -45deg)",
-        "opacity": 0
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)",
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: rotate(-45deg) } to { opacity: 1; transform: translateZ(0) }"
   },
   "rotate-in-down-right": {
     "css": {
       "animationName": "uneRotateInDownRight",
       "transformOrigin": "right bottom"
     },
-    "keyframes": {
-      "from": {
-        "transform": "rotate3d(0, 0, 1, 45deg)",
-        "opacity": 0
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)",
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: rotate(45deg) } to { opacity: 1; transform: translateZ(0) }"
   },
   "rotate-in-up-left": {
     "css": {
       "animationName": "uneRotateInUpLeft",
       "transformOrigin": "left bottom"
     },
-    "keyframes": {
-      "from": {
-        "transform": "rotate3d(0, 0, 1, 45deg)",
-        "opacity": 0
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)",
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: rotate(45deg) } to { opacity: 1; transform: translateZ(0) }"
   },
   "rotate-in-up-right": {
     "css": {
       "animationName": "uneRotateInUpRight",
       "transformOrigin": "right bottom"
     },
-    "keyframes": {
-      "from": {
-        "transform": "rotate3d(0, 0, 1, -90deg)",
-        "opacity": 0
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)",
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: rotate(-90deg) } to { opacity: 1; transform: translateZ(0) }"
   },
   "rotate-out": {
     "css": {
       "animationName": "uneRotateOut",
       "transformOrigin": "center"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "transform": "rotate3d(0, 0, 1, 200deg)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: rotate(200deg) }"
   },
   "rotate-out-down-left": {
     "css": {
       "animationName": "uneRotateOutDownLeft",
       "transformOrigin": "left bottom"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "transform": "rotate3d(0, 0, 1, 45deg)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: rotate(45deg) }"
   },
   "rotate-out-down-right": {
     "css": {
       "animationName": "uneRotateOutDownRight",
       "transformOrigin": "right bottom"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "transform": "rotate3d(0, 0, 1, -45deg)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: rotate(-45deg) }"
   },
   "rotate-out-up-left": {
     "css": {
       "animationName": "uneRotateOutUpLeft",
       "transformOrigin": "left bottom"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "transform": "rotate3d(0, 0, 1, -45deg)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: rotate(-45deg) }"
   },
   "rotate-out-up-right": {
     "css": {
       "animationName": "uneRotateOutUpRight",
       "transformOrigin": "right bottom"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "transform": "rotate3d(0, 0, 1, 90deg)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: rotate(90deg) }"
   },
   "slide-in-down": {
     "css": {
       "animationName": "uneSlideInDown"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(0, -100%, 0)",
-        "visibility": "visible"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { transform: translate3d(0,-100%,0); visibility: visible } to { transform: translateZ(0) }"
   },
   "slide-in-left": {
     "css": {
       "animationName": "uneSlideInLeft"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(-100%, 0, 0)",
-        "visibility": "visible"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { transform: translate3d(-100%,0,0); visibility: visible } to { transform: translateZ(0) }"
   },
   "slide-in-right": {
     "css": {
       "animationName": "uneSlideInRight"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(100%, 0, 0)",
-        "visibility": "visible"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { transform: translate3d(100%,0,0); visibility: visible } to { transform: translateZ(0) }"
   },
   "slide-in-up": {
     "css": {
       "animationName": "uneSlideInUp"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(0, 100%, 0)",
-        "visibility": "visible"
-      },
-      "to": {
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { transform: translate3d(0,100%,0); visibility: visible } to { transform: translateZ(0) }"
   },
   "slide-out-down": {
     "css": {
       "animationName": "uneSlideOutDown"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "to": {
-        "visibility": "hidden",
-        "transform": "translate3d(0, 100%, 0)"
-      }
-    }
+    "keyframes": "0% { transform: translateZ(0) } to { transform: translate3d(0,100%,0); visibility: hidden }"
   },
   "slide-out-left": {
     "css": {
       "animationName": "uneSlideOutLeft"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "to": {
-        "visibility": "hidden",
-        "transform": "translate3d(-100%, 0, 0)"
-      }
-    }
+    "keyframes": "0% { transform: translateZ(0) } to { transform: translate3d(-100%,0,0); visibility: hidden }"
   },
   "slide-out-right": {
     "css": {
       "animationName": "uneSlideOutRight"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "to": {
-        "visibility": "hidden",
-        "transform": "translate3d(100%, 0, 0)"
-      }
-    }
+    "keyframes": "0% { transform: translateZ(0) } to { transform: translate3d(100%,0,0); visibility: hidden }"
   },
   "slide-out-up": {
     "css": {
       "animationName": "uneSlideOutUp"
     },
-    "keyframes": {
-      "from": {
-        "transform": "translate3d(0, 0, 0)"
-      },
-      "to": {
-        "visibility": "hidden",
-        "transform": "translate3d(0, -100%, 0)"
-      }
-    }
+    "keyframes": "0% { transform: translateZ(0) } to { transform: translate3d(0,-100%,0); visibility: hidden }"
   },
   "hinge": {
     "css": {
@@ -1511,241 +539,88 @@
       "animationName": "uneHinge",
       "transformOrigin": "top left"
     },
-    "keyframes": {
-      "0%": {
-        "animationTimingFunction": "ease-in-out"
-      },
-      "20%,\n  60%": {
-        "transform": "rotate3d(0, 0, 1, 80deg)",
-        "animationTimingFunction": "ease-in-out"
-      },
-      "40%,\n  80%": {
-        "transform": "rotate3d(0, 0, 1, 60deg)",
-        "animationTimingFunction": "ease-in-out",
-        "opacity": 1
-      },
-      "to": {
-        "transform": "translate3d(0, 700px, 0)",
-        "opacity": 0
-      }
-    }
+    "keyframes": "0%,20%,60% { animation-timing-function: ease-in-out } 20%,60% { transform: rotate(80deg) } 40%,80% { animation-timing-function: ease-in-out; opacity: 1; transform: rotate(60deg) } to { opacity: 0; transform: translate3d(0,700px,0) }"
   },
   "jack-in-the-box": {
     "css": {
       "animationName": "uneJackInTheBox"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "scale(0.1) rotate(30deg)",
-        "transformOrigin": "center bottom"
-      },
-      "50%": {
-        "transform": "rotate(-10deg)"
-      },
-      "70%": {
-        "transform": "rotate(3deg)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "scale(1)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: scale(.1) rotate(30deg); transform-origin: center bottom } 50% { transform: rotate(-10deg) } 70% { transform: rotate(3deg) } to { opacity: 1; transform: scale(1) }"
   },
   "roll-in": {
     "css": {
       "animationName": "uneRollIn"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)"
-      },
-      "to": {
-        "opacity": 1,
-        "transform": "translate3d(0, 0, 0)"
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: translate3d(-100%,0,0) rotate(-120deg) } to { opacity: 1; transform: translateZ(0) }"
   },
   "roll-out": {
     "css": {
       "animationName": "uneRollOut"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)"
-      }
-    }
+    "keyframes": "0% { opacity: 1 } to { opacity: 0; transform: translate3d(100%,0,0) rotate(120deg) }"
   },
   "zoom-in": {
     "css": {
       "animationName": "uneZoomIn"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "scale3d(0.3, 0.3, 0.3)"
-      },
-      "50%": {
-        "opacity": 1
-      }
-    }
+    "keyframes": "0% { opacity: 0; transform: scale3d(.3,.3,.3) } 50% { opacity: 1 }"
   },
   "zoom-in-down": {
     "css": {
       "animationName": "uneZoomInDown"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0)",
-        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
-      },
-      "60%": {
-        "opacity": 1,
-        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0)",
-        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
-      }
-    }
+    "keyframes": "0% { animation-timing-function: cubic-bezier(.55,.055,.675,.19); opacity: 0; transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0) } 60% { animation-timing-function: cubic-bezier(.175,.885,.32,1); opacity: 1; transform: scale3d(.475,.475,.475) translate3d(0,60px,0) }"
   },
   "zoom-in-left": {
     "css": {
       "animationName": "uneZoomInLeft"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0)",
-        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
-      },
-      "60%": {
-        "opacity": 1,
-        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0)",
-        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
-      }
-    }
+    "keyframes": "0% { animation-timing-function: cubic-bezier(.55,.055,.675,.19); opacity: 0; transform: scale3d(.1,.1,.1) translate3d(-1000px,0,0) } 60% { animation-timing-function: cubic-bezier(.175,.885,.32,1); opacity: 1; transform: scale3d(.475,.475,.475) translate3d(10px,0,0) }"
   },
   "zoom-in-right": {
     "css": {
       "animationName": "uneZoomInRight"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0)",
-        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
-      },
-      "60%": {
-        "opacity": 1,
-        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0)",
-        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
-      }
-    }
+    "keyframes": "0% { animation-timing-function: cubic-bezier(.55,.055,.675,.19); opacity: 0; transform: scale3d(.1,.1,.1) translate3d(1000px,0,0) } 60% { animation-timing-function: cubic-bezier(.175,.885,.32,1); opacity: 1; transform: scale3d(.475,.475,.475) translate3d(-10px,0,0) }"
   },
   "zoom-in-up": {
     "css": {
       "animationName": "uneZoomInUp"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 0,
-        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0)",
-        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
-      },
-      "60%": {
-        "opacity": 1,
-        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0)",
-        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
-      }
-    }
+    "keyframes": "0% { animation-timing-function: cubic-bezier(.55,.055,.675,.19); opacity: 0; transform: scale3d(.1,.1,.1) translate3d(0,1000px,0) } 60% { animation-timing-function: cubic-bezier(.175,.885,.32,1); opacity: 1; transform: scale3d(.475,.475,.475) translate3d(0,-60px,0) }"
   },
   "zoom-out": {
     "css": {
       "animationName": "uneZoomOut"
     },
-    "keyframes": {
-      "from": {
-        "opacity": 1
-      },
-      "50%": {
-        "opacity": 0,
-        "transform": "scale3d(0.3, 0.3, 0.3)"
-      },
-      "to": {
-        "opacity": 0
-      }
-    }
+    "keyframes": "0% { opacity: 1 } 50% { transform: scale3d(.3,.3,.3) } 50%,to { opacity: 0 }"
   },
   "zoom-out-down": {
     "css": {
       "animationName": "uneZoomOutDown",
       "transformOrigin": "center bottom"
     },
-    "keyframes": {
-      "40%": {
-        "opacity": 1,
-        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0)",
-        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0)",
-        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
-      }
-    }
+    "keyframes": "40% { animation-timing-function: cubic-bezier(.55,.055,.675,.19); opacity: 1; transform: scale3d(.475,.475,.475) translate3d(0,-60px,0) } to { animation-timing-function: cubic-bezier(.175,.885,.32,1); opacity: 0; transform: scale3d(.1,.1,.1) translate3d(0,2000px,0) }"
   },
   "zoom-out-left": {
     "css": {
       "animationName": "uneZoomOutLeft",
       "transformOrigin": "left center"
     },
-    "keyframes": {
-      "40%": {
-        "opacity": 1,
-        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "scale(0.1) translate3d(-2000px, 0, 0)"
-      }
-    }
+    "keyframes": "40% { opacity: 1; transform: scale3d(.475,.475,.475) translate3d(42px,0,0) } to { opacity: 0; transform: scale(.1) translate3d(-2000px,0,0) }"
   },
   "zoom-out-right": {
     "css": {
       "animationName": "uneZoomOutRight",
       "transformOrigin": "right center"
     },
-    "keyframes": {
-      "40%": {
-        "opacity": 1,
-        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "scale(0.1) translate3d(2000px, 0, 0)"
-      }
-    }
+    "keyframes": "40% { opacity: 1; transform: scale3d(.475,.475,.475) translate3d(-42px,0,0) } to { opacity: 0; transform: scale(.1) translate3d(2000px,0,0) }"
   },
   "zoom-out-up": {
     "css": {
       "animationName": "uneZoomOutUp",
       "transformOrigin": "center bottom"
     },
-    "keyframes": {
-      "40%": {
-        "opacity": 1,
-        "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0)",
-        "animationTimingFunction": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
-      },
-      "to": {
-        "opacity": 0,
-        "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0)",
-        "animationTimingFunction": "cubic-bezier(0.175, 0.885, 0.32, 1)"
-      }
-    }
+    "keyframes": "40% { animation-timing-function: cubic-bezier(.55,.055,.675,.19); opacity: 1; transform: scale3d(.475,.475,.475) translate3d(0,60px,0) } to { animation-timing-function: cubic-bezier(.175,.885,.32,1); opacity: 0; transform: scale3d(.1,.1,.1) translate3d(0,-2000px,0) }"
   }
 }

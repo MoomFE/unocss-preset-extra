@@ -16,13 +16,13 @@ function removeLastZero(v: string | number) {
 }
 
 describe('animated.json', () => {
-  test('json 数据的 key 均为 kebabCase 格式', () => {
+  test('数据的 key 均为 kebabCase 格式', () => {
     Object.keys(animated).forEach((key) => {
       expect(/^[a-z-]+$/.test(key)).is.true;
     });
   });
 
-  test('css 的 animationName 都有值, 且均为 une 开头的 camelCase 格式', () => {
+  test('css: 动画名称为 une 开头的 camelCase 格式', () => {
     Object.values(animated).forEach(({ css }) => {
       expect(
         /^une[A-Z]/.test(css.animationName),

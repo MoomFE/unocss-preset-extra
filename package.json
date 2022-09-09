@@ -47,6 +47,7 @@
     "@unocss/autocomplete": "^0.45.18",
     "@vitest/ui": "^0.23.1",
     "animate.css": "^4.1.1",
+    "cssnano": "^5.1.13",
     "eslint": "^8.23.0",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
