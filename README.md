@@ -134,7 +134,7 @@ export default defineConfig({
   在 Vue 3 中使用
 
   ```html
-  <Transition class="animated animated-faster" enter-active-class="animated-rotateIn" leave-active-class="animated-rotateOut" mode="out-in">
+  <Transition class="animated animated-faster" enter-active-class="animated-rotate-in" leave-active-class="animated-rotate-out" mode="out-in">
     ...
   </Transition>
   ```
