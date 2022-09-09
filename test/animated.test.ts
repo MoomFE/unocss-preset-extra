@@ -4,9 +4,9 @@ import { createAutocomplete } from '@unocss/autocomplete';
 import { omit } from 'lodash-es';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
+import { durationShortcuts } from '../src/rules/animated';
+import animated from '../src/rules/animated.json';
 import { presetExtra } from '@/index';
-import { durationShortcuts } from '@/rules/animated';
-import animated from '@/rules/animated.json';
 
 function removeUnusedItems(cssJson: object) {
   return omit(cssJson, ['*,::before,::after', '::backdrop']);
