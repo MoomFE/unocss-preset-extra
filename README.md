@@ -123,9 +123,9 @@ export default defineConfig({
 
   <!-- 动画周期 -->
   <div class="animated animated-bounce animated-fast" /> <!-- 慢 -->
-  <div class="animated animated-bounce animated-faster" /> <!-- 更慢 -->
+  <div class="animated animated-bounce animated-faster" /> <!-- 很慢 -->
   <div class="animated animated-bounce animated-slow" /> <!-- 快 -->
-  <div class="animated animated-bounce animated-slower" /> <!-- 更快 -->
+  <div class="animated animated-bounce animated-slower" /> <!-- 很快 -->
   <div class="animated animated-bounce animated-duration-6" /> <!-- 时长为 6 毫秒 -->
   <div class="animated animated-bounce animated-duration-6s" /> <!-- 时长为 6 秒 -->
   <div class="animated animated-bounce animated-duration-6ms" /> <!-- 时长为 6 毫秒 -->
