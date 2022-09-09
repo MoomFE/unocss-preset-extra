@@ -100,35 +100,35 @@ export default defineConfig({
 </details>
 
 <details>
-  <summary>animated - <a href="https://animate.style/" target="_blank">animate.css</a> 的 Unocss 版本</summary>
+  <summary>animated - <a href="https://animate.style" target="_blank">animate.css</a> 的 Unocss 版本</summary>
   <br>
 
   样式名称
 
   ```html
-  <!-- 动画名称 -->
+  <!-- 动画名称 ( 动画名称可在 https://animate.style 查阅, 使用时需转为 `kebabCase` 短横线隔开的格式 ) -->
   <div class="animated animated-bounce" />
   <div class="animated animated-fade-in" />
   <div class="animated animated-fade-out" />
 
   <!-- 动画运行次数 -->
-  <div class="animated animated-bounce animated-infinite" />
-  <div class="animated animated-bounce animated-repeat-2" />
-  <div class="animated animated-bounce animated-repeat-666" />
+  <div class="animated animated-bounce animated-infinite" /> <!-- 无限循环 -->
+  <div class="animated animated-bounce animated-repeat-6" /> <!-- 循环 6 次 -->
+  <div class="animated animated-bounce animated-repeat-666" /> <!-- 循环 666 次 -->
 
   <!-- 动画延迟 -->
-  <div class="animated animated-bounce animated-delay-1" />
-  <div class="animated animated-bounce animated-delay-1s" />
-  <div class="animated animated-bounce animated-delay-1ms" />
+  <div class="animated animated-bounce animated-delay-6" /> <!-- 延迟 6 毫秒 -->
+  <div class="animated animated-bounce animated-delay-6s" /> <!-- 延迟 6 秒 -->
+  <div class="animated animated-bounce animated-delay-6ms" /> <!-- 延迟 6 毫秒 -->
 
   <!-- 动画周期 -->
-  <div class="animated animated-bounce animated-fast" />
-  <div class="animated animated-bounce animated-faster" />
-  <div class="animated animated-bounce animated-slow" />
-  <div class="animated animated-bounce animated-slower" />
-  <div class="animated animated-bounce animated-duration-1" />
-  <div class="animated animated-bounce animated-duration-1s" />
-  <div class="animated animated-bounce animated-duration-1ms" />
+  <div class="animated animated-bounce animated-fast" /> <!-- 慢 -->
+  <div class="animated animated-bounce animated-faster" /> <!-- 更慢 -->
+  <div class="animated animated-bounce animated-slow" /> <!-- 快 -->
+  <div class="animated animated-bounce animated-slower" /> <!-- 更快 -->
+  <div class="animated animated-bounce animated-duration-6" /> <!-- 时长为 6 毫秒 -->
+  <div class="animated animated-bounce animated-duration-6s" /> <!-- 时长为 6 秒 -->
+  <div class="animated animated-bounce animated-duration-6ms" /> <!-- 时长为 6 毫秒 -->
   ```
 
   在 Vue 3 中使用
