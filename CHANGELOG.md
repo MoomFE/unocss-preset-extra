@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [v0.4.1]
+  - 📅 2022-09-09
+  - 💄 Update README.md
+
 ## [v0.4.0]
   - 📅 2022-09-09
   - 🌟 新增 [animate.css](https://animate.style) 的预设规则
@@ -58,7 +62,9 @@ CHANGELOG 图标规范
 <hr>
 <br>
 
-[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.3.1...HEAD
+[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.4.1...HEAD
+[v0.4.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.4.1
+[v0.4.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.4.0
 [v0.3.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.3.1
 [v0.3.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.3.0
 [v0.2.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.2.1
