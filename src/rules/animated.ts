@@ -33,6 +33,9 @@ export const animatedRules: Rule<Theme>[] = [
         'animation-fill-mode': 'both',
       };
     },
+    {
+      autocomplete: ['animated'],
+    },
   ],
   [
     new RegExp(`^animated-(${Object.keys(animatedJSON).join('|')})$`),
@@ -43,6 +46,11 @@ export const animatedRules: Rule<Theme>[] = [
         `@keyframes ${animationName} { ${keyframes} }`,
         css,
       ];
+    },
+    {
+      autocomplete: [
+        `animated-(${Object.keys(animatedJSON).join('|')})`,
+      ],
     },
   ],
   [
@@ -86,6 +94,13 @@ export const animatedRules: Rule<Theme>[] = [
       return {
         'animation-duration': v === 'none' ? '0ms' : handler.bracket.cssvar.time(v),
       };
+    },
+    {
+      autocomplete: [
+        `animated-(${Object.keys(durationShortcuts).join('|')})`,
+        'animated-duration-none',
+        'animated-duration-$duration',
+      ],
     },
   ],
 ];

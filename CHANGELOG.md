@@ -1,4 +1,5 @@
 ## [Unreleased]
+  - 💄 优化 animated 系列样式规则的 autocomplete
 
 ## [v0.4.1]
   - 📅 2022-09-09
