@@ -1,6 +1,6 @@
 {
   "name": "unocss-preset-extra",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "license": "MIT",
@@ -12,6 +12,13 @@
   "bugs": {
     "url": "https://github.com/MoomFE/unocss-preset-extra/issues"
   },
+  "keywords": [
+    "css",
+    "unocss",
+    "unocss-preset",
+    "unocss-preset-extra",
+    "animate.css"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
