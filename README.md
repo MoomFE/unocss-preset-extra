@@ -7,33 +7,6 @@
 
 <br>
 
-## 安装
-
-```bash
-npm install unocss-preset-extra -D
-```
-
-<br>
-
-
-## 使用
-
-```js
-// unocss.config.ts
-import { defineConfig, presetAttributify, presetUno } from 'unocss';
-import { presetExtra } from 'unocss-preset-extra';
-
-export default defineConfig({
-  presets: [
-    presetUno(),
-    presetAttributify(),
-    presetExtra(),
-  ],
-});
-```
-
-<br>
-
 
 ## 内置规则
 
@@ -139,6 +112,33 @@ export default defineConfig({
   </Transition>
   ```
 </details>
+
+<br>
+
+## 安装
+
+```bash
+npm install unocss-preset-extra -D
+```
+
+<br>
+
+
+## 使用
+
+```js
+// unocss.config.ts
+import { defineConfig, presetAttributify, presetUno } from 'unocss';
+import { presetExtra } from 'unocss-preset-extra';
+
+export default defineConfig({
+  presets: [
+    presetUno(),
+    presetAttributify(),
+    presetExtra(),
+  ],
+});
+```
 
 <br>
 
