@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [v0.4.3]
+  - 📅 2022-09-13
+  - 💄 优化 animated 系列样式规则的 autocomplete
+  - 💄 Update README.md
+
 ## [v0.4.2]
   - 📅 2022-09-11
   - 💄 优化 animated 系列样式规则的 autocomplete
@@ -66,7 +71,8 @@ CHANGELOG 图标规范
 <hr>
 <br>
 
-[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.4.2...HEAD
+[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.4.3...HEAD
+[v0.4.3]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.4.3
 [v0.4.2]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.4.2
 [v0.4.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.4.1
 [v0.4.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.4.0
