@@ -1,20 +1,12 @@
 import { type CSSObject, createGenerator, presetAttributify, presetUno } from 'unocss';
 import { describe, expect, test } from 'vitest';
 import { createAutocomplete } from '@unocss/autocomplete';
-import { omit } from 'lodash-es';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { durationShortcuts } from '../src/rules/animated';
 import animated from '../src/rules/animated.json';
+import { removeLastZero, removeUnusedCSS } from './utils';
 import { presetExtra } from '@/index';
-
-function removeUnusedItems(cssJson: object) {
-  return omit(cssJson, ['*,::before,::after', '::backdrop']);
-}
-
-function removeLastZero(v: string | number) {
-  return `${v}`.replace(/0+$/, '');
-}
 
 describe('animated.json', () => {
   test('数据的 key 均为 kebabCase 格式', () => {
@@ -54,7 +46,7 @@ describe('animated', () => {
     const { css } = await generator.generate('animated');
 
     expect(
-      removeUnusedItems({
+      removeUnusedCSS({
         ...postcssJs.objectify(postcss.parse(css)),
       }),
     ).toEqual({
@@ -71,7 +63,7 @@ describe('animated', () => {
       Object.keys(animated).map(k => `animated-${k}`).join(' '),
     );
 
-    const styles = removeUnusedItems({
+    const styles = removeUnusedCSS({
       ...postcssJs.objectify(postcss.parse(css)),
     }) as CSSObject;
 
@@ -93,7 +85,7 @@ describe('animated', () => {
     `);
 
     expect(
-      removeUnusedItems({
+      removeUnusedCSS({
         ...postcssJs.objectify(postcss.parse(css)),
       }),
     ).toEqual(
@@ -126,7 +118,7 @@ describe('animated', () => {
     `);
 
     expect(
-      removeUnusedItems({
+      removeUnusedCSS({
         ...postcssJs.objectify(postcss.parse(css)),
       }),
     ).toEqual(
@@ -170,7 +162,7 @@ describe('animated', () => {
     `);
 
     expect(
-      removeUnusedItems({
+      removeUnusedCSS({
         ...postcssJs.objectify(postcss.parse(css)),
       }),
     ).toEqual(

@@ -1,15 +1,11 @@
 import { createGenerator, presetAttributify, presetUno } from 'unocss';
 import { describe, expect, test } from 'vitest';
 import { createAutocomplete } from '@unocss/autocomplete';
-import { omit } from 'lodash-es';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { ambient, ambientOpacity, penumbra, penumbraOpacity, umbra, umbraOpacity } from '@@/src/rules/elevation';
+import { removeUnusedCSS } from './utils';
 import { presetExtra } from '@/index';
-
-function removeUnusedItems(cssJson: object) {
-  return omit(cssJson, ['*,::before,::after', '::backdrop']);
-}
 
 function createElevationRules(name: string) {
   return Object.assign({}, ...Array.from({ length: 25 }).map((_, index) => {
@@ -51,7 +47,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css)),
       ),
     ).toEqual(
@@ -64,7 +60,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css2)),
       ),
     ).toEqual(
@@ -77,7 +73,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css3)),
       ),
     ).toEqual(
@@ -90,7 +86,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css4)),
       ),
     ).toEqual(
@@ -105,7 +101,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css)),
       ),
     ).toEqual(
@@ -118,7 +114,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css2)),
       ),
     ).toEqual(
@@ -131,7 +127,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css3)),
       ),
     ).toEqual(
@@ -144,7 +140,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css4)),
       ),
     ).toEqual(
@@ -157,7 +153,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css5)),
       ),
     ).toEqual(
@@ -170,7 +166,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css6)),
       ),
     ).toEqual(
@@ -183,7 +179,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css7)),
       ),
     ).toEqual(
@@ -196,7 +192,7 @@ describe('elevation', async () => {
     );
 
     expect(
-      removeUnusedItems(
+      removeUnusedCSS(
         postcssJs.objectify(postcss.parse(css8)),
       ),
     ).toEqual(

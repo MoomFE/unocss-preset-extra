@@ -1,14 +1,10 @@
 import { createGenerator, presetAttributify, presetUno } from 'unocss';
 import { describe, expect, test } from 'vitest';
 import { createAutocomplete } from '@unocss/autocomplete';
-import { omit } from 'lodash-es';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
+import { removeUnusedCSS } from './utils';
 import { presetExtra } from '@/index';
-
-function removeUnusedItems(cssJson: object) {
-  return omit(cssJson, ['*,::before,::after', '::backdrop']);
-}
 
 describe('size', () => {
   const generator = createGenerator({
@@ -33,7 +29,7 @@ describe('size', () => {
     );
 
     expect(
-      removeUnusedItems({
+      removeUnusedCSS({
         ...postcssJs.objectify(postcss.parse(css)),
         ...postcssJs.objectify(postcss.parse(minCss)),
         ...postcssJs.objectify(postcss.parse(maxCss)),
@@ -62,7 +58,7 @@ describe('size', () => {
     );
 
     expect(
-      removeUnusedItems({
+      removeUnusedCSS({
         ...postcssJs.objectify(postcss.parse(css)),
         ...postcssJs.objectify(postcss.parse(minCss)),
         ...postcssJs.objectify(postcss.parse(maxCss)),
@@ -106,7 +102,7 @@ describe('size', () => {
     );
 
     expect(
-      removeUnusedItems({
+      removeUnusedCSS({
         ...postcssJs.objectify(postcss.parse(css)),
         ...postcssJs.objectify(postcss.parse(minCss)),
         ...postcssJs.objectify(postcss.parse(maxCss)),
@@ -174,7 +170,7 @@ describe('size', () => {
     );
 
     expect(
-      removeUnusedItems({
+      removeUnusedCSS({
         ...postcssJs.objectify(postcss.parse(css)),
         ...postcssJs.objectify(postcss.parse(minCss)),
         ...postcssJs.objectify(postcss.parse(maxCss)),
