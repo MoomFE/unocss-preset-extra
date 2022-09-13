@@ -15,8 +15,6 @@ describe('size', () => {
     ],
   });
 
-  const autocomplete = createAutocomplete(generator);
-
   test('自动宽高, 屏幕宽高', async () => {
     const { css } = await generator.generate(
       ['auto', 'screen'].map(s => `size-${s}`).join(' '),
@@ -230,6 +228,14 @@ describe('size', () => {
   });
 
   test('autocomplete', async () => {
+    const autocomplete = createAutocomplete(createGenerator({
+      presets: [
+        presetUno(),
+        presetAttributify(),
+        presetExtra(),
+      ],
+    }));
+
     expect(
       await autocomplete.suggest('size-'),
     ).toMatchSnapshot();

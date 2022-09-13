@@ -40,8 +40,6 @@ describe('animated', () => {
     ],
   });
 
-  const autocomplete = createAutocomplete(generator);
-
   test('animated', async () => {
     const { css } = await generator.generate('animated');
 
@@ -198,6 +196,14 @@ describe('animated', () => {
   });
 
   test('autocomplete', async () => {
+    const autocomplete = createAutocomplete(createGenerator({
+      presets: [
+        presetUno(),
+        presetAttributify(),
+        presetExtra(),
+      ],
+    }));
+
     expect(
       await autocomplete.suggest('animated'),
     ).toMatchSnapshot();

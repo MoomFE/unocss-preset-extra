@@ -38,8 +38,6 @@ describe('elevation', async () => {
     ],
   });
 
-  const autocomplete = createAutocomplete(generator);
-
   test('(shadow-)?(el|elevation)-*', async () => {
     // el-*
     const { css } = await generator.generate(
@@ -201,6 +199,14 @@ describe('elevation', async () => {
   });
 
   test('autocomplete', async () => {
+    const autocomplete = createAutocomplete(createGenerator({
+      presets: [
+        presetUno(),
+        presetAttributify(),
+        presetExtra(),
+      ],
+    }));
+
     expect(
       await autocomplete.suggest('el-'),
     ).toMatchSnapshot();
