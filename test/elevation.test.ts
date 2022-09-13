@@ -207,16 +207,16 @@ describe('elevation', async () => {
       ],
     }));
 
-    expect(
-      await autocomplete.suggest('el-'),
-    ).toMatchSnapshot();
+    expect(await autocomplete.suggest('el-')).toMatchSnapshot();
+    expect(await autocomplete.suggest('el-op-')).toMatchSnapshot();
+    expect(await autocomplete.suggest('el-opacity-')).toMatchSnapshot();
 
-    expect(
-      await autocomplete.suggest('elevation-'),
-    ).toMatchSnapshot();
+    expect(await autocomplete.suggest('elevation-')).toMatchSnapshot();
+    expect(await autocomplete.suggest('elevation-op-')).toMatchSnapshot();
+    expect(await autocomplete.suggest('elevation-opacity-')).toMatchSnapshot();
 
-    expect(
-      await autocomplete.suggest('shadow-elevation-'),
-    ).toMatchSnapshot();
+    expect(await autocomplete.suggest('shadow-elevation-')).toMatchSnapshot();
+    expect(await autocomplete.suggest('shadow-elevation-op-')).toMatchSnapshot();
+    expect(await autocomplete.suggest('shadow-elevation-opacity-')).toMatchSnapshot();
   });
 });

@@ -236,16 +236,10 @@ describe('size', () => {
       ],
     }));
 
-    expect(
-      await autocomplete.suggest('size-'),
-    ).toMatchSnapshot();
+    expect(await autocomplete.suggest('size-')).toMatchSnapshot();
 
-    expect(
-      await autocomplete.suggest('min-size-'),
-    ).toMatchSnapshot();
+    expect(await autocomplete.suggest('min-size-')).toMatchSnapshot();
 
-    expect(
-      await autocomplete.suggest('max-size-'),
-    ).toMatchSnapshot();
+    expect(await autocomplete.suggest('max-size-')).toMatchSnapshot();
   });
 });

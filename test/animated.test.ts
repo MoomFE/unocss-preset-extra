@@ -204,8 +204,14 @@ describe('animated', () => {
       ],
     }));
 
-    expect(
-      await autocomplete.suggest('animated'),
-    ).toMatchSnapshot();
+    expect(await autocomplete.suggest('animated')).toMatchSnapshot();
+
+    expect(await autocomplete.suggest('animated-')).toMatchSnapshot();
+
+    expect(await autocomplete.suggest('animated-repeat-')).toMatchSnapshot();
+
+    expect(await autocomplete.suggest('animated-delay-')).toMatchSnapshot();
+
+    expect(await autocomplete.suggest('animated-duration-')).toMatchSnapshot();
   });
 });

@@ -49,7 +49,9 @@ export const elevationRules: Rule<Theme>[] = [
       }
     },
     {
-      autocomplete: `(el|elevation|shadow-elevation)-(${elevationLevel})`,
+      autocomplete: [
+        `(el|elevation|shadow-elevation)-(${elevationLevel})`,
+      ],
     },
   ],
   [
@@ -60,7 +62,9 @@ export const elevationRules: Rule<Theme>[] = [
       };
     },
     {
-      autocomplete: '(el|elevation|shadow-elevation)-op-<percent>',
+      autocomplete: [
+        '(el|elevation|shadow-elevation)-(op|opacity)-<percent>',
+      ],
     },
   ],
 ];
