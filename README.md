@@ -56,17 +56,12 @@
   <div class="el-6 shadow-op-50" />
   ```
 
-  这将生成以下 css 代码
+  在 [Attributify Mode](https://github.com/unocss/unocss/tree/main/packages/preset-attributify) 下使用
 
-  ```css
-  .el-1 { box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 1px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 3px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
-  .elevation-2 { box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 2px 2px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 5px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
-  .shadow-el-3 { box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 3px 4px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 8px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
-  .shadow-elevation-4 { box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 4px 5px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 10px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
-  .el-5 { box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 5px 8px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 14px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
-  .el-6 { box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, calc(0.2 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 6px 10px 0px rgba(0, 0, 0, calc(0.14 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))), 0px 1px 18px 0px rgba(0, 0, 0, calc(0.12 * var(--une-el-opacity, var(--un-shadow-opacity, 1)))) }
-  .el-op-50 { --une-el-opacity: 0.5 }
-  .shadow-op-50 { --un-shadow-opacity: 0.5 }
+  ```html
+  <div el="1 op-50" />
+  <div elevation="1 op-50" />
+  <div shadow-elevation="1 op-50" />
   ```
 
   <br>
@@ -102,6 +97,13 @@
   <div class="animated animated-bounce animated-duration-6" /> <!-- 时长为 6 毫秒 -->
   <div class="animated animated-bounce animated-duration-6s" /> <!-- 时长为 6 秒 -->
   <div class="animated animated-bounce animated-duration-6ms" /> <!-- 时长为 6 毫秒 -->
+  ```
+
+  在 [Attributify Mode](https://github.com/unocss/unocss/tree/main/packages/preset-attributify) 下使用
+
+  ```html
+  <div animated="~ bounce infinite" />
+  <div animated="~ bounce faster delay-6s" />
   ```
 
   在 Vue 3 中使用
