@@ -1,0 +1,12 @@
+button:
+  home: Home
+  go: Go
+  back: Back
+  toogle-dark-mode: Toggle dark mode
+  change-languages: Change languages
+intro:
+  title: Base Starter Template - Naive UI
+  whats-your-name: What's your name?
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}
+not-found: Not found

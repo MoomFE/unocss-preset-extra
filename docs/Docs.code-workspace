@@ -1,0 +1,130 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "locales",
+      "name": "Locales"
+    },
+    {
+      "path": "src\\assets",
+      "name": "Assets"
+    },
+    {
+      "path": "src\\styles",
+      "name": "Styles"
+    },
+    {
+      "path": "src\\shared",
+      "name": "Shared"
+    },
+    {
+      "path": "src\\libs",
+      "name": "Libs"
+    },
+    {
+      "path": "src\\utils",
+      "name": "Utils"
+    },
+    {
+      "path": "src\\modules",
+      "name": "Modules"
+    },
+    {
+      "path": "src\\workers",
+      "name": "Workers"
+    },
+    {
+      "path": "src\\stores",
+      "name": "Stores"
+    },
+    {
+      "path": "src\\composables",
+      "name": "Composables"
+    },
+    {
+      "path": "src\\components",
+      "name": "Components"
+    },
+    {
+      "path": "src\\components-private",
+      "name": "Components Private"
+    },
+    {
+      "path": "src\\layouts",
+      "name": "Layouts"
+    },
+    {
+      "path": "src\\pages",
+      "name": "Pages"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true,
+      "source.organizeImports": false
+    },
+    "editor.guides.bracketPairs": "active",
+    "editor.renderWhitespace": "boundary",
+    "editor.accessibilitySupport": "off",
+    "editor.cursorSmoothCaretAnimation": true,
+    "breadcrumbs.enabled": false,
+    "files.exclude": {
+      "*.code-workspace": true,
+      "locales": true,
+      "node_modules": true,
+      "src/assets": true,
+      "src/components": true,
+      "src/components-private": true,
+      "src/composables": true,
+      "src/layouts": true,
+      "src/libs": true,
+      "src/modules": true,
+      "src/pages": true,
+      "src/router": true,
+      "src/shared": true,
+      "src/stores": true,
+      "src/styles": true,
+      "src/utils": true,
+      "src/workers": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "prettier.enable": false,
+    "i18n-ally.enabledFrameworks": ["vue"],
+    "i18n-ally.displayLanguage": "zh-CN",
+    "i18n-ally.localesPaths": [
+      "locales",
+      "../../locales"
+    ],
+    "eslint.quiet": true,
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+      "javascriptreact",
+      "typescriptreact",
+      "vue",
+      "html",
+      "markdown",
+      "json",
+      "jsonc",
+      "json5"
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "vue.volar",
+      "antfu.iconify",
+      "antfu.unocss",
+      "dbaeumer.vscode-eslint",
+      "csstools.postcss",
+      "lokalise.i18n-ally"
+    ],
+    "unwantedRecommendations": [
+      "octref.vetur"
+    ]
+  }
+}

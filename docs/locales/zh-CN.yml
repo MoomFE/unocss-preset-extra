@@ -1,0 +1,12 @@
+button:
+  home: 首页
+  go: 确定
+  back: 返回
+  toogle-dark-mode: 切换暗色模式
+  change-languages: 切换语言
+intro:
+  title: 基础项目模板 - Naive UI
+  whats-your-name: 你的名字是？
+  dynamic-route: 动态路由演示
+  hi: 你好，{name}
+not-found: 未找到页面

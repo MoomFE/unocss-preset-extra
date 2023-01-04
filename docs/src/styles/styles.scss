@@ -1,0 +1,23 @@
+body {
+  @apply important:transition-none;
+  @apply scrollbar scrollbar-rounded;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a:focus,
+a:active {
+  @apply outline-none;
+}
+
+a,
+a:focus,
+a:hover {
+  @apply cursor-pointer text-primary underline;
+}
+
+div:focus {
+  @apply outline-none;
+}
