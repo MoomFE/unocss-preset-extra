@@ -3,6 +3,7 @@ node_modules
 
 dist
 types
+!docs/types
 coverage
 
 .pnpm-debug.log
