@@ -1,5 +1,7 @@
 <template>
-  <div class="text-sm"><n-text code>Vuetify 海拔</n-text> 样式</div>
+  <div class="text-sm">
+    <OuterChain href="https://vuetifyjs.com/zh-Hans/styles/elevation/" code>Vuetify 海拔</OuterChain> 样式
+  </div>
   <n-divider />
 
   <n-h2>使用</n-h2>
