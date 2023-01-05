@@ -12,6 +12,10 @@ export default defineConfig({
     ['bg-dynamic', 'bg-white dark:bg-[#101014]'],
     ['card-bg-dynamic', 'bg-white dark:bg-[#242424]'],
   ],
+  safelist: [
+    ...Array.from({ length: 25 }, (_, i) => `el-${i}`),
+    ...Array.from({ length: 101 }, (_, i) => `el-op-${i}`),
+  ],
   theme: {
     // 颜色
     colors: {

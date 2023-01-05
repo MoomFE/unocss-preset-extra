@@ -15,6 +15,7 @@
     "@vueuse/core": "^9.9.0",
     "@vueuse/head": "^1.0.22",
     "@vueuse/math": "^9.9.0",
+    "highlight.js": "^11.7.0",
     "lodash": "^4.17.21",
     "naive-ui": "^2.34.3",
     "pinia": "^2.0.28",

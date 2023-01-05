@@ -19,6 +19,7 @@ specifiers:
   cross-env: ^7.0.3
   eslint: ^8.30.0
   fs-extra: ^11.1.0
+  highlight.js: ^11.7.0
   lodash: ^4.17.21
   naive-ui: ^2.34.3
   pinia: ^2.0.28
@@ -46,6 +47,7 @@ dependencies:
   '@vueuse/core': 9.9.0_vue@3.2.45
   '@vueuse/head': 1.0.22_vue@3.2.45
   '@vueuse/math': 9.9.0_vue@3.2.45
+  highlight.js: 11.7.0
   lodash: 4.17.21
   naive-ui: 2.34.3_vue@3.2.45
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu

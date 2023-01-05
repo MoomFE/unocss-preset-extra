@@ -4,7 +4,7 @@
       <!-- 导航栏 -->
       <div class="h-13 flex-none sticky top-0 z-10 shadow-md card-bg-dynamic">
         <n-space
-          class="w-240 max-w-full h-full mxa px-3"
+          class="w-320 max-w-full h-full mxa px-3"
           item-style="line-height: 1"
           align="center" justify="space-between" :wrap="false"
         >
@@ -32,7 +32,7 @@
       </div>
 
       <!-- 内容区域 -->
-      <div class="w-240 max-w-full h-full mxa px-3" un:flex="~ grow" :class="route.meta.layoutContentClass">
+      <div class="w-320 max-w-full h-full mxa px-3" un:flex="~ grow" :class="route.meta.layoutContentClass">
         <slot v-if="slots.default" />
         <router-view v-else />
       </div>
