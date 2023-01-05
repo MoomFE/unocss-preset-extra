@@ -1,12 +1,15 @@
 <template>
   <!-- 侧边栏 -->
-  <div class="w-60" un:b-r="1 solid gray op-36" un:flex="none">
-    <client-only>
-      <n-menu v-model:value="value" :options="options" />
-    </client-only>
+  <div class="w-60" un:flex="none">
+    <div class="w-60 h-[calc(100%-64px)] fixed scrollbar" un:b-r="1 solid gray op-36">
+      <client-only>
+        <n-menu v-model:value="value" :options="options" />
+      </client-only>
+    </div>
   </div>
   <!-- 内容区域 -->
-  <div un:flex="grow">
+  <div class="px-6" un:p="x-6 t-5 b-10" un:flex="grow">
+    <div class="text-3xl font-bold capitalize mb-1">{{ value }}</div>
     <router-view />
   </div>
 </template>
@@ -40,5 +43,5 @@ redirect:
   name: Rules/Size
 meta:
   layout: home
-  layoutContentClass: gap-2 pl-0
+  layoutContentClass: px-0!
 </route>

@@ -1,5 +1,5 @@
 <template>
-  <div ref="rootRef" class="min-h-screen flex">
+  <div class="min-h-screen flex">
     <div class="w-full" un:flex="~ grow col gap-3">
       <!-- 导航栏 -->
       <div class="h-13 flex-none sticky top-0 z-10 shadow-md card-bg-dynamic">
@@ -32,7 +32,7 @@
       </div>
 
       <!-- 内容区域 -->
-      <div class="w-240 max-w-full h-full mxa px-3" un:flex="~" :class="route.meta.layoutContentClass">
+      <div class="w-240 max-w-full h-full mxa px-3" un:flex="~ grow" :class="route.meta.layoutContentClass">
         <slot v-if="slots.default" />
         <router-view v-else />
       </div>
