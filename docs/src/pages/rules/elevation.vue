@@ -6,7 +6,7 @@
 
   <n-h2>使用</n-h2>
   <DemoCard :code="codeStr">
-    <div class="py-12">
+    <div class="py-18">
       <ElevationDiv :index="index" :opacity="opacity" />
     </div>
     <template #options="{ showCode }">
@@ -48,12 +48,12 @@
     const op = abbr.value ? 'op' : 'opacity';
     const opValue = opacity.value;
 
-    return `<div class="${el}-${index.value}${opValue === 100 ? '' : ` ${el}-${op}-${opacity.value}`}" />`;
+    return `<div class="${el}-${index.value}${opValue === 100 ? '' : ` ${el}-${op}-${opValue}`}" />`;
   });
 
   /** 海拔 */
   const ElevationDiv = ({ index, opacity }: { index: string | number; opacity?: number }) => (
-    <div class={`size-25 flex justify-center items-center rounded c-white bg-sky el-${index} el-op-${opacity ?? 100}`}>{ index }</div>
+    <div class={`size-25 flex justify-center items-center rounded c-white bg-sky dark:bg-sky-6 el-${index} el-op-${opacity ?? 100}`}>{ index }</div>
   );
 </script>
 

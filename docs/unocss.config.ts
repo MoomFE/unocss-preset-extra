@@ -4,6 +4,7 @@ import { presetExtra } from 'unocss-preset-extra';
 import { presetScrollbar } from 'unocss-preset-scrollbar';
 import { outputFileSync } from 'fs-extra';
 import { dataToEsm } from '@rollup/pluginutils';
+import animatedJson from '../src/rules/animated.json';
 
 export default defineConfig({
   shortcuts: [
@@ -15,6 +16,7 @@ export default defineConfig({
   safelist: [
     ...Array.from({ length: 25 }, (_, i) => `el-${i}`),
     ...Array.from({ length: 101 }, (_, i) => `el-op-${i}`),
+    ...Object.keys(animatedJson).map(n => `animated-${n}`),
   ],
   theme: {
     // 颜色

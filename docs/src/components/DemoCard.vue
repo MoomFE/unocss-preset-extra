@@ -1,10 +1,7 @@
 <template>
   <div class="flex">
     <!-- 内容区域 -->
-    <n-card
-      class="not-last:rounded-r-0!"
-      :segmented="{ content: true, footer: true }" header-style="padding: 0"
-    >
+    <BasicCard class="not-last:rounded-r-0!">
       <!-- 头部内容 -->
       <template v-if="props.code" #header>
         <div class="h-8 flex items-center text-base lh-none px-3">
@@ -28,35 +25,24 @@
           <n-code :code="props.code" language="html" />
         </n-config-provider>
       </template>
-    </n-card>
+    </BasicCard>
 
     <!-- 选项区域 -->
-    <n-card
-      v-if="slots.options"
-      un:important="w-60 rounded-l-0 b-l-none"
-      :segmented="{ content: true, footer: true }"
-      header-style="padding: 0" content-style="padding: 0"
-    >
-      <!-- 头部内容 -->
-      <template #header>
-        <div class="h-8 flex items-center text-base lh-none px-3">选项</div>
-      </template>
-
-      <!-- 选项内容 -->
-      <div class="px-3 py-1.5">
-        <slot name="options" :show-code="showCode" />
-      </div>
-    </n-card>
+    <RenderOptions name="options" />
+    <RenderOptions name="extraOptions" />
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="tsx" setup>
   import hljs from 'highlight.js/lib/core';
   import html from 'highlight.js/lib/languages/xml';
+  import BasicCard from '@/components/BasicCard.vue';
 
   interface Props {
     /** 代码 */
     code?: string
+    /** 选项区标题 */
+    optionsTitle?: string
   }
 
   const props = defineProps<Props>();
@@ -67,4 +53,30 @@
   /** 是否显示代码 */
   const showCode = ref(false);
   const toggleShowCode = useToggle(showCode);
+
+  /** 渲染选项区域 */
+  function RenderOptions({ name }: { name: string }) {
+    if (!slots[name]) return;
+
+    return (
+      <div class="w-60 flex-none relative">
+        <BasicCard class="size-full absolute top-0 left-0 rounded-l-0 b-l-none" scrollable>
+          {{
+            header: () => (
+              <div class="h-8 flex items-center text-base lh-none px-3">
+                { props.optionsTitle ?? '选项' }
+              </div>
+            ),
+            default: () => (
+              <div class="px-3 py-1.5">
+                {{
+                  default: () => slots[name]?.({ showCode: showCode.value }),
+                }}
+              </div>
+            ),
+          }}
+        </BasicCard>
+      </div>
+    );
+  }
 </script>

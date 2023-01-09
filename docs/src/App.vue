@@ -1,11 +1,14 @@
 <template>
   <!-- 全局化配置 ( 主题 ) -->
   <NConfigProvider :theme="theme" :theme-overrides="themeOverrides" :locale="zhCN" :date-locale="dateZhCN" abstract>
-    <!-- 加载条 ( 页面加载进度 ) -->
-    <NLoadingBarProvider>
-      <router-view />
-      <GetAppEnv />
-    </NLoadingBarProvider>
+    <!-- 元素 ( CSS 变量 ) -->
+    <NElement>
+      <!-- 加载条 ( 页面加载进度 ) -->
+      <NLoadingBarProvider>
+        <router-view />
+        <GetAppEnv />
+      </NLoadingBarProvider>
+    </NElement>
     <!-- 全局样式 ( 写入一些样式至 body 层 ) -->
     <NGlobalStyle />
   </NConfigProvider>
