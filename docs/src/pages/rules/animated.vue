@@ -11,7 +11,8 @@
     <div class="size-full flex justify-center overflow-hidden py-36">
       <div
         class="size-25 flex justify-center items-center rounded animated c-white bg-sky dark:bg-sky-6"
-        :class="name ? `animated-${name}` : ''"
+        :class="name && isAnimating ? `animated-${name}` : ''"
+        @animationend="onAnimationEnd"
       >
         Animated
       </div>
@@ -24,7 +25,7 @@
           <n-button
             class="justify-start!"
             v-bind="animatedName === name ? { type: 'primary', secondary: true } : { quaternary: true }" block
-            @click="name = animatedName"
+            @click="setAnimated(animatedName)"
           >
             {{ animatedName }}
           </n-button>
@@ -37,8 +38,23 @@
 <script lang="ts" setup>
   import animatedJson from '../../../../src/rules/animated.json';
 
+  /** 当前激活的动画名称 */
   const name = ref('bounce');
+  /** 所有的动画名称 */
   const animatedNames = Object.keys(animatedJson);
+
+  /** 是否在执行动画中 */
+  const isAnimating = ref(false);
+
+  /** 设置动画 */
+  function setAnimated(value: string) {
+    name.value = value;
+    isAnimating.value = true;
+  }
+  /** 动画结束时的回调 */
+  function onAnimationEnd() {
+    isAnimating.value = false;
+  }
 </script>
 
 <route lang="yaml">
