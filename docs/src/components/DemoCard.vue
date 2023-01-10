@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <!-- 内容区域 -->
-    <BasicCard class="not-last:rounded-r-0!">
+    <BasicCard class="not-last:rounded-r-0!" footer-class="py-3 px-6">
       <!-- 头部内容 -->
       <template v-if="props.code" #header>
         <div class="h-8 flex items-center text-base lh-none px-3">
