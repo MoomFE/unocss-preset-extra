@@ -6,7 +6,8 @@
 
   <n-h2>使用</n-h2>
   <DemoCard
-    options-title="动画"
+    :code="codeStr"
+    options-title="动画" options-class="w-55!"
   >
     <div class="size-full flex justify-center overflow-hidden py-36">
       <div
@@ -39,7 +40,7 @@
   import animatedJson from '../../../../src/rules/animated.json';
 
   /** 当前激活的动画名称 */
-  const name = ref('bounce');
+  const name = ref();
   /** 所有的动画名称 */
   const animatedNames = Object.keys(animatedJson);
 
@@ -55,6 +56,15 @@
   function onAnimationEnd() {
     isAnimating.value = false;
   }
+
+  /** 代码字符串 */
+  const codeStr = computed(() => {
+    return `<div class="animated animated-${name.value}" />`;
+  });
+
+  onMounted(() => {
+    setAnimated(animatedNames[0]);
+  });
 </script>
 
 <route lang="yaml">

@@ -52,6 +52,7 @@
     background-color: var(--card-color);
   }
   // 边框色
+  .basic-card,
   .basic-card-header, .basic-card-content{
     border-color: var(--border-color);
   }

@@ -22,7 +22,7 @@
       <!-- 代码 -->
       <template v-if="props.code && showCode" #footer>
         <n-config-provider :hljs="hljs">
-          <n-code :code="props.code" language="html" />
+          <n-code :code="props.code" language="html" word-wrap />
         </n-config-provider>
       </template>
     </BasicCard>
@@ -41,8 +41,14 @@
   interface Props {
     /** 代码 */
     code?: string
+    /** 选项区额外样式类 */
+    optionsClass?: string
     /** 选项区标题 */
     optionsTitle?: string
+    /** 额外选项区额外样式类 */
+    extraOptionsClass?: string
+    /** 额外选项区标题 */
+    extraOptionsTitle?: string
   }
 
   const props = defineProps<Props>();
@@ -59,12 +65,12 @@
     if (!slots[name]) return;
 
     return (
-      <div class="w-60 flex-none relative">
+      <div class={['w-60 flex-none relative [&:not(:last-child)>div]-rounded-r-0 [&:not(:last-child)>div>div]-rounded-r-0', props[`${name}Class` as keyof Props]]}>
         <BasicCard class="size-full absolute top-0 left-0 rounded-l-0 b-l-none" scrollable>
           {{
             header: () => (
               <div class="h-8 flex items-center text-base lh-none px-3">
-                { props.optionsTitle ?? '选项' }
+                { props[`${name}Title` as keyof Props] ?? '选项' }
               </div>
             ),
             default: () => (
