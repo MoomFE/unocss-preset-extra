@@ -119,6 +119,7 @@ export default defineConfig(({ mode }) => {
       includedRoutes: paths => paths.filter(path => !path.includes(':')),
       onBeforePageRender(route, indexHTML, appCtx) {
         collect = setup(appCtx.app).collect;
+        return undefined;
       },
       onPageRendered(route, renderedHTML) {
         const css = collect();
