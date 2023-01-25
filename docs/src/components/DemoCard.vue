@@ -8,9 +8,14 @@
           <div class="flex-grow" />
 
           <!-- 显隐代码切换 -->
-          <n-button v-if="props.code" text @click="toggleShowCode()">
-            <i-material-symbols-code class="text-xl" />
-          </n-button>
+          <n-tooltip v-if="props.code">
+            <template #trigger>
+              <n-button class="disabled-button-hover" :type="showCode ? 'primary' : 'default'" :focusable="false" text @click="toggleShowCode()">
+                <i-material-symbols-code class="text-xl" />
+              </n-button>
+            </template>
+            {{ showCode ? '收起代码' : '显示代码' }}
+          </n-tooltip>
         </div>
       </template>
 
@@ -57,7 +62,7 @@
   hljs.registerLanguage('html', html);
 
   /** 是否显示代码 */
-  const showCode = ref(false);
+  const showCode = ref(true);
   const toggleShowCode = useToggle(showCode);
 
   /** 渲染选项区域 */
@@ -86,3 +91,10 @@
     );
   }
 </script>
+
+<style lang="scss" scoped>
+  .disabled-button-hover:hover{
+    color: var(--n-text-color);
+    background-color: var(--n-color);
+  }
+</style>
