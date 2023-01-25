@@ -7,6 +7,6 @@
   </a>
 </template>
 
-<script lang="tsx" setup>
+<script lang="ts" setup>
   defineProps<{ href: string; code?: boolean }>();
 </script>

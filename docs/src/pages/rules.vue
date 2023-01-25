@@ -8,7 +8,11 @@
   <!-- 内容区域 -->
   <div class="px-6" un:p="x-6 t-5 b-10" un:flex="grow">
     <div class="text-3xl font-bold capitalize mb-1">{{ value }}</div>
-    <router-view />
+    <router-view v-slot="{ Component, route }">
+      <transition un:animated="~ faster" enter-active-class="animated-fade-in" leave-active-class="animated-fade-out" mode="out-in">
+        <component :is="h('div', Component)" :key="route.path" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
