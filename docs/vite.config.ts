@@ -14,12 +14,17 @@ import Layouts from 'vite-plugin-vue-layouts';
 import generateSitemap from 'vite-ssg-sitemap';
 import Inspect from 'vite-plugin-inspect';
 import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
+import { setup } from '@css-render/vue3-ssr';
+import { JSDOM } from 'jsdom';
 
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
   const isDev = mode === 'development'; // eslint-disable-line @typescript-eslint/no-unused-vars
   /** 环境变量 */
   const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']);
+
+  /** Naive UI 样式收集 */
+  let collect: ReturnType<typeof setup>['collect'];
 
   return {
     // 环境变量前缀
@@ -112,6 +117,18 @@ export default defineConfig(({ mode }) => {
         preload: 'swap',
       },
       includedRoutes: paths => paths.filter(path => !path.includes(':')),
+      onBeforePageRender(route, indexHTML, appCtx) {
+        collect = setup(appCtx.app).collect;
+      },
+      onPageRendered(route, renderedHTML) {
+        const css = collect();
+
+        if (css) {
+          const jsdom = new JSDOM(renderedHTML);
+          jsdom.window.document.head.insertAdjacentHTML('beforeend', css);
+          return jsdom.serialize();
+        }
+      },
       onFinished: () => {
         // 生成站点地图
         generateSitemap({ hostname: env.APP_HOSTNAME });
