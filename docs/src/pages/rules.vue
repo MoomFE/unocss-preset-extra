@@ -2,9 +2,7 @@
   <!-- 侧边栏 -->
   <div class="w-60" un:flex="none">
     <div class="w-60 h-[calc(100%-64px)] fixed scrollbar" un:b-r="1 solid gray op-36">
-      <client-only>
-        <n-menu v-model:value="value" :options="options" />
-      </client-only>
+      <n-menu v-model:value="value" :options="options" />
     </div>
   </div>
   <!-- 内容区域 -->

@@ -11,17 +11,15 @@
     </div>
     <template #options="{ showCode }">
       <n-form label-placement="left" label-width="4em" :show-feedback="false">
-        <client-only>
-          <n-form-item label="层级">
-            <n-slider v-model:value="index" :max="24" />
-          </n-form-item>
-          <n-form-item label="透明度">
-            <n-slider v-model:value="opacity" :max="100" />
-          </n-form-item>
-          <n-form-item v-if="showCode" label="简写">
-            <n-checkbox v-model:checked="abbr" />
-          </n-form-item>
-        </client-only>
+        <n-form-item label="层级">
+          <n-slider v-model:value="index" :max="24" />
+        </n-form-item>
+        <n-form-item label="透明度">
+          <n-slider v-model:value="opacity" :max="100" />
+        </n-form-item>
+        <n-form-item v-if="showCode" label="简写">
+          <n-checkbox v-model:checked="abbr" />
+        </n-form-item>
       </n-form>
     </template>
   </DemoCard>
