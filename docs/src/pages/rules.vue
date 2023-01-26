@@ -1,10 +1,16 @@
 <template>
   <!-- 侧边栏 -->
-  <div class="w-60" un:flex="none">
-    <div class="w-60 h-[calc(100%-64px)] fixed scrollbar" un:b-r="1 solid gray op-36">
-      <n-menu v-model:value="value" :options="options" />
+  <BasicSidebar ref="sidebarRef" @setDrawerOpenBtn="(fn) => emit('setRenderNavbarLeft', fn)">
+    <div class="w-60" un:flex="none">
+      <div class="w-60 h-[calc(100%-64px)] fixed scrollbar" un:b-r="1 solid gray op-36">
+        <n-menu v-model:value="value" :options="options" />
+      </div>
     </div>
-  </div>
+    <template #drawer>
+      <n-menu v-model:value="value" :options="options" @update:value="sidebarRef.closeDrawer()" />
+    </template>
+  </BasicSidebar>
+
   <!-- 内容区域 -->
   <div class="px-6" un:p="x-6 t-5 b-10" un:flex="grow">
     <div class="text-3xl font-bold capitalize mb-1">{{ value }}</div>
@@ -20,8 +26,12 @@
   import type { MenuProps } from 'naive-ui';
   import { camelCase, upperFirst } from 'lodash';
 
+  const emit = defineEmits(['setRenderNavbarLeft']);
+
   const route = useRoute();
   const router = useRouter();
+
+  const sidebarRef = ref();
 
   /** 规则列表 */
   const rules = ['size', 'elevation', 'animated'];

@@ -8,12 +8,16 @@
           item-style="line-height: 1"
           align="center" justify="space-between" :wrap="false"
         >
-          <!-- 名称 -->
-          <div class="text-lg font-bold">
-            {{ settings.title }}
-          </div>
+          <!-- 菜单栏左侧 -->
+          <n-space class="[&>div]-(flex items-center)">
+            <!-- 名称 -->
+            <div class="text-lg font-bold">{{ settings.title }}</div>
+            <!-- 菜单栏左侧内容 ( 由页面传递出来的 ) -->
+            <component v-if="renderNavbarLeft" :is="renderNavbarLeft" />
+          </n-space>
 
-          <n-space align="center">
+          <!-- 菜单栏右侧 -->
+          <n-space class="[&>div]-(flex items-center)">
             <!-- Github -->
             <n-button :href="homepage" target="_blank" tag="a" text>
               <i-mdi-github class="text-lg" />
@@ -34,13 +38,14 @@
       <!-- 内容区域 -->
       <div class="w-320 max-w-full h-full mxa px-3" un:flex="~ grow" :class="route.meta.layoutContentClass">
         <slot v-if="slots.default" />
-        <router-view v-else />
+        <router-view v-else @setRenderNavbarLeft="(fn?: () => VNode) => renderNavbarLeft = fn" />
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+  import type { VNode } from 'vue';
   import { homepage } from '@@/package.json';
   import { settings } from '@/settings';
 
@@ -48,4 +53,7 @@
   const slots = useSlots();
 
   const theme = useThemeStore();
+
+  /** 渲染菜单栏左侧内容的方法 */
+  const renderNavbarLeft = ref<() => VNode>();
 </script>
