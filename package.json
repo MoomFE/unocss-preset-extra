@@ -34,11 +34,11 @@
   ],
   "scripts": {
     "pre-task": "pnpm install && tsx scripts/transitionAnimateCSS.ts",
-    "build": "pnpm install && npm run pre-task && tsx scripts/build.ts",
-    "test": "pnpm install && npm run pre-task && vitest",
-    "test:ui": "pnpm install && npm run pre-task && vitest --ui",
-    "test-build": "pnpm install && npm run build && vitest --mode test-build",
-    "test-build:ui": "pnpm install && npm run build && vitest --mode test-build --ui",
+    "build": "npm run pre-task && tsx scripts/build.ts",
+    "test": "npm run pre-task && vitest",
+    "test:ui": "npm run pre-task && vitest --ui",
+    "test-build": "npm run build && vitest --mode test-build",
+    "test-build:ui": "npm run build && vitest --mode test-build --ui",
     "lint": "eslint ./src --fix"
   },
   "peerDependencies": {
