@@ -1,4 +1,4 @@
-# unocss-preset-extra
+# [unocss-preset-extra](https://unocss-preset-extra.moomfe.com/)
 
 [UnoCSS](https://github.com/unocss/unocss) 扩展, 提供类名简写及额外一些样式预设
 
@@ -7,6 +7,11 @@
 
 <br>
 
+## 文档
+
+[https://unocss-preset-extra.moomfe.com/](https://unocss-preset-extra.moomfe.com/)
+
+<br>
 
 ## 内置规则
 
@@ -124,7 +129,6 @@ npm install unocss-preset-extra -D
 ```
 
 <br>
-
 
 ## 使用
 
