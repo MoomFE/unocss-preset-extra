@@ -2,8 +2,15 @@
   "name": "unocss-preset-extra",
   "version": "0.4.3",
   "description": "",
-  "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
+  "keywords": [
+    "css",
+    "unocss",
+    "unocss-preset",
+    "unocss-preset-extra",
+    "animate.css"
+  ],
   "license": "MIT",
+  "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "homepage": "https://github.com/MoomFE/unocss-preset-extra#readme",
   "repository": {
     "type": "git",
@@ -12,13 +19,9 @@
   "bugs": {
     "url": "https://github.com/MoomFE/unocss-preset-extra/issues"
   },
-  "keywords": [
-    "css",
-    "unocss",
-    "unocss-preset",
-    "unocss-preset-extra",
-    "animate.css"
-  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -26,19 +29,16 @@
       "import": "./dist/index.mjs"
     }
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "pre-task": "tsx scripts/transitionAnimateCSS.ts",
-    "build": "npm run pre-task && tsx scripts/build.ts",
-    "test": "npm run pre-task && vitest",
-    "test:ui": "npm run pre-task && vitest --ui",
-    "test-build": "npm run build && vitest --mode test-build",
-    "test-build:ui": "npm run build && vitest --mode test-build --ui",
+    "pre-task": "pnpm install && tsx scripts/transitionAnimateCSS.ts",
+    "build": "pnpm install && npm run pre-task && tsx scripts/build.ts",
+    "test": "pnpm install && npm run pre-task && vitest",
+    "test:ui": "pnpm install && npm run pre-task && vitest --ui",
+    "test-build": "pnpm install && npm run build && vitest --mode test-build",
+    "test-build:ui": "pnpm install && npm run build && vitest --mode test-build --ui",
     "lint": "eslint ./src --fix"
   },
   "peerDependencies": {
