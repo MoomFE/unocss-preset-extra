@@ -15,13 +15,13 @@
         class="size-25 flex justify-center items-center rounded animated c-white bg-sky dark:bg-sky-6"
         :class="name && isAnimating && `animated-${name} ${durationPreset !== 'custom' ? `animated-${durationPreset}` : ''}`"
         :style="name && isAnimating && {
-          animationIterationCount: repeatInfinite ? 'infinite' : `${repeat}`,
-          animationDelay: `${delay}${delayUnit}`,
-          ...(durationPreset === 'custom' ? { animationDuration: `${duration}${durationUnit}` } : {}),
+          ...((repeatInfinite || (repeat && repeat !== 1)) ? { animationIterationCount: repeatInfinite ? 'infinite' : `${repeat}` } : {}),
+          ...(delay && delay !== 0 ? { animationDelay: `${delay}${delayUnit}` } : {}),
+          ...(durationPreset === 'custom' && duration && duration !== 0 ? { animationDuration: `${duration}${durationUnit}` } : {}),
         }"
         @animationend="onAnimationEnd"
       >
-        Animated
+        Animated {{ isAnimating }}
       </div>
     </div>
 
@@ -105,7 +105,7 @@
   /** 延迟时间单位 */
   const delayUnit = ref(timeUnitOptions[0].value);
   /** 周期预设 */
-  const durationPreset = ref(durationPresetOptions.at(-1)!.value);
+  const durationPreset = ref(durationPresetOptions.slice(-1)[0].value);
   /** 周期 */
   const duration = ref(0);
   /** 周期单位 */
@@ -113,21 +113,15 @@
 
   /** 是否在执行动画中 */
   const isAnimating = ref(false);
-  /** 当前动画运行次数 */
-  const animationRuns = ref(0);
 
   /** 设置动画 */
   function setAnimated(value: string) {
     name.value = value;
     isAnimating.value = true;
-    animationRuns.value = 0;
   }
   /** 动画结束时的回调 */
   function onAnimationEnd() {
-    animationRuns.value++;
-
-    if (repeatInfinite.value) return;
-    if (animationRuns.value >= repeat.value) isAnimating.value = false;
+    isAnimating.value = false;
   }
 
   /** 代码字符串 */
