@@ -8,11 +8,17 @@
   <DemoCard
     :code="codeStr"
     options-title="动画" options-class="w-55!"
+    extra-options-class="w-55!"
   >
     <div class="size-full flex justify-center overflow-hidden py-36">
       <div
         class="size-25 flex justify-center items-center rounded animated c-white bg-sky dark:bg-sky-6"
-        :class="name && isAnimating ? `animated-${name}` : ''"
+        :class="name && isAnimating && `animated-${name} ${durationPreset !== 'custom' ? `animated-${durationPreset}` : ''}`"
+        :style="name && isAnimating && {
+          animationIterationCount: repeatInfinite ? 'infinite' : `${repeat}`,
+          animationDelay: `${delay}${delayUnit}`,
+          ...(durationPreset === 'custom' ? { animationDuration: `${duration}${durationUnit}` } : {}),
+        }"
         @animationend="onAnimationEnd"
       >
         Animated
@@ -33,33 +39,115 @@
         </template>
       </n-space>
     </template>
+
+    <!-- 动画选项 -->
+    <template #extraOptions>
+      <n-form label-placement="left" label-width="5.5em" :show-feedback="false">
+        <n-form-item label="运行次数">
+          <n-space vertical>
+            <n-input-number v-if="!repeatInfinite" v-model:value="repeat" :min="1" />
+            <n-checkbox v-model:checked="repeatInfinite">无限循环</n-checkbox>
+          </n-space>
+        </n-form-item>
+        <n-divider class="my-3!" />
+        <n-form-item label="延迟">
+          <n-space vertical>
+            <n-input-number v-model:value="delay" :min="0" />
+            <n-select v-model:value="delayUnit" :options="timeUnitOptions" />
+          </n-space>
+        </n-form-item>
+        <n-divider class="my-3!" />
+        <n-form-item label="周期">
+          <n-space vertical>
+            <n-radio-group v-model:value="durationPreset" class="mt-1.5" name="duration">
+              <n-space vertical>
+                <n-radio v-for="({ label, value }) in durationPresetOptions" :key="value" :value="value">{{ label }}</n-radio>
+              </n-space>
+            </n-radio-group>
+            <template v-if="durationPreset === 'custom'">
+              <n-input-number v-model:value="duration" :min="0" />
+              <n-select v-model:value="durationUnit" :options="timeUnitOptions" />
+            </template>
+          </n-space>
+        </n-form-item>
+      </n-form>
+    </template>
   </DemoCard>
 </template>
 
 <script lang="ts" setup>
   import animatedJson from '../../../../src/rules/animated.json';
 
-  /** 当前激活的动画名称 */
-  const name = ref();
+  /** 延迟时间单位选项 */
+  const timeUnitOptions = [
+    { label: '毫秒', value: 'ms' },
+    { label: '秒', value: 's' },
+  ];
+  /** 周期选项 */
+  const durationPresetOptions = [
+    { label: '快', value: 'fast' },
+    { label: '很快', value: 'faster' },
+    { label: '慢', value: 'slow' },
+    { label: '很慢', value: 'slower' },
+    { label: '自定义', value: 'custom' },
+  ];
+
   /** 所有的动画名称 */
   const animatedNames = Object.keys(animatedJson);
+  /** 当前激活的动画名称 */
+  const name = ref();
+  /** 运行次数 */
+  const repeat = ref(1);
+  /** 无限循环 */
+  const repeatInfinite = ref(false);
+  /** 延迟时间 */
+  const delay = ref(0);
+  /** 延迟时间单位 */
+  const delayUnit = ref(timeUnitOptions[0].value);
+  /** 周期预设 */
+  const durationPreset = ref(durationPresetOptions.at(-1)!.value);
+  /** 周期 */
+  const duration = ref(0);
+  /** 周期单位 */
+  const durationUnit = ref(timeUnitOptions[0].value);
 
   /** 是否在执行动画中 */
   const isAnimating = ref(false);
+  /** 当前动画运行次数 */
+  const animationRuns = ref(0);
 
   /** 设置动画 */
   function setAnimated(value: string) {
     name.value = value;
     isAnimating.value = true;
+    animationRuns.value = 0;
   }
   /** 动画结束时的回调 */
   function onAnimationEnd() {
-    isAnimating.value = false;
+    animationRuns.value++;
+
+    if (repeatInfinite.value) return;
+    if (animationRuns.value >= repeat.value) isAnimating.value = false;
   }
 
   /** 代码字符串 */
   const codeStr = computed(() => {
-    return `<div class="animated animated-${name.value}" />`;
+    /** 运行次数 */
+    const animatedRepeat = repeatInfinite.value
+      ? ' animated-infinite'
+      : repeat.value && repeat.value !== 1
+        ? ` animated-repeat-${repeat.value}`
+        : '';
+    /** 延迟时间 */
+    const animatedDelay = delay.value && delay.value !== 0 ? ` animated-delay-${delay.value}${delayUnit.value}` : '';
+    /** 周期 */
+    const animatedDuration = durationPreset.value !== 'custom'
+      ? ` animated-${durationPreset.value}`
+      : duration.value && duration.value !== 0
+        ? ` animated-duration-${duration.value}${durationUnit.value}`
+        : '';
+
+    return `<div class="animated animated-${name.value}${animatedRepeat}${animatedDelay}${animatedDuration}" />`;
   });
 
   onMounted(() => {

@@ -17,6 +17,7 @@ export default defineConfig({
     ...Array.from({ length: 25 }, (_, i) => `el-${i}`),
     ...Array.from({ length: 101 }, (_, i) => `el-op-${i}`),
     ...Object.keys(animatedJson).map(n => `animated-${n}`),
+    'animated-faster', 'animated-fast', 'animated-slow', 'animated-slower',
   ],
   theme: {
     // 颜色
