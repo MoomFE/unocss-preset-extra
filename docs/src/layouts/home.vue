@@ -2,7 +2,7 @@
   <div class="min-h-screen flex">
     <div class="w-full" un:flex="~ grow col gap-3">
       <!-- 导航栏 -->
-      <div class="h-13 flex-none sticky top-0 z-10 shadow-md card-bg-dynamic">
+      <div class="h-13 flex-none sticky top-0 z-10 card-bg-dynamic" un:el="4 op-36">
         <n-space
           class="w-320 max-w-full h-full mxa px-3"
           item-style="line-height: 1"
