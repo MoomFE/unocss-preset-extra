@@ -1,6 +1,6 @@
 <template>
   <!-- 全局化配置 ( 主题 ) -->
-  <NConfigProvider :theme="theme" :theme-overrides="themeOverrides" :locale="zhCN" :date-locale="dateZhCN" abstract>
+  <NConfigProvider :theme="theme" :theme-overrides="themeOverrides" :locale="zhCN" :date-locale="dateZhCN" :inline-theme-disabled="!isBrowser" abstract>
     <!-- 元素 ( CSS 变量 ) -->
     <NElement>
       <!-- 加载条 ( 页面加载进度 ) -->
@@ -16,6 +16,7 @@
 
 <script lang="ts" setup>
   import { useLoadingBar } from 'naive-ui';
+  import { isBrowser } from '@moomfe/small-utils';
   import { app } from '@/shared/env';
   import { settings } from '@/settings';
 
