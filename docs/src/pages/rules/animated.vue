@@ -10,6 +10,14 @@
     options-title="动画" options-class="w-55!"
     extra-options-class="w-55!"
   >
+    <!-- 动画操控 -->
+    <template #title>
+      <n-button size="tiny" @click="isAnimating ? setAnimatedStop() : setAnimated()">
+        <i-material-symbols-stop v-if="isAnimating" class="text-base" />
+        <i-material-symbols-play-arrow v-else class="text-base" />
+      </n-button>
+    </template>
+
     <div class="size-full flex justify-center overflow-hidden py-36">
       <div
         class="size-25 flex justify-center items-center rounded animated c-white bg-sky dark:bg-sky-6"
@@ -19,9 +27,9 @@
           ...(delay && delay !== 0 ? { animationDelay: `${delay}${delayUnit}` } : {}),
           ...(durationPreset === 'custom' && duration && duration !== 0 ? { animationDuration: `${duration}${durationUnit}` } : {}),
         }"
-        @animationend="onAnimationEnd"
+        @animationend="setAnimatedStop"
       >
-        Animated {{ isAnimating }}
+        Animated
       </div>
     </div>
 
@@ -115,14 +123,26 @@
   const isAnimating = ref(false);
 
   /** 设置动画 */
-  function setAnimated(value: string) {
+  async function setAnimated(value: string = name.value) {
+    if (isAnimating.value) {
+      name.value = undefined;
+      isAnimating.value = false;
+
+      await nextTick();
+    }
+
     name.value = value;
     isAnimating.value = true;
   }
-  /** 动画结束时的回调 */
-  function onAnimationEnd() {
+  /** 设置动画结束 */
+  function setAnimatedStop() {
     isAnimating.value = false;
   }
+
+  // 动画选项修改后, 重新运行动画
+  watch([repeat, repeatInfinite, delay, delayUnit, durationPreset, duration, durationUnit], () => {
+    setAnimated();
+  });
 
   /** 代码字符串 */
   const codeStr = computed(() => {

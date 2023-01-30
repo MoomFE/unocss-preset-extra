@@ -5,6 +5,11 @@
       <!-- 头部内容 -->
       <template v-if="props.code" #header>
         <div class="h-8 flex items-center text-base lh-none px-3">
+          <!-- 标题部分 -->
+          <div v-if="slots.title" class="h-full flex items-center">
+            <slot name="title" />
+          </div>
+
           <div class="flex-grow" />
 
           <!-- 显隐代码切换 -->
