@@ -3,11 +3,11 @@
   <BasicSidebar ref="sidebarRef" @setDrawerOpenBtn="(fn) => emit('setRenderNavbarLeft', fn)">
     <div class="w-60" un:flex="none">
       <div class="w-60 h-[calc(100%-64px)] fixed scrollbar" un:b-r="1 solid gray op-36">
-        <n-menu v-model:value="value" :options="options" />
+        <n-menu v-model:value="value" :options="options" :render-label="renderMenuLabel" />
       </div>
     </div>
     <template #drawer>
-      <n-menu v-model:value="value" :options="options" @update:value="sidebarRef.closeDrawer()" />
+      <n-menu v-model:value="value" :options="options" :render-label="renderMenuLabel" @update:value="sidebarRef.closeDrawer()" />
     </template>
   </BasicSidebar>
 
@@ -22,14 +22,14 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-  import type { MenuProps } from 'naive-ui';
+<script lang="tsx" setup>
+  import type { MenuOption, MenuProps } from 'naive-ui';
+  import { RouterLink } from 'vue-router';
   import { camelCase, upperFirst } from 'lodash';
 
   const emit = defineEmits(['setRenderNavbarLeft']);
 
   const route = useRoute();
-  const router = useRouter();
 
   const sidebarRef = ref();
 
@@ -38,15 +38,25 @@
   /** 菜单 */
   const options: MenuProps['options'] = rules.map(key => ({ label: key, key }));
   /** 当前选中的菜单项 */
-  const value = ref(
-    route.path.split('/').reverse()[0],
-  );
+  const value = ref();
 
-  whenever(value, (key) => {
-    router.push({
-      name: `Rules/${upperFirst(camelCase(key))}`,
-    });
-  });
+  /** 更新当前选中的菜单项 */
+  function updateValue() {
+    value.value = route.path.split('/').reverse()[0];
+  }
+
+  /** 渲染菜单标签 */
+  function renderMenuLabel(option: MenuOption) {
+    return (
+      <RouterLink to={{ name: `Rules/${upperFirst(camelCase(option.key as string))}` }}>
+        { option.label }
+      </RouterLink>
+    );
+  }
+
+  updateValue();
+
+  watch(() => route.path, updateValue);
 </script>
 
 <route lang="yaml">
