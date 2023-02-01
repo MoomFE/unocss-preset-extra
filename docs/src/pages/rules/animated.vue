@@ -21,7 +21,7 @@
     <div class="size-full flex justify-center overflow-hidden py-36">
       <div
         class="size-25 flex justify-center items-center rounded animated c-white bg-sky dark:bg-sky-6"
-        :class="name && isAnimating && `animated-${name} ${durationPreset !== 'custom' ? `animated-${durationPreset}` : ''}`"
+        :class="name && isAnimating && `animated-${name} ${['', 'custom'].includes(durationPreset) ? '' : `animated-${durationPreset}`}`"
         :style="name && isAnimating && {
           ...((repeatInfinite || (repeat && repeat !== 1)) ? { animationIterationCount: repeatInfinite ? 'infinite' : `${repeat}` } : {}),
           ...(delay && delay !== 0 ? { animationDelay: `${delay}${delayUnit}` } : {}),
@@ -88,13 +88,14 @@
 
   /** 延迟时间单位选项 */
   const timeUnitOptions = [
-    { label: '毫秒', value: 'ms' },
     { label: '秒', value: 's' },
+    { label: '毫秒', value: 'ms' },
   ];
   /** 周期选项 */
   const durationPresetOptions = [
-    { label: '快', value: 'fast' },
     { label: '很快', value: 'faster' },
+    { label: '快', value: 'fast' },
+    { label: '默认', value: '' },
     { label: '慢', value: 'slow' },
     { label: '很慢', value: 'slower' },
     { label: '自定义', value: 'custom' },
@@ -113,7 +114,7 @@
   /** 延迟时间单位 */
   const delayUnit = ref(timeUnitOptions[0].value);
   /** 周期预设 */
-  const durationPreset = ref(durationPresetOptions.slice(-1)[0].value);
+  const durationPreset = ref('');
   /** 周期 */
   const duration = ref(0);
   /** 周期单位 */
@@ -155,10 +156,10 @@
     /** 延迟时间 */
     const animatedDelay = delay.value && delay.value !== 0 ? ` animated-delay-${delay.value}${delayUnit.value}` : '';
     /** 周期 */
-    const animatedDuration = durationPreset.value !== 'custom'
-      ? ` animated-${durationPreset.value}`
-      : duration.value && duration.value !== 0
-        ? ` animated-duration-${duration.value}${durationUnit.value}`
+    const animatedDuration = durationPreset.value === 'custom' && duration.value && duration.value !== 0
+      ? ` animated-duration-${duration.value}${durationUnit.value}`
+      : durationPreset.value
+        ? ` animated-${durationPreset.value}`
         : '';
 
     return `<div class="animated animated-${name.value}${animatedRepeat}${animatedDelay}${animatedDuration}" />`;
