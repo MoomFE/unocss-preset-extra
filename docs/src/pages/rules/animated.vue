@@ -156,8 +156,10 @@
     /** 延迟时间 */
     const animatedDelay = delay.value && delay.value !== 0 ? ` animated-delay-${delay.value}${delayUnit.value}` : '';
     /** 周期 */
-    const animatedDuration = durationPreset.value === 'custom' && duration.value && duration.value !== 0
-      ? ` animated-duration-${duration.value}${durationUnit.value}`
+    const animatedDuration = durationPreset.value === 'custom'
+      ? duration.value && duration.value !== 0
+        ? ` animated-duration-${duration.value}${durationUnit.value}`
+        : ''
       : durationPreset.value
         ? ` animated-${durationPreset.value}`
         : '';
