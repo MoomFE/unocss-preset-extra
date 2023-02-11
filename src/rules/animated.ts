@@ -24,19 +24,11 @@ export const durationShortcuts = {
  * animate.css
  */
 export const animatedRules: Rule<Theme>[] = [
-  [
-    /^animated$/,
-    () => {
-      return {
-        '--une-animated-duration': '1s',
-        'animation-duration': 'var(--une-animated-duration)',
-        'animation-fill-mode': 'both',
-      };
-    },
-    {
-      autocomplete: ['animated'],
-    },
-  ],
+  ['animated', {
+    '--une-animated-duration': '1s',
+    'animation-duration': 'var(--une-animated-duration)',
+    'animation-fill-mode': 'both',
+  }],
   [
     new RegExp(`^animated-(${Object.keys(animatedJSON).join('|')})$`),
     ([, name]) => {

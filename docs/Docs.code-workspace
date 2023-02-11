@@ -71,7 +71,7 @@
     "editor.guides.bracketPairs": "active",
     "editor.renderWhitespace": "boundary",
     "editor.accessibilitySupport": "off",
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "breadcrumbs.enabled": false,
     "files.exclude": {
       "*.code-workspace": true,
