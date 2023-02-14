@@ -1,0 +1,817 @@
+// Vitest Snapshot v1
+
+exports[`extra-group > alignments autocomplete 1`] = `
+[
+  "flex-content-around",
+  "flex-content-between",
+  "flex-content-center",
+  "flex-content-end",
+  "flex-content-evenly",
+  "flex-content-inherit",
+  "flex-content-initial",
+  "flex-content-revert",
+  "flex-content-revert-layer",
+  "flex-content-start",
+  "flex-content-unset",
+]
+`;
+
+exports[`extra-group > alignments autocomplete 2`] = `
+[
+  "flex-items-baseline",
+  "flex-items-center",
+  "flex-items-end",
+  "flex-items-inherit",
+  "flex-items-initial",
+  "flex-items-revert",
+  "flex-items-revert-layer",
+  "flex-items-start",
+  "flex-items-stretch",
+  "flex-items-unset",
+]
+`;
+
+exports[`extra-group > alignments autocomplete 3`] = `
+[
+  "flex-self-auto",
+  "flex-self-baseline",
+  "flex-self-center",
+  "flex-self-end",
+  "flex-self-inherit",
+  "flex-self-initial",
+  "flex-self-revert",
+  "flex-self-revert-layer",
+  "flex-self-start",
+  "flex-self-stretch",
+  "flex-self-unset",
+]
+`;
+
+exports[`extra-group > alignments autocomplete 4`] = `
+[
+  "grid-content-around",
+  "grid-content-between",
+  "grid-content-center",
+  "grid-content-end",
+  "grid-content-evenly",
+  "grid-content-inherit",
+  "grid-content-initial",
+  "grid-content-revert",
+  "grid-content-revert-layer",
+  "grid-content-start",
+  "grid-content-unset",
+]
+`;
+
+exports[`extra-group > alignments autocomplete 5`] = `
+[
+  "grid-items-baseline",
+  "grid-items-center",
+  "grid-items-end",
+  "grid-items-inherit",
+  "grid-items-initial",
+  "grid-items-revert",
+  "grid-items-revert-layer",
+  "grid-items-start",
+  "grid-items-stretch",
+  "grid-items-unset",
+]
+`;
+
+exports[`extra-group > alignments autocomplete 6`] = `
+[
+  "grid-self-auto",
+  "grid-self-baseline",
+  "grid-self-center",
+  "grid-self-end",
+  "grid-self-inherit",
+  "grid-self-initial",
+  "grid-self-revert",
+  "grid-self-revert-layer",
+  "grid-self-start",
+  "grid-self-stretch",
+  "grid-self-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 1`] = `
+[
+  "flex-justify-around",
+  "flex-justify-between",
+  "flex-justify-center",
+  "flex-justify-end",
+  "flex-justify-evenly",
+  "flex-justify-inherit",
+  "flex-justify-initial",
+  "flex-justify-items-center",
+  "flex-justify-items-end",
+  "flex-justify-items-inherit",
+  "flex-justify-items-initial",
+  "flex-justify-items-revert",
+  "flex-justify-items-revert-layer",
+  "flex-justify-items-start",
+  "flex-justify-items-stretch",
+  "flex-justify-items-unset",
+  "flex-justify-revert",
+  "flex-justify-revert-layer",
+  "flex-justify-self-auto",
+  "flex-justify-self-center",
+  "flex-justify-self-end",
+  "flex-justify-self-inherit",
+  "flex-justify-self-initial",
+  "flex-justify-self-revert",
+  "flex-justify-self-revert-layer",
+  "flex-justify-self-start",
+  "flex-justify-self-stretch",
+  "flex-justify-self-unset",
+  "flex-justify-start",
+  "flex-justify-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 2`] = `
+[
+  "grid-justify-around",
+  "grid-justify-between",
+  "grid-justify-center",
+  "grid-justify-end",
+  "grid-justify-evenly",
+  "grid-justify-inherit",
+  "grid-justify-initial",
+  "grid-justify-items-center",
+  "grid-justify-items-end",
+  "grid-justify-items-inherit",
+  "grid-justify-items-initial",
+  "grid-justify-items-revert",
+  "grid-justify-items-revert-layer",
+  "grid-justify-items-start",
+  "grid-justify-items-stretch",
+  "grid-justify-items-unset",
+  "grid-justify-revert",
+  "grid-justify-revert-layer",
+  "grid-justify-self-auto",
+  "grid-justify-self-center",
+  "grid-justify-self-end",
+  "grid-justify-self-inherit",
+  "grid-justify-self-initial",
+  "grid-justify-self-revert",
+  "grid-justify-self-revert-layer",
+  "grid-justify-self-start",
+  "grid-justify-self-stretch",
+  "grid-justify-self-unset",
+  "grid-justify-start",
+  "grid-justify-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 3`] = `
+[
+  "flex-order-first",
+  "flex-order-last",
+  "flex-order-none",
+]
+`;
+
+exports[`extra-group > autocomplete 4`] = `
+[
+  "grid-order-first",
+  "grid-order-last",
+  "grid-order-none",
+]
+`;
+
+exports[`extra-group > autocomplete 5`] = `
+[
+  "flex-content-around",
+  "flex-content-between",
+  "flex-content-center",
+  "flex-content-end",
+  "flex-content-evenly",
+  "flex-content-inherit",
+  "flex-content-initial",
+  "flex-content-revert",
+  "flex-content-revert-layer",
+  "flex-content-start",
+  "flex-content-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 6`] = `
+[
+  "flex-items-baseline",
+  "flex-items-center",
+  "flex-items-end",
+  "flex-items-inherit",
+  "flex-items-initial",
+  "flex-items-revert",
+  "flex-items-revert-layer",
+  "flex-items-start",
+  "flex-items-stretch",
+  "flex-items-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 7`] = `
+[
+  "flex-self-auto",
+  "flex-self-baseline",
+  "flex-self-center",
+  "flex-self-end",
+  "flex-self-inherit",
+  "flex-self-initial",
+  "flex-self-revert",
+  "flex-self-revert-layer",
+  "flex-self-start",
+  "flex-self-stretch",
+  "flex-self-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 8`] = `
+[
+  "grid-content-around",
+  "grid-content-between",
+  "grid-content-center",
+  "grid-content-end",
+  "grid-content-evenly",
+  "grid-content-inherit",
+  "grid-content-initial",
+  "grid-content-revert",
+  "grid-content-revert-layer",
+  "grid-content-start",
+  "grid-content-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 9`] = `
+[
+  "grid-items-baseline",
+  "grid-items-center",
+  "grid-items-end",
+  "grid-items-inherit",
+  "grid-items-initial",
+  "grid-items-revert",
+  "grid-items-revert-layer",
+  "grid-items-start",
+  "grid-items-stretch",
+  "grid-items-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 10`] = `
+[
+  "grid-self-auto",
+  "grid-self-baseline",
+  "grid-self-center",
+  "grid-self-end",
+  "grid-self-inherit",
+  "grid-self-initial",
+  "grid-self-revert",
+  "grid-self-revert-layer",
+  "grid-self-start",
+  "grid-self-stretch",
+  "grid-self-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 11`] = `
+[
+  "flex-place-content-around",
+  "flex-place-content-between",
+  "flex-place-content-center",
+  "flex-place-content-end",
+  "flex-place-content-evenly",
+  "flex-place-content-inherit",
+  "flex-place-content-initial",
+  "flex-place-content-revert",
+  "flex-place-content-revert-layer",
+  "flex-place-content-start",
+  "flex-place-content-stretch",
+  "flex-place-content-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 12`] = `
+[
+  "flex-place-items-center",
+  "flex-place-items-end",
+  "flex-place-items-inherit",
+  "flex-place-items-initial",
+  "flex-place-items-revert",
+  "flex-place-items-revert-layer",
+  "flex-place-items-start",
+  "flex-place-items-stretch",
+  "flex-place-items-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 13`] = `
+[
+  "flex-place-self-auto",
+  "flex-place-self-center",
+  "flex-place-self-end",
+  "flex-place-self-inherit",
+  "flex-place-self-initial",
+  "flex-place-self-revert",
+  "flex-place-self-revert-layer",
+  "flex-place-self-start",
+  "flex-place-self-stretch",
+  "flex-place-self-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 14`] = `
+[
+  "grid-place-content-around",
+  "grid-place-content-between",
+  "grid-place-content-center",
+  "grid-place-content-end",
+  "grid-place-content-evenly",
+  "grid-place-content-inherit",
+  "grid-place-content-initial",
+  "grid-place-content-revert",
+  "grid-place-content-revert-layer",
+  "grid-place-content-start",
+  "grid-place-content-stretch",
+  "grid-place-content-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 15`] = `
+[
+  "grid-place-items-center",
+  "grid-place-items-end",
+  "grid-place-items-inherit",
+  "grid-place-items-initial",
+  "grid-place-items-revert",
+  "grid-place-items-revert-layer",
+  "grid-place-items-start",
+  "grid-place-items-stretch",
+  "grid-place-items-unset",
+]
+`;
+
+exports[`extra-group > autocomplete 16`] = `
+[
+  "grid-place-self-auto",
+  "grid-place-self-center",
+  "grid-place-self-end",
+  "grid-place-self-inherit",
+  "grid-place-self-initial",
+  "grid-place-self-revert",
+  "grid-place-self-revert-layer",
+  "grid-place-self-start",
+  "grid-place-self-stretch",
+  "grid-place-self-unset",
+]
+`;
+
+exports[`extra-group > justifies 1`] = `
+[
+  "flex-justify-around",
+  "flex-justify-between",
+  "flex-justify-center",
+  "flex-justify-end",
+  "flex-justify-evenly",
+  "flex-justify-inherit",
+  "flex-justify-initial",
+  "flex-justify-items-center",
+  "flex-justify-items-end",
+  "flex-justify-items-inherit",
+  "flex-justify-items-initial",
+  "flex-justify-items-revert",
+  "flex-justify-items-revert-layer",
+  "flex-justify-items-start",
+  "flex-justify-items-stretch",
+  "flex-justify-items-unset",
+  "flex-justify-revert",
+  "flex-justify-revert-layer",
+  "flex-justify-self-auto",
+  "flex-justify-self-center",
+  "flex-justify-self-end",
+  "flex-justify-self-inherit",
+  "flex-justify-self-initial",
+  "flex-justify-self-revert",
+  "flex-justify-self-revert-layer",
+  "flex-justify-self-start",
+  "flex-justify-self-stretch",
+  "flex-justify-self-unset",
+  "flex-justify-start",
+  "flex-justify-unset",
+]
+`;
+
+exports[`extra-group > justifies 2`] = `
+[
+  "grid-justify-around",
+  "grid-justify-between",
+  "grid-justify-center",
+  "grid-justify-end",
+  "grid-justify-evenly",
+  "grid-justify-inherit",
+  "grid-justify-initial",
+  "grid-justify-items-center",
+  "grid-justify-items-end",
+  "grid-justify-items-inherit",
+  "grid-justify-items-initial",
+  "grid-justify-items-revert",
+  "grid-justify-items-revert-layer",
+  "grid-justify-items-start",
+  "grid-justify-items-stretch",
+  "grid-justify-items-unset",
+  "grid-justify-revert",
+  "grid-justify-revert-layer",
+  "grid-justify-self-auto",
+  "grid-justify-self-center",
+  "grid-justify-self-end",
+  "grid-justify-self-inherit",
+  "grid-justify-self-initial",
+  "grid-justify-self-revert",
+  "grid-justify-self-revert-layer",
+  "grid-justify-self-start",
+  "grid-justify-self-stretch",
+  "grid-justify-self-unset",
+  "grid-justify-start",
+  "grid-justify-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 1`] = `
+[
+  "flex-justify-around",
+  "flex-justify-between",
+  "flex-justify-center",
+  "flex-justify-end",
+  "flex-justify-evenly",
+  "flex-justify-inherit",
+  "flex-justify-initial",
+  "flex-justify-items-center",
+  "flex-justify-items-end",
+  "flex-justify-items-inherit",
+  "flex-justify-items-initial",
+  "flex-justify-items-revert",
+  "flex-justify-items-revert-layer",
+  "flex-justify-items-start",
+  "flex-justify-items-stretch",
+  "flex-justify-items-unset",
+  "flex-justify-revert",
+  "flex-justify-revert-layer",
+  "flex-justify-self-auto",
+  "flex-justify-self-center",
+  "flex-justify-self-end",
+  "flex-justify-self-inherit",
+  "flex-justify-self-initial",
+  "flex-justify-self-revert",
+  "flex-justify-self-revert-layer",
+  "flex-justify-self-start",
+  "flex-justify-self-stretch",
+  "flex-justify-self-unset",
+  "flex-justify-start",
+  "flex-justify-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 2`] = `
+[
+  "grid-justify-around",
+  "grid-justify-between",
+  "grid-justify-center",
+  "grid-justify-end",
+  "grid-justify-evenly",
+  "grid-justify-inherit",
+  "grid-justify-initial",
+  "grid-justify-items-center",
+  "grid-justify-items-end",
+  "grid-justify-items-inherit",
+  "grid-justify-items-initial",
+  "grid-justify-items-revert",
+  "grid-justify-items-revert-layer",
+  "grid-justify-items-start",
+  "grid-justify-items-stretch",
+  "grid-justify-items-unset",
+  "grid-justify-revert",
+  "grid-justify-revert-layer",
+  "grid-justify-self-auto",
+  "grid-justify-self-center",
+  "grid-justify-self-end",
+  "grid-justify-self-inherit",
+  "grid-justify-self-initial",
+  "grid-justify-self-revert",
+  "grid-justify-self-revert-layer",
+  "grid-justify-self-start",
+  "grid-justify-self-stretch",
+  "grid-justify-self-unset",
+  "grid-justify-start",
+  "grid-justify-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 3`] = `
+[
+  "flex-order-first",
+  "flex-order-last",
+  "flex-order-none",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 4`] = `
+[
+  "grid-order-first",
+  "grid-order-last",
+  "grid-order-none",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 5`] = `
+[
+  "flex-content-around",
+  "flex-content-between",
+  "flex-content-center",
+  "flex-content-end",
+  "flex-content-evenly",
+  "flex-content-inherit",
+  "flex-content-initial",
+  "flex-content-revert",
+  "flex-content-revert-layer",
+  "flex-content-start",
+  "flex-content-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 6`] = `
+[
+  "flex-items-baseline",
+  "flex-items-center",
+  "flex-items-end",
+  "flex-items-inherit",
+  "flex-items-initial",
+  "flex-items-revert",
+  "flex-items-revert-layer",
+  "flex-items-start",
+  "flex-items-stretch",
+  "flex-items-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 7`] = `
+[
+  "flex-self-auto",
+  "flex-self-baseline",
+  "flex-self-center",
+  "flex-self-end",
+  "flex-self-inherit",
+  "flex-self-initial",
+  "flex-self-revert",
+  "flex-self-revert-layer",
+  "flex-self-start",
+  "flex-self-stretch",
+  "flex-self-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 8`] = `
+[
+  "grid-content-around",
+  "grid-content-between",
+  "grid-content-center",
+  "grid-content-end",
+  "grid-content-evenly",
+  "grid-content-inherit",
+  "grid-content-initial",
+  "grid-content-revert",
+  "grid-content-revert-layer",
+  "grid-content-start",
+  "grid-content-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 9`] = `
+[
+  "grid-items-baseline",
+  "grid-items-center",
+  "grid-items-end",
+  "grid-items-inherit",
+  "grid-items-initial",
+  "grid-items-revert",
+  "grid-items-revert-layer",
+  "grid-items-start",
+  "grid-items-stretch",
+  "grid-items-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 10`] = `
+[
+  "grid-self-auto",
+  "grid-self-baseline",
+  "grid-self-center",
+  "grid-self-end",
+  "grid-self-inherit",
+  "grid-self-initial",
+  "grid-self-revert",
+  "grid-self-revert-layer",
+  "grid-self-start",
+  "grid-self-stretch",
+  "grid-self-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 11`] = `
+[
+  "flex-place-content-around",
+  "flex-place-content-between",
+  "flex-place-content-center",
+  "flex-place-content-end",
+  "flex-place-content-evenly",
+  "flex-place-content-inherit",
+  "flex-place-content-initial",
+  "flex-place-content-revert",
+  "flex-place-content-revert-layer",
+  "flex-place-content-start",
+  "flex-place-content-stretch",
+  "flex-place-content-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 12`] = `
+[
+  "flex-place-items-center",
+  "flex-place-items-end",
+  "flex-place-items-inherit",
+  "flex-place-items-initial",
+  "flex-place-items-revert",
+  "flex-place-items-revert-layer",
+  "flex-place-items-start",
+  "flex-place-items-stretch",
+  "flex-place-items-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 13`] = `
+[
+  "flex-place-self-auto",
+  "flex-place-self-center",
+  "flex-place-self-end",
+  "flex-place-self-inherit",
+  "flex-place-self-initial",
+  "flex-place-self-revert",
+  "flex-place-self-revert-layer",
+  "flex-place-self-start",
+  "flex-place-self-stretch",
+  "flex-place-self-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 14`] = `
+[
+  "grid-place-content-around",
+  "grid-place-content-between",
+  "grid-place-content-center",
+  "grid-place-content-end",
+  "grid-place-content-evenly",
+  "grid-place-content-inherit",
+  "grid-place-content-initial",
+  "grid-place-content-revert",
+  "grid-place-content-revert-layer",
+  "grid-place-content-start",
+  "grid-place-content-stretch",
+  "grid-place-content-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 15`] = `
+[
+  "grid-place-items-center",
+  "grid-place-items-end",
+  "grid-place-items-inherit",
+  "grid-place-items-initial",
+  "grid-place-items-revert",
+  "grid-place-items-revert-layer",
+  "grid-place-items-start",
+  "grid-place-items-stretch",
+  "grid-place-items-unset",
+]
+`;
+
+exports[`extra-group > justifies autocomplete 16`] = `
+[
+  "grid-place-self-auto",
+  "grid-place-self-center",
+  "grid-place-self-end",
+  "grid-place-self-inherit",
+  "grid-place-self-initial",
+  "grid-place-self-revert",
+  "grid-place-self-revert-layer",
+  "grid-place-self-start",
+  "grid-place-self-stretch",
+  "grid-place-self-unset",
+]
+`;
+
+exports[`extra-group > orders autocomplete 1`] = `
+[
+  "flex-order-first",
+  "flex-order-last",
+  "flex-order-none",
+]
+`;
+
+exports[`extra-group > orders autocomplete 2`] = `
+[
+  "grid-order-first",
+  "grid-order-last",
+  "grid-order-none",
+]
+`;
+
+exports[`extra-group > placements autocomplete 1`] = `
+[
+  "flex-place-content-around",
+  "flex-place-content-between",
+  "flex-place-content-center",
+  "flex-place-content-end",
+  "flex-place-content-evenly",
+  "flex-place-content-inherit",
+  "flex-place-content-initial",
+  "flex-place-content-revert",
+  "flex-place-content-revert-layer",
+  "flex-place-content-start",
+  "flex-place-content-stretch",
+  "flex-place-content-unset",
+]
+`;
+
+exports[`extra-group > placements autocomplete 2`] = `
+[
+  "flex-place-items-center",
+  "flex-place-items-end",
+  "flex-place-items-inherit",
+  "flex-place-items-initial",
+  "flex-place-items-revert",
+  "flex-place-items-revert-layer",
+  "flex-place-items-start",
+  "flex-place-items-stretch",
+  "flex-place-items-unset",
+]
+`;
+
+exports[`extra-group > placements autocomplete 3`] = `
+[
+  "flex-place-self-auto",
+  "flex-place-self-center",
+  "flex-place-self-end",
+  "flex-place-self-inherit",
+  "flex-place-self-initial",
+  "flex-place-self-revert",
+  "flex-place-self-revert-layer",
+  "flex-place-self-start",
+  "flex-place-self-stretch",
+  "flex-place-self-unset",
+]
+`;
+
+exports[`extra-group > placements autocomplete 4`] = `
+[
+  "grid-place-content-around",
+  "grid-place-content-between",
+  "grid-place-content-center",
+  "grid-place-content-end",
+  "grid-place-content-evenly",
+  "grid-place-content-inherit",
+  "grid-place-content-initial",
+  "grid-place-content-revert",
+  "grid-place-content-revert-layer",
+  "grid-place-content-start",
+  "grid-place-content-stretch",
+  "grid-place-content-unset",
+]
+`;
+
+exports[`extra-group > placements autocomplete 5`] = `
+[
+  "grid-place-items-center",
+  "grid-place-items-end",
+  "grid-place-items-inherit",
+  "grid-place-items-initial",
+  "grid-place-items-revert",
+  "grid-place-items-revert-layer",
+  "grid-place-items-start",
+  "grid-place-items-stretch",
+  "grid-place-items-unset",
+]
+`;
+
+exports[`extra-group > placements autocomplete 6`] = `
+[
+  "grid-place-self-auto",
+  "grid-place-self-center",
+  "grid-place-self-end",
+  "grid-place-self-inherit",
+  "grid-place-self-initial",
+  "grid-place-self-revert",
+  "grid-place-self-revert-layer",
+  "grid-place-self-start",
+  "grid-place-self-stretch",
+  "grid-place-self-unset",
+]
+`;

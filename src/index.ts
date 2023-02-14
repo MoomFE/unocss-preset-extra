@@ -2,6 +2,7 @@ import { type Preset } from 'unocss';
 import { sizeRules } from '@/rules/size';
 import { elevationRules } from '@/rules/elevation';
 import { animatedRules } from '@/rules/animated';
+import { extraGroupRules } from '@/rules/extra-group';
 
 export function presetExtra(): Preset {
   return {
@@ -13,6 +14,8 @@ export function presetExtra(): Preset {
       ...elevationRules,
       // animate.css
       ...animatedRules,
+      // 额外的分组
+      ...extraGroupRules,
     ],
   };
 }
