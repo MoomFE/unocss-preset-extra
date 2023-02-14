@@ -15,6 +15,7 @@
     "declarationDir": "./types",
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "suppressImplicitAnyIndexErrors": true,
     "allowJs": true,
     "paths": {
       "@/*": ["./src/*"],
