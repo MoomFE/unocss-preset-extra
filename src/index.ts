@@ -14,7 +14,7 @@ export function presetExtra(): Preset {
       ...elevationRules,
       // animate.css
       ...animatedRules,
-      // 额外的分组
+      // 额外的分组规则
       ...extraGroupRules,
     ],
   };
