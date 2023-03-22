@@ -4,7 +4,6 @@ import { createAutocomplete } from '@unocss/autocomplete';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { alignments, justifies, orders, placements } from '@unocss/preset-mini/dist/rules';
-import { removeUnusedCSS } from './utils';
 import { presetExtra } from '@/index';
 
 describe('extra-group', () => {
@@ -18,26 +17,26 @@ describe('extra-group', () => {
 
   test('justifies', async () => {
     const { css } = await generator.generate(
-      justifies.map(([key]) => key).join(' '),
+      justifies.map(([key]) => key).join(' '), { preflights: false },
     );
     const { css: flexCss } = await generator.generate(
-      justifies.map(([key]) => `flex-${key}`).join(' '),
+      justifies.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
     );
     const { css: gridCss } = await generator.generate(
-      justifies.map(([key]) => `grid-${key}`).join(' '),
+      justifies.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineFlexCss } = await generator.generate(
-      justifies.map(([key]) => `inline-flex-${key}`).join(' '),
+      justifies.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineGridCss } = await generator.generate(
-      justifies.map(([key]) => `inline-grid-${key}`).join(' '),
+      justifies.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
     );
 
-    const cssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(css)));
-    const flexCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(flexCss)));
-    const gridCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(gridCss)));
-    const inlineFlexCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(inlineFlexCss)));
-    const inlineGridCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(inlineGridCss)));
+    const cssJson = postcssJs.objectify(postcss.parse(css));
+    const flexCssJson = postcssJs.objectify(postcss.parse(flexCss));
+    const gridCssJson = postcssJs.objectify(postcss.parse(gridCss));
+    const inlineFlexCssJson = postcssJs.objectify(postcss.parse(inlineFlexCss));
+    const inlineGridCssJson = postcssJs.objectify(postcss.parse(inlineGridCss));
 
     Object.entries(cssJson).forEach(([key, style]) => {
       expect(style).toEqual(flexCssJson[`.flex-${key.slice(1)}`]);
@@ -49,26 +48,26 @@ describe('extra-group', () => {
 
   test('orders', async () => {
     const { css } = await generator.generate(
-      orders.map(([key]) => key).join(' '),
+      orders.map(([key]) => key).join(' '), { preflights: false },
     );
     const { css: flexCss } = await generator.generate(
-      orders.map(([key]) => `flex-${key}`).join(' '),
+      orders.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
     );
     const { css: gridCss } = await generator.generate(
-      orders.map(([key]) => `grid-${key}`).join(' '),
+      orders.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineFlexCss } = await generator.generate(
-      orders.map(([key]) => `inline-flex-${key}`).join(' '),
+      orders.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineGridCss } = await generator.generate(
-      orders.map(([key]) => `inline-grid-${key}`).join(' '),
+      orders.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
     );
 
-    const cssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(css)));
-    const flexCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(flexCss)));
-    const gridCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(gridCss)));
-    const inlineFlexCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(inlineFlexCss)));
-    const inlineGridCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(inlineGridCss)));
+    const cssJson = postcssJs.objectify(postcss.parse(css));
+    const flexCssJson = postcssJs.objectify(postcss.parse(flexCss));
+    const gridCssJson = postcssJs.objectify(postcss.parse(gridCss));
+    const inlineFlexCssJson = postcssJs.objectify(postcss.parse(inlineFlexCss));
+    const inlineGridCssJson = postcssJs.objectify(postcss.parse(inlineGridCss));
 
     Object.entries(cssJson).forEach(([key, style]) => {
       expect(style).toEqual(flexCssJson[`.flex-${key.slice(1)}`]);
@@ -80,26 +79,26 @@ describe('extra-group', () => {
 
   test('alignments', async () => {
     const { css } = await generator.generate(
-      alignments.map(([key]) => key).join(' '),
+      alignments.map(([key]) => key).join(' '), { preflights: false },
     );
     const { css: flexCss } = await generator.generate(
-      alignments.map(([key]) => `flex-${key}`).join(' '),
+      alignments.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
     );
     const { css: gridCss } = await generator.generate(
-      alignments.map(([key]) => `grid-${key}`).join(' '),
+      alignments.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineFlexCss } = await generator.generate(
-      alignments.map(([key]) => `inline-flex-${key}`).join(' '),
+      alignments.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineGridCss } = await generator.generate(
-      alignments.map(([key]) => `inline-grid-${key}`).join(' '),
+      alignments.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
     );
 
-    const cssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(css)));
-    const flexCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(flexCss)));
-    const gridCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(gridCss)));
-    const inlineFlexCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(inlineFlexCss)));
-    const inlineGridCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(inlineGridCss)));
+    const cssJson = postcssJs.objectify(postcss.parse(css));
+    const flexCssJson = postcssJs.objectify(postcss.parse(flexCss));
+    const gridCssJson = postcssJs.objectify(postcss.parse(gridCss));
+    const inlineFlexCssJson = postcssJs.objectify(postcss.parse(inlineFlexCss));
+    const inlineGridCssJson = postcssJs.objectify(postcss.parse(inlineGridCss));
 
     Object.entries(cssJson).forEach(([key, style]) => {
       expect(style).toEqual(flexCssJson[`.flex-${key.slice(1)}`]);
@@ -111,26 +110,26 @@ describe('extra-group', () => {
 
   test('placements', async () => {
     const { css } = await generator.generate(
-      placements.map(([key]) => key).join(' '),
+      placements.map(([key]) => key).join(' '), { preflights: false },
     );
     const { css: flexCss } = await generator.generate(
-      placements.map(([key]) => `flex-${key}`).join(' '),
+      placements.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
     );
     const { css: gridCss } = await generator.generate(
-      placements.map(([key]) => `grid-${key}`).join(' '),
+      placements.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineFlexCss } = await generator.generate(
-      placements.map(([key]) => `inline-flex-${key}`).join(' '),
+      placements.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineGridCss } = await generator.generate(
-      placements.map(([key]) => `inline-grid-${key}`).join(' '),
+      placements.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
     );
 
-    const cssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(css)));
-    const flexCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(flexCss)));
-    const gridCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(gridCss)));
-    const inlineFlexCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(inlineFlexCss)));
-    const inlineGridCssJson = removeUnusedCSS(postcssJs.objectify(postcss.parse(inlineGridCss)));
+    const cssJson = postcssJs.objectify(postcss.parse(css));
+    const flexCssJson = postcssJs.objectify(postcss.parse(flexCss));
+    const gridCssJson = postcssJs.objectify(postcss.parse(gridCss));
+    const inlineFlexCssJson = postcssJs.objectify(postcss.parse(inlineFlexCss));
+    const inlineGridCssJson = postcssJs.objectify(postcss.parse(inlineGridCss));
 
     Object.entries(cssJson).forEach(([key, style]) => {
       expect(style).toEqual(flexCssJson[`.flex-${key.slice(1)}`]);

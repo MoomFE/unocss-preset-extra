@@ -3,7 +3,6 @@ import { describe, expect, test } from 'vitest';
 import { createAutocomplete } from '@unocss/autocomplete';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
-import { removeUnusedCSS } from './utils';
 import { presetExtra } from '@/index';
 
 describe('size', () => {
@@ -17,22 +16,20 @@ describe('size', () => {
 
   test('自动宽高, 屏幕宽高', async () => {
     const { css } = await generator.generate(
-      ['auto', 'screen'].map(s => `size-${s}`).join(' '),
+      ['auto', 'screen'].map(s => `size-${s}`).join(' '), { preflights: false },
     );
     const { css: minCss } = await generator.generate(
-      ['auto', 'screen'].map(s => `min-size-${s}`).join(' '),
+      ['auto', 'screen'].map(s => `min-size-${s}`).join(' '), { preflights: false },
     );
     const { css: maxCss } = await generator.generate(
-      ['auto', 'screen'].map(s => `max-size-${s}`).join(' '),
+      ['auto', 'screen'].map(s => `max-size-${s}`).join(' '), { preflights: false },
     );
 
-    expect(
-      removeUnusedCSS({
-        ...postcssJs.objectify(postcss.parse(css)),
-        ...postcssJs.objectify(postcss.parse(minCss)),
-        ...postcssJs.objectify(postcss.parse(maxCss)),
-      }),
-    ).toEqual({
+    expect({
+      ...postcssJs.objectify(postcss.parse(css)),
+      ...postcssJs.objectify(postcss.parse(minCss)),
+      ...postcssJs.objectify(postcss.parse(maxCss)),
+    }).toEqual({
       '.size-auto': { width: 'auto', height: 'auto' },
       '.size-screen': { width: '100vw', height: '100vh' },
 
@@ -46,22 +43,20 @@ describe('size', () => {
 
   test('百分比宽高', async () => {
     const { css } = await generator.generate(
-      ['1/2', '1/4', '1/10', 'full'].map(s => `size-${s}`).join(' '),
+      ['1/2', '1/4', '1/10', 'full'].map(s => `size-${s}`).join(' '), { preflights: false },
     );
     const { css: minCss } = await generator.generate(
-      ['1/2', '1/4', '1/10', 'full'].map(s => `min-size-${s}`).join(' '),
+      ['1/2', '1/4', '1/10', 'full'].map(s => `min-size-${s}`).join(' '), { preflights: false },
     );
     const { css: maxCss } = await generator.generate(
-      ['1/2', '1/4', '1/10', 'full'].map(s => `max-size-${s}`).join(' '),
+      ['1/2', '1/4', '1/10', 'full'].map(s => `max-size-${s}`).join(' '), { preflights: false },
     );
 
-    expect(
-      removeUnusedCSS({
-        ...postcssJs.objectify(postcss.parse(css)),
-        ...postcssJs.objectify(postcss.parse(minCss)),
-        ...postcssJs.objectify(postcss.parse(maxCss)),
-      }),
-    ).toEqual({
+    expect({
+      ...postcssJs.objectify(postcss.parse(css)),
+      ...postcssJs.objectify(postcss.parse(minCss)),
+      ...postcssJs.objectify(postcss.parse(maxCss)),
+    }).toEqual({
       '.size-1\\/2': { width: '50%', height: '50%' },
       '.size-1\\/4': { width: '25%', height: '25%' },
       '.size-1\\/10': { width: '10%', height: '10%' },
@@ -85,27 +80,28 @@ describe('size', () => {
         '1', '2', '3', '666',
         'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl',
       ].map(s => `size-${s}`).join(' '),
+      { preflights: false },
     );
     const { css: minCss } = await generator.generate(
       [
         '1', '2', '3', '666',
         'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl',
       ].map(s => `min-size-${s}`).join(' '),
+      { preflights: false },
     );
     const { css: maxCss } = await generator.generate(
       [
         '1', '2', '3', '666',
         'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl',
       ].map(s => `max-size-${s}`).join(' '),
+      { preflights: false },
     );
 
-    expect(
-      removeUnusedCSS({
-        ...postcssJs.objectify(postcss.parse(css)),
-        ...postcssJs.objectify(postcss.parse(minCss)),
-        ...postcssJs.objectify(postcss.parse(maxCss)),
-      }),
-    ).toEqual({
+    expect({
+      ...postcssJs.objectify(postcss.parse(css)),
+      ...postcssJs.objectify(postcss.parse(minCss)),
+      ...postcssJs.objectify(postcss.parse(maxCss)),
+    }).toEqual({
       '.size-1': { width: '0.25rem', height: '0.25rem' },
       '.size-2': { width: '0.5rem', height: '0.5rem' },
       '.size-3': { width: '0.75rem', height: '0.75rem' },
@@ -159,21 +155,22 @@ describe('size', () => {
   test('自定义宽高', async () => {
     const { css } = await generator.generate(
       ['1px', '1pt', '1pc', '1rem', '1em', '1%', '1vh', '1vw', '1in', '1cm', '1mm', '1ex', '1ch', '1vmin', '1vmax', '1rpx'].map(s => `size-[${s}]`).join(' '),
+      { preflights: false },
     );
     const { css: minCss } = await generator.generate(
       ['1px', '1pt', '1pc', '1rem', '1em', '1%', '1vh', '1vw', '1in', '1cm', '1mm', '1ex', '1ch', '1vmin', '1vmax', '1rpx'].map(s => `min-size-[${s}]`).join(' '),
+      { preflights: false },
     );
     const { css: maxCss } = await generator.generate(
       ['1px', '1pt', '1pc', '1rem', '1em', '1%', '1vh', '1vw', '1in', '1cm', '1mm', '1ex', '1ch', '1vmin', '1vmax', '1rpx'].map(s => `max-size-[${s}]`).join(' '),
+      { preflights: false },
     );
 
-    expect(
-      removeUnusedCSS({
-        ...postcssJs.objectify(postcss.parse(css)),
-        ...postcssJs.objectify(postcss.parse(minCss)),
-        ...postcssJs.objectify(postcss.parse(maxCss)),
-      }),
-    ).toEqual({
+    expect({
+      ...postcssJs.objectify(postcss.parse(css)),
+      ...postcssJs.objectify(postcss.parse(minCss)),
+      ...postcssJs.objectify(postcss.parse(maxCss)),
+    }).toEqual({
       '.size-\\[1px\\]': { width: '1px', height: '1px' },
       '.size-\\[1pt\\]': { width: '1pt', height: '1pt' },
       '.size-\\[1pc\\]': { width: '1pc', height: '1pc' },

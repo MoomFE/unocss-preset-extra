@@ -4,7 +4,6 @@ import { createAutocomplete } from '@unocss/autocomplete';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { ambient, ambientOpacity, penumbra, penumbraOpacity, umbra, umbraOpacity } from '@@/src/rules/elevation';
-import { removeUnusedCSS } from './utils';
 import { presetExtra } from '@/index';
 
 function createElevationRules(name: string) {
@@ -42,12 +41,11 @@ describe('elevation', async () => {
     // el-*
     const { css } = await generator.generate(
       Array.from({ length: 36 }).map((_, i) => `el-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css)),
-      ),
+      postcssJs.objectify(postcss.parse(css)),
     ).toEqual(
       createElevationRules('el'),
     );
@@ -55,12 +53,11 @@ describe('elevation', async () => {
     // elevation-*
     const { css: css2 } = await generator.generate(
       Array.from({ length: 36 }).map((_, i) => `elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css2)),
-      ),
+      postcssJs.objectify(postcss.parse(css2)),
     ).toEqual(
       createElevationRules('elevation'),
     );
@@ -68,12 +65,11 @@ describe('elevation', async () => {
     // shadow-el-*
     const { css: css3 } = await generator.generate(
       Array.from({ length: 36 }).map((_, i) => `shadow-el-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css3)),
-      ),
+      postcssJs.objectify(postcss.parse(css3)),
     ).toEqual(
       createElevationRules('shadow-el'),
     );
@@ -81,12 +77,11 @@ describe('elevation', async () => {
     // shadow-elevation-*
     const { css: css4 } = await generator.generate(
       Array.from({ length: 36 }).map((_, i) => `shadow-elevation-${i}`).join(' '), // 多生成几个, 测试是否非 0 ~ 24 的 elevation 会被忽略
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css4)),
-      ),
+      postcssJs.objectify(postcss.parse(css4)),
     ).toEqual(
       createElevationRules('shadow-elevation'),
     );
@@ -96,12 +91,11 @@ describe('elevation', async () => {
     // el-op-*
     const { css } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `el-op-${i}`).join(' '),
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css)),
-      ),
+      postcssJs.objectify(postcss.parse(css)),
     ).toEqual(
       createElevationOpacityRules('el-op'),
     );
@@ -109,12 +103,11 @@ describe('elevation', async () => {
     // el-opacity-*
     const { css: css2 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `el-opacity-${i}`).join(' '),
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css2)),
-      ),
+      postcssJs.objectify(postcss.parse(css2)),
     ).toEqual(
       createElevationOpacityRules('el-opacity'),
     );
@@ -122,12 +115,11 @@ describe('elevation', async () => {
     // elevation-op-*
     const { css: css3 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `elevation-op-${i}`).join(' '),
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css3)),
-      ),
+      postcssJs.objectify(postcss.parse(css3)),
     ).toEqual(
       createElevationOpacityRules('elevation-op'),
     );
@@ -135,12 +127,11 @@ describe('elevation', async () => {
     // elevation-opacity-*
     const { css: css4 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `elevation-opacity-${i}`).join(' '),
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css4)),
-      ),
+      postcssJs.objectify(postcss.parse(css4)),
     ).toEqual(
       createElevationOpacityRules('elevation-opacity'),
     );
@@ -148,12 +139,11 @@ describe('elevation', async () => {
     // shadow-el-op-*
     const { css: css5 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `shadow-el-op-${i}`).join(' '),
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css5)),
-      ),
+      postcssJs.objectify(postcss.parse(css5)),
     ).toEqual(
       createElevationOpacityRules('shadow-el-op'),
     );
@@ -161,12 +151,11 @@ describe('elevation', async () => {
     // shadow-el-opacity-*
     const { css: css6 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `shadow-el-opacity-${i}`).join(' '),
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css6)),
-      ),
+      postcssJs.objectify(postcss.parse(css6)),
     ).toEqual(
       createElevationOpacityRules('shadow-el-opacity'),
     );
@@ -174,12 +163,11 @@ describe('elevation', async () => {
     // shadow-elevation-op-*
     const { css: css7 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `shadow-elevation-op-${i}`).join(' '),
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css7)),
-      ),
+      postcssJs.objectify(postcss.parse(css7)),
     ).toEqual(
       createElevationOpacityRules('shadow-elevation-op'),
     );
@@ -187,12 +175,11 @@ describe('elevation', async () => {
     // shadow-elevation-opacity-*
     const { css: css8 } = await generator.generate(
       Array.from({ length: 101 }).map((_, i) => `shadow-elevation-opacity-${i}`).join(' '),
+      { preflights: false },
     );
 
     expect(
-      removeUnusedCSS(
-        postcssJs.objectify(postcss.parse(css8)),
-      ),
+      postcssJs.objectify(postcss.parse(css8)),
     ).toEqual(
       createElevationOpacityRules('shadow-elevation-opacity'),
     );

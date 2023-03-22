@@ -1,11 +1,11 @@
-import { type CSSObject, createGenerator, presetAttributify, presetUno } from 'unocss';
+import { createGenerator, presetAttributify, presetUno } from 'unocss';
 import { describe, expect, test } from 'vitest';
 import { createAutocomplete } from '@unocss/autocomplete';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { durationShortcuts } from '../src/rules/animated';
 import animated from '../src/rules/animated.json';
-import { removeLastZero, removeUnusedCSS } from './utils';
+import { removeLastZero } from './utils';
 import { presetExtra } from '@/index';
 
 describe('animated.json', () => {
@@ -41,12 +41,10 @@ describe('animated', () => {
   });
 
   test('animated', async () => {
-    const { css } = await generator.generate('animated');
+    const { css } = await generator.generate('animated', { preflights: false });
 
     expect(
-      removeUnusedCSS({
-        ...postcssJs.objectify(postcss.parse(css)),
-      }),
+      postcssJs.objectify(postcss.parse(css)),
     ).toEqual({
       '.animated': {
         '--une-animated-duration': '1s',
@@ -59,11 +57,10 @@ describe('animated', () => {
   test('animated-name', async () => {
     const { css } = await generator.generate(
       Object.keys(animated).map(k => `animated-${k}`).join(' '),
+      { preflights: false },
     );
 
-    const styles = removeUnusedCSS({
-      ...postcssJs.objectify(postcss.parse(css)),
-    }) as CSSObject;
+    const styles = postcssJs.objectify(postcss.parse(css));
 
     // 均生成了 css 样式及 @keyframes
     Object.entries(animated).forEach(([key, { animationName }]) => {
@@ -80,12 +77,12 @@ describe('animated', () => {
       ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}.${removeLastZero(i + 1)}`).join(' ')}
       ${/* 0_1, 1_2, ... ( 不符合规则的样式类 ) */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${removeLastZero(i + 1)}`).join(' ')}
       ${/* a ~ z ( 不符合规则的样式类 ) */ Array.from({ length: 26 }, (_, i) => `animated-repeat-${String.fromCharCode(97 + i)}`)}
-    `);
+    `, {
+      preflights: false,
+    });
 
     expect(
-      removeUnusedCSS({
-        ...postcssJs.objectify(postcss.parse(css)),
-      }),
+      postcssJs.objectify(postcss.parse(css)),
     ).toEqual(
       Object.assign(
         // infinite, repeat-infinite
