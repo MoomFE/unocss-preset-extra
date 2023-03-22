@@ -1,16 +1,9 @@
 {
   "name": "unocss-preset-extra",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "",
-  "keywords": [
-    "css",
-    "unocss",
-    "unocss-preset",
-    "unocss-preset-extra",
-    "animate.css"
-  ],
-  "license": "MIT",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
+  "license": "MIT",
   "homepage": "https://github.com/MoomFE/unocss-preset-extra#readme",
   "repository": {
     "type": "git",
@@ -19,9 +12,13 @@
   "bugs": {
     "url": "https://github.com/MoomFE/unocss-preset-extra/issues"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "keywords": [
+    "css",
+    "unocss",
+    "unocss-preset",
+    "unocss-preset-extra",
+    "animate.css"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -29,6 +26,9 @@
       "import": "./dist/index.mjs"
     }
   },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
