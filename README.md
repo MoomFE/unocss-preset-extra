@@ -125,16 +125,6 @@
   <summary>额外的可在分组中使用的规则</summary>
   <br>
 
-> 添加了以下规则, 现在可以嵌套在分组中使用了
-> 1. (inline-)?(flex|grid)-justify-*
-> 2. (inline-)?(flex|grid)-order-*
-> 3. (inline-)?(flex|grid)-content-*
-> 4. (inline-)?(flex|grid)-items-*
-> 5. (inline-)?(flex|grid)-self-*
-> 6. (inline-)?(flex|grid)-place-content-*
-> 7. (inline-)?(flex|grid)-place-items-*
-> 8. (inline-)?(flex|grid)-place-self-*
-
   在 [Attributify Mode](https://github.com/unocss/unocss/tree/main/packages/preset-attributify) 下使用
 
   ```html
