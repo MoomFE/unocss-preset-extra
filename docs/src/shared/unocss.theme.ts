@@ -1038,7 +1038,7 @@ export const verticalBreakpoints = {
 };
 export const borderRadius = {
   DEFAULT: "0.25rem",
-  none: "0rem",
+  none: "0",
   sm: "0.125rem",
   md: "0.375rem",
   lg: "0.5rem",
@@ -1170,11 +1170,11 @@ export const easing = {
 };
 export const lineWidth = {
   DEFAULT: "1px",
-  none: "0px"
+  none: "0"
 };
 export const spacing = {
   DEFAULT: "1rem",
-  none: "0rem",
+  none: "0",
   xs: "0.75rem",
   sm: "0.875rem",
   lg: "1.125rem",
@@ -1198,12 +1198,12 @@ export const duration = {
   "700": "700ms",
   "1000": "1000ms",
   DEFAULT: "150ms",
-  none: "0ms",
+  none: "0s",
   colors: "300ms"
 };
 export const ringWidth = {
   DEFAULT: "1px",
-  none: "0px"
+  none: "0"
 };
 export const preflightBase = {
   "--un-rotate": 0,
