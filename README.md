@@ -134,52 +134,52 @@
 
   ```html
   <!-- (inline-)?(flex|grid)-justify-* -->
-  <div class="flex-(~ justify-center)" /> // <div flex="~ justify-center" />
-  <div class="grid-(~ justify-center)" /> // <div grid="~ justify-center" />
-  <div class="inline-flex-(~ justify-center)" /> // <div inline-flex="~ justify-center" />
-  <div class="inline-grid-(~ justify-center)" /> // <div inline-grid="~ justify-center" />
+  <div class="flex-(~ justify-center)" />
+  <div class="grid-(~ justify-center)" />
+  <div class="inline-flex-(~ justify-center)" />
+  <div class="inline-grid-(~ justify-center)" />
 
   <!-- (inline-)?(flex|grid)-order-* -->
-  <div class="flex-(~ order-first)" /> // <div flex="~ order-first" />
-  <div class="grid-(~ order-first)" /> // <div grid="~ order-first" />
-  <div class="inline-flex-(~ order-first)" /> // <div inline-flex="~ order-first" />
-  <div class="inline-grid-(~ order-first)" /> // <div inline-grid="~ order-first" />
+  <div class="flex-(~ order-first)" />
+  <div class="grid-(~ order-first)" />
+  <div class="inline-flex-(~ order-first)" />
+  <div class="inline-grid-(~ order-first)" />
 
   <!-- (inline-)?(flex|grid)-content-* -->
-  <div class="flex-(~ content-center)" /> // <div flex="~ content-center" />
-  <div class="grid-(~ content-center)" /> // <div grid="~ content-center" />
-  <div class="inline-flex-(~ content-center)" /> // <div inline-flex="~ content-center" />
-  <div class="inline-grid-(~ content-center)" /> // <div inline-grid="~ content-center" />
+  <div class="flex-(~ content-center)" />
+  <div class="grid-(~ content-center)" />
+  <div class="inline-flex-(~ content-center)" />
+  <div class="inline-grid-(~ content-center)" />
 
   <!-- (inline-)?(flex|grid)-items-* -->
-  <div class="flex-(~ items-center)" /> // <div flex="~ items-center" />
-  <div class="grid-(~ items-center)" /> // <div grid="~ items-center" />
-  <div class="inline-flex-(~ items-center)" /> // <div inline-flex="~ items-center" />
-  <div class="inline-grid-(~ items-center)" /> // <div inline-grid="~ items-center" />
+  <div class="flex-(~ items-center)" />
+  <div class="grid-(~ items-center)" />
+  <div class="inline-flex-(~ items-center)" />
+  <div class="inline-grid-(~ items-center)" />
 
   <!-- (inline-)?(flex|grid)-self-* -->
-  <div class="flex-(~ self-center)" /> // <div flex="~ self-center" />
-  <div class="grid-(~ self-center)" /> // <div grid="~ self-center" />
-  <div class="inline-flex-(~ self-center)" /> // <div inline-flex="~ self-center" />
-  <div class="inline-grid-(~ self-center)" /> // <div inline-grid="~ self-center" />
+  <div class="flex-(~ self-center)" />
+  <div class="grid-(~ self-center)" />
+  <div class="inline-flex-(~ self-center)" />
+  <div class="inline-grid-(~ self-center)" />
 
   <!-- (inline-)?(flex|grid)-place-content-* -->
-  <div class="flex-(~ place-content-center)" /> // <div flex="~ place-content-center" />
-  <div class="grid-(~ place-content-center)" /> // <div grid="~ place-content-center" />
-  <div class="inline-flex-(~ place-content-center)" /> // <div inline-flex="~ place-content-center" />
-  <div class="inline-grid-(~ place-content-center)" /> // <div inline-grid="~ place-content-center" />
+  <div class="flex-(~ place-content-center)" />
+  <div class="grid-(~ place-content-center)" />
+  <div class="inline-flex-(~ place-content-center)" />
+  <div class="inline-grid-(~ place-content-center)" />
 
   <!-- (inline-)?(flex|grid)-place-items-* -->
-  <div class="flex-(~ place-items-center)" /> // <div flex="~ place-items-center" />
-  <div class="grid-(~ place-items-center)" /> // <div grid="~ place-items-center" />
-  <div class="inline-flex-(~ place-items-center)" /> // <div inline-flex="~ place-items-center" />
-  <div class="inline-grid-(~ place-items-center)" /> // <div inline-grid="~ place-items-center" />
+  <div class="flex-(~ place-items-center)" />
+  <div class="grid-(~ place-items-center)" />
+  <div class="inline-flex-(~ place-items-center)" />
+  <div class="inline-grid-(~ place-items-center)" />
 
   <!-- (inline-)?(flex|grid)-place-self-* -->
-  <div class="flex-(~ place-self-center)" /> // <div flex="~ place-self-center" />
-  <div class="grid-(~ place-self-center)" /> // <div grid="~ place-self-center" />
-  <div class="inline-flex-(~ place-self-center)" /> // <div inline-flex="~ place-self-center" />
-  <div class="inline-grid-(~ place-self-center)" /> // <div inline-grid="~ place-self-center" />
+  <div class="flex-(~ place-self-center)" />
+  <div class="grid-(~ place-self-center)" />
+  <div class="inline-flex-(~ place-self-center)" />
+  <div class="inline-grid-(~ place-self-center)" />
   ```
 </details>
 
