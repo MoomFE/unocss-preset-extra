@@ -95,8 +95,9 @@
   <div class="animated animated-bounce animated-delay-6ms" /> <!-- 延迟 6 毫秒 -->
 
   <!-- 动画周期 -->
-  <div class="animated animated-bounce animated-fast" /> <!-- 快 -->
   <div class="animated animated-bounce animated-faster" /> <!-- 很快 -->
+  <div class="animated animated-bounce animated-fast" /> <!-- 快 -->
+  <div class="animated animated-bounce" /> <!-- 不设置, 默认 -->
   <div class="animated animated-bounce animated-slow" /> <!-- 慢 -->
   <div class="animated animated-bounce animated-slower" /> <!-- 很慢 -->
   <div class="animated animated-bounce animated-duration-6" /> <!-- 时长为 6 毫秒 -->
@@ -117,6 +118,72 @@
   <Transition class="animated animated-faster" enter-active-class="animated-rotate-in" leave-active-class="animated-rotate-out" mode="out-in">
     ...
   </Transition>
+  ```
+</details>
+
+<details>
+  <summary>额外的可在分组中使用的规则</summary>
+  <br>
+
+> 添加了以下规则, 现在可以嵌套在分组中使用了
+> 1. (inline-)?(flex|grid)-justify-*
+> 2. (inline-)?(flex|grid)-order-*
+> 3. (inline-)?(flex|grid)-content-*
+> 4. (inline-)?(flex|grid)-items-*
+> 5. (inline-)?(flex|grid)-self-*
+> 6. (inline-)?(flex|grid)-place-content-*
+> 7. (inline-)?(flex|grid)-place-items-*
+> 8. (inline-)?(flex|grid)-place-self-*
+
+  在 [Attributify Mode](https://github.com/unocss/unocss/tree/main/packages/preset-attributify) 下使用
+
+  ```html
+  <!-- (inline-)?(flex|grid)-justify-* -->
+  <div flex="~ justify-center" />
+  <div grid="~ justify-center" />
+  <div inline-flex="~ justify-center" />
+  <div inline-grid="~ justify-center" />
+
+  <!-- (inline-)?(flex|grid)-order-* -->
+  <div flex="~ order-first" />
+  <div grid="~ order-first" />
+  <div inline-flex="~ order-first" />
+  <div inline-grid="~ order-first" />
+
+  <!-- (inline-)?(flex|grid)-content-* -->
+  <div flex="~ content-center" />
+  <div grid="~ content-center" />
+  <div inline-flex="~ content-center" />
+  <div inline-grid="~ content-center" />
+
+  <!-- (inline-)?(flex|grid)-items-* -->
+  <div flex="~ items-center" />
+  <div grid="~ items-center" />
+  <div inline-flex="~ items-center" />
+  <div inline-grid="~ items-center" />
+
+  <!-- (inline-)?(flex|grid)-self-* -->
+  <div flex="~ self-center" />
+  <div grid="~ self-center" />
+  <div inline-flex="~ self-center" />
+  <div inline-grid="~ self-center" />
+
+  <!-- (inline-)?(flex|grid)-place-content-* -->
+  <div flex="~ place-content-center" />
+  <div grid="~ place-content-center" />
+  <div inline-flex="~ place-content-center" />
+  <div inline-grid="~ place-content-center" />
+
+  <!-- (inline-)?(flex|grid)-place-items-* -->
+  <div flex="~ place-items-center" />
+  <div grid="~ place-items-center" />
+  <div inline-flex="~ place-items-center" />
+
+  <!-- (inline-)?(flex|grid)-place-self-* -->
+  <div flex="~ place-self-center" />
+  <div grid="~ place-self-center" />
+  <div inline-flex="~ place-self-center" />
+  <div inline-grid="~ place-self-center" />
   ```
 </details>
 
