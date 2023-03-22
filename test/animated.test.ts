@@ -113,38 +113,11 @@ describe('animated', () => {
       ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}`).join(' ')}
       ${/* 0.1ms, 1.2ms, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
       ${/* 0.1s, 1.2s, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}s`).join(' ')}
-    `);
+    `, {
+      preflights: false,
+    });
 
-    expect(
-      removeUnusedCSS({
-        ...postcssJs.objectify(postcss.parse(css)),
-      }),
-    ).toEqual(
-      Object.assign(
-        // 0, 0ms, none
-        {
-          '.animated-delay-0,\n.animated-delay-0ms,\n.animated-delay-none': { animationDelay: '0ms' },
-        },
-        // 1 ~ 66
-        // 1ms ~ 66ms
-        ...Array.from({ length: 66 }, (_, i) => ({
-          [`.animated-delay-${i + 1},\n.animated-delay-${i + 1}ms`]: { animationDelay: `${i + 1}ms` },
-        })),
-        // 0s ~ 66s
-        ...Array.from({ length: 67 }, (_, i) => ({
-          [`.animated-delay-${i}s`]: { animationDelay: `${i}s` },
-        })),
-        // 0.1, 1.2, ... ( 小数 )
-        // 0.1ms, 1.2ms, ... ( 小数 )
-        ...Array.from({ length: 67 }, (_, i) => ({
-          [`.animated-delay-${i}\\.${removeLastZero(i + 1)},\n.animated-delay-${i}\\.${removeLastZero(i + 1)}ms`]: { animationDelay: `${i}.${removeLastZero(i + 1)}ms` },
-        })),
-        // 0s ~ 66s
-        ...Array.from({ length: 67 }, (_, i) => ({
-          [`.animated-delay-${i}\\.${removeLastZero(i + 1)}s`]: { animationDelay: `${i}.${removeLastZero(i + 1)}s` },
-        })),
-      ),
-    );
+    expect(css).toMatchSnapshot();
   });
 
   test('animated-duration', async () => {
@@ -157,42 +130,11 @@ describe('animated', () => {
       ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}`).join(' ')}
       ${/* 0.1ms, 1.2ms, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
       ${/* 0.1s, 1.2s, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}s`).join(' ')}
-    `);
+    `, {
+      preflights: false,
+    });
 
-    expect(
-      removeUnusedCSS({
-        ...postcssJs.objectify(postcss.parse(css)),
-      }),
-    ).toEqual(
-      Object.assign(
-        // 0, 0ms, none
-        {
-          '.animated-duration-0,\n.animated-duration-0ms,\n.animated-duration-none': { animationDuration: '0ms' },
-        },
-        // shortcuts
-        ...Object.entries(durationShortcuts).map(([shortcut, v]) => ({
-          [`.animated-${shortcut}`]: { animationDuration: `calc(var(--une-animated-duration) * ${v})` },
-        })),
-        // 1 ~ 66
-        // 1ms ~ 66ms
-        ...Array.from({ length: 66 }, (_, i) => ({
-          [`.animated-duration-${i + 1},\n.animated-duration-${i + 1}ms`]: { animationDuration: `${i + 1}ms` },
-        })),
-        // 0s ~ 66s
-        ...Array.from({ length: 67 }, (_, i) => ({
-          [`.animated-duration-${i}s`]: { animationDuration: `${i}s` },
-        })),
-        // 0.1, 1.2, ... ( 小数 )
-        // 0.1ms, 1.2ms, ... ( 小数 )
-        ...Array.from({ length: 67 }, (_, i) => ({
-          [`.animated-duration-${i}\\.${removeLastZero(i + 1)},\n.animated-duration-${i}\\.${removeLastZero(i + 1)}ms`]: { animationDuration: `${i}.${removeLastZero(i + 1)}ms` },
-        })),
-        // 0s ~ 66s
-        ...Array.from({ length: 67 }, (_, i) => ({
-          [`.animated-duration-${i}\\.${removeLastZero(i + 1)}s`]: { animationDuration: `${i}.${removeLastZero(i + 1)}s` },
-        })),
-      ),
-    );
+    expect(css).toMatchSnapshot();
   });
 
   test('autocomplete', async () => {
