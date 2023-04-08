@@ -5,6 +5,7 @@ import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { alignments, justifies, orders, placements } from '@unocss/preset-mini/dist/rules';
 import { presetExtra } from '@/index';
+import { extraGroupRules } from '@/rules/extra-group';
 
 describe('extra-group', () => {
   const generator = createGenerator({
@@ -187,5 +188,11 @@ describe('extra-group', () => {
     expect(await autocomplete.suggest('inline-grid-place-content-')).toMatchSnapshot();
     expect(await autocomplete.suggest('inline-grid-place-items-')).toMatchSnapshot();
     expect(await autocomplete.suggest('inline-grid-place-self-')).toMatchSnapshot();
+  });
+
+  test('rules', () => {
+    expect(
+      extraGroupRules.map(rule => rule[0]),
+    ).toMatchSnapshot();
   });
 });
