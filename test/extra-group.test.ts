@@ -19,22 +19,17 @@ describe('extra-group', () => {
 
   test('justifies', async () => {
     const staticJustifies = justifies.filter(([k]) => isString(k));
+    const cssInput = staticJustifies.map(([key]) => key).join(' ');
+    const flexCssInput = staticJustifies.map(([key]) => `flex-${key}`).join(' ');
+    const gridCssInput = staticJustifies.map(([key]) => `grid-${key}`).join(' ');
+    const inlineFlexCssInput = staticJustifies.map(([key]) => `inline-flex-${key}`).join(' ');
+    const inlineGridCssInput = staticJustifies.map(([key]) => `inline-grid-${key}`).join(' ');
 
-    const { css } = await generator.generate(
-      staticJustifies.map(([key]) => key).join(' '), { preflights: false },
-    );
-    const { css: flexCss } = await generator.generate(
-      staticJustifies.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
-    );
-    const { css: gridCss } = await generator.generate(
-      staticJustifies.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
-    );
-    const { css: inlineFlexCss } = await generator.generate(
-      staticJustifies.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
-    );
-    const { css: inlineGridCss } = await generator.generate(
-      staticJustifies.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
-    );
+    const { css } = await generator.generate(cssInput, { preflights: false });
+    const { css: flexCss } = await generator.generate(flexCssInput, { preflights: false });
+    const { css: gridCss } = await generator.generate(gridCssInput, { preflights: false });
+    const { css: inlineFlexCss } = await generator.generate(inlineFlexCssInput, { preflights: false });
+    const { css: inlineGridCss } = await generator.generate(inlineGridCssInput, { preflights: false });
 
     const cssJson = postcssJs.objectify(postcss.parse(css));
     const flexCssJson = postcssJs.objectify(postcss.parse(flexCss));
@@ -48,26 +43,28 @@ describe('extra-group', () => {
       expect(style).toEqual(inlineFlexCssJson[`.inline-flex-${key.slice(1)}`]);
       expect(style).toEqual(inlineGridCssJson[`.inline-grid-${key.slice(1)}`]);
     });
+
+    expect(`
+      ${cssInput}
+      ${flexCssInput}
+      ${gridCssInput}
+      ${inlineFlexCssInput}
+      ${inlineGridCssInput}\n`.replaceAll('      ', '  ')).toMatchSnapshot();
   });
 
   test('orders', async () => {
     const staticOrders = orders.filter(([k]) => isString(k));
+    const cssInput = staticOrders.map(([key]) => key).join(' ');
+    const flexCssInput = staticOrders.map(([key]) => `flex-${key}`).join(' ');
+    const gridCssInput = staticOrders.map(([key]) => `grid-${key}`).join(' ');
+    const inlineFlexCssInput = staticOrders.map(([key]) => `inline-flex-${key}`).join(' ');
+    const inlineGridCssInput = staticOrders.map(([key]) => `inline-grid-${key}`).join(' ');
 
-    const { css } = await generator.generate(
-      staticOrders.map(([key]) => key).join(' '), { preflights: false },
-    );
-    const { css: flexCss } = await generator.generate(
-      staticOrders.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
-    );
-    const { css: gridCss } = await generator.generate(
-      staticOrders.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
-    );
-    const { css: inlineFlexCss } = await generator.generate(
-      staticOrders.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
-    );
-    const { css: inlineGridCss } = await generator.generate(
-      staticOrders.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
-    );
+    const { css } = await generator.generate(cssInput, { preflights: false });
+    const { css: flexCss } = await generator.generate(flexCssInput, { preflights: false });
+    const { css: gridCss } = await generator.generate(gridCssInput, { preflights: false });
+    const { css: inlineFlexCss } = await generator.generate(inlineFlexCssInput, { preflights: false });
+    const { css: inlineGridCss } = await generator.generate(inlineGridCssInput, { preflights: false });
 
     const cssJson = postcssJs.objectify(postcss.parse(css));
     const flexCssJson = postcssJs.objectify(postcss.parse(flexCss));
@@ -81,26 +78,28 @@ describe('extra-group', () => {
       expect(style).toEqual(inlineFlexCssJson[`.inline-flex-${key.slice(1)}`]);
       expect(style).toEqual(inlineGridCssJson[`.inline-grid-${key.slice(1)}`]);
     });
+
+    expect(`
+      ${cssInput}
+      ${flexCssInput}
+      ${gridCssInput}
+      ${inlineFlexCssInput}
+      ${inlineGridCssInput}\n`.replaceAll('      ', '  ')).toMatchSnapshot();
   });
 
   test('alignments', async () => {
     const staticAlignments = alignments.filter(([k]) => isString(k));
+    const cssInput = staticAlignments.map(([key]) => key).join(' ');
+    const flexCssInput = staticAlignments.map(([key]) => `flex-${key}`).join(' ');
+    const gridCssInput = staticAlignments.map(([key]) => `grid-${key}`).join(' ');
+    const inlineFlexCssInput = staticAlignments.map(([key]) => `inline-flex-${key}`).join(' ');
+    const inlineGridCssInput = staticAlignments.map(([key]) => `inline-grid-${key}`).join(' ');
 
-    const { css } = await generator.generate(
-      staticAlignments.map(([key]) => key).join(' '), { preflights: false },
-    );
-    const { css: flexCss } = await generator.generate(
-      staticAlignments.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
-    );
-    const { css: gridCss } = await generator.generate(
-      staticAlignments.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
-    );
-    const { css: inlineFlexCss } = await generator.generate(
-      staticAlignments.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
-    );
-    const { css: inlineGridCss } = await generator.generate(
-      staticAlignments.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
-    );
+    const { css } = await generator.generate(cssInput, { preflights: false });
+    const { css: flexCss } = await generator.generate(flexCssInput, { preflights: false });
+    const { css: gridCss } = await generator.generate(gridCssInput, { preflights: false });
+    const { css: inlineFlexCss } = await generator.generate(inlineFlexCssInput, { preflights: false });
+    const { css: inlineGridCss } = await generator.generate(inlineGridCssInput, { preflights: false });
 
     const cssJson = postcssJs.objectify(postcss.parse(css));
     const flexCssJson = postcssJs.objectify(postcss.parse(flexCss));
@@ -114,26 +113,28 @@ describe('extra-group', () => {
       expect(style).toEqual(inlineFlexCssJson[`.inline-flex-${key.slice(1)}`]);
       expect(style).toEqual(inlineGridCssJson[`.inline-grid-${key.slice(1)}`]);
     });
+
+    expect(`
+      ${cssInput}
+      ${flexCssInput}
+      ${gridCssInput}
+      ${inlineFlexCssInput}
+      ${inlineGridCssInput}\n`.replaceAll('      ', '  ')).toMatchSnapshot();
   });
 
   test('placements', async () => {
     const staticPlacements = placements.filter(([k]) => isString(k));
+    const cssInput = staticPlacements.map(([key]) => key).join(' ');
+    const flexCssInput = staticPlacements.map(([key]) => `flex-${key}`).join(' ');
+    const gridCssInput = staticPlacements.map(([key]) => `grid-${key}`).join(' ');
+    const inlineFlexCssInput = staticPlacements.map(([key]) => `inline-flex-${key}`).join(' ');
+    const inlineGridCssInput = staticPlacements.map(([key]) => `inline-grid-${key}`).join(' ');
 
-    const { css } = await generator.generate(
-      staticPlacements.map(([key]) => key).join(' '), { preflights: false },
-    );
-    const { css: flexCss } = await generator.generate(
-      staticPlacements.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
-    );
-    const { css: gridCss } = await generator.generate(
-      staticPlacements.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
-    );
-    const { css: inlineFlexCss } = await generator.generate(
-      staticPlacements.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
-    );
-    const { css: inlineGridCss } = await generator.generate(
-      staticPlacements.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
-    );
+    const { css } = await generator.generate(cssInput, { preflights: false });
+    const { css: flexCss } = await generator.generate(flexCssInput, { preflights: false });
+    const { css: gridCss } = await generator.generate(gridCssInput, { preflights: false });
+    const { css: inlineFlexCss } = await generator.generate(inlineFlexCssInput, { preflights: false });
+    const { css: inlineGridCss } = await generator.generate(inlineGridCssInput, { preflights: false });
 
     const cssJson = postcssJs.objectify(postcss.parse(css));
     const flexCssJson = postcssJs.objectify(postcss.parse(flexCss));
@@ -147,6 +148,13 @@ describe('extra-group', () => {
       expect(style).toEqual(inlineFlexCssJson[`.inline-flex-${key.slice(1)}`]);
       expect(style).toEqual(inlineGridCssJson[`.inline-grid-${key.slice(1)}`]);
     });
+
+    expect(`
+      ${cssInput}
+      ${flexCssInput}
+      ${gridCssInput}
+      ${inlineFlexCssInput}
+      ${inlineGridCssInput}\n`.replaceAll('      ', '  ')).toMatchSnapshot();
   });
 
   test('autocomplete', async () => {
