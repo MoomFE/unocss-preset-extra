@@ -2,7 +2,7 @@ name: Node.js Package
 
 on:
   release:
-    types: ['released']
+    types: [released]
 
 jobs:
   publish:
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-          cache: 'pnpm'
+          cache: pnpm
 
       - name: Build
         run: |

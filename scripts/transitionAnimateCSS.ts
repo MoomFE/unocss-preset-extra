@@ -1,4 +1,4 @@
-import { resolve } from 'path';
+import { resolve } from 'node:path';
 import { outputFile, readFile } from 'fs-extra';
 import { getPackageInfoSync } from 'local-pkg';
 import { camelCase, kebabCase } from 'lodash-es';

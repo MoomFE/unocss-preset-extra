@@ -150,14 +150,14 @@
     /** 运行次数 */
     const animatedRepeat = repeatInfinite.value
       ? ' animated-infinite'
-      : repeat.value && repeat.value !== 1
+      : (repeat.value && repeat.value !== 1)
         ? ` animated-repeat-${repeat.value}`
         : '';
     /** 延迟时间 */
-    const animatedDelay = delay.value && delay.value !== 0 ? ` animated-delay-${delay.value}${delayUnit.value}` : '';
+    const animatedDelay = (delay.value && delay.value !== 0) ? ` animated-delay-${delay.value}${delayUnit.value}` : '';
     /** 周期 */
     const animatedDuration = durationPreset.value === 'custom'
-      ? duration.value && duration.value !== 0
+      ? (duration.value && duration.value !== 0)
         ? ` animated-duration-${duration.value}${durationUnit.value}`
         : ''
       : durationPreset.value
