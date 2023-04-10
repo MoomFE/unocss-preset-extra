@@ -54,11 +54,11 @@ describe('extra-group', () => {
 
   test('orders', async () => {
     const staticOrders = orders.filter(([k]) => isString(k));
-    const cssInput = staticOrders.map(([key]) => key).join(' ');
-    const flexCssInput = staticOrders.map(([key]) => `flex-${key}`).join(' ');
-    const gridCssInput = staticOrders.map(([key]) => `grid-${key}`).join(' ');
-    const inlineFlexCssInput = staticOrders.map(([key]) => `inline-flex-${key}`).join(' ');
-    const inlineGridCssInput = staticOrders.map(([key]) => `inline-grid-${key}`).join(' ');
+    const cssInput = staticOrders.map(([key]) => key).join(' ').concat(' order-1 order-2 order-6 order-12');
+    const flexCssInput = staticOrders.map(([key]) => `flex-${key}`).join(' ').concat(' flex-order-1 flex-order-2 flex-order-6 flex-order-12');
+    const gridCssInput = staticOrders.map(([key]) => `grid-${key}`).join(' ').concat(' grid-order-1 grid-order-2 grid-order-6 grid-order-12');
+    const inlineFlexCssInput = staticOrders.map(([key]) => `inline-flex-${key}`).join(' ').concat(' inline-flex-order-1 inline-flex-order-2 inline-flex-order-6 inline-flex-order-12');
+    const inlineGridCssInput = staticOrders.map(([key]) => `inline-grid-${key}`).join(' ').concat(' inline-grid-order-1 inline-grid-order-2 inline-grid-order-6 inline-grid-order-12');
 
     const { css } = await generator.generate(cssInput, { preflights: false });
     const { css: flexCss } = await generator.generate(flexCssInput, { preflights: false });

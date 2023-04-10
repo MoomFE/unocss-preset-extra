@@ -614,11 +614,11 @@ exports[`extra-group > justifies 1`] = `
 
 exports[`extra-group > orders 1`] = `
 "
-  order-first order-last order-none
-  flex-order-first flex-order-last flex-order-none
-  grid-order-first grid-order-last grid-order-none
-  inline-flex-order-first inline-flex-order-last inline-flex-order-none
-  inline-grid-order-first inline-grid-order-last inline-grid-order-none
+  order-first order-last order-none order-1 order-2 order-6 order-12
+  flex-order-first flex-order-last flex-order-none flex-order-1 flex-order-2 flex-order-6 flex-order-12
+  grid-order-first grid-order-last grid-order-none grid-order-1 grid-order-2 grid-order-6 grid-order-12
+  inline-flex-order-first inline-flex-order-last inline-flex-order-none inline-flex-order-1 inline-flex-order-2 inline-flex-order-6 inline-flex-order-12
+  inline-grid-order-first inline-grid-order-last inline-grid-order-none inline-grid-order-1 inline-grid-order-2 inline-grid-order-6 inline-grid-order-12
 "
 `;
 
