@@ -1,6 +1,7 @@
 import { createGenerator, presetAttributify, presetUno } from 'unocss';
 import { describe, expect, test } from 'vitest';
 import { createAutocomplete } from '@unocss/autocomplete';
+import { isString } from '@moomfe/small-utils';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { alignments, justifies, orders, placements } from '@unocss/preset-mini/dist/rules';
@@ -17,20 +18,22 @@ describe('extra-group', () => {
   });
 
   test('justifies', async () => {
+    const staticJustifies = justifies.filter(([k]) => isString(k));
+
     const { css } = await generator.generate(
-      justifies.map(([key]) => key).join(' '), { preflights: false },
+      staticJustifies.map(([key]) => key).join(' '), { preflights: false },
     );
     const { css: flexCss } = await generator.generate(
-      justifies.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
+      staticJustifies.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
     );
     const { css: gridCss } = await generator.generate(
-      justifies.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
+      staticJustifies.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineFlexCss } = await generator.generate(
-      justifies.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
+      staticJustifies.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineGridCss } = await generator.generate(
-      justifies.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
+      staticJustifies.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
     );
 
     const cssJson = postcssJs.objectify(postcss.parse(css));
@@ -48,20 +51,22 @@ describe('extra-group', () => {
   });
 
   test('orders', async () => {
+    const staticOrders = orders.filter(([k]) => isString(k));
+
     const { css } = await generator.generate(
-      orders.map(([key]) => key).join(' '), { preflights: false },
+      staticOrders.map(([key]) => key).join(' '), { preflights: false },
     );
     const { css: flexCss } = await generator.generate(
-      orders.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
+      staticOrders.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
     );
     const { css: gridCss } = await generator.generate(
-      orders.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
+      staticOrders.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineFlexCss } = await generator.generate(
-      orders.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
+      staticOrders.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineGridCss } = await generator.generate(
-      orders.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
+      staticOrders.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
     );
 
     const cssJson = postcssJs.objectify(postcss.parse(css));
@@ -79,20 +84,22 @@ describe('extra-group', () => {
   });
 
   test('alignments', async () => {
+    const staticAlignments = alignments.filter(([k]) => isString(k));
+
     const { css } = await generator.generate(
-      alignments.map(([key]) => key).join(' '), { preflights: false },
+      staticAlignments.map(([key]) => key).join(' '), { preflights: false },
     );
     const { css: flexCss } = await generator.generate(
-      alignments.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
+      staticAlignments.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
     );
     const { css: gridCss } = await generator.generate(
-      alignments.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
+      staticAlignments.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineFlexCss } = await generator.generate(
-      alignments.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
+      staticAlignments.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineGridCss } = await generator.generate(
-      alignments.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
+      staticAlignments.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
     );
 
     const cssJson = postcssJs.objectify(postcss.parse(css));
@@ -110,20 +117,22 @@ describe('extra-group', () => {
   });
 
   test('placements', async () => {
+    const staticPlacements = placements.filter(([k]) => isString(k));
+
     const { css } = await generator.generate(
-      placements.map(([key]) => key).join(' '), { preflights: false },
+      staticPlacements.map(([key]) => key).join(' '), { preflights: false },
     );
     const { css: flexCss } = await generator.generate(
-      placements.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
+      staticPlacements.map(([key]) => `flex-${key}`).join(' '), { preflights: false },
     );
     const { css: gridCss } = await generator.generate(
-      placements.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
+      staticPlacements.map(([key]) => `grid-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineFlexCss } = await generator.generate(
-      placements.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
+      staticPlacements.map(([key]) => `inline-flex-${key}`).join(' '), { preflights: false },
     );
     const { css: inlineGridCss } = await generator.generate(
-      placements.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
+      staticPlacements.map(([key]) => `inline-grid-${key}`).join(' '), { preflights: false },
     );
 
     const cssJson = postcssJs.objectify(postcss.parse(css));
