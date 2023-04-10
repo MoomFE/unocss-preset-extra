@@ -10,6 +10,42 @@ exports[`extra-group > alignments 1`] = `
 "
 `;
 
+exports[`extra-group > alignments 2`] = `
+"/* layer: default */
+.content-center{align-content:center;}
+.content-start{align-content:flex-start;}
+.content-end{align-content:flex-end;}
+.content-between{align-content:space-between;}
+.content-around{align-content:space-around;}
+.content-evenly{align-content:space-evenly;}
+.content-inherit{align-content:inherit;}
+.content-initial{align-content:initial;}
+.content-revert{align-content:revert;}
+.content-revert-layer{align-content:revert-layer;}
+.content-unset{align-content:unset;}
+.items-start{align-items:flex-start;}
+.items-end{align-items:flex-end;}
+.items-center{align-items:center;}
+.items-baseline{align-items:baseline;}
+.items-stretch{align-items:stretch;}
+.items-inherit{align-items:inherit;}
+.items-initial{align-items:initial;}
+.items-revert{align-items:revert;}
+.items-revert-layer{align-items:revert-layer;}
+.items-unset{align-items:unset;}
+.self-auto{align-self:auto;}
+.self-start{align-self:flex-start;}
+.self-end{align-self:flex-end;}
+.self-center{align-self:center;}
+.self-stretch{align-self:stretch;}
+.self-baseline{align-self:baseline;}
+.self-inherit{align-self:inherit;}
+.self-initial{align-self:initial;}
+.self-revert{align-self:revert;}
+.self-revert-layer{align-self:revert-layer;}
+.self-unset{align-self:unset;}"
+`;
+
 exports[`extra-group > autocomplete 1`] = `
 [
   "flex-justify-around",
@@ -612,6 +648,40 @@ exports[`extra-group > justifies 1`] = `
 "
 `;
 
+exports[`extra-group > justifies 2`] = `
+"/* layer: default */
+.justify-start{justify-content:flex-start;}
+.justify-end{justify-content:flex-end;}
+.justify-center{justify-content:center;}
+.justify-between{justify-content:space-between;}
+.justify-around{justify-content:space-around;}
+.justify-evenly{justify-content:space-evenly;}
+.justify-inherit{justify-content:inherit;}
+.justify-initial{justify-content:initial;}
+.justify-revert{justify-content:revert;}
+.justify-revert-layer{justify-content:revert-layer;}
+.justify-unset{justify-content:unset;}
+.justify-items-start{justify-items:start;}
+.justify-items-end{justify-items:end;}
+.justify-items-center{justify-items:center;}
+.justify-items-stretch{justify-items:stretch;}
+.justify-items-inherit{justify-items:inherit;}
+.justify-items-initial{justify-items:initial;}
+.justify-items-revert{justify-items:revert;}
+.justify-items-revert-layer{justify-items:revert-layer;}
+.justify-items-unset{justify-items:unset;}
+.justify-self-auto{justify-self:auto;}
+.justify-self-start{justify-self:start;}
+.justify-self-end{justify-self:end;}
+.justify-self-center{justify-self:center;}
+.justify-self-stretch{justify-self:stretch;}
+.justify-self-inherit{justify-self:inherit;}
+.justify-self-initial{justify-self:initial;}
+.justify-self-revert{justify-self:revert;}
+.justify-self-revert-layer{justify-self:revert-layer;}
+.justify-self-unset{justify-self:unset;}"
+`;
+
 exports[`extra-group > orders 1`] = `
 "
   order-first order-last order-none order-1 order-2 order-6 order-12
@@ -622,6 +692,17 @@ exports[`extra-group > orders 1`] = `
 "
 `;
 
+exports[`extra-group > orders 2`] = `
+"/* layer: default */
+.order-1{order:1;}
+.order-12{order:12;}
+.order-2{order:2;}
+.order-6{order:6;}
+.order-first{order:-9999;}
+.order-last{order:9999;}
+.order-none{order:0;}"
+`;
+
 exports[`extra-group > placements 1`] = `
 "
   place-content-center place-content-start place-content-end place-content-between place-content-around place-content-evenly place-content-stretch place-content-inherit place-content-initial place-content-revert place-content-revert-layer place-content-unset place-items-start place-items-end place-items-center place-items-stretch place-items-inherit place-items-initial place-items-revert place-items-revert-layer place-items-unset place-self-auto place-self-start place-self-end place-self-center place-self-stretch place-self-inherit place-self-initial place-self-revert place-self-revert-layer place-self-unset
@@ -630,6 +711,41 @@ exports[`extra-group > placements 1`] = `
   inline-flex-place-content-center inline-flex-place-content-start inline-flex-place-content-end inline-flex-place-content-between inline-flex-place-content-around inline-flex-place-content-evenly inline-flex-place-content-stretch inline-flex-place-content-inherit inline-flex-place-content-initial inline-flex-place-content-revert inline-flex-place-content-revert-layer inline-flex-place-content-unset inline-flex-place-items-start inline-flex-place-items-end inline-flex-place-items-center inline-flex-place-items-stretch inline-flex-place-items-inherit inline-flex-place-items-initial inline-flex-place-items-revert inline-flex-place-items-revert-layer inline-flex-place-items-unset inline-flex-place-self-auto inline-flex-place-self-start inline-flex-place-self-end inline-flex-place-self-center inline-flex-place-self-stretch inline-flex-place-self-inherit inline-flex-place-self-initial inline-flex-place-self-revert inline-flex-place-self-revert-layer inline-flex-place-self-unset
   inline-grid-place-content-center inline-grid-place-content-start inline-grid-place-content-end inline-grid-place-content-between inline-grid-place-content-around inline-grid-place-content-evenly inline-grid-place-content-stretch inline-grid-place-content-inherit inline-grid-place-content-initial inline-grid-place-content-revert inline-grid-place-content-revert-layer inline-grid-place-content-unset inline-grid-place-items-start inline-grid-place-items-end inline-grid-place-items-center inline-grid-place-items-stretch inline-grid-place-items-inherit inline-grid-place-items-initial inline-grid-place-items-revert inline-grid-place-items-revert-layer inline-grid-place-items-unset inline-grid-place-self-auto inline-grid-place-self-start inline-grid-place-self-end inline-grid-place-self-center inline-grid-place-self-stretch inline-grid-place-self-inherit inline-grid-place-self-initial inline-grid-place-self-revert inline-grid-place-self-revert-layer inline-grid-place-self-unset
 "
+`;
+
+exports[`extra-group > placements 2`] = `
+"/* layer: default */
+.place-content-center{place-content:center;}
+.place-content-start{place-content:start;}
+.place-content-end{place-content:end;}
+.place-content-between{place-content:space-between;}
+.place-content-around{place-content:space-around;}
+.place-content-evenly{place-content:space-evenly;}
+.place-content-stretch{place-content:stretch;}
+.place-content-inherit{place-content:inherit;}
+.place-content-initial{place-content:initial;}
+.place-content-revert{place-content:revert;}
+.place-content-revert-layer{place-content:revert-layer;}
+.place-content-unset{place-content:unset;}
+.place-items-start{place-items:start;}
+.place-items-end{place-items:end;}
+.place-items-center{place-items:center;}
+.place-items-stretch{place-items:stretch;}
+.place-items-inherit{place-items:inherit;}
+.place-items-initial{place-items:initial;}
+.place-items-revert{place-items:revert;}
+.place-items-revert-layer{place-items:revert-layer;}
+.place-items-unset{place-items:unset;}
+.place-self-auto{place-self:auto;}
+.place-self-start{place-self:start;}
+.place-self-end{place-self:end;}
+.place-self-center{place-self:center;}
+.place-self-stretch{place-self:stretch;}
+.place-self-inherit{place-self:inherit;}
+.place-self-initial{place-self:initial;}
+.place-self-revert{place-self:revert;}
+.place-self-revert-layer{place-self:revert-layer;}
+.place-self-unset{place-self:unset;}"
 `;
 
 exports[`extra-group > rules 1`] = `

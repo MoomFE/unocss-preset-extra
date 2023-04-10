@@ -50,6 +50,7 @@ describe('extra-group', () => {
       ${gridCssInput}
       ${inlineFlexCssInput}
       ${inlineGridCssInput}\n`.replaceAll('      ', '  ')).toMatchSnapshot();
+    expect(css).toMatchSnapshot();
   });
 
   test('orders', async () => {
@@ -85,6 +86,7 @@ describe('extra-group', () => {
       ${gridCssInput}
       ${inlineFlexCssInput}
       ${inlineGridCssInput}\n`.replaceAll('      ', '  ')).toMatchSnapshot();
+    expect(css).toMatchSnapshot();
   });
 
   test('alignments', async () => {
@@ -120,6 +122,7 @@ describe('extra-group', () => {
       ${gridCssInput}
       ${inlineFlexCssInput}
       ${inlineGridCssInput}\n`.replaceAll('      ', '  ')).toMatchSnapshot();
+    expect(css).toMatchSnapshot();
   });
 
   test('placements', async () => {
@@ -155,6 +158,7 @@ describe('extra-group', () => {
       ${gridCssInput}
       ${inlineFlexCssInput}
       ${inlineGridCssInput}\n`.replaceAll('      ', '  ')).toMatchSnapshot();
+    expect(css).toMatchSnapshot();
   });
 
   test('autocomplete', async () => {
