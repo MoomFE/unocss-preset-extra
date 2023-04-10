@@ -5,8 +5,8 @@ import { isString } from '@moomfe/small-utils';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { alignments, justifies, orders, placements } from '@unocss/preset-mini/dist/rules';
+import { extraGroupRules } from '@@/src/rules/extra-group';
 import { presetExtra } from '@/index';
-import { extraGroupRules } from '@/rules/extra-group';
 
 describe('extra-group', () => {
   const generator = createGenerator({
