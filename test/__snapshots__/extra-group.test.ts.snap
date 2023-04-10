@@ -2,11 +2,11 @@
 
 exports[`extra-group > alignments 1`] = `
 "
-  content-center content-start content-end content-between content-around content-evenly content-inherit content-initial content-revert content-revert-layer content-unset items-start items-end items-center items-baseline items-stretch items-inherit items-initial items-revert items-revert-layer items-unset self-auto self-start self-end self-center self-stretch self-baseline self-inherit self-initial self-revert self-revert-layer self-unset
-  flex-content-center flex-content-start flex-content-end flex-content-between flex-content-around flex-content-evenly flex-content-inherit flex-content-initial flex-content-revert flex-content-revert-layer flex-content-unset flex-items-start flex-items-end flex-items-center flex-items-baseline flex-items-stretch flex-items-inherit flex-items-initial flex-items-revert flex-items-revert-layer flex-items-unset flex-self-auto flex-self-start flex-self-end flex-self-center flex-self-stretch flex-self-baseline flex-self-inherit flex-self-initial flex-self-revert flex-self-revert-layer flex-self-unset
-  grid-content-center grid-content-start grid-content-end grid-content-between grid-content-around grid-content-evenly grid-content-inherit grid-content-initial grid-content-revert grid-content-revert-layer grid-content-unset grid-items-start grid-items-end grid-items-center grid-items-baseline grid-items-stretch grid-items-inherit grid-items-initial grid-items-revert grid-items-revert-layer grid-items-unset grid-self-auto grid-self-start grid-self-end grid-self-center grid-self-stretch grid-self-baseline grid-self-inherit grid-self-initial grid-self-revert grid-self-revert-layer grid-self-unset
-  inline-flex-content-center inline-flex-content-start inline-flex-content-end inline-flex-content-between inline-flex-content-around inline-flex-content-evenly inline-flex-content-inherit inline-flex-content-initial inline-flex-content-revert inline-flex-content-revert-layer inline-flex-content-unset inline-flex-items-start inline-flex-items-end inline-flex-items-center inline-flex-items-baseline inline-flex-items-stretch inline-flex-items-inherit inline-flex-items-initial inline-flex-items-revert inline-flex-items-revert-layer inline-flex-items-unset inline-flex-self-auto inline-flex-self-start inline-flex-self-end inline-flex-self-center inline-flex-self-stretch inline-flex-self-baseline inline-flex-self-inherit inline-flex-self-initial inline-flex-self-revert inline-flex-self-revert-layer inline-flex-self-unset
-  inline-grid-content-center inline-grid-content-start inline-grid-content-end inline-grid-content-between inline-grid-content-around inline-grid-content-evenly inline-grid-content-inherit inline-grid-content-initial inline-grid-content-revert inline-grid-content-revert-layer inline-grid-content-unset inline-grid-items-start inline-grid-items-end inline-grid-items-center inline-grid-items-baseline inline-grid-items-stretch inline-grid-items-inherit inline-grid-items-initial inline-grid-items-revert inline-grid-items-revert-layer inline-grid-items-unset inline-grid-self-auto inline-grid-self-start inline-grid-self-end inline-grid-self-center inline-grid-self-stretch inline-grid-self-baseline inline-grid-self-inherit inline-grid-self-initial inline-grid-self-revert inline-grid-self-revert-layer inline-grid-self-unset
+  content-center zcontent-centerw content-start zcontent-startw content-end zcontent-endw content-between zcontent-betweenw content-around zcontent-aroundw content-evenly zcontent-evenlyw content-inherit zcontent-inheritw content-initial zcontent-initialw content-revert zcontent-revertw content-revert-layer zcontent-revert-layerw content-unset zcontent-unsetw items-start zitems-startw items-end zitems-endw items-center zitems-centerw items-baseline zitems-baselinew items-stretch zitems-stretchw items-inherit zitems-inheritw items-initial zitems-initialw items-revert zitems-revertw items-revert-layer zitems-revert-layerw items-unset zitems-unsetw self-auto zself-autow self-start zself-startw self-end zself-endw self-center zself-centerw self-stretch zself-stretchw self-baseline zself-baselinew self-inherit zself-inheritw self-initial zself-initialw self-revert zself-revertw self-revert-layer zself-revert-layerw self-unset zself-unsetw
+  flex-content-center zflex-content-centerw flex-content-start zflex-content-startw flex-content-end zflex-content-endw flex-content-between zflex-content-betweenw flex-content-around zflex-content-aroundw flex-content-evenly zflex-content-evenlyw flex-content-inherit zflex-content-inheritw flex-content-initial zflex-content-initialw flex-content-revert zflex-content-revertw flex-content-revert-layer zflex-content-revert-layerw flex-content-unset zflex-content-unsetw flex-items-start zflex-items-startw flex-items-end zflex-items-endw flex-items-center zflex-items-centerw flex-items-baseline zflex-items-baselinew flex-items-stretch zflex-items-stretchw flex-items-inherit zflex-items-inheritw flex-items-initial zflex-items-initialw flex-items-revert zflex-items-revertw flex-items-revert-layer zflex-items-revert-layerw flex-items-unset zflex-items-unsetw flex-self-auto zflex-self-autow flex-self-start zflex-self-startw flex-self-end zflex-self-endw flex-self-center zflex-self-centerw flex-self-stretch zflex-self-stretchw flex-self-baseline zflex-self-baselinew flex-self-inherit zflex-self-inheritw flex-self-initial zflex-self-initialw flex-self-revert zflex-self-revertw flex-self-revert-layer zflex-self-revert-layerw flex-self-unset zflex-self-unsetw
+  grid-content-center zgrid-content-centerw grid-content-start zgrid-content-startw grid-content-end zgrid-content-endw grid-content-between zgrid-content-betweenw grid-content-around zgrid-content-aroundw grid-content-evenly zgrid-content-evenlyw grid-content-inherit zgrid-content-inheritw grid-content-initial zgrid-content-initialw grid-content-revert zgrid-content-revertw grid-content-revert-layer zgrid-content-revert-layerw grid-content-unset zgrid-content-unsetw grid-items-start zgrid-items-startw grid-items-end zgrid-items-endw grid-items-center zgrid-items-centerw grid-items-baseline zgrid-items-baselinew grid-items-stretch zgrid-items-stretchw grid-items-inherit zgrid-items-inheritw grid-items-initial zgrid-items-initialw grid-items-revert zgrid-items-revertw grid-items-revert-layer zgrid-items-revert-layerw grid-items-unset zgrid-items-unsetw grid-self-auto zgrid-self-autow grid-self-start zgrid-self-startw grid-self-end zgrid-self-endw grid-self-center zgrid-self-centerw grid-self-stretch zgrid-self-stretchw grid-self-baseline zgrid-self-baselinew grid-self-inherit zgrid-self-inheritw grid-self-initial zgrid-self-initialw grid-self-revert zgrid-self-revertw grid-self-revert-layer zgrid-self-revert-layerw grid-self-unset zgrid-self-unsetw
+  inline-flex-content-center zinline-flex-content-centerw inline-flex-content-start zinline-flex-content-startw inline-flex-content-end zinline-flex-content-endw inline-flex-content-between zinline-flex-content-betweenw inline-flex-content-around zinline-flex-content-aroundw inline-flex-content-evenly zinline-flex-content-evenlyw inline-flex-content-inherit zinline-flex-content-inheritw inline-flex-content-initial zinline-flex-content-initialw inline-flex-content-revert zinline-flex-content-revertw inline-flex-content-revert-layer zinline-flex-content-revert-layerw inline-flex-content-unset zinline-flex-content-unsetw inline-flex-items-start zinline-flex-items-startw inline-flex-items-end zinline-flex-items-endw inline-flex-items-center zinline-flex-items-centerw inline-flex-items-baseline zinline-flex-items-baselinew inline-flex-items-stretch zinline-flex-items-stretchw inline-flex-items-inherit zinline-flex-items-inheritw inline-flex-items-initial zinline-flex-items-initialw inline-flex-items-revert zinline-flex-items-revertw inline-flex-items-revert-layer zinline-flex-items-revert-layerw inline-flex-items-unset zinline-flex-items-unsetw inline-flex-self-auto zinline-flex-self-autow inline-flex-self-start zinline-flex-self-startw inline-flex-self-end zinline-flex-self-endw inline-flex-self-center zinline-flex-self-centerw inline-flex-self-stretch zinline-flex-self-stretchw inline-flex-self-baseline zinline-flex-self-baselinew inline-flex-self-inherit zinline-flex-self-inheritw inline-flex-self-initial zinline-flex-self-initialw inline-flex-self-revert zinline-flex-self-revertw inline-flex-self-revert-layer zinline-flex-self-revert-layerw inline-flex-self-unset zinline-flex-self-unsetw
+  inline-grid-content-center zinline-grid-content-centerw inline-grid-content-start zinline-grid-content-startw inline-grid-content-end zinline-grid-content-endw inline-grid-content-between zinline-grid-content-betweenw inline-grid-content-around zinline-grid-content-aroundw inline-grid-content-evenly zinline-grid-content-evenlyw inline-grid-content-inherit zinline-grid-content-inheritw inline-grid-content-initial zinline-grid-content-initialw inline-grid-content-revert zinline-grid-content-revertw inline-grid-content-revert-layer zinline-grid-content-revert-layerw inline-grid-content-unset zinline-grid-content-unsetw inline-grid-items-start zinline-grid-items-startw inline-grid-items-end zinline-grid-items-endw inline-grid-items-center zinline-grid-items-centerw inline-grid-items-baseline zinline-grid-items-baselinew inline-grid-items-stretch zinline-grid-items-stretchw inline-grid-items-inherit zinline-grid-items-inheritw inline-grid-items-initial zinline-grid-items-initialw inline-grid-items-revert zinline-grid-items-revertw inline-grid-items-revert-layer zinline-grid-items-revert-layerw inline-grid-items-unset zinline-grid-items-unsetw inline-grid-self-auto zinline-grid-self-autow inline-grid-self-start zinline-grid-self-startw inline-grid-self-end zinline-grid-self-endw inline-grid-self-center zinline-grid-self-centerw inline-grid-self-stretch zinline-grid-self-stretchw inline-grid-self-baseline zinline-grid-self-baselinew inline-grid-self-inherit zinline-grid-self-inheritw inline-grid-self-initial zinline-grid-self-initialw inline-grid-self-revert zinline-grid-self-revertw inline-grid-self-revert-layer zinline-grid-self-revert-layerw inline-grid-self-unset zinline-grid-self-unsetw
 "
 `;
 
@@ -640,11 +640,11 @@ exports[`extra-group > autocomplete 32`] = `
 
 exports[`extra-group > justifies 1`] = `
 "
-  justify-start justify-end justify-center justify-between justify-around justify-evenly justify-inherit justify-initial justify-revert justify-revert-layer justify-unset justify-items-start justify-items-end justify-items-center justify-items-stretch justify-items-inherit justify-items-initial justify-items-revert justify-items-revert-layer justify-items-unset justify-self-auto justify-self-start justify-self-end justify-self-center justify-self-stretch justify-self-inherit justify-self-initial justify-self-revert justify-self-revert-layer justify-self-unset
-  flex-justify-start flex-justify-end flex-justify-center flex-justify-between flex-justify-around flex-justify-evenly flex-justify-inherit flex-justify-initial flex-justify-revert flex-justify-revert-layer flex-justify-unset flex-justify-items-start flex-justify-items-end flex-justify-items-center flex-justify-items-stretch flex-justify-items-inherit flex-justify-items-initial flex-justify-items-revert flex-justify-items-revert-layer flex-justify-items-unset flex-justify-self-auto flex-justify-self-start flex-justify-self-end flex-justify-self-center flex-justify-self-stretch flex-justify-self-inherit flex-justify-self-initial flex-justify-self-revert flex-justify-self-revert-layer flex-justify-self-unset
-  grid-justify-start grid-justify-end grid-justify-center grid-justify-between grid-justify-around grid-justify-evenly grid-justify-inherit grid-justify-initial grid-justify-revert grid-justify-revert-layer grid-justify-unset grid-justify-items-start grid-justify-items-end grid-justify-items-center grid-justify-items-stretch grid-justify-items-inherit grid-justify-items-initial grid-justify-items-revert grid-justify-items-revert-layer grid-justify-items-unset grid-justify-self-auto grid-justify-self-start grid-justify-self-end grid-justify-self-center grid-justify-self-stretch grid-justify-self-inherit grid-justify-self-initial grid-justify-self-revert grid-justify-self-revert-layer grid-justify-self-unset
-  inline-flex-justify-start inline-flex-justify-end inline-flex-justify-center inline-flex-justify-between inline-flex-justify-around inline-flex-justify-evenly inline-flex-justify-inherit inline-flex-justify-initial inline-flex-justify-revert inline-flex-justify-revert-layer inline-flex-justify-unset inline-flex-justify-items-start inline-flex-justify-items-end inline-flex-justify-items-center inline-flex-justify-items-stretch inline-flex-justify-items-inherit inline-flex-justify-items-initial inline-flex-justify-items-revert inline-flex-justify-items-revert-layer inline-flex-justify-items-unset inline-flex-justify-self-auto inline-flex-justify-self-start inline-flex-justify-self-end inline-flex-justify-self-center inline-flex-justify-self-stretch inline-flex-justify-self-inherit inline-flex-justify-self-initial inline-flex-justify-self-revert inline-flex-justify-self-revert-layer inline-flex-justify-self-unset
-  inline-grid-justify-start inline-grid-justify-end inline-grid-justify-center inline-grid-justify-between inline-grid-justify-around inline-grid-justify-evenly inline-grid-justify-inherit inline-grid-justify-initial inline-grid-justify-revert inline-grid-justify-revert-layer inline-grid-justify-unset inline-grid-justify-items-start inline-grid-justify-items-end inline-grid-justify-items-center inline-grid-justify-items-stretch inline-grid-justify-items-inherit inline-grid-justify-items-initial inline-grid-justify-items-revert inline-grid-justify-items-revert-layer inline-grid-justify-items-unset inline-grid-justify-self-auto inline-grid-justify-self-start inline-grid-justify-self-end inline-grid-justify-self-center inline-grid-justify-self-stretch inline-grid-justify-self-inherit inline-grid-justify-self-initial inline-grid-justify-self-revert inline-grid-justify-self-revert-layer inline-grid-justify-self-unset
+  justify-start zjustify-startw justify-end zjustify-endw justify-center zjustify-centerw justify-between zjustify-betweenw justify-around zjustify-aroundw justify-evenly zjustify-evenlyw justify-inherit zjustify-inheritw justify-initial zjustify-initialw justify-revert zjustify-revertw justify-revert-layer zjustify-revert-layerw justify-unset zjustify-unsetw justify-items-start zjustify-items-startw justify-items-end zjustify-items-endw justify-items-center zjustify-items-centerw justify-items-stretch zjustify-items-stretchw justify-items-inherit zjustify-items-inheritw justify-items-initial zjustify-items-initialw justify-items-revert zjustify-items-revertw justify-items-revert-layer zjustify-items-revert-layerw justify-items-unset zjustify-items-unsetw justify-self-auto zjustify-self-autow justify-self-start zjustify-self-startw justify-self-end zjustify-self-endw justify-self-center zjustify-self-centerw justify-self-stretch zjustify-self-stretchw justify-self-inherit zjustify-self-inheritw justify-self-initial zjustify-self-initialw justify-self-revert zjustify-self-revertw justify-self-revert-layer zjustify-self-revert-layerw justify-self-unset zjustify-self-unsetw
+  flex-justify-start zflex-justify-startw flex-justify-end zflex-justify-endw flex-justify-center zflex-justify-centerw flex-justify-between zflex-justify-betweenw flex-justify-around zflex-justify-aroundw flex-justify-evenly zflex-justify-evenlyw flex-justify-inherit zflex-justify-inheritw flex-justify-initial zflex-justify-initialw flex-justify-revert zflex-justify-revertw flex-justify-revert-layer zflex-justify-revert-layerw flex-justify-unset zflex-justify-unsetw flex-justify-items-start zflex-justify-items-startw flex-justify-items-end zflex-justify-items-endw flex-justify-items-center zflex-justify-items-centerw flex-justify-items-stretch zflex-justify-items-stretchw flex-justify-items-inherit zflex-justify-items-inheritw flex-justify-items-initial zflex-justify-items-initialw flex-justify-items-revert zflex-justify-items-revertw flex-justify-items-revert-layer zflex-justify-items-revert-layerw flex-justify-items-unset zflex-justify-items-unsetw flex-justify-self-auto zflex-justify-self-autow flex-justify-self-start zflex-justify-self-startw flex-justify-self-end zflex-justify-self-endw flex-justify-self-center zflex-justify-self-centerw flex-justify-self-stretch zflex-justify-self-stretchw flex-justify-self-inherit zflex-justify-self-inheritw flex-justify-self-initial zflex-justify-self-initialw flex-justify-self-revert zflex-justify-self-revertw flex-justify-self-revert-layer zflex-justify-self-revert-layerw flex-justify-self-unset zflex-justify-self-unsetw
+  grid-justify-start zgrid-justify-startw grid-justify-end zgrid-justify-endw grid-justify-center zgrid-justify-centerw grid-justify-between zgrid-justify-betweenw grid-justify-around zgrid-justify-aroundw grid-justify-evenly zgrid-justify-evenlyw grid-justify-inherit zgrid-justify-inheritw grid-justify-initial zgrid-justify-initialw grid-justify-revert zgrid-justify-revertw grid-justify-revert-layer zgrid-justify-revert-layerw grid-justify-unset zgrid-justify-unsetw grid-justify-items-start zgrid-justify-items-startw grid-justify-items-end zgrid-justify-items-endw grid-justify-items-center zgrid-justify-items-centerw grid-justify-items-stretch zgrid-justify-items-stretchw grid-justify-items-inherit zgrid-justify-items-inheritw grid-justify-items-initial zgrid-justify-items-initialw grid-justify-items-revert zgrid-justify-items-revertw grid-justify-items-revert-layer zgrid-justify-items-revert-layerw grid-justify-items-unset zgrid-justify-items-unsetw grid-justify-self-auto zgrid-justify-self-autow grid-justify-self-start zgrid-justify-self-startw grid-justify-self-end zgrid-justify-self-endw grid-justify-self-center zgrid-justify-self-centerw grid-justify-self-stretch zgrid-justify-self-stretchw grid-justify-self-inherit zgrid-justify-self-inheritw grid-justify-self-initial zgrid-justify-self-initialw grid-justify-self-revert zgrid-justify-self-revertw grid-justify-self-revert-layer zgrid-justify-self-revert-layerw grid-justify-self-unset zgrid-justify-self-unsetw
+  inline-flex-justify-start zinline-flex-justify-startw inline-flex-justify-end zinline-flex-justify-endw inline-flex-justify-center zinline-flex-justify-centerw inline-flex-justify-between zinline-flex-justify-betweenw inline-flex-justify-around zinline-flex-justify-aroundw inline-flex-justify-evenly zinline-flex-justify-evenlyw inline-flex-justify-inherit zinline-flex-justify-inheritw inline-flex-justify-initial zinline-flex-justify-initialw inline-flex-justify-revert zinline-flex-justify-revertw inline-flex-justify-revert-layer zinline-flex-justify-revert-layerw inline-flex-justify-unset zinline-flex-justify-unsetw inline-flex-justify-items-start zinline-flex-justify-items-startw inline-flex-justify-items-end zinline-flex-justify-items-endw inline-flex-justify-items-center zinline-flex-justify-items-centerw inline-flex-justify-items-stretch zinline-flex-justify-items-stretchw inline-flex-justify-items-inherit zinline-flex-justify-items-inheritw inline-flex-justify-items-initial zinline-flex-justify-items-initialw inline-flex-justify-items-revert zinline-flex-justify-items-revertw inline-flex-justify-items-revert-layer zinline-flex-justify-items-revert-layerw inline-flex-justify-items-unset zinline-flex-justify-items-unsetw inline-flex-justify-self-auto zinline-flex-justify-self-autow inline-flex-justify-self-start zinline-flex-justify-self-startw inline-flex-justify-self-end zinline-flex-justify-self-endw inline-flex-justify-self-center zinline-flex-justify-self-centerw inline-flex-justify-self-stretch zinline-flex-justify-self-stretchw inline-flex-justify-self-inherit zinline-flex-justify-self-inheritw inline-flex-justify-self-initial zinline-flex-justify-self-initialw inline-flex-justify-self-revert zinline-flex-justify-self-revertw inline-flex-justify-self-revert-layer zinline-flex-justify-self-revert-layerw inline-flex-justify-self-unset zinline-flex-justify-self-unsetw
+  inline-grid-justify-start zinline-grid-justify-startw inline-grid-justify-end zinline-grid-justify-endw inline-grid-justify-center zinline-grid-justify-centerw inline-grid-justify-between zinline-grid-justify-betweenw inline-grid-justify-around zinline-grid-justify-aroundw inline-grid-justify-evenly zinline-grid-justify-evenlyw inline-grid-justify-inherit zinline-grid-justify-inheritw inline-grid-justify-initial zinline-grid-justify-initialw inline-grid-justify-revert zinline-grid-justify-revertw inline-grid-justify-revert-layer zinline-grid-justify-revert-layerw inline-grid-justify-unset zinline-grid-justify-unsetw inline-grid-justify-items-start zinline-grid-justify-items-startw inline-grid-justify-items-end zinline-grid-justify-items-endw inline-grid-justify-items-center zinline-grid-justify-items-centerw inline-grid-justify-items-stretch zinline-grid-justify-items-stretchw inline-grid-justify-items-inherit zinline-grid-justify-items-inheritw inline-grid-justify-items-initial zinline-grid-justify-items-initialw inline-grid-justify-items-revert zinline-grid-justify-items-revertw inline-grid-justify-items-revert-layer zinline-grid-justify-items-revert-layerw inline-grid-justify-items-unset zinline-grid-justify-items-unsetw inline-grid-justify-self-auto zinline-grid-justify-self-autow inline-grid-justify-self-start zinline-grid-justify-self-startw inline-grid-justify-self-end zinline-grid-justify-self-endw inline-grid-justify-self-center zinline-grid-justify-self-centerw inline-grid-justify-self-stretch zinline-grid-justify-self-stretchw inline-grid-justify-self-inherit zinline-grid-justify-self-inheritw inline-grid-justify-self-initial zinline-grid-justify-self-initialw inline-grid-justify-self-revert zinline-grid-justify-self-revertw inline-grid-justify-self-revert-layer zinline-grid-justify-self-revert-layerw inline-grid-justify-self-unset zinline-grid-justify-self-unsetw
 "
 `;
 
@@ -684,11 +684,11 @@ exports[`extra-group > justifies 2`] = `
 
 exports[`extra-group > orders 1`] = `
 "
-  order-first order-last order-none order-1 order-2 order-6 order-12
-  flex-order-first flex-order-last flex-order-none flex-order-1 flex-order-2 flex-order-6 flex-order-12
-  grid-order-first grid-order-last grid-order-none grid-order-1 grid-order-2 grid-order-6 grid-order-12
-  inline-flex-order-first inline-flex-order-last inline-flex-order-none inline-flex-order-1 inline-flex-order-2 inline-flex-order-6 inline-flex-order-12
-  inline-grid-order-first inline-grid-order-last inline-grid-order-none inline-grid-order-1 inline-grid-order-2 inline-grid-order-6 inline-grid-order-12
+  order-first zorder-firstw order-last zorder-lastw order-none zorder-nonew order-1 zorder-1w order-2 zorder-2w order-6 zorder-6w order-12 zorder-12w
+  flex-order-first zflex-order-firstw flex-order-last zflex-order-lastw flex-order-none zflex-order-nonew flex-order-1 zflex-order-1w flex-order-2 zflex-order-2w flex-order-6 zflex-order-6w flex-order-12 zflex-order-12w
+  grid-order-first zgrid-order-firstw grid-order-last zgrid-order-lastw grid-order-none zgrid-order-nonew grid-order-1 zgrid-order-1w grid-order-2 zgrid-order-2w grid-order-6 zgrid-order-6w grid-order-12 zgrid-order-12w
+  inline-flex-order-first zinline-flex-order-firstw inline-flex-order-last zinline-flex-order-lastw inline-flex-order-none zinline-flex-order-nonew inline-flex-order-1 zinline-flex-order-1w inline-flex-order-2 zinline-flex-order-2w inline-flex-order-6 zinline-flex-order-6w inline-flex-order-12 zinline-flex-order-12w
+  inline-grid-order-first zinline-grid-order-firstw inline-grid-order-last zinline-grid-order-lastw inline-grid-order-none zinline-grid-order-nonew inline-grid-order-1 zinline-grid-order-1w inline-grid-order-2 zinline-grid-order-2w inline-grid-order-6 zinline-grid-order-6w inline-grid-order-12 zinline-grid-order-12w
 "
 `;
 
@@ -705,11 +705,11 @@ exports[`extra-group > orders 2`] = `
 
 exports[`extra-group > placements 1`] = `
 "
-  place-content-center place-content-start place-content-end place-content-between place-content-around place-content-evenly place-content-stretch place-content-inherit place-content-initial place-content-revert place-content-revert-layer place-content-unset place-items-start place-items-end place-items-center place-items-stretch place-items-inherit place-items-initial place-items-revert place-items-revert-layer place-items-unset place-self-auto place-self-start place-self-end place-self-center place-self-stretch place-self-inherit place-self-initial place-self-revert place-self-revert-layer place-self-unset
-  flex-place-content-center flex-place-content-start flex-place-content-end flex-place-content-between flex-place-content-around flex-place-content-evenly flex-place-content-stretch flex-place-content-inherit flex-place-content-initial flex-place-content-revert flex-place-content-revert-layer flex-place-content-unset flex-place-items-start flex-place-items-end flex-place-items-center flex-place-items-stretch flex-place-items-inherit flex-place-items-initial flex-place-items-revert flex-place-items-revert-layer flex-place-items-unset flex-place-self-auto flex-place-self-start flex-place-self-end flex-place-self-center flex-place-self-stretch flex-place-self-inherit flex-place-self-initial flex-place-self-revert flex-place-self-revert-layer flex-place-self-unset
-  grid-place-content-center grid-place-content-start grid-place-content-end grid-place-content-between grid-place-content-around grid-place-content-evenly grid-place-content-stretch grid-place-content-inherit grid-place-content-initial grid-place-content-revert grid-place-content-revert-layer grid-place-content-unset grid-place-items-start grid-place-items-end grid-place-items-center grid-place-items-stretch grid-place-items-inherit grid-place-items-initial grid-place-items-revert grid-place-items-revert-layer grid-place-items-unset grid-place-self-auto grid-place-self-start grid-place-self-end grid-place-self-center grid-place-self-stretch grid-place-self-inherit grid-place-self-initial grid-place-self-revert grid-place-self-revert-layer grid-place-self-unset
-  inline-flex-place-content-center inline-flex-place-content-start inline-flex-place-content-end inline-flex-place-content-between inline-flex-place-content-around inline-flex-place-content-evenly inline-flex-place-content-stretch inline-flex-place-content-inherit inline-flex-place-content-initial inline-flex-place-content-revert inline-flex-place-content-revert-layer inline-flex-place-content-unset inline-flex-place-items-start inline-flex-place-items-end inline-flex-place-items-center inline-flex-place-items-stretch inline-flex-place-items-inherit inline-flex-place-items-initial inline-flex-place-items-revert inline-flex-place-items-revert-layer inline-flex-place-items-unset inline-flex-place-self-auto inline-flex-place-self-start inline-flex-place-self-end inline-flex-place-self-center inline-flex-place-self-stretch inline-flex-place-self-inherit inline-flex-place-self-initial inline-flex-place-self-revert inline-flex-place-self-revert-layer inline-flex-place-self-unset
-  inline-grid-place-content-center inline-grid-place-content-start inline-grid-place-content-end inline-grid-place-content-between inline-grid-place-content-around inline-grid-place-content-evenly inline-grid-place-content-stretch inline-grid-place-content-inherit inline-grid-place-content-initial inline-grid-place-content-revert inline-grid-place-content-revert-layer inline-grid-place-content-unset inline-grid-place-items-start inline-grid-place-items-end inline-grid-place-items-center inline-grid-place-items-stretch inline-grid-place-items-inherit inline-grid-place-items-initial inline-grid-place-items-revert inline-grid-place-items-revert-layer inline-grid-place-items-unset inline-grid-place-self-auto inline-grid-place-self-start inline-grid-place-self-end inline-grid-place-self-center inline-grid-place-self-stretch inline-grid-place-self-inherit inline-grid-place-self-initial inline-grid-place-self-revert inline-grid-place-self-revert-layer inline-grid-place-self-unset
+  place-content-center zplace-content-centerw place-content-start zplace-content-startw place-content-end zplace-content-endw place-content-between zplace-content-betweenw place-content-around zplace-content-aroundw place-content-evenly zplace-content-evenlyw place-content-stretch zplace-content-stretchw place-content-inherit zplace-content-inheritw place-content-initial zplace-content-initialw place-content-revert zplace-content-revertw place-content-revert-layer zplace-content-revert-layerw place-content-unset zplace-content-unsetw place-items-start zplace-items-startw place-items-end zplace-items-endw place-items-center zplace-items-centerw place-items-stretch zplace-items-stretchw place-items-inherit zplace-items-inheritw place-items-initial zplace-items-initialw place-items-revert zplace-items-revertw place-items-revert-layer zplace-items-revert-layerw place-items-unset zplace-items-unsetw place-self-auto zplace-self-autow place-self-start zplace-self-startw place-self-end zplace-self-endw place-self-center zplace-self-centerw place-self-stretch zplace-self-stretchw place-self-inherit zplace-self-inheritw place-self-initial zplace-self-initialw place-self-revert zplace-self-revertw place-self-revert-layer zplace-self-revert-layerw place-self-unset zplace-self-unsetw
+  flex-place-content-center zflex-place-content-centerw flex-place-content-start zflex-place-content-startw flex-place-content-end zflex-place-content-endw flex-place-content-between zflex-place-content-betweenw flex-place-content-around zflex-place-content-aroundw flex-place-content-evenly zflex-place-content-evenlyw flex-place-content-stretch zflex-place-content-stretchw flex-place-content-inherit zflex-place-content-inheritw flex-place-content-initial zflex-place-content-initialw flex-place-content-revert zflex-place-content-revertw flex-place-content-revert-layer zflex-place-content-revert-layerw flex-place-content-unset zflex-place-content-unsetw flex-place-items-start zflex-place-items-startw flex-place-items-end zflex-place-items-endw flex-place-items-center zflex-place-items-centerw flex-place-items-stretch zflex-place-items-stretchw flex-place-items-inherit zflex-place-items-inheritw flex-place-items-initial zflex-place-items-initialw flex-place-items-revert zflex-place-items-revertw flex-place-items-revert-layer zflex-place-items-revert-layerw flex-place-items-unset zflex-place-items-unsetw flex-place-self-auto zflex-place-self-autow flex-place-self-start zflex-place-self-startw flex-place-self-end zflex-place-self-endw flex-place-self-center zflex-place-self-centerw flex-place-self-stretch zflex-place-self-stretchw flex-place-self-inherit zflex-place-self-inheritw flex-place-self-initial zflex-place-self-initialw flex-place-self-revert zflex-place-self-revertw flex-place-self-revert-layer zflex-place-self-revert-layerw flex-place-self-unset zflex-place-self-unsetw
+  grid-place-content-center zgrid-place-content-centerw grid-place-content-start zgrid-place-content-startw grid-place-content-end zgrid-place-content-endw grid-place-content-between zgrid-place-content-betweenw grid-place-content-around zgrid-place-content-aroundw grid-place-content-evenly zgrid-place-content-evenlyw grid-place-content-stretch zgrid-place-content-stretchw grid-place-content-inherit zgrid-place-content-inheritw grid-place-content-initial zgrid-place-content-initialw grid-place-content-revert zgrid-place-content-revertw grid-place-content-revert-layer zgrid-place-content-revert-layerw grid-place-content-unset zgrid-place-content-unsetw grid-place-items-start zgrid-place-items-startw grid-place-items-end zgrid-place-items-endw grid-place-items-center zgrid-place-items-centerw grid-place-items-stretch zgrid-place-items-stretchw grid-place-items-inherit zgrid-place-items-inheritw grid-place-items-initial zgrid-place-items-initialw grid-place-items-revert zgrid-place-items-revertw grid-place-items-revert-layer zgrid-place-items-revert-layerw grid-place-items-unset zgrid-place-items-unsetw grid-place-self-auto zgrid-place-self-autow grid-place-self-start zgrid-place-self-startw grid-place-self-end zgrid-place-self-endw grid-place-self-center zgrid-place-self-centerw grid-place-self-stretch zgrid-place-self-stretchw grid-place-self-inherit zgrid-place-self-inheritw grid-place-self-initial zgrid-place-self-initialw grid-place-self-revert zgrid-place-self-revertw grid-place-self-revert-layer zgrid-place-self-revert-layerw grid-place-self-unset zgrid-place-self-unsetw
+  inline-flex-place-content-center zinline-flex-place-content-centerw inline-flex-place-content-start zinline-flex-place-content-startw inline-flex-place-content-end zinline-flex-place-content-endw inline-flex-place-content-between zinline-flex-place-content-betweenw inline-flex-place-content-around zinline-flex-place-content-aroundw inline-flex-place-content-evenly zinline-flex-place-content-evenlyw inline-flex-place-content-stretch zinline-flex-place-content-stretchw inline-flex-place-content-inherit zinline-flex-place-content-inheritw inline-flex-place-content-initial zinline-flex-place-content-initialw inline-flex-place-content-revert zinline-flex-place-content-revertw inline-flex-place-content-revert-layer zinline-flex-place-content-revert-layerw inline-flex-place-content-unset zinline-flex-place-content-unsetw inline-flex-place-items-start zinline-flex-place-items-startw inline-flex-place-items-end zinline-flex-place-items-endw inline-flex-place-items-center zinline-flex-place-items-centerw inline-flex-place-items-stretch zinline-flex-place-items-stretchw inline-flex-place-items-inherit zinline-flex-place-items-inheritw inline-flex-place-items-initial zinline-flex-place-items-initialw inline-flex-place-items-revert zinline-flex-place-items-revertw inline-flex-place-items-revert-layer zinline-flex-place-items-revert-layerw inline-flex-place-items-unset zinline-flex-place-items-unsetw inline-flex-place-self-auto zinline-flex-place-self-autow inline-flex-place-self-start zinline-flex-place-self-startw inline-flex-place-self-end zinline-flex-place-self-endw inline-flex-place-self-center zinline-flex-place-self-centerw inline-flex-place-self-stretch zinline-flex-place-self-stretchw inline-flex-place-self-inherit zinline-flex-place-self-inheritw inline-flex-place-self-initial zinline-flex-place-self-initialw inline-flex-place-self-revert zinline-flex-place-self-revertw inline-flex-place-self-revert-layer zinline-flex-place-self-revert-layerw inline-flex-place-self-unset zinline-flex-place-self-unsetw
+  inline-grid-place-content-center zinline-grid-place-content-centerw inline-grid-place-content-start zinline-grid-place-content-startw inline-grid-place-content-end zinline-grid-place-content-endw inline-grid-place-content-between zinline-grid-place-content-betweenw inline-grid-place-content-around zinline-grid-place-content-aroundw inline-grid-place-content-evenly zinline-grid-place-content-evenlyw inline-grid-place-content-stretch zinline-grid-place-content-stretchw inline-grid-place-content-inherit zinline-grid-place-content-inheritw inline-grid-place-content-initial zinline-grid-place-content-initialw inline-grid-place-content-revert zinline-grid-place-content-revertw inline-grid-place-content-revert-layer zinline-grid-place-content-revert-layerw inline-grid-place-content-unset zinline-grid-place-content-unsetw inline-grid-place-items-start zinline-grid-place-items-startw inline-grid-place-items-end zinline-grid-place-items-endw inline-grid-place-items-center zinline-grid-place-items-centerw inline-grid-place-items-stretch zinline-grid-place-items-stretchw inline-grid-place-items-inherit zinline-grid-place-items-inheritw inline-grid-place-items-initial zinline-grid-place-items-initialw inline-grid-place-items-revert zinline-grid-place-items-revertw inline-grid-place-items-revert-layer zinline-grid-place-items-revert-layerw inline-grid-place-items-unset zinline-grid-place-items-unsetw inline-grid-place-self-auto zinline-grid-place-self-autow inline-grid-place-self-start zinline-grid-place-self-startw inline-grid-place-self-end zinline-grid-place-self-endw inline-grid-place-self-center zinline-grid-place-self-centerw inline-grid-place-self-stretch zinline-grid-place-self-stretchw inline-grid-place-self-inherit zinline-grid-place-self-inheritw inline-grid-place-self-initial zinline-grid-place-self-initialw inline-grid-place-self-revert zinline-grid-place-self-revertw inline-grid-place-self-revert-layer zinline-grid-place-self-revert-layerw inline-grid-place-self-unset zinline-grid-place-self-unsetw
 "
 `;
 
@@ -750,102 +750,102 @@ exports[`extra-group > placements 2`] = `
 
 exports[`extra-group > rules 1`] = `
 [
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-start/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-end/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-center/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-between/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-around/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-evenly/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-inherit/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-initial/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-revert/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-revert-layer/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-unset/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-start/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-end/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-center/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-stretch/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-inherit/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-initial/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-revert/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-revert-layer/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-unset/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-auto/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-start/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-end/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-center/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-stretch/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-inherit/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-initial/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-revert/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-revert-layer/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-unset/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-start\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-end\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-center\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-between\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-around\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-evenly\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-inherit\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-initial\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-revert\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-revert-layer\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-unset\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-start\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-end\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-center\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-stretch\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-inherit\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-initial\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-revert\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-revert-layer\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-items-unset\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-auto\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-start\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-end\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-center\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-stretch\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-inherit\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-initial\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-revert\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-revert-layer\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-self-unset\\$/,
   /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-order-\\(\\.\\+\\)\\$/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-order-first/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-order-last/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-order-none/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-center/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-start/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-end/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-between/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-around/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-evenly/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-inherit/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-initial/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-revert/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-revert-layer/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-unset/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-start/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-end/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-center/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-baseline/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-stretch/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-inherit/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-initial/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-revert/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-revert-layer/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-unset/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-auto/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-start/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-end/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-center/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-stretch/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-baseline/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-inherit/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-initial/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-revert/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-revert-layer/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-unset/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-center/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-start/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-end/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-between/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-around/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-evenly/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-stretch/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-inherit/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-initial/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-revert/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-revert-layer/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-unset/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-start/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-end/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-center/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-stretch/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-inherit/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-initial/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-revert/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-revert-layer/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-unset/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-auto/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-start/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-end/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-center/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-stretch/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-inherit/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-initial/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-revert/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-revert-layer/,
-  /\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-unset/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-order-first\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-order-last\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-order-none\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-center\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-start\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-end\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-between\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-around\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-evenly\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-inherit\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-initial\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-revert\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-revert-layer\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-content-unset\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-start\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-end\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-center\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-baseline\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-stretch\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-inherit\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-initial\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-revert\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-revert-layer\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-items-unset\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-auto\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-start\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-end\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-center\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-stretch\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-baseline\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-inherit\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-initial\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-revert\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-revert-layer\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-self-unset\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-center\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-start\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-end\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-between\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-around\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-evenly\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-stretch\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-inherit\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-initial\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-revert\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-revert-layer\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-content-unset\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-start\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-end\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-center\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-stretch\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-inherit\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-initial\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-revert\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-revert-layer\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-items-unset\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-auto\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-start\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-end\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-center\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-stretch\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-inherit\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-initial\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-revert\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-revert-layer\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-place-self-unset\\$/,
 ]
 `;

@@ -89,10 +89,12 @@ export const extraGroupRules: Rule<Theme>[] = [
  */
 function insertBefore(str: string | RegExp, insert: string) {
   if (typeof str === 'string')
-    return new RegExp(`${insert}${str}`);
+    return new RegExp(`^${insert}${str}$`);
 
-  if (str.source.startsWith('^'))
-    return new RegExp(`^${insert}${str.source.slice(1)}`);
-
-  return new RegExp(insert + str.source);
+  return new RegExp(`^${insert}${
+    str.source.slice(
+      str.source.startsWith('^') ? 1 : 0,
+      str.source.endsWith('$') ? -1 : undefined,
+    )
+  }$`);
 }
