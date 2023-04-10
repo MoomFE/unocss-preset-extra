@@ -127,7 +127,7 @@
 </details>
 
 <details>
-  <summary>额外的可在分组中使用的规则</summary>
+  <summary>额外的可在分组中使用的规则 ( 暂未更新到文档站中 )</summary>
   <br>
 
   可在 [Variant Group](https://github.com/unocss/unocss/tree/main/packages/transformer-variant-group) 或 [Attributify Mode](https://github.com/unocss/unocss/tree/main/packages/preset-attributify) 下使用
