@@ -133,6 +133,15 @@
   可在 [Variant Group](https://github.com/unocss/unocss/tree/main/packages/transformer-variant-group) 或 [Attributify Mode](https://github.com/unocss/unocss/tree/main/packages/preset-attributify) 下使用
 
   ```html
+  <!-- 使用之前 -->
+  <div class="flex-(~ col none) justify-center" />
+  <div class="justify-center" un:flex="~ col none" />
+  <!-- 使用之后 -->
+  <div class="flex-(~ col none justify-center)" />
+  <div un:flex="~ col none justify-center" />
+
+  <!-- ↓↓↓ 以下是所有规则 ↓↓↓ -->
+
   <!-- (inline-)?(flex|grid)-justify-* -->
   <div class="flex-(~ justify-center)" />
   <div class="grid-(~ justify-center)" />
@@ -141,9 +150,9 @@
 
   <!-- (inline-)?(flex|grid)-order-* -->
   <div class="flex-(~ order-first)" />
-  <div class="grid-(~ order-first)" />
-  <div class="inline-flex-(~ order-first)" />
-  <div class="inline-grid-(~ order-first)" />
+  <div class="grid-(~ order-1)" />
+  <div class="inline-flex-(~ order-2)" />
+  <div class="inline-grid-(~ order-last)" />
 
   <!-- (inline-)?(flex|grid)-content-* -->
   <div class="flex-(~ content-center)" />
