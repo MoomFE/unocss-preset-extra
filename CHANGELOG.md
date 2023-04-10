@@ -86,7 +86,10 @@ CHANGELOG 图标规范
 <hr>
 <br>
 
-[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.4.3...HEAD
+[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.5.2...HEAD
+[v0.5.2]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.2
+[v0.5.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.1
+[v0.5.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.0
 [v0.4.3]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.4.3
 [v0.4.2]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.4.2
 [v0.4.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.4.1
