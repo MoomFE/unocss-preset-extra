@@ -121,6 +121,7 @@
       "antfu.unocss",
       "dbaeumer.vscode-eslint",
       "csstools.postcss",
+      "syler.sass-indented",
       "lokalise.i18n-ally"
     ],
     "unwantedRecommendations": [
