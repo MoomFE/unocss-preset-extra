@@ -1,6 +1,7 @@
 <template>
   <div class="text-sm">
-    <OuterChain href="https://animate.style/" code>animate.css</OuterChain> 的 Unocss 版本
+    <OuterChain href="https://animate.style/" code>animate.css</OuterChain>
+    的 Unocss 版本
   </div>
   <n-divider />
 

@@ -34,7 +34,7 @@
   const sidebarRef = ref();
 
   /** 规则列表 */
-  const rules = ['size', 'elevation', 'animated'];
+  const rules = ['size', 'elevation', 'animated', 'extra-group'];
   /** 菜单 */
   const options: MenuProps['options'] = rules.map(key => ({ label: key, key }));
   /** 当前选中的菜单项 */

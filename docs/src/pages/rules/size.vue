@@ -1,5 +1,11 @@
 <template>
-  <div class="text-sm">同时设置 <n-text code>width</n-text> 和 <n-text code>height</n-text> 样式</div>
+  <div class="text-sm">
+    同时设置
+    <n-text code>width</n-text>
+    和
+    <n-text code>height</n-text>
+    样式
+  </div>
   <n-divider />
 
   <n-h2>宽高</n-h2>

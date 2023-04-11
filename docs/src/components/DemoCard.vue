@@ -31,9 +31,7 @@
 
       <!-- 代码 -->
       <template v-if="props.code && showCode" #footer>
-        <n-config-provider :hljs="hljs">
-          <n-code :code="props.code" language="html" word-wrap />
-        </n-config-provider>
+        <CodeHighLight :code="props.code!" />
       </template>
     </BasicCard>
 
@@ -44,10 +42,6 @@
 </template>
 
 <script lang="tsx" setup>
-  import hljs from 'highlight.js/lib/core';
-  import html from 'highlight.js/lib/languages/xml';
-  import BasicCard from '@/components/BasicCard.vue';
-
   interface Props {
     /** 代码 */
     code?: string
@@ -63,8 +57,6 @@
 
   const props = defineProps<Props>();
   const slots = useSlots();
-
-  hljs.registerLanguage('html', html);
 
   /** 是否显示代码 */
   const showCode = ref(true);
