@@ -24,11 +24,7 @@
   const code = computed(() => {
     if (props.lineTrimStart)
       return props.code.replace(/^ +/mg, '');
-    
+
     return props.code;
   });
-
-  watchEffect(() => {
-    console.log(props.code)
-  })
 </script>
