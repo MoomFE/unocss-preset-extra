@@ -79,7 +79,7 @@
 </template>
 
 <script lang="ts" setup>
-
+  // @unocss-ignore
 </script>
 
 <route lang="yaml">
