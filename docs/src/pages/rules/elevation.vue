@@ -50,9 +50,9 @@
   });
 
   /** 海拔 */
-  const ElevationDiv = ({ index, opacity }: { index: string | number; opacity?: number }) => (
-    <div class={`size-25 flex justify-center items-center rounded c-white bg-sky dark:bg-sky-6 el-${index} el-op-${opacity ?? 100}`}>{ index }</div>
-  );
+  function ElevationDiv({ index, opacity }: { index: string | number; opacity?: number }) {
+    return <div class={`size-25 flex justify-center items-center rounded c-white bg-sky dark:bg-sky-6 el-${index} el-op-${opacity ?? 100}`}>{ index }</div>;
+  }
 </script>
 
 <route lang="yaml">
