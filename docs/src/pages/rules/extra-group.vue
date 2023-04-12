@@ -1,9 +1,9 @@
 <template>
   <div class="text-sm">
     额外的可在分组中使用的规则, 可在
-    <OuterChain href="https://github.com/unocss/unocss/tree/main/packages/transformer-variant-group" code>Variant Group</OuterChain>
+    <OuterChain href="https://unocss.dev/transformers/variant-group" code>Variant Group</OuterChain>
     或
-    <OuterChain href="https://github.com/unocss/unocss/tree/main/packages/preset-attributify" code>Attributify Mode</OuterChain>
+    <OuterChain href="https://unocss.dev/presets/attributify" code>Attributify Mode</OuterChain>
     下使用
   </div>
   <n-divider />
