@@ -14,10 +14,10 @@
       code="
         <!-- 使用之前 -->
         <div class=&quot;flex-(~ col none) justify-center&quot; />
-        <div class=&quot;justify-center&quot; un:flex=&quot;~ col none&quot; />
+        <div class=&quot;justify-center&quot; flex=&quot;~ col none&quot; />
         <!-- 使用之后 -->
         <div class=&quot;flex-(~ col none justify-center)&quot; />
-        <div un:flex=&quot;~ col none justify-center&quot; />
+        <div flex=&quot;~ col none justify-center&quot; />
       "
     />
   </n-card>

@@ -135,10 +135,10 @@
   ```html
   <!-- 使用之前 -->
   <div class="flex-(~ col none) justify-center" />
-  <div class="justify-center" un:flex="~ col none" />
+  <div class="justify-center" flex="~ col none" />
   <!-- 使用之后 -->
   <div class="flex-(~ col none justify-center)" />
-  <div un:flex="~ col none justify-center" />
+  <div flex="~ col none justify-center" />
 
   <!-- ↓↓↓ 以下是所有规则 ↓↓↓ -->
 
