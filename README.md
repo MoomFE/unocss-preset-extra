@@ -61,9 +61,15 @@
   <div class="el-6 shadow-op-50" />
   ```
 
-  在 [Attributify Mode](https://unocss.dev/presets/attributify) 下使用
+  在 [Variant Group](https://unocss.dev/transformers/variant-group) 或 [Attributify Mode](https://unocss.dev/presets/attributify) 下使用
 
   ```html
+  <!-- Variant Group -->
+  <div class="el-(1 op-50)" />
+  <div class="elevation-(1 op-50)" />
+  <div class="shadow-elevation-(1 op-50)" />
+
+  <!-- Attributify Mode -->
   <div el="1 op-50" />
   <div elevation="1 op-50" />
   <div shadow-elevation="1 op-50" />
