@@ -39,6 +39,7 @@
     "test:ui": "npm run pre-task && vitest --ui",
     "test-build": "npm run build && vitest --mode test-build",
     "test-build:ui": "npm run build && vitest --mode test-build --ui",
+    "up": "npx taze latest -r -w -i",
     "lint": "eslint ./src --fix"
   },
   "peerDependencies": {
