@@ -64,8 +64,10 @@ exports[`extra-group > autocomplete 1`] = `
   "flex-justify-items-start",
   "flex-justify-items-stretch",
   "flex-justify-items-unset",
+  "flex-justify-left",
   "flex-justify-revert",
   "flex-justify-revert-layer",
+  "flex-justify-right",
   "flex-justify-self-auto",
   "flex-justify-self-center",
   "flex-justify-self-end",
@@ -100,8 +102,10 @@ exports[`extra-group > autocomplete 2`] = `
   "grid-justify-items-start",
   "grid-justify-items-stretch",
   "grid-justify-items-unset",
+  "grid-justify-left",
   "grid-justify-revert",
   "grid-justify-revert-layer",
+  "grid-justify-right",
   "grid-justify-self-auto",
   "grid-justify-self-center",
   "grid-justify-self-end",
@@ -136,8 +140,10 @@ exports[`extra-group > autocomplete 3`] = `
   "inline-flex-justify-items-start",
   "inline-flex-justify-items-stretch",
   "inline-flex-justify-items-unset",
+  "inline-flex-justify-left",
   "inline-flex-justify-revert",
   "inline-flex-justify-revert-layer",
+  "inline-flex-justify-right",
   "inline-flex-justify-self-auto",
   "inline-flex-justify-self-center",
   "inline-flex-justify-self-end",
@@ -172,8 +178,10 @@ exports[`extra-group > autocomplete 4`] = `
   "inline-grid-justify-items-start",
   "inline-grid-justify-items-stretch",
   "inline-grid-justify-items-unset",
+  "inline-grid-justify-left",
   "inline-grid-justify-revert",
   "inline-grid-justify-revert-layer",
+  "inline-grid-justify-right",
   "inline-grid-justify-self-auto",
   "inline-grid-justify-self-center",
   "inline-grid-justify-self-end",
@@ -192,6 +200,9 @@ exports[`extra-group > autocomplete 4`] = `
 
 exports[`extra-group > autocomplete 5`] = `
 [
+  "flex-order-first",
+  "flex-order-last",
+  "flex-order-none",
   "flex-order-0",
   "flex-order-1",
   "flex-order-2",
@@ -204,14 +215,14 @@ exports[`extra-group > autocomplete 5`] = `
   "flex-order-12",
   "flex-order-24",
   "flex-order-36",
-  "flex-order-first",
-  "flex-order-last",
-  "flex-order-none",
 ]
 `;
 
 exports[`extra-group > autocomplete 6`] = `
 [
+  "grid-order-first",
+  "grid-order-last",
+  "grid-order-none",
   "grid-order-0",
   "grid-order-1",
   "grid-order-2",
@@ -224,14 +235,14 @@ exports[`extra-group > autocomplete 6`] = `
   "grid-order-12",
   "grid-order-24",
   "grid-order-36",
-  "grid-order-first",
-  "grid-order-last",
-  "grid-order-none",
 ]
 `;
 
 exports[`extra-group > autocomplete 7`] = `
 [
+  "inline-flex-order-first",
+  "inline-flex-order-last",
+  "inline-flex-order-none",
   "inline-flex-order-0",
   "inline-flex-order-1",
   "inline-flex-order-2",
@@ -244,14 +255,14 @@ exports[`extra-group > autocomplete 7`] = `
   "inline-flex-order-12",
   "inline-flex-order-24",
   "inline-flex-order-36",
-  "inline-flex-order-first",
-  "inline-flex-order-last",
-  "inline-flex-order-none",
 ]
 `;
 
 exports[`extra-group > autocomplete 8`] = `
 [
+  "inline-grid-order-first",
+  "inline-grid-order-last",
+  "inline-grid-order-none",
   "inline-grid-order-0",
   "inline-grid-order-1",
   "inline-grid-order-2",
@@ -264,9 +275,6 @@ exports[`extra-group > autocomplete 8`] = `
   "inline-grid-order-12",
   "inline-grid-order-24",
   "inline-grid-order-36",
-  "inline-grid-order-first",
-  "inline-grid-order-last",
-  "inline-grid-order-none",
 ]
 `;
 
@@ -644,11 +652,11 @@ exports[`extra-group > autocomplete 32`] = `
 
 exports[`extra-group > justifies 1`] = `
 "
-  justify-start zjustify-startw justify-end zjustify-endw justify-center zjustify-centerw justify-between zjustify-betweenw justify-around zjustify-aroundw justify-evenly zjustify-evenlyw justify-stretch zjustify-stretchw justify-inherit zjustify-inheritw justify-initial zjustify-initialw justify-revert zjustify-revertw justify-revert-layer zjustify-revert-layerw justify-unset zjustify-unsetw justify-items-start zjustify-items-startw justify-items-end zjustify-items-endw justify-items-center zjustify-items-centerw justify-items-stretch zjustify-items-stretchw justify-items-inherit zjustify-items-inheritw justify-items-initial zjustify-items-initialw justify-items-revert zjustify-items-revertw justify-items-revert-layer zjustify-items-revert-layerw justify-items-unset zjustify-items-unsetw justify-self-auto zjustify-self-autow justify-self-start zjustify-self-startw justify-self-end zjustify-self-endw justify-self-center zjustify-self-centerw justify-self-stretch zjustify-self-stretchw justify-self-inherit zjustify-self-inheritw justify-self-initial zjustify-self-initialw justify-self-revert zjustify-self-revertw justify-self-revert-layer zjustify-self-revert-layerw justify-self-unset zjustify-self-unsetw
-  flex-justify-start zflex-justify-startw flex-justify-end zflex-justify-endw flex-justify-center zflex-justify-centerw flex-justify-between zflex-justify-betweenw flex-justify-around zflex-justify-aroundw flex-justify-evenly zflex-justify-evenlyw flex-justify-stretch zflex-justify-stretchw flex-justify-inherit zflex-justify-inheritw flex-justify-initial zflex-justify-initialw flex-justify-revert zflex-justify-revertw flex-justify-revert-layer zflex-justify-revert-layerw flex-justify-unset zflex-justify-unsetw flex-justify-items-start zflex-justify-items-startw flex-justify-items-end zflex-justify-items-endw flex-justify-items-center zflex-justify-items-centerw flex-justify-items-stretch zflex-justify-items-stretchw flex-justify-items-inherit zflex-justify-items-inheritw flex-justify-items-initial zflex-justify-items-initialw flex-justify-items-revert zflex-justify-items-revertw flex-justify-items-revert-layer zflex-justify-items-revert-layerw flex-justify-items-unset zflex-justify-items-unsetw flex-justify-self-auto zflex-justify-self-autow flex-justify-self-start zflex-justify-self-startw flex-justify-self-end zflex-justify-self-endw flex-justify-self-center zflex-justify-self-centerw flex-justify-self-stretch zflex-justify-self-stretchw flex-justify-self-inherit zflex-justify-self-inheritw flex-justify-self-initial zflex-justify-self-initialw flex-justify-self-revert zflex-justify-self-revertw flex-justify-self-revert-layer zflex-justify-self-revert-layerw flex-justify-self-unset zflex-justify-self-unsetw
-  grid-justify-start zgrid-justify-startw grid-justify-end zgrid-justify-endw grid-justify-center zgrid-justify-centerw grid-justify-between zgrid-justify-betweenw grid-justify-around zgrid-justify-aroundw grid-justify-evenly zgrid-justify-evenlyw grid-justify-stretch zgrid-justify-stretchw grid-justify-inherit zgrid-justify-inheritw grid-justify-initial zgrid-justify-initialw grid-justify-revert zgrid-justify-revertw grid-justify-revert-layer zgrid-justify-revert-layerw grid-justify-unset zgrid-justify-unsetw grid-justify-items-start zgrid-justify-items-startw grid-justify-items-end zgrid-justify-items-endw grid-justify-items-center zgrid-justify-items-centerw grid-justify-items-stretch zgrid-justify-items-stretchw grid-justify-items-inherit zgrid-justify-items-inheritw grid-justify-items-initial zgrid-justify-items-initialw grid-justify-items-revert zgrid-justify-items-revertw grid-justify-items-revert-layer zgrid-justify-items-revert-layerw grid-justify-items-unset zgrid-justify-items-unsetw grid-justify-self-auto zgrid-justify-self-autow grid-justify-self-start zgrid-justify-self-startw grid-justify-self-end zgrid-justify-self-endw grid-justify-self-center zgrid-justify-self-centerw grid-justify-self-stretch zgrid-justify-self-stretchw grid-justify-self-inherit zgrid-justify-self-inheritw grid-justify-self-initial zgrid-justify-self-initialw grid-justify-self-revert zgrid-justify-self-revertw grid-justify-self-revert-layer zgrid-justify-self-revert-layerw grid-justify-self-unset zgrid-justify-self-unsetw
-  inline-flex-justify-start zinline-flex-justify-startw inline-flex-justify-end zinline-flex-justify-endw inline-flex-justify-center zinline-flex-justify-centerw inline-flex-justify-between zinline-flex-justify-betweenw inline-flex-justify-around zinline-flex-justify-aroundw inline-flex-justify-evenly zinline-flex-justify-evenlyw inline-flex-justify-stretch zinline-flex-justify-stretchw inline-flex-justify-inherit zinline-flex-justify-inheritw inline-flex-justify-initial zinline-flex-justify-initialw inline-flex-justify-revert zinline-flex-justify-revertw inline-flex-justify-revert-layer zinline-flex-justify-revert-layerw inline-flex-justify-unset zinline-flex-justify-unsetw inline-flex-justify-items-start zinline-flex-justify-items-startw inline-flex-justify-items-end zinline-flex-justify-items-endw inline-flex-justify-items-center zinline-flex-justify-items-centerw inline-flex-justify-items-stretch zinline-flex-justify-items-stretchw inline-flex-justify-items-inherit zinline-flex-justify-items-inheritw inline-flex-justify-items-initial zinline-flex-justify-items-initialw inline-flex-justify-items-revert zinline-flex-justify-items-revertw inline-flex-justify-items-revert-layer zinline-flex-justify-items-revert-layerw inline-flex-justify-items-unset zinline-flex-justify-items-unsetw inline-flex-justify-self-auto zinline-flex-justify-self-autow inline-flex-justify-self-start zinline-flex-justify-self-startw inline-flex-justify-self-end zinline-flex-justify-self-endw inline-flex-justify-self-center zinline-flex-justify-self-centerw inline-flex-justify-self-stretch zinline-flex-justify-self-stretchw inline-flex-justify-self-inherit zinline-flex-justify-self-inheritw inline-flex-justify-self-initial zinline-flex-justify-self-initialw inline-flex-justify-self-revert zinline-flex-justify-self-revertw inline-flex-justify-self-revert-layer zinline-flex-justify-self-revert-layerw inline-flex-justify-self-unset zinline-flex-justify-self-unsetw
-  inline-grid-justify-start zinline-grid-justify-startw inline-grid-justify-end zinline-grid-justify-endw inline-grid-justify-center zinline-grid-justify-centerw inline-grid-justify-between zinline-grid-justify-betweenw inline-grid-justify-around zinline-grid-justify-aroundw inline-grid-justify-evenly zinline-grid-justify-evenlyw inline-grid-justify-stretch zinline-grid-justify-stretchw inline-grid-justify-inherit zinline-grid-justify-inheritw inline-grid-justify-initial zinline-grid-justify-initialw inline-grid-justify-revert zinline-grid-justify-revertw inline-grid-justify-revert-layer zinline-grid-justify-revert-layerw inline-grid-justify-unset zinline-grid-justify-unsetw inline-grid-justify-items-start zinline-grid-justify-items-startw inline-grid-justify-items-end zinline-grid-justify-items-endw inline-grid-justify-items-center zinline-grid-justify-items-centerw inline-grid-justify-items-stretch zinline-grid-justify-items-stretchw inline-grid-justify-items-inherit zinline-grid-justify-items-inheritw inline-grid-justify-items-initial zinline-grid-justify-items-initialw inline-grid-justify-items-revert zinline-grid-justify-items-revertw inline-grid-justify-items-revert-layer zinline-grid-justify-items-revert-layerw inline-grid-justify-items-unset zinline-grid-justify-items-unsetw inline-grid-justify-self-auto zinline-grid-justify-self-autow inline-grid-justify-self-start zinline-grid-justify-self-startw inline-grid-justify-self-end zinline-grid-justify-self-endw inline-grid-justify-self-center zinline-grid-justify-self-centerw inline-grid-justify-self-stretch zinline-grid-justify-self-stretchw inline-grid-justify-self-inherit zinline-grid-justify-self-inheritw inline-grid-justify-self-initial zinline-grid-justify-self-initialw inline-grid-justify-self-revert zinline-grid-justify-self-revertw inline-grid-justify-self-revert-layer zinline-grid-justify-self-revert-layerw inline-grid-justify-self-unset zinline-grid-justify-self-unsetw
+  justify-start zjustify-startw justify-end zjustify-endw justify-center zjustify-centerw justify-between zjustify-betweenw justify-around zjustify-aroundw justify-evenly zjustify-evenlyw justify-stretch zjustify-stretchw justify-left zjustify-leftw justify-right zjustify-rightw justify-inherit zjustify-inheritw justify-initial zjustify-initialw justify-revert zjustify-revertw justify-revert-layer zjustify-revert-layerw justify-unset zjustify-unsetw justify-items-start zjustify-items-startw justify-items-end zjustify-items-endw justify-items-center zjustify-items-centerw justify-items-stretch zjustify-items-stretchw justify-items-inherit zjustify-items-inheritw justify-items-initial zjustify-items-initialw justify-items-revert zjustify-items-revertw justify-items-revert-layer zjustify-items-revert-layerw justify-items-unset zjustify-items-unsetw justify-self-auto zjustify-self-autow justify-self-start zjustify-self-startw justify-self-end zjustify-self-endw justify-self-center zjustify-self-centerw justify-self-stretch zjustify-self-stretchw justify-self-inherit zjustify-self-inheritw justify-self-initial zjustify-self-initialw justify-self-revert zjustify-self-revertw justify-self-revert-layer zjustify-self-revert-layerw justify-self-unset zjustify-self-unsetw
+  flex-justify-start zflex-justify-startw flex-justify-end zflex-justify-endw flex-justify-center zflex-justify-centerw flex-justify-between zflex-justify-betweenw flex-justify-around zflex-justify-aroundw flex-justify-evenly zflex-justify-evenlyw flex-justify-stretch zflex-justify-stretchw flex-justify-left zflex-justify-leftw flex-justify-right zflex-justify-rightw flex-justify-inherit zflex-justify-inheritw flex-justify-initial zflex-justify-initialw flex-justify-revert zflex-justify-revertw flex-justify-revert-layer zflex-justify-revert-layerw flex-justify-unset zflex-justify-unsetw flex-justify-items-start zflex-justify-items-startw flex-justify-items-end zflex-justify-items-endw flex-justify-items-center zflex-justify-items-centerw flex-justify-items-stretch zflex-justify-items-stretchw flex-justify-items-inherit zflex-justify-items-inheritw flex-justify-items-initial zflex-justify-items-initialw flex-justify-items-revert zflex-justify-items-revertw flex-justify-items-revert-layer zflex-justify-items-revert-layerw flex-justify-items-unset zflex-justify-items-unsetw flex-justify-self-auto zflex-justify-self-autow flex-justify-self-start zflex-justify-self-startw flex-justify-self-end zflex-justify-self-endw flex-justify-self-center zflex-justify-self-centerw flex-justify-self-stretch zflex-justify-self-stretchw flex-justify-self-inherit zflex-justify-self-inheritw flex-justify-self-initial zflex-justify-self-initialw flex-justify-self-revert zflex-justify-self-revertw flex-justify-self-revert-layer zflex-justify-self-revert-layerw flex-justify-self-unset zflex-justify-self-unsetw
+  grid-justify-start zgrid-justify-startw grid-justify-end zgrid-justify-endw grid-justify-center zgrid-justify-centerw grid-justify-between zgrid-justify-betweenw grid-justify-around zgrid-justify-aroundw grid-justify-evenly zgrid-justify-evenlyw grid-justify-stretch zgrid-justify-stretchw grid-justify-left zgrid-justify-leftw grid-justify-right zgrid-justify-rightw grid-justify-inherit zgrid-justify-inheritw grid-justify-initial zgrid-justify-initialw grid-justify-revert zgrid-justify-revertw grid-justify-revert-layer zgrid-justify-revert-layerw grid-justify-unset zgrid-justify-unsetw grid-justify-items-start zgrid-justify-items-startw grid-justify-items-end zgrid-justify-items-endw grid-justify-items-center zgrid-justify-items-centerw grid-justify-items-stretch zgrid-justify-items-stretchw grid-justify-items-inherit zgrid-justify-items-inheritw grid-justify-items-initial zgrid-justify-items-initialw grid-justify-items-revert zgrid-justify-items-revertw grid-justify-items-revert-layer zgrid-justify-items-revert-layerw grid-justify-items-unset zgrid-justify-items-unsetw grid-justify-self-auto zgrid-justify-self-autow grid-justify-self-start zgrid-justify-self-startw grid-justify-self-end zgrid-justify-self-endw grid-justify-self-center zgrid-justify-self-centerw grid-justify-self-stretch zgrid-justify-self-stretchw grid-justify-self-inherit zgrid-justify-self-inheritw grid-justify-self-initial zgrid-justify-self-initialw grid-justify-self-revert zgrid-justify-self-revertw grid-justify-self-revert-layer zgrid-justify-self-revert-layerw grid-justify-self-unset zgrid-justify-self-unsetw
+  inline-flex-justify-start zinline-flex-justify-startw inline-flex-justify-end zinline-flex-justify-endw inline-flex-justify-center zinline-flex-justify-centerw inline-flex-justify-between zinline-flex-justify-betweenw inline-flex-justify-around zinline-flex-justify-aroundw inline-flex-justify-evenly zinline-flex-justify-evenlyw inline-flex-justify-stretch zinline-flex-justify-stretchw inline-flex-justify-left zinline-flex-justify-leftw inline-flex-justify-right zinline-flex-justify-rightw inline-flex-justify-inherit zinline-flex-justify-inheritw inline-flex-justify-initial zinline-flex-justify-initialw inline-flex-justify-revert zinline-flex-justify-revertw inline-flex-justify-revert-layer zinline-flex-justify-revert-layerw inline-flex-justify-unset zinline-flex-justify-unsetw inline-flex-justify-items-start zinline-flex-justify-items-startw inline-flex-justify-items-end zinline-flex-justify-items-endw inline-flex-justify-items-center zinline-flex-justify-items-centerw inline-flex-justify-items-stretch zinline-flex-justify-items-stretchw inline-flex-justify-items-inherit zinline-flex-justify-items-inheritw inline-flex-justify-items-initial zinline-flex-justify-items-initialw inline-flex-justify-items-revert zinline-flex-justify-items-revertw inline-flex-justify-items-revert-layer zinline-flex-justify-items-revert-layerw inline-flex-justify-items-unset zinline-flex-justify-items-unsetw inline-flex-justify-self-auto zinline-flex-justify-self-autow inline-flex-justify-self-start zinline-flex-justify-self-startw inline-flex-justify-self-end zinline-flex-justify-self-endw inline-flex-justify-self-center zinline-flex-justify-self-centerw inline-flex-justify-self-stretch zinline-flex-justify-self-stretchw inline-flex-justify-self-inherit zinline-flex-justify-self-inheritw inline-flex-justify-self-initial zinline-flex-justify-self-initialw inline-flex-justify-self-revert zinline-flex-justify-self-revertw inline-flex-justify-self-revert-layer zinline-flex-justify-self-revert-layerw inline-flex-justify-self-unset zinline-flex-justify-self-unsetw
+  inline-grid-justify-start zinline-grid-justify-startw inline-grid-justify-end zinline-grid-justify-endw inline-grid-justify-center zinline-grid-justify-centerw inline-grid-justify-between zinline-grid-justify-betweenw inline-grid-justify-around zinline-grid-justify-aroundw inline-grid-justify-evenly zinline-grid-justify-evenlyw inline-grid-justify-stretch zinline-grid-justify-stretchw inline-grid-justify-left zinline-grid-justify-leftw inline-grid-justify-right zinline-grid-justify-rightw inline-grid-justify-inherit zinline-grid-justify-inheritw inline-grid-justify-initial zinline-grid-justify-initialw inline-grid-justify-revert zinline-grid-justify-revertw inline-grid-justify-revert-layer zinline-grid-justify-revert-layerw inline-grid-justify-unset zinline-grid-justify-unsetw inline-grid-justify-items-start zinline-grid-justify-items-startw inline-grid-justify-items-end zinline-grid-justify-items-endw inline-grid-justify-items-center zinline-grid-justify-items-centerw inline-grid-justify-items-stretch zinline-grid-justify-items-stretchw inline-grid-justify-items-inherit zinline-grid-justify-items-inheritw inline-grid-justify-items-initial zinline-grid-justify-items-initialw inline-grid-justify-items-revert zinline-grid-justify-items-revertw inline-grid-justify-items-revert-layer zinline-grid-justify-items-revert-layerw inline-grid-justify-items-unset zinline-grid-justify-items-unsetw inline-grid-justify-self-auto zinline-grid-justify-self-autow inline-grid-justify-self-start zinline-grid-justify-self-startw inline-grid-justify-self-end zinline-grid-justify-self-endw inline-grid-justify-self-center zinline-grid-justify-self-centerw inline-grid-justify-self-stretch zinline-grid-justify-self-stretchw inline-grid-justify-self-inherit zinline-grid-justify-self-inheritw inline-grid-justify-self-initial zinline-grid-justify-self-initialw inline-grid-justify-self-revert zinline-grid-justify-self-revertw inline-grid-justify-self-revert-layer zinline-grid-justify-self-revert-layerw inline-grid-justify-self-unset zinline-grid-justify-self-unsetw
 "
 `;
 
@@ -661,6 +669,8 @@ exports[`extra-group > justifies 2`] = `
 .justify-around{justify-content:space-around;}
 .justify-evenly{justify-content:space-evenly;}
 .justify-stretch{justify-content:stretch;}
+.justify-left{justify-content:left;}
+.justify-right{justify-content:right;}
 .justify-inherit{justify-content:inherit;}
 .justify-initial{justify-content:initial;}
 .justify-revert{justify-content:revert;}
@@ -762,6 +772,8 @@ exports[`extra-group > rules 1`] = `
   /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-around\\$/,
   /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-evenly\\$/,
   /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-stretch\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-left\\$/,
+  /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-right\\$/,
   /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-inherit\\$/,
   /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-initial\\$/,
   /\\^\\(\\?:inline-\\)\\?\\(\\?:flex\\|grid\\)-justify-revert\\$/,

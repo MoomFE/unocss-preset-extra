@@ -941,6 +941,7 @@ exports[`animated > autocomplete 2`] = `
 
 exports[`animated > autocomplete 3`] = `
 [
+  "animated-repeat-infinite",
   "animated-repeat-0",
   "animated-repeat-1",
   "animated-repeat-2",
@@ -953,12 +954,12 @@ exports[`animated > autocomplete 3`] = `
   "animated-repeat-12",
   "animated-repeat-24",
   "animated-repeat-36",
-  "animated-repeat-infinite",
 ]
 `;
 
 exports[`animated > autocomplete 4`] = `
 [
+  "animated-delay-none",
   "animated-delay-75",
   "animated-delay-100",
   "animated-delay-150",
@@ -967,12 +968,12 @@ exports[`animated > autocomplete 4`] = `
   "animated-delay-500",
   "animated-delay-700",
   "animated-delay-1000",
-  "animated-delay-none",
 ]
 `;
 
 exports[`animated > autocomplete 5`] = `
 [
+  "animated-duration-none",
   "animated-duration-75",
   "animated-duration-100",
   "animated-duration-150",
@@ -981,6 +982,5 @@ exports[`animated > autocomplete 5`] = `
   "animated-duration-500",
   "animated-duration-700",
   "animated-duration-1000",
-  "animated-duration-none",
 ]
 `;
