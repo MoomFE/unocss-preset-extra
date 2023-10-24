@@ -1,4 +1,7 @@
 ## [Unreleased]
+
+## [v0.5.3]
+  - 📅 2023-10-24
   - 💄 升级依赖类库, 更新 extra-group 系列样式规则
   - 💄 优化海拔样式的 autocomplete
 
@@ -88,7 +91,8 @@ CHANGELOG 图标规范
 <hr>
 <br>
 
-[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.5.2...HEAD
+[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.5.3...HEAD
+[v0.5.3]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.3
 [v0.5.2]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.2
 [v0.5.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.1
 [v0.5.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.0
