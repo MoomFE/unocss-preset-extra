@@ -7,7 +7,7 @@
 
 <script lang="tsx" setup>
   import { NButton, NDrawer } from 'naive-ui';
-  import { isBrowser } from '@moomfe/small-utils';
+  import { isBrowser } from 'mixte';
   import { breakpoints } from '@/shared/unocss.theme';
 
   const emit = defineEmits(['setDrawerOpenBtn']);
@@ -17,7 +17,7 @@
   const open = ref(false);
   /** 桌面模式 */
   const isDesktop = isBrowser
-    ? useBreakpoints({ desktop: parseInt(breakpoints.lg) }).desktop
+    ? useBreakpoints({ desktop: Number.parseInt(breakpoints.lg) }).desktop
     : ref(true);
 
   /** 渲染抽屉 */

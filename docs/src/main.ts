@@ -1,5 +1,5 @@
 import { ViteSSG } from 'vite-ssg';
-import { isBrowser } from '@moomfe/small-utils';
+import { isBrowser } from 'mixte';
 import App from './App.vue';
 import type { UserModule } from './types';
 import routes from '@/modules/router/routes';

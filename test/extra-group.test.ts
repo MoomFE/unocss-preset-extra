@@ -1,7 +1,7 @@
 import { createGenerator, presetAttributify, presetUno } from 'unocss';
 import { describe, expect, test } from 'vitest';
 import { createAutocomplete } from '@unocss/autocomplete';
-import { isString } from '@moomfe/small-utils';
+import { isString } from 'mixte';
 import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { alignments, justifies, orders, placements } from '@unocss/preset-mini/dist/rules';

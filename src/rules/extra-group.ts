@@ -1,7 +1,7 @@
 import { type Rule } from 'unocss';
 import { type Theme } from '@unocss/preset-mini';
 import { alignments, justifies, orders, placements } from '@unocss/preset-mini/dist/rules';
-import { isPlainObject, isString } from '@moomfe/small-utils';
+import { isPlainObject, isString } from 'mixte';
 
 // @ts-expect-error
 export const extraGroupRules: Rule<Theme>[] = [
