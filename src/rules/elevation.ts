@@ -49,9 +49,9 @@ export const elevationRules: Rule<Theme>[] = [
       }
     },
     {
-      autocomplete: [
-        `(el|elevation|shadow-elevation)-(${elevationLevel})`,
-      ],
+      autocomplete: ['el', 'elevation', 'shadow-elevation']
+        .map(name => elevationLevel.split('|').map(level => `${name}-${level}`))
+        .flat()
     },
   ],
   [
@@ -62,9 +62,9 @@ export const elevationRules: Rule<Theme>[] = [
       };
     },
     {
-      autocomplete: [
-        '(el|elevation|shadow-elevation)-(op|opacity)-<percent>',
-      ],
+      autocomplete: ['el', 'elevation', 'shadow-elevation']
+        .map(name => ['op', 'opacity'].map(op => Array.from({ length: 101 }).map((_, i) => `${name}-${op}-${i}`)))
+        .flat(2)
     },
   ],
 ];
