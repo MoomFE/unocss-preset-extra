@@ -12,7 +12,12 @@ export default defineConfig(({ mode }) => {
       },
     },
     test: {
-
+      globals: true,
+      coverage: {
+        enabled: true,
+        provider: 'v8',
+        all: false,
+      },
     },
   };
 });
