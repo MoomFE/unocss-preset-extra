@@ -28,7 +28,7 @@
     "@css-render/vue3-ssr": "^0.15.12",
     "@iconify/json": "^2.2.157",
     "@intlify/unplugin-vue-i18n": "^1.6.0",
-    "@moomfe/eslint-config": "^2.7.2",
+    "@moomfe/eslint-config": "^3.0.0",
     "@rollup/pluginutils": "^5.1.0",
     "@types/fs-extra": "^11.0.4",
     "@types/jsdom": "^21.1.6",
