@@ -88,7 +88,7 @@ importers:
         specifier: ^7.0.3
         version: 7.0.3
       eslint:
-        specifier: ^8.55.0
+        specifier: ^8.57.0
         version: 8.57.0
       fs-extra:
         specifier: ^11.2.0

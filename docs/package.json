@@ -39,7 +39,7 @@
     "@vue/compiler-sfc": "^3.3.11",
     "critters": "^0.0.20",
     "cross-env": "^7.0.3",
-    "eslint": "^8.55.0",
+    "eslint": "^8.57.0",
     "fs-extra": "^11.2.0",
     "jsdom": "^24.0.0",
     "pnpm": "^9.0.6",
