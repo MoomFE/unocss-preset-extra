@@ -54,8 +54,8 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       mixte:
-        specifier: ^1.7.0
-        version: 1.7.0
+        specifier: ^1.11.0
+        version: 1.11.0
       pnpm:
         specifier: ^9.0.6
         version: 9.0.6
@@ -1866,8 +1866,8 @@ packages:
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
-  mixte@1.7.0:
-    resolution: {integrity: sha512-84EbjHCu2yEY40jwD9Hx0AkYGYc/vKSJ6tw7hdCWDCfiEuTwuEZpjkUZH7kUKjpPLpMH7MXiWMleVDqUyi/B0Q==}
+  mixte@1.11.0:
+    resolution: {integrity: sha512-G4if9mjZ1CcVB/te7tuBwN6a1BwNa7lyKJe5gZNnKJtzkShrkDlWK/zZ8rI/zs5fQCKS9wOmKJFeZnZUMIEE/A==}
 
   mlly@1.4.2:
     resolution: {integrity: sha512-i/Ykufi2t1EZ6NaPLdfnZk2AX8cs0d+mTzVKuPfqPKPatxLApaBoxJQ9x1/uckXtrS/U5oisPMDkNs0yQTaBRg==}
@@ -4585,7 +4585,7 @@ snapshots:
     dependencies:
       brace-expansion: 1.1.11
 
-  mixte@1.7.0: {}
+  mixte@1.11.0: {}
 
   mlly@1.4.2:
     dependencies:
