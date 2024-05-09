@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.1.0",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "homepage": "https://github.com/MoomFE/unocss-preset-extra",
   "scripts": {
@@ -42,10 +42,10 @@
     "eslint": "^8.57.0",
     "fs-extra": "^11.2.0",
     "jsdom": "^24.0.0",
-    "pnpm": "^9.0.6",
+    "pnpm": "^9.1.0",
     "sass": "^1.69.5",
     "typescript": "^5.3.3",
-    "unocss": "^0.58.0",
+    "unocss": "^0.60.0",
     "unocss-preset-extra": "^0.5.3",
     "unocss-preset-scrollbar": "^0.3.0",
     "unplugin-auto-import": "^0.17.2",
