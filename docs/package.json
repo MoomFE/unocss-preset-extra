@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.1.3",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "homepage": "https://github.com/MoomFE/unocss-preset-extra",
   "scripts": {
@@ -42,7 +42,7 @@
     "eslint": "^8.57.0",
     "fs-extra": "^11.2.0",
     "jsdom": "^24.0.0",
-    "pnpm": "^9.1.1",
+    "pnpm": "^9.1.3",
     "sass": "^1.69.5",
     "typescript": "^5.3.3",
     "unocss": "^0.60.0",
