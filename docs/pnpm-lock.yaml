@@ -97,8 +97,8 @@ importers:
         specifier: ^24.0.0
         version: 24.0.0
       pnpm:
-        specifier: ^9.1.3
-        version: 9.1.3
+        specifier: ^9.1.4
+        version: 9.1.4
       sass:
         specifier: ^1.69.5
         version: 1.74.1
@@ -2397,8 +2397,8 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
 
-  pnpm@9.1.3:
-    resolution: {integrity: sha512-fC6gieGmrzBkCcT8jE8Il72sMrdyAWGWxGnZQo8f4tWiHa+K1lEnYmVKxkW12RNrshDsmgCvqNvEZ3hDujYuzQ==}
+  pnpm@9.1.4:
+    resolution: {integrity: sha512-nfnPJ8kXFWRsfWddHJyOQfb86IJG8TGMGqah7RrrPE8DL830umPMacT+bWNCeRdrU1hyfY8sweZbZfQ84vi/sA==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -5773,7 +5773,7 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  pnpm@9.1.3: {}
+  pnpm@9.1.4: {}
 
   possible-typed-array-names@1.0.0: {}
 
