@@ -57,8 +57,8 @@ importers:
         specifier: ^1.13.1
         version: 1.13.1
       pnpm:
-        specifier: ^9.1.4
-        version: 9.1.4
+        specifier: ^9.2.0
+        version: 9.2.0
       postcss:
         specifier: ^8.4.32
         version: 8.4.32
@@ -2060,8 +2060,8 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
 
-  pnpm@9.1.4:
-    resolution: {integrity: sha512-nfnPJ8kXFWRsfWddHJyOQfb86IJG8TGMGqah7RrrPE8DL830umPMacT+bWNCeRdrU1hyfY8sweZbZfQ84vi/sA==}
+  pnpm@9.2.0:
+    resolution: {integrity: sha512-mKgP0RwucJZ0d2IwQQZDKz3cZ9z1S1qMAck/aKLNXgXmghhJUioG+3YoTUGiZg1eM08u47vykYO/LnObHa+ncQ==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -4822,7 +4822,7 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  pnpm@9.1.4: {}
+  pnpm@9.2.0: {}
 
   postcss-calc@9.0.1(postcss@8.4.32):
     dependencies:
