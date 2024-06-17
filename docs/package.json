@@ -16,7 +16,7 @@
     "@vueuse/math": "^10.7.0",
     "highlight.js": "^11.9.0",
     "lodash": "^4.17.21",
-    "mixte": "^1.13.1",
+    "mixte": "^1.13.2",
     "naive-ui": "^2.35.0",
     "pinia": "^2.1.7",
     "vite-ssg": "^0.23.5",
