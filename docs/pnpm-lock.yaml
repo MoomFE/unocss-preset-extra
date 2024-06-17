@@ -24,8 +24,8 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       mixte:
-        specifier: ^1.13.1
-        version: 1.13.1
+        specifier: ^1.13.2
+        version: 1.13.2
       naive-ui:
         specifier: ^2.35.0
         version: 2.38.1(vue@3.4.27(typescript@5.4.4))
@@ -554,6 +554,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -561,6 +562,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    deprecated: Use @eslint/object-schema instead
 
   '@iconify/json@2.2.197':
     resolution: {integrity: sha512-THpL6FPTaYhXRkCSCVAxR1J/tpicJH/2nHeGh1L25Dd9EJJURemPfqsY05cbasLH0a16RF9UZhksx0QKg8msZw==}
@@ -2205,8 +2207,8 @@ packages:
     resolution: {integrity: sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  mixte@1.13.1:
-    resolution: {integrity: sha512-UdpuFIgstkE2P6s4wDeFU6CjBeyqdbxZ89JrOP89s0AQ+n45D3y0f02LGpZdfuTPKgl1mOKN96wYz37ifKZiLg==}
+  mixte@1.13.2:
+    resolution: {integrity: sha512-IRwhdsTMxwUSl7JIWv00jtoCZXU25Vj0UPq6RJ4W9BLOxPuPR/9SXywf4n1WGm3y8l1AODdGOFbye5yeCDU3Cg==}
 
   mlly@1.6.1:
     resolution: {integrity: sha512-vLgaHvaeunuOXHSmEbZ9izxPx3USsk8KCQ8iC+aTlp5sKRSoZvwhHh5L9VbKSaVC6sJDqbyohIS76E2VmHIPAA==}
@@ -5566,7 +5568,7 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.1
 
-  mixte@1.13.1: {}
+  mixte@1.13.2: {}
 
   mlly@1.6.1:
     dependencies:
