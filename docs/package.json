@@ -11,7 +11,7 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
-    "@vueuse/core": "^10.7.0",
+    "@vueuse/core": "^11.1.0",
     "@vueuse/head": "^2.0.0",
     "@vueuse/math": "^10.7.0",
     "highlight.js": "^11.9.0",
