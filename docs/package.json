@@ -11,9 +11,9 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
-    "@vueuse/core": "^10.7.0",
+    "@vueuse/core": "^11.2.0",
     "@vueuse/head": "^2.0.0",
-    "@vueuse/math": "^10.7.0",
+    "@vueuse/math": "^11.2.0",
     "highlight.js": "^11.9.0",
     "lodash": "^4.17.21",
     "mixte": "^2.4.0",
