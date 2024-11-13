@@ -35,7 +35,7 @@
     "@types/lodash": "^4.14.202",
     "@types/node": "^20.10.4",
     "@vitejs/plugin-vue": "^4.5.2",
-    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vitejs/plugin-vue-jsx": "^4.1.0",
     "@vue/compiler-sfc": "^3.5.12",
     "critters": "^0.0.20",
     "cross-env": "^7.0.3",
