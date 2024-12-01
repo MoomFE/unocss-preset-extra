@@ -54,8 +54,8 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       mixte:
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.5.0
+        version: 2.5.0
       pnpm:
         specifier: ^9.1.4
         version: 9.1.4
@@ -1936,8 +1936,8 @@ packages:
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
-  mixte@2.4.0:
-    resolution: {integrity: sha512-7V45ot+ING/hNgDWi3Zrr3zEcX05jvZiagx+mD8/TR6nu5MoXhiOhwGhIzi3fk8IV2vNupFFGrbipfmD2Vw/Ag==}
+  mixte@2.5.0:
+    resolution: {integrity: sha512-ry6iZMOIuusycnQe22XOxOIGUdceXaoFvvPTkVI7kiShWJI+mIKMzkV5J3WTKkjlSldrLLlioA+mQI6rTfLXVA==}
 
   mlly@1.4.2:
     resolution: {integrity: sha512-i/Ykufi2t1EZ6NaPLdfnZk2AX8cs0d+mTzVKuPfqPKPatxLApaBoxJQ9x1/uckXtrS/U5oisPMDkNs0yQTaBRg==}
@@ -3014,7 +3014,7 @@ snapshots:
       '@babel/helper-split-export-declaration': 7.24.5
       '@babel/parser': 7.24.5
       '@babel/types': 7.24.5
-      debug: 4.3.4
+      debug: 4.3.7
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -4739,7 +4739,7 @@ snapshots:
     dependencies:
       brace-expansion: 1.1.11
 
-  mixte@2.4.0: {}
+  mixte@2.5.0: {}
 
   mlly@1.4.2:
     dependencies:
