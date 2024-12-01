@@ -24,8 +24,8 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       mixte:
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.5.0
+        version: 2.5.0
       naive-ui:
         specifier: ^2.35.0
         version: 2.38.1(vue@3.5.13(typescript@5.4.4))
@@ -2336,8 +2336,8 @@ packages:
     resolution: {integrity: sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  mixte@2.4.0:
-    resolution: {integrity: sha512-7V45ot+ING/hNgDWi3Zrr3zEcX05jvZiagx+mD8/TR6nu5MoXhiOhwGhIzi3fk8IV2vNupFFGrbipfmD2Vw/Ag==}
+  mixte@2.5.0:
+    resolution: {integrity: sha512-ry6iZMOIuusycnQe22XOxOIGUdceXaoFvvPTkVI7kiShWJI+mIKMzkV5J3WTKkjlSldrLLlioA+mQI6rTfLXVA==}
 
   mlly@1.6.1:
     resolution: {integrity: sha512-vLgaHvaeunuOXHSmEbZ9izxPx3USsk8KCQ8iC+aTlp5sKRSoZvwhHh5L9VbKSaVC6sJDqbyohIS76E2VmHIPAA==}
@@ -5002,7 +5002,7 @@ snapshots:
   eslint-compat-utils@0.5.0(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
-      semver: 7.6.0
+      semver: 7.6.3
 
   eslint-import-resolver-node@0.3.9:
     dependencies:
@@ -5853,7 +5853,7 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.1
 
-  mixte@2.4.0: {}
+  mixte@2.5.0: {}
 
   mlly@1.6.1:
     dependencies:
