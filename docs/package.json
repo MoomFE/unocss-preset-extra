@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.1.4",
+  "packageManager": "pnpm@9.15.0",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "homepage": "https://github.com/MoomFE/unocss-preset-extra",
   "scripts": {
