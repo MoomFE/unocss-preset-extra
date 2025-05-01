@@ -58,7 +58,7 @@
     "@vitest/ui": "^1.6.1",
     "animate.css": "^4.1.1",
     "cssnano": "^7.0.6",
-    "eslint": "^9.23.0",
+    "eslint": "^9.25.1",
     "fast-glob": "^3.3.3",
     "fs-extra": "^11.3.0",
     "local-pkg": "^0.5.1",
