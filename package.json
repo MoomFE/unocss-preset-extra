@@ -63,7 +63,7 @@
     "fs-extra": "^11.3.0",
     "local-pkg": "^0.5.1",
     "lodash-es": "^4.17.21",
-    "mixte": "^2.5.0",
+    "mixte": "^3.4.1",
     "pnpm": "^9.15.9",
     "postcss": "^8.5.3",
     "postcss-js": "^4.0.1",

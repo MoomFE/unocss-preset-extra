@@ -24,8 +24,8 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       mixte:
-        specifier: ^2.5.0
-        version: 2.5.0
+        specifier: ^3.4.1
+        version: 3.4.1
       naive-ui:
         specifier: ^2.41.0
         version: 2.41.0(vue@3.5.13(typescript@5.8.3))
@@ -2530,8 +2530,8 @@ packages:
     resolution: {integrity: sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  mixte@2.5.0:
-    resolution: {integrity: sha512-ry6iZMOIuusycnQe22XOxOIGUdceXaoFvvPTkVI7kiShWJI+mIKMzkV5J3WTKkjlSldrLLlioA+mQI6rTfLXVA==}
+  mixte@3.4.1:
+    resolution: {integrity: sha512-JMbhIF0FlOxor74dpEj+9yaeif443SW5NQ2leDs1qYE+oAXRwP96e4iN0ZUiLtQ+fM9b91S8lzpBe9kaI3tWUA==}
 
   mlly@1.6.1:
     resolution: {integrity: sha512-vLgaHvaeunuOXHSmEbZ9izxPx3USsk8KCQ8iC+aTlp5sKRSoZvwhHh5L9VbKSaVC6sJDqbyohIS76E2VmHIPAA==}
@@ -6266,7 +6266,7 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.1
 
-  mixte@2.5.0: {}
+  mixte@3.4.1: {}
 
   mlly@1.6.1:
     dependencies:
