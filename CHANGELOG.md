@@ -1,4 +1,8 @@
 ## [Unreleased]
+
+## [v1.0.0]
+  - 📅 2025-05-29
+  - ⚠️ 升级 unocss 版本
   - 🐞 修复 unocss 的 peerDependencies 版本范围 (fix #60)
 
 ## [v0.5.3]
@@ -92,7 +96,8 @@ CHANGELOG 图标规范
 <hr>
 <br>
 
-[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v0.5.3...HEAD
+[Unreleased]: https://github.com/MoomFE/unocss-preset-extra/compare/v1.0.0...HEAD
+[v1.0.0]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v1.0.0
 [v0.5.3]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.3
 [v0.5.2]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.2
 [v0.5.1]: https://github.com/MoomFE/unocss-preset-extra/releases/tag/v0.5.1
