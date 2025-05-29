@@ -122,87 +122,12 @@ exports[`extra-group > autocomplete 2`] = `
 ]
 `;
 
-exports[`extra-group > autocomplete 3`] = `
-[
-  "inline-flex-justify-around",
-  "inline-flex-justify-between",
-  "inline-flex-justify-center",
-  "inline-flex-justify-end",
-  "inline-flex-justify-evenly",
-  "inline-flex-justify-inherit",
-  "inline-flex-justify-initial",
-  "inline-flex-justify-items-center",
-  "inline-flex-justify-items-end",
-  "inline-flex-justify-items-inherit",
-  "inline-flex-justify-items-initial",
-  "inline-flex-justify-items-revert",
-  "inline-flex-justify-items-revert-layer",
-  "inline-flex-justify-items-start",
-  "inline-flex-justify-items-stretch",
-  "inline-flex-justify-items-unset",
-  "inline-flex-justify-left",
-  "inline-flex-justify-revert",
-  "inline-flex-justify-revert-layer",
-  "inline-flex-justify-right",
-  "inline-flex-justify-self-auto",
-  "inline-flex-justify-self-center",
-  "inline-flex-justify-self-end",
-  "inline-flex-justify-self-inherit",
-  "inline-flex-justify-self-initial",
-  "inline-flex-justify-self-revert",
-  "inline-flex-justify-self-revert-layer",
-  "inline-flex-justify-self-start",
-  "inline-flex-justify-self-stretch",
-  "inline-flex-justify-self-unset",
-  "inline-flex-justify-start",
-  "inline-flex-justify-stretch",
-  "inline-flex-justify-unset",
-]
-`;
+exports[`extra-group > autocomplete 3`] = `[]`;
 
-exports[`extra-group > autocomplete 4`] = `
-[
-  "inline-grid-justify-around",
-  "inline-grid-justify-between",
-  "inline-grid-justify-center",
-  "inline-grid-justify-end",
-  "inline-grid-justify-evenly",
-  "inline-grid-justify-inherit",
-  "inline-grid-justify-initial",
-  "inline-grid-justify-items-center",
-  "inline-grid-justify-items-end",
-  "inline-grid-justify-items-inherit",
-  "inline-grid-justify-items-initial",
-  "inline-grid-justify-items-revert",
-  "inline-grid-justify-items-revert-layer",
-  "inline-grid-justify-items-start",
-  "inline-grid-justify-items-stretch",
-  "inline-grid-justify-items-unset",
-  "inline-grid-justify-left",
-  "inline-grid-justify-revert",
-  "inline-grid-justify-revert-layer",
-  "inline-grid-justify-right",
-  "inline-grid-justify-self-auto",
-  "inline-grid-justify-self-center",
-  "inline-grid-justify-self-end",
-  "inline-grid-justify-self-inherit",
-  "inline-grid-justify-self-initial",
-  "inline-grid-justify-self-revert",
-  "inline-grid-justify-self-revert-layer",
-  "inline-grid-justify-self-start",
-  "inline-grid-justify-self-stretch",
-  "inline-grid-justify-self-unset",
-  "inline-grid-justify-start",
-  "inline-grid-justify-stretch",
-  "inline-grid-justify-unset",
-]
-`;
+exports[`extra-group > autocomplete 4`] = `[]`;
 
 exports[`extra-group > autocomplete 5`] = `
 [
-  "flex-order-first",
-  "flex-order-last",
-  "flex-order-none",
   "flex-order-0",
   "flex-order-1",
   "flex-order-2",
@@ -220,9 +145,6 @@ exports[`extra-group > autocomplete 5`] = `
 
 exports[`extra-group > autocomplete 6`] = `
 [
-  "grid-order-first",
-  "grid-order-last",
-  "grid-order-none",
   "grid-order-0",
   "grid-order-1",
   "grid-order-2",
@@ -240,9 +162,6 @@ exports[`extra-group > autocomplete 6`] = `
 
 exports[`extra-group > autocomplete 7`] = `
 [
-  "inline-flex-order-first",
-  "inline-flex-order-last",
-  "inline-flex-order-none",
   "inline-flex-order-0",
   "inline-flex-order-1",
   "inline-flex-order-2",
@@ -260,9 +179,6 @@ exports[`extra-group > autocomplete 7`] = `
 
 exports[`extra-group > autocomplete 8`] = `
 [
-  "inline-grid-order-first",
-  "inline-grid-order-last",
-  "inline-grid-order-none",
   "inline-grid-order-0",
   "inline-grid-order-1",
   "inline-grid-order-2",
@@ -372,99 +288,17 @@ exports[`extra-group > autocomplete 14`] = `
 ]
 `;
 
-exports[`extra-group > autocomplete 15`] = `
-[
-  "inline-flex-content-around",
-  "inline-flex-content-between",
-  "inline-flex-content-center",
-  "inline-flex-content-end",
-  "inline-flex-content-evenly",
-  "inline-flex-content-inherit",
-  "inline-flex-content-initial",
-  "inline-flex-content-revert",
-  "inline-flex-content-revert-layer",
-  "inline-flex-content-start",
-  "inline-flex-content-unset",
-]
-`;
+exports[`extra-group > autocomplete 15`] = `[]`;
 
-exports[`extra-group > autocomplete 16`] = `
-[
-  "inline-flex-items-baseline",
-  "inline-flex-items-center",
-  "inline-flex-items-end",
-  "inline-flex-items-inherit",
-  "inline-flex-items-initial",
-  "inline-flex-items-revert",
-  "inline-flex-items-revert-layer",
-  "inline-flex-items-start",
-  "inline-flex-items-stretch",
-  "inline-flex-items-unset",
-]
-`;
+exports[`extra-group > autocomplete 16`] = `[]`;
 
-exports[`extra-group > autocomplete 17`] = `
-[
-  "inline-flex-self-auto",
-  "inline-flex-self-baseline",
-  "inline-flex-self-center",
-  "inline-flex-self-end",
-  "inline-flex-self-inherit",
-  "inline-flex-self-initial",
-  "inline-flex-self-revert",
-  "inline-flex-self-revert-layer",
-  "inline-flex-self-start",
-  "inline-flex-self-stretch",
-  "inline-flex-self-unset",
-]
-`;
+exports[`extra-group > autocomplete 17`] = `[]`;
 
-exports[`extra-group > autocomplete 18`] = `
-[
-  "inline-grid-content-around",
-  "inline-grid-content-between",
-  "inline-grid-content-center",
-  "inline-grid-content-end",
-  "inline-grid-content-evenly",
-  "inline-grid-content-inherit",
-  "inline-grid-content-initial",
-  "inline-grid-content-revert",
-  "inline-grid-content-revert-layer",
-  "inline-grid-content-start",
-  "inline-grid-content-unset",
-]
-`;
+exports[`extra-group > autocomplete 18`] = `[]`;
 
-exports[`extra-group > autocomplete 19`] = `
-[
-  "inline-grid-items-baseline",
-  "inline-grid-items-center",
-  "inline-grid-items-end",
-  "inline-grid-items-inherit",
-  "inline-grid-items-initial",
-  "inline-grid-items-revert",
-  "inline-grid-items-revert-layer",
-  "inline-grid-items-start",
-  "inline-grid-items-stretch",
-  "inline-grid-items-unset",
-]
-`;
+exports[`extra-group > autocomplete 19`] = `[]`;
 
-exports[`extra-group > autocomplete 20`] = `
-[
-  "inline-grid-self-auto",
-  "inline-grid-self-baseline",
-  "inline-grid-self-center",
-  "inline-grid-self-end",
-  "inline-grid-self-inherit",
-  "inline-grid-self-initial",
-  "inline-grid-self-revert",
-  "inline-grid-self-revert-layer",
-  "inline-grid-self-start",
-  "inline-grid-self-stretch",
-  "inline-grid-self-unset",
-]
-`;
+exports[`extra-group > autocomplete 20`] = `[]`;
 
 exports[`extra-group > autocomplete 21`] = `
 [
@@ -558,97 +392,17 @@ exports[`extra-group > autocomplete 26`] = `
 ]
 `;
 
-exports[`extra-group > autocomplete 27`] = `
-[
-  "inline-flex-place-content-around",
-  "inline-flex-place-content-between",
-  "inline-flex-place-content-center",
-  "inline-flex-place-content-end",
-  "inline-flex-place-content-evenly",
-  "inline-flex-place-content-inherit",
-  "inline-flex-place-content-initial",
-  "inline-flex-place-content-revert",
-  "inline-flex-place-content-revert-layer",
-  "inline-flex-place-content-start",
-  "inline-flex-place-content-stretch",
-  "inline-flex-place-content-unset",
-]
-`;
+exports[`extra-group > autocomplete 27`] = `[]`;
 
-exports[`extra-group > autocomplete 28`] = `
-[
-  "inline-flex-place-items-center",
-  "inline-flex-place-items-end",
-  "inline-flex-place-items-inherit",
-  "inline-flex-place-items-initial",
-  "inline-flex-place-items-revert",
-  "inline-flex-place-items-revert-layer",
-  "inline-flex-place-items-start",
-  "inline-flex-place-items-stretch",
-  "inline-flex-place-items-unset",
-]
-`;
+exports[`extra-group > autocomplete 28`] = `[]`;
 
-exports[`extra-group > autocomplete 29`] = `
-[
-  "inline-flex-place-self-auto",
-  "inline-flex-place-self-center",
-  "inline-flex-place-self-end",
-  "inline-flex-place-self-inherit",
-  "inline-flex-place-self-initial",
-  "inline-flex-place-self-revert",
-  "inline-flex-place-self-revert-layer",
-  "inline-flex-place-self-start",
-  "inline-flex-place-self-stretch",
-  "inline-flex-place-self-unset",
-]
-`;
+exports[`extra-group > autocomplete 29`] = `[]`;
 
-exports[`extra-group > autocomplete 30`] = `
-[
-  "inline-grid-place-content-around",
-  "inline-grid-place-content-between",
-  "inline-grid-place-content-center",
-  "inline-grid-place-content-end",
-  "inline-grid-place-content-evenly",
-  "inline-grid-place-content-inherit",
-  "inline-grid-place-content-initial",
-  "inline-grid-place-content-revert",
-  "inline-grid-place-content-revert-layer",
-  "inline-grid-place-content-start",
-  "inline-grid-place-content-stretch",
-  "inline-grid-place-content-unset",
-]
-`;
+exports[`extra-group > autocomplete 30`] = `[]`;
 
-exports[`extra-group > autocomplete 31`] = `
-[
-  "inline-grid-place-items-center",
-  "inline-grid-place-items-end",
-  "inline-grid-place-items-inherit",
-  "inline-grid-place-items-initial",
-  "inline-grid-place-items-revert",
-  "inline-grid-place-items-revert-layer",
-  "inline-grid-place-items-start",
-  "inline-grid-place-items-stretch",
-  "inline-grid-place-items-unset",
-]
-`;
+exports[`extra-group > autocomplete 31`] = `[]`;
 
-exports[`extra-group > autocomplete 32`] = `
-[
-  "inline-grid-place-self-auto",
-  "inline-grid-place-self-center",
-  "inline-grid-place-self-end",
-  "inline-grid-place-self-inherit",
-  "inline-grid-place-self-initial",
-  "inline-grid-place-self-revert",
-  "inline-grid-place-self-revert-layer",
-  "inline-grid-place-self-start",
-  "inline-grid-place-self-stretch",
-  "inline-grid-place-self-unset",
-]
-`;
+exports[`extra-group > autocomplete 32`] = `[]`;
 
 exports[`extra-group > justifies 1`] = `
 "

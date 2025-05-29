@@ -8,8 +8,8 @@ import { alignments, justifies, orders, placements } from '@unocss/preset-mini/d
 import { extraGroupRules } from '@@/src/rules/extra-group';
 import { presetExtra } from '@/index';
 
-describe('extra-group', () => {
-  const generator = createGenerator({
+describe('extra-group', async () => {
+  const generator = await createGenerator({
     presets: [
       presetUno(),
       presetAttributify(),

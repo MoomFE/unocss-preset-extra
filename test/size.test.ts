@@ -5,8 +5,8 @@ import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 import { presetExtra } from '@/index';
 
-describe('size', () => {
-  const generator = createGenerator({
+describe('size', async () => {
+  const generator = await createGenerator({
     presets: [
       presetUno(),
       presetAttributify(),
