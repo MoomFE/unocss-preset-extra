@@ -1,4 +1,5 @@
 ## [Unreleased]
+  - 🐞 修复 unocss 的 peerDependencies 版本范围 (fix #60)
 
 ## [v0.5.3]
   - 📅 2023-10-24

@@ -45,7 +45,7 @@
     "lint": "eslint ./src --fix"
   },
   "peerDependencies": {
-    "unocss": ">= 0.31.0 < 1"
+    "unocss": ">= 0.31.0"
   },
   "devDependencies": {
     "@moomfe/eslint-config": "^3.5.0",
