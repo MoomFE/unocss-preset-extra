@@ -31,8 +31,8 @@ describe('animated.json', () => {
   });
 });
 
-describe('animated', () => {
-  const generator = createGenerator({
+describe('animated', async () => {
+  const generator = await createGenerator({
     presets: [
       presetUno(),
       presetAttributify(),

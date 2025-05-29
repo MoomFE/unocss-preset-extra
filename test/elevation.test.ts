@@ -29,7 +29,7 @@ function createElevationOpacityRules(name: string) {
 }
 
 describe('elevation', async () => {
-  const generator = createGenerator({
+  const generator = await createGenerator({
     presets: [
       presetUno(),
       presetAttributify(),
