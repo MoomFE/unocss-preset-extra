@@ -57,8 +57,8 @@ importers:
         specifier: ^3.4.1
         version: 3.4.1
       pnpm:
-        specifier: ^9.15.9
-        version: 9.15.9
+        specifier: ^10.0.0
+        version: 10.12.4
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -2260,8 +2260,8 @@ packages:
   pnpm-workspace-yaml@0.3.1:
     resolution: {integrity: sha512-3nW5RLmREmZ8Pm8MbPsO2RM+99RRjYd25ynj3NV0cFsN7CcEl4sDFzgoFmSyduFwxFQ2Qbu3y2UdCh6HlyUOeA==}
 
-  pnpm@9.15.9:
-    resolution: {integrity: sha512-aARhQYk8ZvrQHAeSMRKOmvuJ74fiaR1p5NQO7iKJiClf1GghgbrlW1hBjDolO95lpQXsfF+UA+zlzDzTfc8lMQ==}
+  pnpm@10.12.4:
+    resolution: {integrity: sha512-Xqiw3u2U7WhpHJutTJVUknBcXuuKh++GvGLHSiawN7CP+VcPEIsuTb0d0akYb+qSXlJ/FBxkjoWvRWMQdGgBhA==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -5331,7 +5331,7 @@ snapshots:
     dependencies:
       yaml: 2.7.1
 
-  pnpm@9.15.9: {}
+  pnpm@10.12.4: {}
 
   postcss-calc@10.1.1(postcss@8.5.6):
     dependencies:
