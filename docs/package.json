@@ -27,7 +27,7 @@
   "devDependencies": {
     "@css-render/vue3-ssr": "^0.15.14",
     "@iconify/json": "^2.2.364",
-    "@intlify/unplugin-vue-i18n": "^1.6.0",
+    "@intlify/unplugin-vue-i18n": "^6.0.8",
     "@moomfe/eslint-config": "^3.5.0",
     "@rollup/pluginutils": "^5.2.0",
     "@types/fs-extra": "^11.0.4",
