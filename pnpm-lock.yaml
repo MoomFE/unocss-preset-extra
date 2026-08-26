@@ -54,8 +54,8 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       mixte:
-        specifier: ^3.4.1
-        version: 3.4.1
+        specifier: ^3.6.1
+        version: 3.6.1
       pnpm:
         specifier: ^10.14.0
         version: 10.14.0
@@ -1590,6 +1590,7 @@ packages:
   eslint@9.25.1:
     resolution: {integrity: sha512-E6Mtz9oGQWDCpV12319d59n4tx9zOTXSTmc8BLVxBx+G/0RdM5MvEEJLU9c0+aleoePYYgVTOsRblx433qmhWQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -2103,8 +2104,8 @@ packages:
     resolution: {integrity: sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  mixte@3.4.1:
-    resolution: {integrity: sha512-JMbhIF0FlOxor74dpEj+9yaeif443SW5NQ2leDs1qYE+oAXRwP96e4iN0ZUiLtQ+fM9b91S8lzpBe9kaI3tWUA==}
+  mixte@3.6.1:
+    resolution: {integrity: sha512-UMk7xKssb1eCanFhYBtbpZiUfmhWseu1gnnOVrJNKrVSf2FfpjuAanIl1ZpOdq6pyLYt3A/OmNU4t8KJF5T6bg==}
 
   mlly@1.7.3:
     resolution: {integrity: sha512-xUsx5n/mN0uQf4V548PKQ+YShA4/IW0KI1dZhrNrPCLG+xizETbHTkOa1f8/xut9JRPp8kQuMnz0oqwkTiLo/A==}
@@ -5168,7 +5169,7 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.1
 
-  mixte@3.4.1: {}
+  mixte@3.6.1: {}
 
   mlly@1.7.3:
     dependencies:
