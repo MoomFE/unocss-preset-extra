@@ -1,7 +1,7 @@
 {
   "name": "unocss-preset-extra",
   "version": "1.0.0",
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.34.5",
   "description": "",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "license": "MIT",
